@@ -1,0 +1,136 @@
+/*
+Skin Name: Nivo Slider Default Theme
+Skin URI: http://nivo.dev7studios.com
+Description: The default skin for the Nivo Slider.
+Version: 1.3
+Author: Gilbert Pellegrom
+Author URI: http://dev7studios.com
+Supports Thumbs: true
+*/
+/* -------------------------------------
+    preview-1
+----------------------------------------*/
+.preview-1 .nivoSlider .nivo-directionNav a.nivo-prevNav {
+  left: 0px;
+  font-size: 0;
+}
+.preview-1 .nivoSlider .nivo-directionNav a.nivo-nextNav {
+  right: 70px;
+  font-size: 0;
+}
+.preview-1 .nivo-directionNav a.nivo-prevNav::before {
+  background: #f0f1f8 none repeat scroll 0 0;
+  height: 100px;
+  position: absolute;
+  transition: all 300ms ease-in 0s;
+  width: 70px;
+  content: "";
+  line-height:100px;
+  opacity:0.5;
+}
+.preview-1 .nivo-directionNav a.nivo-prevNav::after {
+  content: "";
+  cursor: pointer;
+  font: 400 40px/100px FontAwesome;
+  height: 100px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transition: all 300ms ease-in 0s;
+  width: 70px;
+  z-index: 9;
+  line-height:100px;
+  color:#424242;
+}
+.preview-1 .nivo-directionNav a.nivo-nextNav::before {
+  background: #f0f1f8 none repeat scroll 0 0;
+  height: 100px;
+  position: absolute;
+  transition: all 300ms ease-in 0s;
+  width: 70px;
+  content: "";
+  line-height:100px;
+  opacity:0.5;
+}
+.preview-1 .nivo-directionNav a.nivo-nextNav::after {
+  content: "\f105";
+  cursor: pointer;
+  font: 400 40px/100px FontAwesome;
+  height: 100px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transition: all 300ms ease-in 0s;
+  width: 70px;
+  z-index: 9;
+  line-height:100px;
+  color:#424242;
+}
+.preview-1 .nivoSlider:hover .nivo-directionNav a.nivo-prevNav {
+  left: 20px;
+}
+.preview-1 .nivoSlider:hover .nivo-directionNav a.nivo-nextNav {
+  right: 90px;
+}
+.preview-1 .nivo-directionNav a.nivo-prevNav:hover:before{
+  opacity:0.7;
+}
+.preview-1 .nivo-directionNav a.nivo-nextNav:hover:before{
+  opacity:0.7;
+}
+.nivo-directionNav a {
+  cursor: pointer;
+  margin-top: -50px;
+  position: absolute;
+  top: 50%;
+  z-index: 9;
+}
+.niceties.preview-1 {
+  position: relative;
+}
+.preview-1 .nivo-controlNav {
+  bottom: 2%;
+  left: 49%;
+  position: absolute;
+  z-index: 99999;
+  display:none;
+}
+.preview-1 .nivo-controlNav a {
+	border: 5px solid #fff;
+	display: inline-block;
+	height: 18px;
+	margin: 0 5px;
+	text-indent: -9999px;
+	width: 18px;
+	line-height: 8px;
+	background: #3c3c3c;
+	cursor: pointer;
+	position: relative;
+	z-index: 9;
+	border-radius: 100%;
+	opacity: 0;
+	z-index: -999;
+}
+.preview-1:hover .nivo-controlNav a {
+  opacity: 1;
+  z-index: 999999;
+}
+/*preview-1 home-4*/
+.preview-1.ho_4 .nivo-directionNav a.nivo-prevNav::before {
+  background: #000 none repeat scroll 0 0;
+  opacity:0.3;
+}
+.preview-1.ho_4 .nivo-directionNav a.nivo-prevNav::after {
+  content: "";
+  color:#fff;
+}
+.preview-1.ho_4 .nivo-directionNav a.nivo-nextNav::before {
+  background: #000 none repeat scroll 0 0;
+  opacity:0.3;
+}
+.preview-1.ho_4 .nivo-directionNav a.nivo-nextNav::after {
+  content: "\f105";
+  color:#fff;
+}
+
+/* Slider V2 */
