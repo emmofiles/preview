@@ -1,0 +1,452 @@
+
+/*!--------------------------------------------------------------------------------------------------------------
+	MeanMenu 2.0.7
+	--------
+	To be used with jquery.meanmenu.js by Chris Wharton (http://www.meanthemes.com/plugins/meanmenu/)
+	This Plug in Modified by BootExperts.  
+------------------------------------------------------------------------------------------------------------------ */
+/* hide the link until viewport size is reached */
+.mobile-menu-area{
+  padding: 0 15px;
+}
+a.meanmenu-reveal {
+	display: none;
+}
+.mean-container .mean-bar {
+	float: left;
+	width: 100%;
+	position: relative;
+	padding: 10px 0;
+	min-height: 42px;
+	z-index: 1;
+}
+.mean-container a.meanmenu-reveal {
+  color: #ffffff;
+  cursor: pointer;
+  display: block;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 1px;
+  font-weight: 700;
+  height: 18px;
+  line-height: 18px;
+  overflow: hidden;
+  padding: 13px 13px 11px;
+  position: absolute;
+  text-decoration: none;
+  text-indent: -9999em;
+  top: 0;
+  width: 18px;
+}
+.mean-container a.meanmenu-reveal span {
+	display: block;
+	background: #fff;
+	height: 3px;
+	margin-top: 3px;
+	position: relative;
+	top: -2px;
+}
+.header-v3 .mean-container a.meanmenu-reveal span,
+.header-v4 a.meanmenu-reveal span,
+.header-food a.meanmenu-reveal span {
+  background: #444 none repeat scroll 0 0;
+}
+.header-v3 .mean-container a.meanmenu-reveal,
+.header-food .mean-container a.meanmenu-reveal{
+	color: #444;
+}
+.header-v3 .mean-container .mean-nav,
+.header-food .mean-container .mean-nav {
+  background: #ffffff none repeat scroll 0 0;
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  float: left;
+  margin-top: 44px;
+  width: 100%;
+}
+.header-food .mean-container .mean-nav{
+	margin-top: 62px;
+}
+.header-v3.construction-header .mean-container a.meanmenu-reveal[style] {
+	top: 8px;
+}
+.header-v3.construction-header .mean-container .mean-nav{
+	margin-top: 50px;
+}
+.header-v3 .mean-container .mean-nav ul li.mean-last a,
+.header-food .mean-container .mean-nav ul li.mean-last a {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.mean-container .mean-nav {
+	float: left;
+	width: 100%;
+	background: #0c1923;
+	margin-top: 44px;
+}
+.mean-container .mean-nav ul {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	list-style-type: none;
+}
+.mean-container .mean-nav ul li {
+	position: relative;
+	float: left;
+	width: 100%;
+}
+.mean-container .mean-nav ul li a {
+  background: #ffffff none repeat scroll 0 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  color: #444444;
+  display: block;
+  float: left;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0;
+  padding: 11px 3%;
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 94%;
+}
+.mean-container .mean-nav ul li li a {
+	width: 80%;
+	padding: 1em 10%;
+	border-top: 1px solid #f1f1f1;
+	border-top: 1px solid rgba(0,0,0,0.3);
+	text-shadow: none !important;
+	visibility: visible;
+}
+.mean-container .mean-nav ul li.mean-last a {
+	border-bottom: none;
+	margin-bottom: 0;
+}
+.mean-container .mean-nav ul li li li a {
+	width: 70%;
+	padding: 1em 15%;
+}
+.mean-container .mean-nav ul li li li li a {
+	width: 60%;
+	padding: 1em 20%;
+}
+.mean-container .mean-nav ul li li li li li a {
+	width: 50%;
+	padding: 1em 25%;
+}
+.mean-container .mean-nav ul li a:hover {
+  background: #444444 none repeat scroll 0 0;
+  color: #ffffff;
+}
+.mean-container .mean-nav ul li a.mean-expand {
+	margin-top: 1px;
+	width: 22px;
+	height: 22px;
+	padding: 12px !important;
+	text-align: center;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 2;
+	font-weight: 700;
+	background: rgba(255,255,255,0.1);
+	border: none !important;
+	border-left: 1px solid rgba(0,0,0,0.3) !important;
+	border-bottom: 1px solid rgba(0,0,0,0.2) !important;
+}
+.mean-container .mean-nav ul li a.mean-expand:hover {
+	background: rgba(0,0,0,0.9);
+}
+.mean-container .mean-push {
+	float: left;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	clear: both;
+}
+.mean-nav .wrapper {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+/* Fix for box sizing on Foundation Framework etc. */
+.mean-container .mean-bar, .mean-container .mean-bar * {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+.mean-remove {
+	display: none !important;
+}
+.header-v3 .mean-container a.meanmenu-reveal[style],
+.header-food .mean-container a.meanmenu-reveal[style] {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.header-v3 .mean-container a.meanmenu-reveal,
+.header-food .mean-container a.meanmenu-reveal {
+  height: 18px;
+  line-height: 18px;
+  display: block;
+  top: 0;
+  width: 18px;
+}
+.header-food .mean-container a.meanmenu-reveal{
+	top: 11px
+}
+.header-v3 .mobile-menu-area {
+  padding-left: 15px;
+}
+
+.header-v4 .mean-container .mean-nav {
+  background: #0c1923 none repeat scroll 0 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  float: left;
+  margin-top: 44px;
+  width: 100%;
+}
+
+.header-v4 .mean-container a.meanmenu-reveal,
+.header-bottom-border .mean-container a.meanmenu-reveal,
+.header-v5 .mean-container a.meanmenu-reveal,
+.solid-bg-header .mean-container a.meanmenu-reveal[style],
+.header-v7 .ml-light .mean-container a.meanmenu-reveal[style],
+.header-handmed .mean-container a.meanmenu-reveal[style] {
+  color: #444;
+}
+.header-bottom-border .mean-container a.meanmenu-reveal span,
+.header-v5 .mean-container a.meanmenu-reveal span,
+.solid-bg-header .mean-container a.meanmenu-reveal span,
+.header-v7 .ml-light .mean-container a.meanmenu-reveal span,
+.shop-furniture-header .mean-container a.meanmenu-reveal span,
+.header-handmed .mean-container a.meanmenu-reveal span{
+	background: #444;
+}
+.header-v4 .mean-container .mean-bar {
+  margin-top: -65px;
+}
+
+.header-v4 .mean-container a.meanmenu-reveal,
+.header-v5 .mean-container a.meanmenu-reveal {
+  top: 12px;
+}
+.header-v1 .col-lg-3.col-md-4.col-sm-6,
+.header-v4 .col-md-4.col-sm-4,
+.header-v7 .col-md-4.col-sm-4,
+.header-v7 .col-md-4.col-sm-8,
+.col-md-6.col-xs-8,
+.header-v6 .col-md-3.col-sm-4,
+.header-v6 .col-md-2.col-sm-7,
+.col-lg-1.col-md-7.col-sm-6.col-xs-10,
+.col-lg-3.col-md-4.col-sm-5.col-xs-12,
+.col-lg-3.col-md-9.col-xs-8,
+.col-md-3.col-xs-8,
+.col-lg-3.col-md-4.col-sm-4,
+.col-lg-2.col-md-7.col-sm-7,
+.header-v7 .col-md-4.col-sm-4,
+.header-v7 .col-md-8.col-sm-8,
+.header-v7 .col-md-3.col-sm-8,
+.header-food .col-md-3.col-sm-4,
+.header-food .col-lg-2.col-md-8.col-sm-7,
+.header-food .col-md-8,
+.chairman-logo-menu .col-md-3.col-sm-4,
+.chairman-logo-menu .col-md-2.col-sm-7,
+.col-meta-md{
+  z-index: 2;
+}
+.header-v4 .header-social-bookmark ul li,
+.header-v5 .header-social-bookmark ul li {
+  position: relative;
+}
+
+
+.header-v5 .mean-container .mean-bar {
+  margin-top: -57px;
+}
+.header-v5 .green-bg-menu .mean-container .mean-bar {
+  margin-top: 0;
+}
+.header-v5 .green-bg-menu .mean-container .mean-bar::before {
+  color: #444444;
+  content: "Menu";
+  font-size: 18px;
+  font-weight: bold;
+  left: 0;
+  position: absolute;
+  text-transform: uppercase;
+  top: 20px;
+}
+.header-v5 .mean-container .mean-nav{
+  background: #0c1923 none repeat scroll 0 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+.header-handmed .mean-container .mean-nav,
+.header-bottom-border .mean-container .mean-nav,
+.header-v7 .ml-light .mean-container .mean-nav,
+.header-v8.header-v8-light .mean-container .mean-nav,
+.header-v9 .mean-container .mean-nav {
+  background: #0c1923 none repeat scroll 0 0;
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+.header-handmed .mean-container .mean-nav ul li.mean-last a,
+.header-bottom-border .mean-container .mean-nav ul li.mean-last a,
+.header-v7 .ml-light .mean-container .mean-nav ul li.mean-last a,
+.header-v8.header-v8-light .mean-container .mean-nav ul li.mean-last a,
+.header-v9 .mean-container .mean-nav ul li.mean-last a {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.header-v6 .mean-container .mean-bar {
+  margin-top: -66px;
+}
+.header-bottom-border .mean-container a.meanmenu-reveal[style] {
+  background: #ffffff none repeat scroll 0 0;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  height: 18px;
+  line-height: 18px;
+  right: 0 !important;
+  top: 12px;
+  width: 18px;
+}
+.header-bottom-border  .mean-container .mean-nav {
+  margin-top: 60px;
+}
+.construction-header .mean-container .mean-bar {
+  margin-top: -105px;
+}
+.construction-header.header-v3 .mobile-menu-area {
+  padding-right: 15px;
+}
+.header-v3.construction-header.construction-header-2 .mean-container a.meanmenu-reveal[style] {
+  top: 55px;
+}
+.header-v3.construction-header.construction-header-2 .mean-container a.meanmenu-reveal span {
+  background: #ffffff none repeat scroll 0 0;
+}
+.header-v3.construction-header.construction-header-2 .mean-container a.meanmenu-reveal[style]{
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+.header-not-full-width.header-v3 .mean-container a.meanmenu-reveal[style],
+.header-handmed .mean-container a.meanmenu-reveal[style] {
+  right: 0 !important;
+  top: 6px;
+}
+.header-handmed .mean-container a.meanmenu-reveal[style] {
+	top: 13px;
+	transition: .3s;
+}
+.header-handmed .sticky .mean-container a.meanmenu-reveal[style] {
+  top: 7px;
+}
+.header-not-full-width .header-v3 .mobile-menu-area,
+.header-not-full-width .header-food .mobile-menu-area {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.header-v7 .mean-container a.meanmenu-reveal[style] {
+  top: 39px;
+}
+.header-v7 .mean-container .mean-nav {
+  margin-top: 70px;
+}
+.header-food2 .mobile-menu-area,
+.header-v7 .mobile-menu-area,
+.shop-furniture-header .mobile-menu-area,
+.header-handmed .mobile-menu-area {
+  display: block;
+  padding: 0 15px;
+}
+.header-not-full-width .header-v3 .mean-container.m-menu-furniture a.meanmenu-reveal {
+  top: 0;
+}
+.shop-furniture-header .mean-container a.meanmenu-reveal {
+  border: 1px solid #323334;
+  top: 35px;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  color: #444;
+}
+.shop-furniture-header .mean-container .mean-nav {
+  margin-top: 80px;
+}
+.corporate-h1 .mean-container a.meanmenu-reveal,
+.corporate-h2 .mean-container a.meanmenu-reveal,
+.corporate-h3 .mean-container a.meanmenu-reveal{
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.shop-hand-mad-header .mean-container a.meanmenu-reveal{
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  top: 24px
+}
+.shop-hand-mad-header .mean-container .mean-nav {
+  margin-top: 65px;
+}
+/*Digital Header*/
+.header-v8 .mean-container .mean-nav {
+  margin-top: 40px;
+}
+.header-v8 .mean-container .mean-bar {
+  margin-top: 0;
+}
+.header-v8 .mean-container a.meanmenu-reveal {
+  top: 10px;
+}
+.header-v8 .mean-container .mean-bar::before {
+  color: #ffffff;
+  content: "Menu";
+  font-size: 18px;
+  font-weight: bold;
+  left: 0;
+  position: absolute;
+  text-transform: uppercase;
+  top: 20px;
+}
+.header-v8.header-v8-light .mean-container .mean-bar::before,
+.header-v8-light .mean-container a.meanmenu-reveal,
+.mint-color-header .mean-container a.meanmenu-reveal {
+  color: #323334;
+}
+
+.header-v8.header-v8-light .menu-black-bg .mean-container .mean-bar::before,
+.header-v8-light .menu-black-bg .mean-container a.meanmenu-reveal {
+  color: #ffffff;
+}
+.header-v8-light .menu-black-bg .mean-container a.meanmenu-reveal span{
+  background: #ffffff;
+}
+.header-v8.header-v8-search-bottom .mean-container .mean-bar {
+  margin-top: -90px;
+}
+.header-v8-light.header-v8-search-bottom .mean-container a.meanmenu-reveal,
+.mint-color-header .mean-container a.meanmenu-reveal{
+  border: 1px solid #323334
+}
+.header-v8-light.header-v8-search-bottom .mean-container a.meanmenu-reveal span,
+.header-v8-light .mean-container a.meanmenu-reveal span,
+.mint-color-header .mean-container a.meanmenu-reveal span {
+  background: #323334 none repeat scroll 0 0;
+}
+.header-v8.header-v8-search-bottom .mean-container .mean-bar::before {
+  display: none;
+}
+.header-v8.header-v8-search-bottom .mean-container .mean-nav {
+  margin-top: 50px;
+}
+.header-v7.mint-color-header .mean-container a.meanmenu-reveal {
+  top: 38px;
+}
+.header-v7.mint-color-header .mean-container .mean-nav {
+  margin-top: 78px;
+}
+.header-food.header-medicine .mean-container .mean-nav {
+  margin-top: 55px;
+}
+.header-not-full-width .header-v3.header-medicine .mean-container a.meanmenu-reveal {
+  top: 11px;
+}
+

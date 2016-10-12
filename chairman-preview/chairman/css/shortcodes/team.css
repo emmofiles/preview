@@ -1,0 +1,213 @@
+/*------------------------------------------------
+	Team area css
+--------------------------------------------------*/
+.single-member {
+  position: relative;
+  overflow: hidden;
+}
+.member-img{
+  position: relative;
+}
+.member-img::before{
+  background: rgba(0, 0, 0, .5);
+}
+.member-img::before,
+.team-style-one .member-img::before{
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  content: "";
+  transition: all 0.3s ease 0s;
+}
+.team-style-one .member-img::before {
+  background: rgba(39,98,141,.8); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(45deg,rgba(42,49,64,.3),rgba(39,98,141,.5)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(45deg,rgba(42,49,64,.3),rgba(39,98,141,.5)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(45deg,rgba(42,49,64,.3),rgba(39,98,141,.5)); /*Fx 3.6-15*/
+  background: linear-gradient(to 45deg, rgba(42,49,64,.3), rgba(39,98,141,.5)); /*Standard*/
+}
+.team-style-one .member-details {
+  border: 1px solid #ddd;
+  color: #fff;
+  height: calc(100% - 40px);
+  left: 20px;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  top: 20px;
+  transition: all 0.3s ease 0s;
+  width: calc(100% - 40px);
+}
+.single-member:hover .member-details,
+.single-member:hover .member-img::before{
+  opacity: 1;
+}
+.member-details {
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  transition: all 0.3s ease 0s;
+  width: 100%;
+}
+.mb-wrap {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+.team-style-two .mb-wrap{
+  top: 50%;
+}
+.member-details h4{
+  margin-bottom: 10px;
+}
+.member-details h4 a{
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.member-details h5 {
+  color: #dcdcdc;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 18px;
+  margin-bottom: 80px;
+  transition: all 0.3s ease 0s;
+}
+.member-social-links > li {
+  display: inline-block;
+}
+.member-social-links > li a{
+  color: #fff;
+  background: #444;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  margin-left: 10px;
+  display: inline-block;
+}
+.member-social-links > li a:hover{
+  background: #fff;
+  color: #585c66;
+}
+.member-social-links {
+  bottom: 40px;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.3s ease 0s;
+  visibility: hidden;
+  width: 100%;
+}
+.single-member:hover .member-social-links {
+  bottom: 60px;
+  opacity: 1;
+  visibility: visible;
+}
+.team-style-one .member-details h5{
+  margin-bottom: 0;
+}
+.team-style-one .ttbg > h4 {
+  margin-bottom: 10px;
+}
+.team-style-one .member-details h4 a{
+  margin-bottom: 0;
+}
+/*-------------------------------------------
+	Style Two
+---------------------------------------------*/
+.fact-color-2 .single-member{
+  position: relative;
+}
+.fact-color-2 .mb-wrap {
+  border: 1px solid rgba(181, 181, 181, 0.5);
+  content: "";
+  height: calc(100% - 40px);
+  left: 20px;
+  margin-top: 0;
+  position: absolute;
+  top: 20px;
+  width: calc(100% - 40px);
+  padding-top: 255px;
+}
+.corporate-h2 .single-member:hover .member-details{
+  opacity: 1;
+}
+.corporate-h2 .member-details h5 {
+  margin-bottom: 0;
+}
+.ttbg {
+  background: rgba(255, 255, 255, 0.2) none repeat scroll 0 0;
+  padding: 10px 0;
+}
+.member-img img {
+  width: 100%;
+}
+
+.team-style-content-botton .member-details h5{
+  margin-bottom: 0;
+}
+.team-style-content-botton .member-details {
+  background: #3e3e3e;
+  color: #fff;
+  opacity: 1;
+  position: static;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+  padding: 15px 0;
+}
+.team-style-content-botton .member-social-links {
+  top: 50%;
+}
+.team-style-content-botton.single-member:hover .member-social-links {
+  top: 45%;
+}
+.team-style-content-botton.single-member:hover .member-details h5,
+.team-style-content-botton .member-social-links > li a:hover{
+  color: #fff;
+}
+/*Contraction team area*/
+.member-details-2 .mbc-wrap h4{
+  margin-bottom: 0px;
+}
+.member-details-2 .mbc-wrap h4 a {
+  color: #444444;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 18px;
+  margin-bottom: asdf;
+}
+.member-details-2 .mbc-wrap > p {
+  margin: 0;
+  color: #999999;
+  font-size: 13px;
+  line-height: 24px;
+}
+.member-details-2 .mbc-wrap {
+  padding: 20px 0;
+}
+.member-details-2 .member-social {
+  background: #f5f5f5 none repeat scroll 0 0;
+  overflow: hidden;
+  padding: 15px 0;
+}
+.member-details-2 .member-social li {
+  display: inline-block;
+  padding: 0 12px;
+}
+.member-details-2 .member-social li a {
+  color: #2b2b35;
+}
+.theme-color-bg .member-social-links > li a {
+  background: #fff none repeat scroll 0 0;
+  color: #555;
+}
