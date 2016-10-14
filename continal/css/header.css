@@ -1,0 +1,245 @@
+/*
+ * LESS VARIABLES
+ */
+/* Colors
+----------------------------------------------------------*/
+/* Body
+----------------------------------------------------------*/
+/* Typography
+----------------------------------------------------------*/
+/*Header*/
+.top-line {
+  height: 5px;
+  background: #ffae4e;
+}
+header {
+  transition: .3s;
+  background: #fff;
+  z-index: 999;
+}
+header .logo {
+  margin-top: 47px;
+  float: left;
+}
+header .logo img {
+  vertical-align: top;
+  max-width: 100%;
+}
+header .top-info {
+  float: right;
+}
+header .btn-toggle {
+  display: none;
+}
+.nav {
+  float: left;
+  margin-left: 50px;
+  text-transform: uppercase;
+  transition: .3s;
+}
+.nav .main-menu {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.nav .main-menu li {
+  position: relative;
+  clear: both;
+}
+.nav .main-menu li:hover > ul {
+  opacity: 1;
+  top: 100%;
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.nav .main-menu li ul {
+  transition: top 0.3s ease 0s, opacity 0.3s;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  opacity: 0;
+  top: 115%;
+  border: none;
+  border-radius: 0;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+  margin: 0;
+  display: block;
+  left: 0;
+  padding: 0;
+  min-width: 200px;
+  white-space: nowrap;
+}
+.nav .main-menu li ul a {
+  line-height: 41px;
+  padding: 0 23px;
+  font-size: 13px;
+}
+.nav .main-menu li ul a:hover,
+.nav .main-menu li ul a:focus {
+  background: #ffae4e;
+  color: #333;
+}
+.nav .main-menu li ul ul {
+  opacity: 0;
+  top: 0;
+  left: 110%;
+  transition: left 0.3s ease 0s, opacity 0.3s;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+}
+.nav .main-menu li ul li:hover > ul {
+  opacity: 1;
+  left: 100%;
+  top: 0;
+}
+.nav .main-menu > li {
+  display: inline-block;
+  padding: 57px 15px;
+}
+.nav .main-menu a {
+  color: #666;
+  text-decoration: none;
+  font-weight: bold;
+}
+.nav .main-menu a:hover {
+  color: #ffae4e;
+}
+.nav .main-menu a i {
+  margin-right: 6px;
+}
+.nav .arrow-parent {
+  display: none;
+}
+.nav .main-menu li:last-child ul {
+  right: 0;
+  left: auto;
+}
+.nav .main-menu li:last-child ul ul {
+  right: 110%;
+  top: 0;
+  transition: right 0.3s ease 0s, opacity 0.3s;
+}
+.nav .main-menu li:last-child ul li:hover > ul {
+  right: 100%;
+  left: auto;
+}
+.header5 .top-menu .nav .main-menu > li:first-child {
+  padding-left: 0;
+}
+.top-info {
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #888;
+  margin: 16px 0;
+  padding-left: 30px;
+  border-left: 1px solid #f2f2f2;
+  transition: .3s;
+}
+.top-info p {
+  line-height: 20px;
+}
+.top-info a {
+  color: #888;
+}
+.top-info a:hover {
+  color: #ffae4e;
+}
+.top-info .socials {
+  padding-top: 7px;
+}
+.top-info .socials a {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #e8e8e8;
+  color: #999;
+  border-radius: 50%;
+  line-height: 28px;
+  margin-right: 3px;
+}
+.top-info .socials a:hover {
+  border-color: #ffae4e;
+  color: #ffae4e;
+}
+/*Hearder 3*/
+.header3 {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0px, transparent 95%);
+}
+.header3 .top-info {
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ccc;
+}
+.header3 .top-info a {
+  color: #ccc;
+}
+.header3 .top-info a:hover {
+  color: #ffae4e;
+}
+.header3 .nav .main-menu > li > a {
+  color: #ebebeb;
+}
+.header3 .nav .main-menu > li > a:hover {
+  color: #ffae4e;
+}
+.header3 .nav .main-menu ul a {
+  color: #666;
+}
+.header3.smaller {
+  background: rgba(0, 0, 0, 0.8);
+}
+.header3 .btn-toggle {
+  color: #fff;
+}
+/*Header 4*/
+.header4 .top-info {
+  margin-left: 10px;
+  margin-top: 10px;
+  text-transform: none;
+  font-weight: 600;
+  border: none;
+}
+.header4 .top-info p {
+  float: left;
+  margin: 0 20px;
+  margin-bottom: 0;
+}
+.header4 .top-info .socials {
+  float: left;
+  padding-top: 0;
+  margin: 0;
+}
+.header4 .top-info .socials a {
+  border: none;
+  width: auto;
+  height: auto;
+  line-height: 20px;
+  margin-left: 15px;
+  margin-right: 0;
+}
+/*Header 5*/
+.search-box {
+  float: right;
+  margin-top: 15px;
+}
+.search-box input[type=text] {
+  border: none;
+  font-size: 15px;
+  width: 140px;
+}
+.search-box button {
+  border: none;
+  background: transparent;
+  font-size: 15px;
+}
+.smaller .search-box {
+  display: none;
+}
+/*# sourceMappingURL=header.css.map */

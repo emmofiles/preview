@@ -1,0 +1,64 @@
+@import 'variables';
+
+/*FOOTER*/
+
+footer{
+	background: url(images/bg-dark.png) repeat;
+	.widget-footer{
+		padding: 50px 0;
+		color: #aaa;
+		line-height: 25px;
+		h4{
+			color: @light;
+			text-transform: uppercase;
+			margin-bottom: 30px;
+		}
+		p{
+			margin-bottom: 8px;
+		}
+		ul{
+			padding-left: 20px;
+			list-style: inherit;
+			color: fade(#fff, 20%);
+			li{
+				margin-bottom: 8px;
+			}
+			a{
+				line-height: 25px;
+				display: block;
+			}
+		}
+		.gallery-image {
+			overflow: hidden;
+			a{
+				max-width: 33.33%;
+				padding-right: 10px;
+				padding-bottom: 10px;
+				float: left;
+			}
+			img{				
+				width: 100%;
+				transition: 0.3s ease-in-out;		
+			}
+		}
+		i{
+			margin-right: 3px;
+		}
+	}
+	a{
+		color: #e5e5e5;
+		&:hover{
+			color: @primary-color;
+		}
+	}
+	.sub-footer{
+		background: @gray-dark;
+		text-align: center;
+		padding: 15px 0;
+		color: #999;
+		p{
+			margin-bottom: 0;
+			font-size: 12px;
+		}
+	}
+}
