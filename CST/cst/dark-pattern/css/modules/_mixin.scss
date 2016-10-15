@@ -1,0 +1,63 @@
+//breakpoints
+$SS: 320px;
+$S: 480px;
+$MM: 768px;
+$M: 1024px;
+$L: 1170px;
+
+//media queries
+@mixin media_query($canvas){
+  @if $canvas == S {
+    @media only screen and (min-width: $S) { @content; }
+  }
+  @else if $canvas == MM {
+    @media only screen and (min-width: $MM) and (max-width: $M - 1) { @content; }
+  }
+  @else if $canvas == M {
+    @media only screen and (min-width: $M) and (max-width: $L){ @content; }
+  }
+  @else if $canvas == L {
+    @media only screen and (min-width: $L) { @content; }
+  }
+  @else if $canvas == SS {
+    @media only screen and ( max-width: 767px ) and ( min-width: $SS ) { @content; }
+  }
+}
+
+// antialiasing mode font rendering
+@mixin font-smoothing {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// ======= Screen sizes ======== //
+
+// -- Bootstrap //
+$screen-sm-min: 768px;
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-md-min: 992px;
+$screen-sm-max: ($screen-md-min - 1);
+$screen-lg-min: 1200px;
+$screen-md-max: ($screen-lg-min - 1);
+
+$breakpoints: (
+  'small'  : ( min-width:  767px ),
+  'medium' : ( min-width:  992px ),
+  'large'  : ( min-width: 1200px )
+);
+
+@mixin respond-to($name) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $name) {
+    // Prints a media query based on the value
+    @media #{inspect(map-get($breakpoints, $name))} {
+      @content;
+    }
+  }
+
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+  }
+}

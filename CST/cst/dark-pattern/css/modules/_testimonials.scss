@@ -1,0 +1,202 @@
+.carousel-testimonials{
+  width: 100%;
+  position: relative;
+  margin: 0px auto;
+  @include media_query(SS){
+    margin:50px auto;
+  }
+  .carousel{
+    width: 100%;
+    position: relative;
+    height:310px;
+    overflow: hidden;
+    @include media_query(SS){
+      padding-top: 0px;
+    }
+    @include media_query(MM){
+      padding-top: 290px;
+    }
+    .inner{
+      width: 100%;
+      height: 260px;
+      @include media_query(M){
+        height: 235px;
+      }
+      @include media_query(SS){
+        height: 300px;
+      }
+      position: absolute;
+      top:0;
+      left: 0;
+      border:1px solid #313034;
+      overflow: hidden;
+    }
+
+  }
+}
+
+/**
+ * ==========================
+ * Animations
+ */
+.inner {
+  .slide{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    z-index: 1;
+    opacity: 0;
+    padding-right: 40px;
+    padding-left: 40px;
+    &.active,
+    &.left,
+    &.right{
+      z-index: 2;
+      opacity: 1;
+    }
+  }
+}
+.top-quote{
+  background:url('../images/top-quote.png') no-repeat;
+  position: absolute;
+  top:-10px;
+  left:40px;
+  width:44px;
+  height: 36px;
+  z-index: 9;
+}
+.bottom-quote{
+  background:url('../images/bottom-quote.png') no-repeat;
+  position: absolute;
+  bottom:40px;
+  right:40px;
+  width:44px;
+  height: 36px;
+  z-index: 9;
+  @include media_query(M){
+    bottom: -10px;
+  }
+  @include media_query(SS){
+    bottom:0px;
+  }
+}
+
+/**
+ * ==========================
+ * JS animation styles
+ */
+.js-reset-left{left:auto}
+
+/**
+ * ==========================
+ * CSS animation styles
+ */
+.slide.left{
+  left:-100%;
+  right:0;
+}
+
+.slide.right{
+  right:-100%;
+  left: auto;
+}
+
+.transition .slide.left{left:0%}
+.transition .slide.right{right:0%}
+
+.transition .slide.shift-right{right: 100%;left:auto}
+.transition .slide.shift-left{left: 100%;right:auto}
+
+.transition .slide{
+  transition-property: right, left, margin;
+}
+
+.indicators{
+  width:100%;
+  position: absolute;
+  bottom:0;
+  z-index: 4;
+  padding:0;
+  text-align: center;
+  display: none;
+}
+
+.indicators li{
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+  margin: 5px;
+  background: #fff;
+  list-style-type: none;
+  border-radius: 50%;
+  cursor:pointer;
+  transition:background 0.3s ease-out;
+}
+
+.indicators li.active{
+  background:#93278f;
+}
+
+.indicators li:hover{
+  background-color:#2b2b2b;
+}
+
+/**
+ * ==========================
+ * Arrows
+ *
+ */
+.arrow{
+  width: 20px;
+  height: 20px;
+  position:absolute;
+  top:50%;
+  z-index:5;
+  border-top:3px solid #fff;
+  border-right:3px solid #fff;
+  cursor:pointer;
+  transition:border-color 0.3s ease-out;
+}
+
+.arrow:hover{
+  border-color:#93278f;
+}
+
+.arrow-left{
+  left:20px;
+  transform:rotate(225deg);
+}
+
+.arrow-right{
+  right:20px;
+  transform:rotate(45deg);
+}
+
+/**
+ * ==========================
+ * For demo purposes only
+ */
+.slide{
+  text-align:center;
+  padding-top:11%;
+  background-size:cover;
+  b{
+    width:30px;
+    height: 1px;
+    background:#313034;
+    display: block;
+    margin-bottom: 30px;
+  }
+  strong{
+    text-transform: uppercase;
+    color:#fff;
+    font-size: 12px;
+    font-family: $font-montserrat;
+    font-weight: 700;
+    float: left;
+
+  }
+}

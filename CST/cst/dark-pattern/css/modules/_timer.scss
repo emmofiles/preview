@@ -1,0 +1,37 @@
+.numbers{
+  text-align:center;
+  position: relative;
+  width: 100%;
+  top: 40px;
+  @include media_query(SS){
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top:8px;
+    left:-4px;
+  }
+}
+.position{
+  display: inline-block;
+  height: 75px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.digit{
+  position:absolute;
+  display:block;
+  font-family:$font-playfair;
+  font-size:60px;
+  text-align:center;
+  color:#fff;
+  width: 100%;
+  @include media_query(SS){
+    font-size: 50px;
+     -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+}
