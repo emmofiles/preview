@@ -1,0 +1,731 @@
+/* --------------------------------------
+=========================================
+eBook Landing Page Template
+Version: 1.0
+Designed By: ilmosys
+=========================================
+-----------------------------------------
+
+1. GLOABL - CSS
+	1.1 IMPORT GOOGLE WEBFONT
+	1.2 GENERAL - CSS
+	1.3 TYPOGRAPHY 
+	1.4 PRE-LOADER 
+	1.4 PRE-LOADER ANIMATIONS 
+
+2. MASTER COLOR SETTINGS
+	2.1 BACKGROUND COLOR SETTINGS
+	2.2 TEXT COLOR SETTINGS
+	
+3. SECTION CSS
+
+4. HEADER & BACKGROUND SECTION
+	
+5. FEATURE SECTION
+
+6. TOPICS SECTION
+
+7. AUTHOR SECTION
+
+8. READERS SECTION
+
+9. SUBSCRIBE SECTION
+
+10. FOOTER SECTION
+	
+11. RESPONSIVE FIXES
+-----------------------------------------*/
+
+/* --------------------------------------
+=========================================
+   1. GLOABL - CSS
+=========================================
+-----------------------------------------*/
+
+/*---------------------------------------
+   1.1 IMPORT GOOGLE WEBFONT               Playfair+Display
+-----------------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Arvo:400,300,500,700,800);
+@import url(http://fonts.googleapis.com/css?family=Amita:400,300,500,700,800);
+/*---------------------------------------
+   1.2 GENERAL - CSS               
+-----------------------------------------*/
+
+body {
+	background: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px; /* PIXEL FALLBACK */
+	font-size: 1.6rem;
+	line-height: 1.5;
+	color: #8f96a9;
+}
+
+/*---------------------------------------
+   1.3 TYPOGRAPHY               
+-----------------------------------------*/
+	
+h1, h2, h3, h4, h5, h6, p {
+	font-family: 'Arvo', sans-serif;
+}
+
+h1 {
+	font-size: 48px; /* PIXEL FALLBACK */
+	font-size: 4.8rem;
+	font-weight: normal;
+}
+
+h2 {
+	font-size: 40px; /* PIXEL FALLBACK */
+	font-size: 4rem;
+	font-weight: normal;
+	margin-top: 0;
+}
+
+h3 {
+	font-size: 24px; /* PIXEL FALLBACK */
+	font-size: 2.4rem;
+}
+
+h4 {
+	font-size: 20px; /* PIXEL FALLBACK */
+	text-transform:capitalize;
+	color: #414141;
+	font-weight:600;
+}
+
+p {
+	font-size: 18px; /* PIXEL FALLBACK */
+	font-size: 1.8rem;
+}
+
+section p {
+	font-size: 16px; /* PIXEL FALLBACK */
+	font-size: 1.6rem;
+}
+
+footer p {
+	font-size: 14px; /* PIXEL FALLBACK */
+	font-size: 1.4rem;
+}
+
+/*---------------------------------------
+   1.4 PRE-LOADER              
+-----------------------------------------*/
+
+#loading{
+	background:#F77A36;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	margin-top: 0px;
+	top: 0px;
+}
+#loading-center{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+#loading-center-absolute {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	height: 200px;
+	width: 200px;
+	margin-top: -100px;
+	margin-left: -100px;
+}
+#object{
+	background: #fff;
+	width: 40px;
+	height: 40px;
+	-webkit-animation: animate 1s infinite ease-in-out;
+	animation: animate 1s infinite ease-in-out;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 60px;
+}
+
+/*---------------------------------------
+   1.5 PRE-LOADER ANIMATION               
+-----------------------------------------*/
+
+@-webkit-keyframes animate {
+  0% { -webkit-transform: perspective(160px); }
+  50% { -webkit-transform: perspective(160px) rotateY(-180deg); }
+  100% { -webkit-transform: perspective(160px) rotateY(-180deg) rotateX(-180deg); }
+}
+
+@keyframes animate {
+  0% { 
+    transform: perspective(160px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(160px) rotateX(0deg) rotateY(0deg); 
+  } 50% { 
+    transform: perspective(160px) rotateX(-180deg) rotateY(0deg);
+    -webkit-transform: perspective(160px) rotateX(-180deg) rotateY(0deg) ;
+  } 100% { 
+    transform: perspective(160px) rotateX(-180deg) rotateY(-180deg);
+    -webkit-transform: perspective(160px) rotateX(-180deg) rotateY(-180deg);
+  }
+}
+
+
+/* --------------------------------------
+=========================================
+   2. MASTER COLOR SETTINGS
+=========================================
+-----------------------------------------*/
+
+/*---------------------------------------
+   2.1 BACKGROUND COLOR SETTINGS               
+-----------------------------------------*/
+.gray {
+	background: #FBFBFB;
+}
+.white{
+	background:#fff;
+	padding:70px 0 70px;
+}
+
+/*---------------------------------------
+   2.2 TEXT COLOR SETTINGS               
+-----------------------------------------*/
+section p {
+	color: #767676;
+	line-height:26px;
+	font-family:'Arial';
+}
+section h2{
+	font-size: 36px;
+	color: #414141;
+}
+
+/* --------------------------------------
+=========================================
+   3. Section CSS
+=========================================
+-----------------------------------------*/	
+
+section {
+	padding: 20px 0 40px;
+	text-align: center;
+	
+}
+.s2{
+	padding:70px 0 0px;
+}
+.s3{
+	padding:70px 0 70px;
+}
+.cl-1 {
+	border:none;
+	text-align:center;
+	display:inline-block;
+  	border-top:5px dashed #C7C7C7;;
+  	color:#fff;
+  	background-color:#fff;
+  	width:20px;
+	margin: 17px 0;
+	-webkit-margin-end:5px;
+	 -ms-padding: none;
+         -o-appearance: none;
+}
+
+.cl-2 {
+	border:none;
+	text-align:center;
+	display:inline-block;
+  	border-top:5px dashed #F77A36;
+  	color:#fff;
+  	background-color:#fff;
+  	width:20px;
+	margin: 17px 0;
+	-webkit-margin-end:5px;
+	 -ms-padding: none;
+         -o-appearance: none;
+}
+.section-finish{
+	border:none;
+  	border-top:2px dashed #C7C7C7;;
+  	color:#fff;
+  	background-color:#fff;
+  	width:100%;
+	}
+/* --------------------------------------
+=========================================
+   4. HEADER & BACKGROUND SECTION 
+=========================================
+-----------------------------------------*/
+.cb-slideshow{
+   position: fixed;
+   width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: -9999;
+  list-style: outside none none;  
+}
+.cb-slideshow li span { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    z-index: 0;
+	-webkit-backface-visibility: hidden;
+    -webkit-animation: imageAnimation 36s linear infinite 0s;
+    -moz-animation: imageAnimation 36s linear infinite 0s;
+    -o-animation: imageAnimation 36s linear infinite 0s;
+    -ms-animation: imageAnimation 36s linear infinite 0s;
+    animation: imageAnimation 36s linear infinite 0s; 
+	
+}
+.cb-slideshow li div { 
+    z-index: 1000;
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    -webkit-animation: titleAnimation 36s linear infinite 0s;
+    -moz-animation: titleAnimation 36s linear infinite 0s;
+    -o-animation: titleAnimation 36s linear infinite 0s;
+    -ms-animation: titleAnimation 36s linear infinite 0s;
+    animation: titleAnimation 36s linear infinite 0s;
+}
+.cb-slideshow li div h3 { 
+    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+    font-size: 240px;
+    padding: 0;
+    line-height: 200px; 
+}
+.cb-slideshow li:nth-child(1) span {
+    background-image:url(../img/1.jpg);
+}
+.cb-slideshow li:nth-child(2) span { 
+    background-image: url(../img/2.jpg);
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    -ms-animation-delay: 6s;
+    animation-delay: 6s; 
+}
+.cb-slideshow li:nth-child(3) span { 
+    background-image: url(../img/3.jpg);
+    -webkit-animation-delay: 12s;
+    -moz-animation-delay: 12s;
+    -o-animation-delay: 12s;
+    -ms-animation-delay: 12s;
+    animation-delay: 12s; 
+}
+.cb-slideshow li:nth-child(4) span { 
+    background-image: url(../img/4.jpg);
+    -webkit-animation-delay: 18s;
+    -moz-animation-delay: 18s;
+    -o-animation-delay: 18s;
+    -ms-animation-delay: 18s;
+    animation-delay: 18s; 
+}
+.cb-slideshow li:nth-child(5) span { 
+    background-image: url(../img/5.jpg);
+    -webkit-animation-delay: 24s;
+    -moz-animation-delay: 24s;
+    -o-animation-delay: 24s;
+    -ms-animation-delay: 24s;
+    animation-delay: 24s; 
+}
+.cb-slideshow li:nth-child(6) span { 
+    background-image: url(../img/6.jpg);
+    -webkit-animation-delay: 30s;
+    -moz-animation-delay: 30s;
+    -o-animation-delay: 30s;
+    -ms-animation-delay: 30s;
+    animation-delay: 30s; 
+}
+.cb-slideshow li:nth-child(2) div { 
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    -ms-animation-delay: 6s;
+    animation-delay: 6s; 
+}
+.cb-slideshow li:nth-child(3) div { 
+    -webkit-animation-delay: 12s;
+    -moz-animation-delay: 12s;
+    -o-animation-delay: 12s;
+    -ms-animation-delay: 12s;
+    animation-delay: 12s; 
+}
+.cb-slideshow li:nth-child(4) div { 
+    -webkit-animation-delay: 18s;
+    -moz-animation-delay: 18s;
+    -o-animation-delay: 18s;
+    -ms-animation-delay: 18s;
+    animation-delay: 18s; 
+}
+.cb-slideshow li:nth-child(5) div { 
+    -webkit-animation-delay: 24s;
+    -moz-animation-delay: 24s;
+    -o-animation-delay: 24s;
+    -ms-animation-delay: 24s;
+    animation-delay: 24s; 
+}
+.cb-slideshow li:nth-child(6) div { 
+    -webkit-animation-delay: 30s;
+    -moz-animation-delay: 30s;
+    -o-animation-delay: 30s;
+    -ms-animation-delay: 30s;
+    animation-delay: 30s; 
+}
+/* Animation for the slideshow images */
+@-webkit-keyframes imageAnimation { 
+    0% { opacity: 0;
+    -webkit-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -webkit-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@-moz-keyframes imageAnimation { 
+    0% { opacity: 0;
+    -moz-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -moz-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@-o-keyframes imageAnimation { 
+    0% { opacity: 0;
+    -o-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -o-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@-ms-keyframes imageAnimation { 
+    0% { opacity: 0;
+    -ms-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -ms-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@keyframes imageAnimation { 
+    0% { opacity: 0;
+    animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+/* Animation for the title */
+@-webkit-keyframes titleAnimation { 
+    0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    19% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@-moz-keyframes titleAnimation { 
+    0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    19% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@-o-keyframes titleAnimation { 
+    0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    19% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@-ms-keyframes titleAnimation { 
+    0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    19% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@keyframes titleAnimation { 
+    0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    19% { opacity: 0 }
+    100% { opacity: 0 }
+}
+header {
+	padding: 70px 0;
+}
+.overlay{
+	background: rgba(0, 0, 0, 0.7) no-repeat fixed center center;
+}
+.background-image{
+		background: url(../img/bg.png) no-repeat fixed center center;
+}
+.logo {
+	text-align:center;
+}
+header h1 {
+	margin: 0px;
+	padding: 0px;
+	font-family: Arvo;
+	font-weight: normal;
+	text-decoration: none;
+	font-style: normal;
+	text-align: center;
+	direction: ltr;
+	font-size: 48px;
+	color: #FFF;
+	margin-top: 40px;
+	line-height:60px;
+}
+.header-book{
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: -70px;;
+}
+/* --------------------------------------
+=========================================
+   5. FEATURE SECTION
+=========================================
+-----------------------------------------*/
+.feature {
+	margin: 40px 0 40px;
+}
+.feature-button{
+	position:relative;
+	height: 50px;
+	width: 250px;
+	border: 0px solid #707070;
+	background-color: #F77A36;
+	border-radius: 5px;
+	box-shadow: 0px 0px 0px #FFF;
+	color:#fff;
+	text-align:center;
+	font-size: 18px;
+}
+.feature-button:hover{
+	color:#fff;
+	text-decoration:none;
+
+}
+/* --------------------------------------
+=========================================
+   6. TOPICS SECTION
+=========================================
+-----------------------------------------*/
+.topics{
+	margin-top:40px;
+	margin-bottom: -20px;
+}
+	
+.topics-icon {
+	display: inline-block;
+	text-align:center;
+	font-size:33px;
+	color:#fff;
+	padding-top:5px;
+	height: 60px;
+	width: 60px;
+	border: 0px solid #000;
+	background-color: #F77A36;
+	border-radius: 100%;
+	box-shadow: 0px 0px 0px #FFF;
+}
+
+.topics-detail {
+	text-align:left;
+}
+
+.topics-detail h3 {
+	margin: 0 0 0;
+	font-size: 20px;
+	color: #414141;
+	font-weight: 600;
+}
+.name-color{
+	color: #F77A36;
+	font-family: Arvo;
+	font-size:20px;
+	font-weight:600;
+}
+
+/* --------------------------------------
+=========================================
+   7. AUTHOR SECTION
+=========================================
+-----------------------------------------*/	
+.author-icon {
+	display: inline-block;
+	text-align:center;
+	font-size:33px;
+	color:#fff;
+	padding-top:5px;
+	height: 60px;
+	width: 60px;
+	margin-right:15px;
+	border: 0px solid #000;
+	background-color: #F77A36;
+	border-radius: 100%;
+	box-shadow: 0px 0px 0px #FFF;
+}
+.author-detail {
+	text-align:left;
+}
+.author-detail h2, p {
+	padding-top:10px;
+}
+.author-detail p {
+	padding-bottom:10px;
+}
+/* --------------------------------------
+=========================================
+   8. READERS SECTION
+=========================================
+-----------------------------------------*/	
+.quotes{
+	color: #F77A36;
+	font-weight:bold;
+	font-size:140px;
+	margin-top: -50px;
+	font-family:'Amita';
+}
+.client-box {
+ margin: 105px 0 0;
+}
+
+.client-image {
+ height: 90px;
+}
+
+.client-image img {
+ border: 5px solid #C7C7C7;
+ border-radius:100%;
+ height: 150px;
+ margin: -70px 0 0;
+ width: 150px;
+}
+.client-text {
+ background: #fff;
+ text-align:center;
+}
+
+/* --------------------------------------
+=========================================
+   9. SUBSCRIBE SECTION
+=========================================
+-----------------------------------------*/	
+.subscribe-bg .center-line {
+	background: #fff;
+}
+
+.subscribe-form {
+	margin: 35px 0 0;
+	width: 100%;
+	max-width: 635px;
+	display: inline-block;
+}
+
+.subscribe-input {
+	background: #EEEFF1;
+	border-radius: 5px;
+	border: none;
+	height: 60px;
+	color: #767676;
+	font-size: 16px;
+	font-family: arial;
+	margin-bottom: 20px;
+	padding: 10px;
+	width: 60%;
+	float: left;
+}
+.subscribe-button{
+	position:relative;
+	height: 60px;
+	width: 220px;
+	border: 0px solid #707070;
+	background-color: #F77A36;
+	border-radius: 5px;
+	box-shadow: 0px 0px 0px #FFF;
+	color:#fff;
+	text-align:center;
+	font-size: 18px;
+}
+.subscribe-button:hover{
+	color:#fff;
+	text-decoration:none;
+
+}
+#newsletter-error {
+	background:#ee2b49;
+	color:#fff;
+	padding:15px;
+	margin-bottom:20px;
+	display:none;
+}
+#newsletter-success {
+	background:#F77A36;
+	color:#fff;
+	padding:15px;
+	margin-bottom:20px;
+	display:none;
+}
+/* --------------------------------------
+=========================================
+   10. FOOTER  SECTION
+=========================================
+-----------------------------------------*/		
+footer {
+	padding: 30px 0px;
+	background: #414141;
+	text-align: center;
+}
+
+footer p {
+	color: #fff;
+	margin: 0;
+}
+/* --------------------------------------
+=========================================
+   11. RESPONSIVE FIXES
+=========================================
+-----------------------------------------*/
+@media (min-width: 992px) {
+
+.container {
+    width: 970px;
+}
+
+}
+@media (max-width: 767px) {
+.topics-detail {
+	text-align:center;
+	padding-top:10px;
+}
+.author-detail{
+	text-align:center;
+	padding-bottom:10px;
+}
+.name-color{
+	text-align:center;
+}
+.subscribe-input {
+	float:none;
+}
+}
+@media (max-width: 991px) {
+.header-book{
+	padding: 20px 20px 0 20px;
+}
+}

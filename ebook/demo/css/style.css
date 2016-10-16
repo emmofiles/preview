@@ -1,0 +1,307 @@
+/* --------------------------------------
+=========================================
+eBook Landing Page Template
+Version: 1.0
+Designed By: ilmosys
+=========================================
+-----------------------------------------
+
+1. GLOABL-CSS
+	1.1 GENERAL-CSS
+	1.2 TYPOGRAPHY
+	
+2. PRELOADER
+	2.1 LOADING
+	2.2 LOADING ANIMATION
+	
+3. HEADER SECTION
+
+4. SCREEN SHOT SECTION	
+
+5. BUY IT SECTION
+
+6. FOOTER SECTION
+
+7. RESPONSIVE FIX
+    7.1 FOR MAXIMUM WIDTH 320PX 
+	7.2 FOR MAXIMUM WIDTH 768PX 
+	
+-----------------------------------------*/
+
+/* --------------------------------------
+=========================================
+   1. GLOABL - CSS
+=========================================
+-----------------------------------------*/
+
+/*---------------------------------------
+   1.1 IMPORT GOOGLE WEBFONT               
+-----------------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Arvo:400,300,500,700,800);
+/*---------------------------------------
+   1.2 GENERAL - CSS               
+-----------------------------------------*/
+
+body {
+	background: #eeeff1;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px; /* PIXEL FALLBACK */
+	font-size: 1.6rem;
+	line-height: 1.5;
+	color: #8f96a9;
+}
+button {
+	color: #fff;
+	background: #F77A36 none repeat scroll 0 0;
+	font-size: 18px;
+	line-height: 50px;
+	text-align: center;
+	width: 220px;
+	border: none;
+	font-weight: bold;
+	font-family: 'Arvo', sans-serif;
+}
+button:hover {
+	background: #f66a1d;
+}
+button.disable {
+	color: #fff;
+	background: #bcbcbc none repeat scroll 0 0;
+}
+a{
+	color:#FFF;
+}
+iframe {
+	border: none;
+}
+/*---------------------------------------
+   1.3 TYPOGRAPHY               
+-----------------------------------------*/
+	
+h1, h2, h3, h4, h5, h6 p {
+	font-family: 'Arvo', sans-serif;
+	color: #324d5b;
+}
+h1 {
+	font-size: 48px; /* PIXEL FALLBACK */
+	font-size: 4.8rem;
+}
+h2 {
+	font-size: 36px; /* PIXEL FALLBACK */
+	font-size: 3.6rem;
+	font-weight: bold;
+	margin-top: 0;
+}
+h3 {
+	font-size: 22px; /* PIXEL FALLBACK */
+	font-size: 2.2rem;
+	font-weight: bold;
+}
+h4 {
+	font-size: 26px; /* PIXEL FALLBACK */
+	font-size: 2.6rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+/* --------------------------------------
+=========================================
+   2. PRELOADER
+=========================================
+-----------------------------------------*/
+
+/*---------------------------------------
+   2.1 LOADING               
+-----------------------------------------*/
+#loading{
+	background:#F77A36;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	margin-top: 0px;
+	top: 0px;
+}
+#loading-center{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+#loading-center-absolute {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	height: 200px;
+	width: 200px;
+	margin-top: -100px;
+	margin-left: -100px;
+}
+#object{
+	background: #fff;
+	width: 40px;
+	height: 40px;
+	-webkit-animation: animate 1s infinite ease-in-out;
+	animation: animate 1s infinite ease-in-out;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 60px;
+}
+
+/*---------------------------------------
+   2.2 LOADING ANIMATION               
+-----------------------------------------*/
+
+@-webkit-keyframes animate {
+  0% { -webkit-transform: perspective(160px); }
+  50% { -webkit-transform: perspective(160px) rotateY(-180deg); }
+  100% { -webkit-transform: perspective(160px) rotateY(-180deg) rotateX(-180deg); }
+}
+
+@keyframes animate {
+  0% { 
+    transform: perspective(160px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(160px) rotateX(0deg) rotateY(0deg); 
+  } 50% { 
+    transform: perspective(160px) rotateX(-180deg) rotateY(0deg);
+    -webkit-transform: perspective(160px) rotateX(-180deg) rotateY(0deg) ;
+  } 100% { 
+    transform: perspective(160px) rotateX(-180deg) rotateY(-180deg);
+    -webkit-transform: perspective(160px) rotateX(-180deg) rotateY(-180deg);
+  }
+}
+
+
+/* --------------------------------------
+=========================================
+   3. HEADER SECTION
+=========================================
+-----------------------------------------*/
+header {
+	background: url(../img/main_bg.jpg);
+	min-height: 700px;
+	text-align: center;
+	position: relative;
+	padding: 0 0 100px;
+}
+.logo {
+	margin-top: 80px;
+}
+header h1 {
+	color: #fff;
+	font-weight: normal;
+}
+header h3 {
+	color: #fff;
+	font-size: 30px; /* PIXEL FALLBACK */
+	font-size: 3rem;
+	font-weight: normal;
+	margin-top: 40px;
+}
+.down-arrow {
+	bottom: -32px;
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+.down-arrow img{
+	cursor: pointer;
+	}
+.header-button {
+	margin: 25px 15px 0;
+}
+/* --------------------------------------
+=========================================
+   4. SCREEN SHOT SECTION
+=========================================
+-----------------------------------------*/
+#screen-shot {
+	padding: 120px 0;
+	background: #fff;
+	text-align: center;
+}
+#screen-shot h5 {
+	font-size: 18px; /* PIXEL FALLBACK */
+	font-size: 1.8rem;
+	color: #8f96a9;
+}
+.screen-shot {
+	margin-top: 80px;
+}
+.screen-shot img {
+	width: 100%;
+	max-width: 540px;
+}
+.live-preview {
+	width: 100%;
+	margin: 25px 0 0;
+}
+/* --------------------------------------
+=========================================
+   5. BUY IT SECTION
+=========================================
+-----------------------------------------*/	
+#buy-it {
+	background: url(../img/main_bg.jpg);
+	text-align: center;
+	padding: 100px 0;
+}
+#buy-it h2 {
+	color: #fff;
+	font-weight: normal;
+}
+#buy-it h5 {
+	font-size: 18px; /* PIXEL FALLBACK */
+	font-size: 1.8rem;
+	color: #fff;
+	margin: 25px 0;
+}
+.buy-button {
+	width: 100%;
+	max-width: 350px;
+	line-height: 66px;
+}
+/* --------------------------------------
+=========================================
+  6. FOOTER SECTION
+=========================================
+-----------------------------------------*/		
+footer {
+	background: #17262d;
+	padding: 50px 0;
+	text-align: center;
+}
+footer p {
+	font-size: 14px; /* PIXEL FALLBACK */
+	font-size: 1.4rem;
+	color: #fff;
+}
+footer p a {
+	color: #f75735;
+	text-decoration: none;
+}
+footer p a:hover {
+	color: #f66a1d;
+}
+/* --------------------------------------
+=========================================
+   7. RESPONSIVE FIX
+=========================================
+-----------------------------------------*/	
+/*---------------------------------------
+   7.1 FOR MAXIMUM WIDTH 320PX              
+-----------------------------------------*/
+
+@media (max-width: 350px) {
+button {
+	font-size: 14px; /* PIXEL FALLBACK */
+	font-size: 1.4rem;
+}
+}
+/*---------------------------------------
+   7.2 FOR MAXIMUM WIDTH 768PX              
+-----------------------------------------*/	
+@media (max-width: 768px) {
+.logo {
+	margin-top: 50px;
+}
+}
