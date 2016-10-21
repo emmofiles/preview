@@ -1,0 +1,203 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
+
+*{
+	font-family: 'Open Sans', sans-serif;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; 
+	-webkit-box-sizing:border-box;
+}
+
+.row{
+	width: 100%;
+	margin-top: 15px;
+}
+.row:first-child {
+	margin-top: 0;
+}
+.row:before,
+.row:after {
+	display: table;
+	content: "";
+	line-height: 0;
+}
+.row:after {
+	clear: both;
+}
+.row .col1,
+.row .col2,
+.row .col3,
+.row .col4,
+.row .col5,
+.row .col6,
+.row .col7,
+.row .col8,
+.row .col9,
+.row .col10,
+.row .col11,
+.row .col12{
+	display: block;
+	min-height: 20px;
+	float: left;
+	margin-left: 3%;
+}
+.row [class*="col"]:first-child {
+	margin-left: 0;
+}
+.row .col1{
+	width: 5.583333333333%;
+}
+.row .col2{
+	width: 14.166666666666%;
+}
+.row .col3{
+	width: 22.75%;
+}
+.row .col4{
+	width: 31.333333333333%;
+}
+.row .col5{
+	width: 39.916666666667%;
+}
+.row .col6{
+	width: 48.5%;
+}
+.row .col7{
+	width: 57.083333333333%;
+}
+.row .col8{
+	width: 65.666666666667%;
+}
+.row .col9{
+	width: 74.25%;
+}
+.row .col10{
+	width: 82.833333333334%;
+}
+.row .col11{
+	width: 91.416666666667%;
+}
+.row .col12{
+	width: 100%;
+}
+@media (max-width: 800px){
+	.row [class*="col"]{
+		float: left;
+		display: block;
+		width: 100% !important;
+		margin-left: 0;
+		margin-top: 15px;
+	}
+	.row{
+		margin-top: 0;
+	}
+	.row:first-child  [class*="col"]:first-child {
+		margin-top: 0;
+	}
+}
+
+
+body{
+	background: #333;
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+}
+h3{
+	font-weight: 400;
+	color: #dedede;
+}
+p{
+	text-align: justify;
+}
+.content{
+	padding: 30px 30px;
+}
+.options{
+	width: 100%;
+	margin: 100px 0;
+	padding: 10px 50px 40px;
+	float: left;
+	background: #444;
+}
+
+.btDemo{
+	width: 100%;
+	display: block;
+	padding: 10px 20px;
+	color: #E9573F; 
+	background: #222;
+	text-decoration: none;
+	font-size: 13px;
+	text-align: center;
+	transition: background .3s linear;
+}
+.btDemo:hover,
+.btDemo.active{
+	background: #fff;
+}
+
+
+/* skins */
+.btColor{
+	width: 100%;
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	font-size: 13px;
+	text-align: center;
+	color: #fff;
+	transition: background .3s linear;
+}
+.btDefault{ background: #999; }
+.btBlue{ background: #4A89DC; }
+.btGreen{ background: #37BC9B; }
+.btRed{ background: #E9573F; }
+.btOrange{ background: #ff670f; }
+.btYellow{ background: #F6BB42; }
+.btPurple{ background: #967ADC; }
+.btPink{ background: #D770AD; }
+
+/* button Buy */
+.btBuy{
+	width: 100%;
+	margin: 30px 0;
+	float: left;
+	text-align: center;
+	display: none;
+}
+.btBuy a{
+	padding: 8px 40px 10px;
+	display: inline-block;
+	background: #222;
+	color: #E9573F; 
+	font-size: 20px;
+	text-decoration: none;
+	outline: 0;
+	transition: background .3s linear;
+}
+.btBuy a:hover{
+	background: #fff;
+}
+
+@media (max-width: 1024px){
+	.btDemo{
+		padding: 10px 10px;
+		font-size: 11px;
+	}
+	.btColor{
+		padding: 10px 6px;
+		font-size: 11px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
