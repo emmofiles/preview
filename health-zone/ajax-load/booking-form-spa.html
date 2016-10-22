@@ -1,0 +1,139 @@
+<div class="modal-header bg-theme-colored">
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <h4 class="modal-title text-white" id="myModalLabel">Members’ Booking Form</h4>
+</div>
+<div class="p-40">
+  <!-- Booking Form Starts -->
+  <form id="booking_form" name="booking_form" class="" action="includes/booking-spa.php" method="post">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <label><strong>Treatment:</strong></label>
+          <select name="booking_treatment" class="form-control" required>
+            <option value="">-- select --</option>
+            <option>Hydration Strategy - Brilliance (60 min)</option>
+            <option>Reverse – Ageing Ritual – Lift (1h30) </option>
+            <option>Instant Glow Green Tea Facial (30 min)</option>
+            <option>Ensuring better life</option>
+          </select>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label><strong>Arrival Date:</strong></label>
+              <input type="text" placeholder="Arrival Date" class="form-control date-picker" name="booking_arrival_date" required>
+            </div>
+          </div> 
+          <div class="col-sm-6">
+           <div class="form-group">
+             <label><strong>Departure Date:</strong></label>
+             <input type="text" placeholder="Departure Date" class="form-control date-picker" name="booking_departure_date" required>
+           </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label><strong>Time:</strong></label>
+          <input type="text" placeholder="Time" class="form-control time-picker" name="booking_time" required>
+        </div>
+        <div class="form-group">
+          <label><strong>Guest:</strong></label>
+          <input type="text" placeholder="Enter Your Guest Name" id="guest_name" name="booking_guest_name" class="form-control" required>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="form-group mb-20">
+          <label><strong>Your Stay:</strong></label>
+          <div class="radio mt-5">
+            <label class="radio-inline">
+              <input type="radio" value="Beach Resort and Spa" name="booking_stay_at" checked="">
+              Beach Resort and Spa </label>
+            <label class="radio-inline">
+              <input type="radio" value="Staying at Other Hotels" name="booking_stay_at">
+              Staying at Other Hotels </label>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="form-group">
+          <label><strong>Title:</strong></label>
+          <select name="booking_title" class="form-control" required>
+            <option value="">-- select one --</option>
+            <option value="Mr">Mr.</option>
+            <option value="Mrs">Mrs.</option>
+            <option value="Ms">Ms.</option>
+            <option value="Mr & Mrs">Mr & Mrs.</option>
+            <option value="Dr">Dr.</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label><strong>Name:</strong></label>
+          <input type="text" placeholder="Enter Name" name="booking_name" class="form-control" required>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label><strong>Membership Number:</strong></label>
+          <input type="text" placeholder="Enter Membership Number" name="booking_membership_number" class="form-control" required>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label><strong>Email:</strong></label>
+          <input type="text" placeholder="Enter Email" name="booking_email" class="form-control" required>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label><strong>Phone:</strong></label>
+          <input type="text" placeholder="Enter Phone" name="booking_phone" class="form-control" required>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="form-group">
+          <label><strong>Comments:</strong></label>
+          <textarea name="booking_comments" class="form-control"></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <input name="form_botcheck" class="form-control" type="hidden" value="" />
+      <button type="submit" class="btn btn-dark btn-theme-colored btn-flat mr-5" data-loading-text="Please wait...">Book Now</button>
+      <button type="reset" class="btn btn-default btn-flat btn-theme-colored">Reset</button>
+    </div>
+  </form>
+
+  <!-- Booking Form Validation-->
+  <script type="text/javascript">
+    $("#booking_form").validate({
+      submitHandler: function(form) {
+        var form_btn = $(form).find('button[type="submit"]');
+        var form_result_div = '#form-result';
+        $(form_result_div).remove();
+        form_btn.before('<div id="form-result" class="alert alert-success" role="alert" style="display: none;"></div>');
+        var form_btn_old_msg = form_btn.html();
+        form_btn.html(form_btn.prop('disabled', true).data("loading-text"));
+        $(form).ajaxSubmit({
+          dataType:  'json',
+          success: function(data) {
+            if( data.status == 'true' ) {
+              $(form).find('.form-control').val('');
+            }
+            form_btn.prop('disabled', false).html(form_btn_old_msg);
+            $(form_result_div).html(data.message).fadeIn('slow');
+            setTimeout(function(){ $(form_result_div).fadeOut('slow') }, 6000);
+          }
+        });
+      }
+    });
+  </script>
+  <!-- Booking Form Ends -->
+</div>
+<div class="modal-footer">
+</div>
+<!-- Footer Scripts -->
+<script>
+  //reload date and time picker
+  THEMEMASCOT.initialize.TM_datePicker();
+</script>

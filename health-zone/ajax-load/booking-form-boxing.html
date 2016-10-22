@@ -1,0 +1,83 @@
+<div class="modal-header bg-theme-colored">
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <h4 class="modal-title text-white" id="myModalLabel">Members’ Booking Form</h4>
+</div>
+<div class="p-40">
+  <!-- Reservation Form Start-->
+  <form id="reservation_form" name="reservation_form" class="reservation-form p-50 pt-60 pb-60 mb-0 bg-light" method="post" action="includes/reservation.php">
+    <h3 class="font-raleway text-theme-colored mt-0 mb-20">Reservation Here</h3>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="form-group mb-30">
+          <input placeholder="Enter Name" type="text" id="reservation_name" name="reservation_name" required="" class="form-control">
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group mb-30">
+          <input placeholder="Email" type="text" id="reservation_email" name="reservation_email" class="form-control" required="">
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group mb-30">
+          <input placeholder="Phone" type="text" id="reservation_phone" name="reservation_phone" class="form-control" required="">
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group mb-30">
+          <div class="styled-select">
+            <select id="person_select" name="person_select" class="form-control" required="">
+              <option value="">Sex</option>
+              <option value="1 Person">Male</option>
+              <option value="2 Person">Female</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group mb-30">
+          <input name="reservation_date" class="form-control required date-picker" type="text" placeholder="Reservation Date">
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="form-group mb-0 mt-0">
+          <input name="form_botcheck" class="form-control" type="hidden" value="">
+          <button type="submit" class="btn btn-colored btn-theme-colored btn-lg btn-flat btn-submit" data-loading-text="Please wait...">Submit Now</button>
+        </div>
+      </div>
+    </div>
+  </form>
+  <!-- Reservation Form End-->
+
+  <!-- Reservation Form Validation Start-->
+  <script type="text/javascript">
+    $("#reservation_form").validate({
+      submitHandler: function(form) {
+        var form_btn = $(form).find('button[type="submit"]');
+        var form_result_div = '#form-result';
+        $(form_result_div).remove();
+        form_btn.before('<div id="form-result" class="alert alert-success" role="alert" style="display: none;"></div>');
+        var form_btn_old_msg = form_btn.html();
+        form_btn.html(form_btn.prop('disabled', true).data("loading-text"));
+        $(form).ajaxSubmit({
+          dataType:  'json',
+          success: function(data) {
+            if( data.status == 'true' ) {
+              $(form).find('.form-control').val('');
+            }
+            form_btn.prop('disabled', false).html(form_btn_old_msg);
+            $(form_result_div).html(data.message).fadeIn('slow');
+            setTimeout(function(){ $(form_result_div).fadeOut('slow') }, 6000);
+          }
+        });
+      }
+    });
+  </script>
+  <!-- Reservation Form Validation Start -->
+</div>
+<div class="modal-footer">
+</div>
+<!-- Footer Scripts -->
+<script>
+  //reload date and time picker
+  THEMEMASCOT.initialize.TM_datePicker();
+</script>

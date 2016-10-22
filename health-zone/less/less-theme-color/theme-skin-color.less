@@ -1,0 +1,478 @@
+// Import bootstrap variables and mixins for reference
+@import (reference) "../less-bootstrap/variables.less";
+@import (reference) "../less-bootstrap/mixins.less";
+
+// Initialize Theme Variables
+@import (reference) "../less-healthzone/variables.less";
+
+
+
+/* text-theme-color */
+.text-theme-colored {
+  color: @theme-color !important;
+}
+.widget .twitter-feed li::after {
+  color: @theme-color;
+}
+/* text-hover-theme-color */
+.text-hover-theme-colored {
+  &:hover {
+    color: @theme-color !important;
+  }
+}
+/* background-theme-color */
+.bg-theme-colored {
+  background-color: @theme-color !important;
+}
+/* bg-hover-theme-color */
+.bg-hover-theme-colored {
+  &:hover {
+    background: @theme-color !important;
+    border-color: @theme-color !important;
+    color: @white-base !important;
+    
+    h1,h2,h3,h4,h5,h6,p,a,i {
+      color: @white-base !important;
+    }
+  }
+}
+.portfolio-filter a.active,
+.portfolio-filter a:hover{
+  background: @theme-color;
+}
+.pagination.theme-colored li.active a {
+  background: @theme-color;
+  color: @white-base !important;
+}
+.pagination.theme-colored > li > a, .pagination.theme-colored > li > span {
+    color: @theme-color !important;
+}
+/* box-shadow */
+.box-shadow,.icon-box .icon.icon-border-effect::after{
+    -webkit-box-shadow: @theme-color;
+    -moz-box-shadow: @theme-color;
+    box-shadow: 0 0 0 3px @theme-color;
+}
+
+.outline-border,.clients-logo img {
+    outline: 2px solid;
+    outline-offset: 5px;
+}
+
+.outline-border {
+    outline-color: @theme-color;
+}
+
+/* border-theme-color */
+.border-theme-colored {
+  border-color: @theme-color !important;
+}
+.border-top-theme-colored {
+  border-top: 1px solid @theme-color !important;
+}
+.border-bottom-theme-colored {
+  border-bottom: 1px solid @theme-color !important;
+}
+
+/* background-color-transparent */
+.bg-theme-colored-transparent,.post .entry-meta.meta-absolute,.schedule-box .thumb .overlay {
+  background-color: fade(@theme-color, 80%) !important;
+}
+/*
+ * background: theme-color
+ * -----------------------------------------------
+*/
+.sidebar-widget .tags a:hover,
+.sidebar .tags a:hover,
+.drop-caps .colored-square,
+.horizontal-tab-centered .nav-pills > li > a:hover,
+.nav-pills > li > a:hover, 
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover, 
+.nav-pills > li.active > a:focus,
+.table.table-bordered.class-time td:hover,
+.line-bottom::after,
+.icon-switcher {
+  background: @theme-color;
+}   
+
+.stylish-header,.stylish-header:before {
+  background:  fade(@theme-color, 90%);
+}
+
+.service-icon-box a {
+  background:  fade(@theme-color, 90%);
+}
+.service-icon-box:hover a {
+  background:  fade(@theme-color, 95%);
+}
+
+.testimonial.style1 .comment {
+  background: fade(@theme-color, 85%);
+}
+.tag-sale {
+  background-color: @theme-color;
+}
+
+
+
+/*
+ * text: theme-color
+ * -----------------------------------------------
+*/
+.section-title .title, ul.list li::before,.post .entry-content .entry-title {
+  color: @theme-color;
+}
+/*
+ * border: theme-color
+ * -----------------------------------------------
+*/
+.clients-logo img {
+  border: 1px solid @theme-color;
+}
+
+.lll {
+  border: @theme-color;
+}
+.border-10px {
+  border:10px solid @theme-color;
+}
+
+
+/* border-left-color */
+blockquote {
+    border-left: 3px solid @theme-color;
+}
+
+
+/* border-top-color */
+.stylish-header:after{
+  -webkit-border-top: 80px solid lighten(@theme-color, 2%);
+  -moz-border-top: 80px solid lighten(@theme-color, 2%);
+  -ms-border-top: 80px solid lighten(@theme-color, 2%);
+  -o-border-top: 80px solid lighten(@theme-color, 2%);
+  border-top: 80px solid lighten(@theme-color, 2%);
+}
+
+/*
+ * btn-default: theme-color
+ * -----------------------------------------------
+*/
+.btn-default.btn-theme-colored {
+  .button-variant(@theme-color; @btn-default-bg; @theme-color);
+}
+.btn-default.btn-theme-colored:hover,
+.btn-default.btn-theme-colored:active,
+.btn-default.btn-theme-colored:focus {
+  background-color: @theme-color;
+  border-color: @theme-color;
+  color: @white-base;
+}
+
+
+/*
+ * btn-border
+ * -----------------------------------------------
+*/
+.btn-border.btn-theme-colored {
+  .button-variant(@theme-color; @btn-border-bg; @theme-color);
+}
+.btn-border.btn-theme-colored:hover,
+.btn-border.btn-theme-colored:active,
+.btn-border.btn-theme-colored:focus {
+  background-color: darken(@theme-color, 10%);
+  border-color: darken(@theme-color, 10%);
+  color: @white-base;
+}
+
+
+/*
+ * btn-dark
+ * -----------------------------------------------
+*/
+.btn-dark.btn-theme-colored {
+  .button-variant(@btn-dark-color; @theme-color; @theme-color);
+}
+
+
+/*
+ * btn-gray
+ * -----------------------------------------------
+*/
+.btn-gray.btn-theme-colored {
+  .button-variant(@white-base; lighten(@theme-color, 10%); lighten(@theme-color, 10%));
+}
+
+/*
+ * btn-primary: theme-color
+ * -----------------------------------------------
+*/
+.btn-theme-colored {
+  .button-variant(@btn-primary-color; @theme-color; @theme-color)
+}
+
+/*
+ * btn-transparent
+ * -----------------------------------------------
+*/
+.btn-transparent {
+  background-color: transparent;
+  color: @white-base;
+}
+.btn-transparent.btn-theme-colored {
+  background-color: transparent;
+}
+.btn-transparent.btn-dark {
+  background-color: @black-111;
+  border-color: @black-111;
+
+  &:hover {
+    background-color: darken(@black-111, 10%);
+    border-color: darken(@black-111, 10%);
+  }
+}
+.btn-transparent.btn-dark.btn-theme-colored {
+  background-color: @theme-color;
+  border-color: @theme-color;
+
+  &:hover {
+    background-color: darken(@theme-color, 10%);
+    border-color: darken(@theme-color, 10%);
+  }
+}
+.btn-transparent.btn-border {
+  background-color: transparent;
+  border-color: @gray-lighter;
+
+  &:hover {
+    background-color: @gray-lighter;
+    color: @black;
+  }
+}
+.btn-transparent.btn-border.btn-theme-colored {
+  background-color: transparent;
+  border-color: @theme-color;
+
+  &:hover {
+    background-color: @theme-color;
+    color: @white-base;
+  }
+}
+
+.btn-gray.btn-transparent {
+  background-color: @gray-lightgray;
+  color: @black-333;
+
+  &:hover {
+    background-color: lighten(@gray-lightgray, 10%);
+    color: darken(@black-333, 10%);
+  }
+}
+
+.btn-gray.btn-transparent.btn-theme-colored {
+  background-color: lighten(@theme-color, 10%);
+  color: @white-base;
+
+  &:hover {
+    background-color: darken(@theme-color, 10%);
+    color: darken(@white-base, 10%);
+  }
+}
+
+.btn-hover-theme-colored {
+  &:hover {
+    background-color: @theme-color;
+    border-color: @theme-color;
+    color: @white-base;
+  }
+}
+
+/*
+ * Shortcode: social-icons Theme Colored
+ * -----------------------------------------------
+*/
+.icon-theme-colored {
+  a {
+    color: @theme-color;
+  }
+
+  &.icon-bordered {
+    a {
+      border-color: @theme-color;
+
+      &:hover {
+        background-color: @theme-color;
+        color: @white-base;
+      }
+    }
+  }
+
+  &.icon-dark {
+    a {
+      background-color: @theme-color;
+      color: @white-base;
+
+      &:hover {
+        background-color: darken(@theme-color, 10%);
+        color: darken(@white-base, 10%);
+      }
+    }
+
+    &.icon-bordered {
+      a {
+        border-color: @theme-color;
+        color: @theme-color;
+
+        &:hover {
+          background-color: @theme-color;
+          border-color: @theme-color;
+          color: @white-base;
+        }
+      }
+    }
+  }
+
+  &.icon-gray {
+    a {
+      color: @theme-color;
+
+      &:hover {
+        color: darken(@theme-color, 10%);
+      }
+    }
+
+    &.icon-bordered {
+      a {
+        color: @theme-color;
+
+        &:hover {
+          background-color: @gray-lighter;
+          border-color: @gray-lighter;
+          color: @theme-color;
+        }
+      }
+    }
+  }
+}
+
+.icon-theme-colored {
+  a {
+    &:hover {
+      color: darken(@theme-color, 10%);
+    }
+  }  
+}
+
+.icon-hover-theme-colored {
+  a {
+    &:hover {
+      background-color: @theme-color;
+      border-color: @theme-color;
+      color: @white-base;
+    }
+  }  
+}
+
+.social-icons.icon-hover-theme-colored {
+  a {
+    &:hover {
+      background-color: @theme-color;
+      border-color: @theme-color;
+      color: @white-base;
+    }
+  }  
+}
+
+/*
+ * Shortcode: Icon Boxes Theme Colored
+ * -----------------------------------------------
+*/
+.icon-box{
+  &.iconbox-theme-colored {
+    .icon {
+      color: @theme-color;
+
+      &.icon-border-effect {
+        &::after {
+          box-shadow: 0 0 0 3px @theme-color;
+        }
+      }
+
+      &.icon-bordered {
+        border-color: @theme-color;
+
+        &:hover {
+          background-color: @theme-color;
+          color: @white-base;
+        }
+      }
+
+      &.icon-gray {
+        &:hover {
+          background-color: @theme-color;
+          color: @white-base;
+        }
+
+        &.icon-bordered {
+          border-color: @gray-lighter;
+
+          &:hover {
+            background-color: @theme-color;
+            border-color: @theme-color;
+            color: @white-base;
+          }
+        }
+      }
+
+      &.icon-dark {
+        background-color: @theme-color;
+        color: @white-base;
+
+        &:hover {
+          color: @white-base;
+        }
+
+        &.icon-bordered {
+          background-color: transparent;
+          border-color: @theme-color;
+          color: @theme-color;
+
+          &:hover {
+            background-color: @theme-color;
+            border-color: @theme-color;
+            color: @white-base;
+          }
+        }
+      }
+
+
+
+      &.icon-white {
+        background-color: @white-base;
+        color: @theme-color;
+
+        &:hover {
+          background-color: @theme-color;
+          color: @white-base;
+        }
+
+        &.icon-bordered {
+          background-color: transparent;
+          border-color: @theme-color;
+          color: @white-base;
+
+          &:hover {
+            background-color: @theme-color;
+            border-color: @theme-color;
+            color: @white-base;
+          }
+        }
+      }
+
+    }
+
+    &.iconbox-border {
+      border-color: @theme-color;
+    }
+  }
+}

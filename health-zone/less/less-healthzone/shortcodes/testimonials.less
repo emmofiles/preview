@@ -1,0 +1,239 @@
+/*
+ * Shortcode: Testimonials.less
+ * -----------------------------------------------
+*/
+ 
+.testimonial {
+  background: url('../images/features-bg.jpg') repeat center top;
+  .thumb img {
+    display: inline-block;
+    width: auto;
+  }
+  &.style1 {
+    .author {
+      color: @gray-light;
+    }
+    .title {
+      color: @gray-base;
+    }
+  }
+}
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none !important;
+  filter: none;
+}
+.block-text {
+  background-color: #fff;
+  box-shadow: 0 1px 5px #e8e9ea;
+  color: #626262;
+  font-size: 14px;
+  margin-top: 27px;
+  padding-bottom: 1px;
+}
+.block-text a {
+  color: #7d4702;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 21px;
+  text-decoration: none;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+.mark {
+  padding: 12px 0;background:none;
+}
+.block-text p {
+  color: #585858;
+  font-style: italic;
+  line-height: 20px;
+}
+.sprite {
+  border-left: 18px solid rgba(0, 0, 0, 0);
+  border-top: 18px solid rgba(241,241,241,0.80);
+  height: 0;
+  left: -18px;
+  position: absolute;
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+  width: 0;
+}
+.block-text ins {
+  bottom: -18px;
+  left: 0;
+  margin: auto;
+  right: 0;
+}
+.person-name {
+  padding: 5px 0;
+}
+.block {
+  display: block;
+}
+.zmin {
+  z-index: 1;
+}
+.ab {
+  position: absolute;
+}
+.person-text {
+  padding: 24px 0 0;
+  text-align: center;
+  z-index: 2;
+}
+.person-text a {
+  color: #ffcc00;
+  display: block;
+  font-size: 14px;
+  margin-top: 3px;
+  text-decoration: underline;
+}
+.person-text i {
+  color: #fff;
+  font-family: Georgia;
+  font-size: 13px;
+}
+.rel {
+  position: relative;
+}
+
+/*Style 2*/
+.feedback {
+  position: relative;
+}
+
+.big-triangle, .big-triangle-second-color {
+  border-style: solid;
+  border-width: 0 0 80px 80px;
+  height: 0;
+  position: absolute;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+  width: 0;
+  top: 0;
+  left: 0;
+}
+.big-icon, .big-icon-second-color {
+  border-radius: 50%;
+  bottom: 7px;
+  height: 49px;
+  position: relative;
+  right: 3px;
+  text-align: center;
+  width: 49px;
+  z-index: 20;
+  background: #fff;
+}
+.big-icon i.fa {
+  line-height: 49px;
+  color: #e6d8ad;
+}
+
+
+/* -------- Testimonial-Carousel ---------- */
+.testimonial-carousel,
+.testimonial-carousel-style2 {
+  .quote, 
+  .thumb {
+    margin-bottom: 40px;
+  }
+  .quote i {
+    background: @black-555;
+    border-radius: 50%;
+    color: @white-base;
+    font-size: 25px;
+    height: 60px;
+    line-height: 1;
+    padding: 20px 0 0;
+    text-align: center;
+    width: 60px;
+  }
+  .author {
+    margin-top: 30px;
+    text-transform: uppercase;
+  }
+  &.owl-theme {
+    .owl-controls {
+      margin-top: 10px;
+    }
+  }
+  /* fullwidth */
+  &.fullwidth {
+    .content{
+      p {
+        font-size: 15px;
+        font-style: italic;
+        color: @white-base;
+        &::after {
+          content: "\f10e";
+          font-family: fontawesome;
+          font-size: 100px;
+          left: 42%;
+          opacity: 0.1;
+          position: absolute;
+        }
+      }
+    } 
+  }
+  &.bullet-white {
+    .owl-dots {
+      span {
+        background: @white-base !important;
+      }
+    }
+  }
+  .owl-item {
+    img {
+      display: inline-block;
+      width: auto;
+      max-width: 90px;
+    } 
+  }
+  &.boxed {
+    .quote,
+    .thumb {
+      margin-bottom: 20px;
+    }
+    .owl-item {
+      img {
+        display: inline-block;
+        width: auto;
+        max-width: 65px;
+      }
+    }
+    .content::after {
+      bottom: 12px;
+      content: "\f10e";
+      font-family: fontawesome;
+      font-size: 55px;
+      opacity: 0.2;
+      position: absolute;
+      right: 10px;
+    }
+    .owl-controls {
+        margin-top: 0;  
+    }
+    .owl-dots {
+        text-align: left;
+    }
+    &.owl-theme {
+      .owl-dots {
+        .owl-dot {
+          &.active,
+          &:hover {
+            span {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
