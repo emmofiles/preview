@@ -1,0 +1,334 @@
+/* font-face */
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald.eot');
+    src: url('../fonts/Oswald.eot') format('embedded-opentype'),
+         url('../fonts/Oswald.woff2') format('woff2'),
+         url('../fonts/Oswald.woff') format('woff'),
+         url('../fonts/Oswald.ttf') format('truetype'),
+         url('../fonts/Oswald.svg#Oswald') format('svg');
+}
+
+@font-face {
+    font-family: 'montserratbold';
+    src: url('../fonts/montserrat-bold-webfont.eot');
+    src: url('../fonts/montserrat-bold-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/montserrat-bold-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-bold-webfont.woff') format('woff'),
+         url('../fonts/montserrat-bold-webfont.ttf') format('truetype'),
+         url('../fonts/montserrat-bold-webfont.svg#montserratbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratregular';
+    src: url('../fonts/montserrat-regular-webfont.eot');
+    src: url('../fonts/montserrat-regular-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/montserrat-regular-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-regular-webfont.woff') format('woff'),
+         url('../fonts/montserrat-regular-webfont.ttf') format('truetype'),
+         url('../fonts/montserrat-regular-webfont.svg#montserratregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* Reset ================================================================================= */
+ html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: top;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1; 
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+img { 
+     max-width: 100%; 
+     height: auto;
+	 width: auto;
+     border:0;
+      vertical-align:top;
+}
+/*================================================================================ */
+
+body {color: #000000; font-family: montserratregular, sans-serif; font-size: 14px; line-height: 1.5em; background-color: #fff; text-align: center; }
+
+a{ color:#7c7c7c; text-decoration: none; }
+a:hover{text-decoration:none; color:#72b9ea}
+a:focus{ outline:none; }
+:focus{ outline:none; }
+
+h1            { font-size:1.5em; line-height:normal; font-weight:normal; }
+h2            { font-size:1.33em; line-height:normal; font-weight:normal; }
+h3            { font-size:1.09em; line-height:normal; font-weight:bold; }
+h4            { font-size:1em; line-height:normal; font-weight:bold; }
+h5            { font-size:0.91em; line-height:normal; font-weight:bold; }
+h6            { font-size:0.91em; line-height:normal; font-weight:normal; }
+.f-col { width: 33.333%; float: left; padding: 0 15px; }
+.f-col2 { width: 50%; float: left; }
+
+/*==Header===========================*/
+.header { }
+.header .header-top {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border-bottom: 1px solid #7f7f7f;
+  padding: 50px 0;
+}
+.header .header-content { padding: 15px 0;  }
+
+.header .logo strong{
+ position: absolute;
+top: -999em;
+left: -999em;
+width: 0;
+height: 0;
+font-size: 0;
+line-height: 0;
+text-indent: -999em;
+overflow: hidden;   
+}
+
+.header .banner-box { min-height: 71px; color: #fff; padding: 8px; }
+.header .banner-box1 { margin-right: 8px; background: #ff8788; }
+.header .banner-box2 { margin-left: 8px; background: #5ed9e8; }
+.header .banner-box .box-inner { overflow: hidden; margin-left: 100px; }
+.header .banner-box .box-inner:before { width: 55px; height: 55px; display: inline-block; float: left; border-radius: 100%; background: rgba(0,0,0,0.5); content:""; margin-right: 20px; line-height: 55px; text-align: center;}
+.header .banner-box1 .box-inner:before { content: "\f0e0"; font-family: FontAwesome; font-size: 30px;  }
+.header .banner-box2 .box-inner:before { content: "one"; font-family: montserratbold; font-size: 14px; text-transform: uppercase; }
+.header .banner-box .box-inner .content { margin-left: 75px; text-align: left;}
+.header .banner-box .box-inner .content h2 { font-size: 20px; text-transform: uppercase; font-family: montserratregular; } 
+.header .banner-box1 .box-inner .content { margin-top: 5px; }
+.header .banner-box2 .box-inner .content { margin-top: 15px; }
+
+/* title-page */
+.title-page {}
+.title-page .title h1 {
+  color: #000000;
+  font-family: Oswald;
+  font-size: 30px;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+.pages-title {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.pages-title h2 {
+  font-family: oswald;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+.pages-title p {
+  font-size: 20px;
+  font-family: oswald;
+}
+/*==Box-themes=========================*/
+.us-themes{padding: 40px 0 50px; } 
+ 
+.box-themes { margin-top: 25px; }
+.box-themes .image {
+  background: #efefef none repeat scroll 0 0;
+  border: 1px solid #00cccb;
+  display: block;
+  overflow: hidden;
+  padding: 12px;
+  position: relative;
+  transition: all 0.5s ease 0s;
+}
+.box-themes .image:hover {
+  background: #00cccb none repeat scroll 0 0;
+  border-color: #00cccb;
+}
+.box-themes .image a { display: block; border: 2px solid #fff;}
+.image-shop-scroll {
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  height: 300px;
+  transition: all 5s ease-out 0s;
+}
+.box-themes .image:hover .image-shop-scroll {
+  background-position: center bottom;
+}
+.box-themes .image a img { width: 100%; }
+ 
+.box-themes a.button {
+  border: 0 none;
+  box-shadow: none;
+  color: #000;
+  display: inline-block;
+  font-family: Oswald;
+  font-size: 24px;
+  margin: 10px 0;
+  padding: 15px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out 0s;
+}
+.box-themes a.button:hover {
+  color: #00cccb;
+  text-decoration: none;
+}
+/*==us-band-layouts=========================*/
+.box-features{padding: 70px 0;overflow: hidden;}
+h3.text-18{text-transform: uppercase;font-size: 1.5em;font-weight: 300;margin: 20px 0 0}
+.us-column-1{float: left;width: 47%;margin-right: 3%;margin-top:20px}
+.us-column-1.last{margin-right: 0;margin-left: 3%;}
+.us-column-1 .box-col{overflow: hidden;margin-bottom: 40px}
+.us-column-1 .box-col:last-child{margin-bottom: 0}
+.us-column-1 .pull-left{margin-right: 20px}
+.us-column-1 .media-body{text-align: left;min-height: 180px; margin-top: 10px; overflow: hidden; display: inherit;padding: 10px}
+h3.text-24{text-transform: uppercase;font-size: 2.5em;margin-bottom: 10px;}
+p.text-12{font-size: 1.15em;line-height: 1.5em}
+
+/*==us-support=========================*/
+.us-support{background-color: #f6f6f6}
+.box-support{padding:50px 0;overflow: hidden;}
+.box-support h3.text-24{text-transform: capitalize;font-weight: 600;position: relative;padding-bottom: 15px;font-size: 2.2em;color: #272727}
+.box-support h3.text-24:after{
+content: "";
+position: absolute;
+left: 0;
+bottom: 0;
+margin: auto;
+text-align: center;
+width: 55px;
+height: 2px;
+background-color: #000;
+}
+.box-support .us-column-1 .media-body{background: none}
+
+/*==Footter========================*/
+.footer { background: #fff; padding: 35px 0; }
+.footer-inner{ }
+.footer a.logo-us{margin-bottom: 40px;display: block;}
+.footer h3.text-40 {
+  color: #000;
+  font-family: montserratbold;
+  font-size: 20px;
+  letter-spacing: 10px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+a.buttons{
+color: #fff;
+font-size: 30px;
+text-transform: uppercase;
+background-color: #00cccb; 
+font-family: montserratregular; 
+display: inline-block;
+padding: 10px 40px; line-height: 40px; border-radius: 4px; border-bottom: 4px solid #00e1e1; box-shadow: 0px 4px 1px 0px #dedede;
+vertical-align: text-top; 
+-moz-transition: all 0.2s ease-in-out;
+-webkit-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+text-decoration: none;
+}
+a.buttons:hover{ text-decoration: none; opacity: 0.7;}
+
+/*==back-top========================*/
+#back-top{
+background: #5ed9e8;
+color: #fff;
+text-transform:uppercase;
+font-weight: 500;
+bottom: 35px;
+height: 40px;
+width: 40px;
+line-height: 40px;
+text-align: center;
+position: fixed;
+right: 12px;
+z-index: 9999;
+cursor: pointer;
+border: 1px solid #fff;
+display: none
+}
+#back-top:hover{background-color: #ff8788}
+/*==Fix-Mobile========================*/
+
+@media(max-width:1199px){
+ .header .banner-box .box-inner { margin-left: 15%;} 
+.title-page .title h1 { font-size: 50px;} 
+}
+
+@media(max-width:991px){ 
+ .header .banner-box .box-inner { margin-left: 10%;}
+ .header .banner-box .box-inner .content h2 { font-size: 16px; }
+ .title-page .title h1 { font-size: 40px; }
+ .box-themes-1,
+.box-themes-3,
+.box-themes-5 { margin-right: 15px;}
+.box-themes-2,
+.box-themes-4,
+.box-themes-6 { margin-left: 15px;}
+.footer h3.text-40 { letter-spacing: 5px; }
+}
+@media(max-width:767px){ 
+.f-col { width: 100%; }
+.header .banner-box1 { margin: 0; }
+.header .banner-box2 { margin: 20px 0 0; }
+ .box-themes-1,
+.box-themes-3,
+.box-themes-5 { margin-right: 0;}
+.box-themes-2,
+.box-themes-4,
+.box-themes-6 { margin-left: 0;} 
+}
+@media(max-width: 600px) {
+.title-page .title h1 { font-size: 30px; }
+a.buttons { font-size: 20px; line-height: 20px; padding: 10px 25px;}  
+.footer h3.text-40 { font-size: 15px; letter-spacing: 3px; }
+}
+@media(max-width: 320px){
+.header .banner-box .box-inner { margin-left: 5px; }
+.header .banner-box .box-inner .content { margin-left: 70px;}
+.header .banner-box .box-inner:before { margin-right: 15px; }
+.title-page .title h1 {
+    font-size: 22px;
+}
+.title-page { margin-bottom: 0; }
+.box-themes a.button { font-size: 18px; }
+}
