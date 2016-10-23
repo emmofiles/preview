@@ -1,0 +1,70 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+dd {
+    margin: 0;
+    padding: 15px 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+dt {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 700;
+    background: #e3e3e3;
+    border-top: 1px solid #c5c5c5;
+    border-bottom: 1px solid #fff;
+    padding: 0 15px;
+    cursor: pointer;
+    color: #9f9f9f;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 1px;
+}
+dt:first-child {
+    border-top: 0px solid;
+}
+dt:nth-last-child(2) {
+    border-bottom: 0px solid;
+}
+
+dl.accordion {
+    width: 500px;
+    margin-top: 0;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.style1 .active {
+    color: #000;
+    background: #ddd;
+}
+
+.style2.accordion dt, .accordion.style4 dt, .accordion.style5 dt {
+    position: relative;
+    padding-left: 40px;
+}
+.accordion.style2 dt::after, .accordion.style4 dt::after,  .accordion.style5 dt::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "+";
+    height: 30px;
+    width: 30px;
+    background: #00AAE8;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    font-size: 20px;
+}
+.accordion.style2 dt.active::after, .accordion.style4 dt.active::after, .accordion.style5 dt:hover::after , .accordion.style5 dt.active::after {
+    content: "-";
+}
+.accordion {
+    margin-bottom: 100px;
+}
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
