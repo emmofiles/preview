@@ -1,0 +1,413 @@
+/*
+  Theme Name: Martin - Multipurpose Responsive HTML5 Template
+  Theme URL: http://themewar.com/html/martin
+  Author: ThemeWar
+  Author URI: http://themewar.com
+  Description: Martin - Multipurpose Responsive HTML5 Template
+  Version: 1.0.0
+*/
+
+/*=======================================================================
+[Table of contents]
+=========================================================================
+1. Fonts
+2. Normalization
+3. Section setup
+4. Margin and padding setup
+==========================================================================*/
+
+/*=======================================================================
+// Fonts
+=========================================================================*/
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,700,400italic,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Raleway:600,600italic,700,700italic,800,800italic,900,900italic);
+
+/* Normalization */
+htm,body{
+    color: #777777;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+} 
+
+a{
+    color: #222222;
+    transition: all ease 500ms;
+    -moz-transition: all ease 500ms;
+    -webkit-transition: all ease 500ms;
+    -ms-transition: all ease 500ms;
+    -o-transition: all ease 500ms;
+}
+a:hover{
+    text-decoration: none;
+    color: #f7941d;
+}
+a:focus{
+    outline: 0;
+    text-decoration: none;
+}
+ul,
+ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+button{
+    border: none;
+}
+p.lead{
+    font-size: 16px;
+    font-style: italic;
+    line-height: 26px;
+    margin-bottom: 15px;
+}
+
+
+.martin_btn {
+    font-size: 11px;
+    display: inline-block;
+    letter-spacing: 1.1px;
+    font-weight: 600;
+    text-transform: uppercase;
+    min-height: 43px;
+    padding: 17px 40px;
+    line-height: .8;
+    color: #fff;
+    background: #f7941d;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.noRadius{
+    border-radius: 0;
+}
+.btn_blue{
+    background: #29c2e1;
+}
+.btn_black{
+    background: #303030;
+}
+.btn_black:hover{
+    border-color: #303030;
+}
+.btn_dark2{
+    background: #000000;
+}
+.martin_btn.noBG{
+    background: rgba(0, 0, 0, 0);
+    border: 2px solid #f7941d;
+    color: #f7941d;
+    padding: 15px 40px
+}
+.martin_btn.noBG:hover{
+    background: #f7941d;
+    color: #fff;
+
+}
+
+.martin_btn span {
+    background: #f7941d ;
+    border-radius: 50%;
+    display: block;
+    height: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease 0s, height 0.6s ease 0s;
+    width: 0;
+    z-index: 1;
+}
+.martin_btn:hover span {
+    height: 562.5px;
+    width: 562.5px;
+}
+.martin_btn.big:hover span {
+    height: 600px;
+    width: 1500px;
+}
+.martin_btn:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.martin_btn i{
+    position: relative;
+    z-index: 2;
+    font-style: normal;
+}
+.martin_btn.hover_white:hover{
+    color: #f7941d;
+}
+.martin_btn.hover_white span{
+    background: #fff;
+}
+.martin_btn.hover_black:hover i{
+    color: #fff;
+}
+.martin_btn.hover_black span{
+    background: #333;
+}
+.btn_sq{
+    border-radius: 0;
+}
+
+
+
+
+
+.pageTitle{
+    width: 100%;
+    position: relative;
+    background: url(../images/bg/1.jpg) no-repeat center center / cover;
+    padding: 124px 0 129px;
+}
+.pageTitle2 {
+    background: rgba(0, 0, 0, 0) url("../images/bg/18.jpg") no-repeat scroll center center / cover ;
+    padding: 124px 0 129px;
+    position: relative;
+    width: 100%;
+}
+.pageTitle3{
+    background: rgba(0, 0, 0, 0) url("../images/bg/19.jpg") no-repeat scroll center center / cover ;
+    padding: 124px 0 129px;
+    position: relative;
+    width: 100%;
+}
+.pageTitle4{
+    background: rgba(0, 0, 0, 0) url("../images/bg/20.jpg") no-repeat scroll center center / cover ;
+    padding: 124px 0 129px;
+    position: relative;
+    width: 100%;
+}
+.pageTitle5{
+    background: rgba(0, 0, 0, 0) url("../images/bg/21.jpg") no-repeat scroll center center / cover ;
+    padding: 124px 0 129px;
+    position: relative;
+    width: 100%;
+}
+.pageTitle6{
+    background: rgba(0, 0, 0, 0) url("../images/bg/12.jpg") no-repeat scroll center center / cover ;
+    padding: 124px 0 129px;
+    position: relative;
+    width: 100%;
+}
+.pageTitle:after{
+    background: rgba(0, 0, 0, .8);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+}
+.pageTitle .container{
+    position: relative;
+    z-index: 2;
+}
+.pageTitle_content{
+    width: 100%;
+    position: relative;
+}
+.pageTitle_content h1{
+    position: relative;
+    margin: 0 0 40px;
+    line-height: .8;
+    font-family: Raleway;
+    font-size: 50px;
+    color: #FFF;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.pageTitle_content h1 span{
+    display: inline-block;
+    position: relative;
+    padding: 19px 27px;
+}
+.pageTitle_content h1 span:after{
+    height: 77px;
+    width: 24px;
+    background: none;
+    border-left: 2px solid #f7941d;
+    border-top: 2px solid #f7941d;;
+    border-bottom: 2px solid #f7941d;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+.pageTitle_content h1 span:before{
+    height: 77px;
+    width: 24px;
+    background: none;
+    border-right: 2px solid #f7941d;
+    border-top: 2px solid #f7941d;;
+    border-bottom: 2px solid #f7941d;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+.bredCrumb{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    line-height: .8;
+    color: #FFF;
+    font-size: 13px;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+}
+.bredCrumb a{
+    color: #FFF;
+}
+.bredCrumb a:hover{
+    color: #f7941d;
+}
+.bredCrumb a:last-child{
+    color: #f7941d;
+}
+.bredCrumb span{
+    padding: 0 13px;
+}
+
+.comonSection{
+    position: relative;
+    padding: 150px 0;
+    background: #FFF
+}
+.greys{
+    background: #edf2f8;
+}
+.halfImgSec .container, .halfImgSec .container-fluid{
+    position: relative;
+    z-index: 2;
+}
+.sectionTitle{
+    width: 100%;
+    position: relative;
+    margin-bottom: 70px;
+}
+.sectionTitle.marginBottom60{
+    margin-bottom: 60px;
+}
+.sectionTitle h2{
+    margin: 0px;
+    font-size: 36px;
+    font-weight: 900;
+    color: #23282f;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: .8;
+    margin-bottom: 30px;
+    font-family: Raleway;
+}
+.sectionTitle p{
+    margin: 0px;
+    font-size: 13px;
+    color: #333333;
+    line-height: .8;
+    text-transform: uppercase;
+    letter-spacing: 2.6px;
+    font-family: Roboto Slab;
+    font-weight: 300;
+}
+.sectionTitle.white h2,
+.sectionTitle.white p{
+    color: #fff;
+}
+.zindex{
+    position: relative;
+    z-index: 2;
+}
+.overlay,
+.overlay2,
+.overlay3,
+.overlay4,
+.overlay5{
+    position: relative
+}
+.overlay:after,
+.overlay2:after,
+.overlay3:after,
+.overlay4:after,
+.overlay5:after{
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0 
+}
+.overlay .container,
+.overlay2 .container,
+.overlay3 .container,
+.overlay4 .container,
+.overlay4 .container{
+    z-index: 4;
+    position: relative;
+}
+.overlay:after{
+    background: rgba(24, 24, 24, 0.75);
+}
+.overlay2::after {
+    background: rgba(38, 47, 58, 0.9) none repeat scroll 0 0;
+}
+.overlay3::after {
+    background: rgba(38, 47, 58, 0.93) none repeat scroll 0 0;
+}
+.overlay4::after {
+    background: rgba(38, 47, 58, 0.85) none repeat scroll 0 0;
+}
+.overlay5::after {
+    background: rgba(0, 0, 0, .85) none repeat scroll 0 0;
+}
+/*=======================================================================
+//  Margin and padding setup
+=========================================================================*/
+.noPadding{
+    padding: 0px;
+}
+.noPaddingBottom{
+    padding-bottom: 0px !important;
+}
+.noPaddingLeft{
+    padding-left: 0px !important;
+}
+.noPaddingRight{
+    padding-right: 0px !important;
+}
+.noMarginBottom{
+    margin-bottom: 0px !important;
+}
+.noMarginRight{
+    margin-right: 0px !important;
+}
+.noPaddingTop{
+    padding-top: 0px !important;
+}
+
+
+.imageDiv{
+    width: 100%;
+    position: relative;
+}
+.imageDiv img{
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+.comonHeading{
+    font-size: 36px;
+    color: #23282f;
+    font-weight: 900;
+    font-family: Raleway;
+    letter-spacing: 0;
+    margin: 0 0 30px;
+    text-transform: uppercase;
+}
