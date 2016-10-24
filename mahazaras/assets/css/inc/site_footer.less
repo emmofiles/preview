@@ -1,0 +1,49 @@
+.site-footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  z-index: 101;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: @color_black;
+  padding: 8px 0;
+  a{
+    text-decoration: none;
+  }
+  .contact-me{
+    top: 10px;
+    position: absolute;
+    left: 35px; 
+  }
+  .social-icns{
+    top: 10px;
+    position: absolute;
+    right: 35px;
+    a{
+      margin-left: 10px;
+    }
+  }
+
+  @media (max-width: @size_tablet) {
+    .contact-me{
+      display: none;
+    }
+    .social-icns{
+      top: 0;
+      padding: 10px;
+      position: relative;
+      right: 0;
+      text-align: center;
+      a{
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+    }
+    position: relative;
+    background: @color_white;
+    z-index: 1;
+  }
+
+
+}

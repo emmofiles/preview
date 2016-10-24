@@ -1,0 +1,88 @@
+.box_bars{
+  @bar_width: 35px;
+
+  .link-top-site{
+    font-weight: 700;
+    padding: 8px 10px; 
+    position: relative;
+    text-decoration: none;
+    display: none;
+  }
+  .top-bar, .bottom-bar, .left-bar, .right-bar{
+    background: @color_white;
+    position: fixed;
+    z-index: 100;
+  }
+  .top-bar, .bottom-bar{
+    width: 100%;
+    z-index: 101;
+    height: @bar_width;
+    left: 0;
+  }
+  .top-bar{
+    top: 0;
+    &:before{
+      content: "";
+      position: absolute;
+      left: @bar_width - 1px;
+      right: @bar_width - 1px;
+      height: 1px;
+      bottom: 0;
+      background: @color_soft_light - 10;
+    }
+  }
+  .bottom-bar{
+    bottom: 0;
+
+    &:before{
+      content: "";
+      position: absolute;
+      left: @bar_width - 1px;
+      right: @bar_width - 1px;
+      height: 1px;
+      top: 0;
+      background: @color_soft_light - 10;
+    }
+  }
+  .left-bar, .right-bar{
+    width: @bar_width;
+    height: 100%;
+    top: 0;
+  }
+
+  .left-bar{
+    left: 0;
+    &:before{
+      content: "";
+      position: absolute;
+      top: @bar_width - 1px;
+      bottom: @bar_width - 1px;
+      width: 1px;
+      right: 0;
+      background: @color_soft_light - 10;
+    }
+  }
+  .right-bar{
+    right: 0;
+    &:before{
+      content: "";
+      position: absolute;
+      top: @bar_width - 1px;
+      bottom: @bar_width - 1px;
+      width: 1px;
+      left: 0;
+      background: @color_soft_light - 10;
+    }
+  }
+
+
+  @media (max-width: @size_tablet) {
+    .bottom-bar, .left-bar, .right-bar{
+      display: none;
+    }
+
+    .link-top-site{ 
+      display: block;
+    }
+  }
+}

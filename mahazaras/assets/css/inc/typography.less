@@ -1,0 +1,25 @@
+body{
+  font-family: @font1;
+  background: @color_white - 30;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.body-loading{
+  position: fixed;
+  z-index: 0;
+  background: @color_white - 60;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+a{
+  color: @color_black;
+  &:focus, &:hover{
+    color: @color_black;
+    -moz-text-decoration-color: @color_black; /* Code for Firefox */
+    text-decoration-color: @color_black;
+  }
+}

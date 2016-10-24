@@ -1,0 +1,24 @@
+//Flat Tabs  ============================================================
+.flat-nav-tabs{
+  background: @color_white - 10;
+  padding: 15px 10px 0 10px;
+  border-top: 1px solid @color_white - 20;
+  border-left: 1px solid @color_white - 20;
+  border-right: 1px solid @color_white - 20;
+  &>li{
+    &>a{
+      color: @color_black;
+      .border-radius;
+    }
+    &.active{
+      &>a{
+        .box-shadow(0 -2px 0  @color_black); 
+      }
+    }
+  }
+}
+
+.flat-tab-content{
+  padding-top: 20px;
+}
+//End Flat Tabs  ============================================================

@@ -1,0 +1,67 @@
+.btn{
+   .border-radius;
+}
+
+.btn-default{
+  background-color: #e6e6e6;
+}
+
+.btn-cts1{
+  border: 3px solid @color_white;
+  .border-radius;
+  background: transparent;
+  color: @color_white;
+  min-width: 130px;
+  &.btn-lg{ 
+    min-width: 200px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .transition;
+  &:hover, &:focus, &:active{
+    background: @color_white;
+    color: @color_black;
+  }
+
+  &.btn-dark{
+    border: 3px solid @color_black;
+    color: @color_black;
+    &:hover, &:focus, &:active{
+      background: @color_black;
+      color: @color_white;
+    }
+  }
+} 
+
+.btn-m10{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.btn-minW130{
+  min-width: 130px;
+}
+
+a, .btn{
+  outline: none;
+  &:focus, &:active{
+    outline: none !important;
+    .box-shadow;
+  }
+}
+
+.input-group-btn{
+  .btn{
+    .border-radius;
+  }
+} 
+
+.ic-btn-left{
+  font-size: 12px;
+  margin-right: 5px;
+}
+.ic-btn{
+  font-size: 12px;
+  margin-left: 5px;
+}
