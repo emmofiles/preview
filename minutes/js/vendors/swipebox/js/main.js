@@ -1,0 +1,1 @@
+$( '.swipebox-video' ).swipebox();
