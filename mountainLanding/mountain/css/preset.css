@@ -1,0 +1,389 @@
+/*
+  Theme Name: Mountain - HTML5 Responsive App Landing Page
+  Theme URL: http://themewar.com/html/mountainLanding
+  Author: ThemeWar
+  Author URI: http://themewar.com
+  Description: Mountain - HTML5 Responsive App Landing Page
+  Version: 1.0
+*/
+
+/*=======================================================================
+[Table of contents]
+=========================================================================
+1. Header 01
+2. Header 02
+3. Banner 01 
+4. Banner 03
+5. Banner 04 
+6. Banner 05 
+7. Banner 06 
+8. Banner 07 
+9. Banner 08
+10. Features
+11. Features 02
+12. Screenshot
+13. About Us
+14. Testimonial
+15. Team
+16. Fun Fact
+17. Pricing
+18. Video
+19. Download
+20. Contact
+21. Footer
+
+
+==========================================================================*/
+/*=======================================================================
+[Font Family]
+=========================================================================
+1. Montserrat [ Use for all  headings]
+2. Raleway [ Use for all Paragraph ]
+2. Crimson Text [ Use for all Special text ]
+
+Main Color: #8e44ad
+Preset Colors:
+    1. #8e44ad
+    2. #2BA0C7
+    6. #C0392B
+    4. #F2CA27
+    5. #27ae60
+    6. #DB0A5B
+==========================================================================*/
+
+/*=======================================================================
+// Fonts
+=========================================================================*/
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600italic,600,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+body, html{
+    font-family: 'Raleway', sans-serif;
+    color: #5f6263;
+    font-size: 13px;
+    line-height: 26px;
+}
+a{
+    color: #8e44ad;
+    transition: all ease 500ms;
+    -moz-transition: all ease 500ms;
+    -webkit-transition: all ease 500ms;
+    -ms-transition: all ease 500ms;
+    -o-transition: all ease 500ms;
+}
+a:hover{
+    text-decoration: none;
+    color: #222;
+}
+a:focus{
+    outline: 0;
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6{
+    color: #222222;
+    font-family: "Montserrat","Arial",sans-serif;
+    letter-spacing: 0;
+    text-transform: none;
+    text-rendering: optimizelegibility;
+    font-weight: 400;
+}
+h1{
+    font-size: 36px;
+    letter-spacing: 0;
+    text-transform: none;
+    margin-bottom: 10px;
+    text-transform: none;
+    margin-top: 0px;
+    line-height: 1.3;
+    letter-spacing: 5px;
+    font-weight: 700;
+}
+.font-light{
+    font-weight: 300;
+}
+
+.apButtons{
+    border: 2px solid #fff;
+    border-radius: 22px;
+    color: #fff;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 0.7;
+    padding: 15px 30px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    text-transform: uppercase;
+    transition: all ease 400ms;
+    -moz-transition: all ease 400ms;
+    -webkit-transition: all ease 400ms;
+    -ms-transition: all ease 400ms;
+    -o-transition: all ease 400ms;
+}
+a.comm_btn span{
+    background: #FFF none repeat scroll 0 0;
+    border-radius: 50%;
+    display: block;
+    height: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transition: width 0.6s ease 0s, height 0.6s ease 0s;;
+    -moz-transition: width 0.6s ease 0s, height 0.6s ease 0s;;
+    -webkit-transition: width 0.6s ease 0s, height 0.6s ease 0s;;
+    -ms-transition: width 0.6s ease 0s, height 0.6s ease 0s;;
+    -o-transition: width 0.6s ease 0s, height 0.6s ease 0s;;
+    width: 0;
+    z-index: -1;
+}
+.apButtons i{
+    margin-right: 5px;
+}
+.apButtons:hover{
+    color: #222;
+    text-decoration: none;
+}
+a.comm_btn:hover span {
+  height: 562.5px;
+  width: 562.5px;
+}
+.apBtnDefault{
+    border: 2px solid #8e44ad;
+    border-radius: 22px;
+    color: #8e44ad;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 0.7;
+    padding: 15px 30px;
+    position: relative;
+    text-align: center;
+    font-family: "Montserrat","Arial",sans-serif;
+    overflow: hidden;
+    background: none;
+    text-transform: uppercase;
+    transition: all ease 400ms;
+    -moz-transition: all ease 400ms;
+    -webkit-transition: all ease 400ms;
+    -ms-transition: all ease 400ms;
+    -o-transition: all ease 400ms;
+}
+
+.apBtnDefault span{
+    background: #8e44ad none repeat scroll 0 0;
+    border-radius: 50%;
+    display: block;
+    height: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transition: width 0.6s ease 0s, height 0.6s ease 0s;;
+    -moz-transition: width 0.6s ease 0s, height 0.6s ease 0s;;
+    -webkit-transition: width 0.6s ease 0s, height 0.6s ease 0s;;
+    -ms-transition: width 0.6s ease 0s, height 0.6s ease 0s;;
+    -o-transition: width 0.6s ease 0s, height 0.6s ease 0s;;
+    width: 0;
+    z-index: 1;
+}
+.apBtnDefault i{
+    margin-right: 7px;
+    z-index: 2;
+    position: relative;
+}
+.apBtnDefault b{
+    z-index: 2;
+    position: relative;
+}
+.apBtnDefault:hover{
+    color: #FFF;
+}
+a.apBtnDefault:hover span {
+  height: 562.5px;
+  width: 562.5px;
+}
+
+.comonLInk{
+    background: transparent none repeat scroll 0 0;
+    color: #212121;
+    display: inline-block;
+    font-size: 10px;
+    line-height: 0.75;
+    padding: 0;
+    position: relative;
+    text-transform: uppercase;
+    transition: all 700ms ease 0s;
+    z-index: 2;
+    font-family: "Montserrat","Arial",sans-serif;
+    font-weight: 400;
+    transition: all ease 500ms;
+    -moz-transition: all ease 500ms;
+    -webkit-transition: all ease 500ms;
+    -ms-transition: all ease 500ms;
+    -o-transition: all ease 500ms;
+}
+.comonLInk i{
+    margin-left: 5px;
+}
+.comonLInk:hover{
+    color: #8e44ad;
+    text-decoration: none;
+}
+
+
+/*=======================================================================
+// Section Setup
+=========================================================================*/
+.comonSection{
+    width: 100%;
+    position: relative;
+    padding: 100px 0;
+}
+.graySection{
+    background: #f5f5f5;
+}
+.border_bottom{
+    border-bottom: 1px solid #f4f4f4;
+}
+.graybg{
+    background: #F1F5F3;
+}
+.sectionTitle{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.sectionTitle h2{
+    color: #222222;
+    font-size: 36px;
+    letter-spacing: 0;
+    text-transform: none;
+    margin-bottom: 30px;
+    text-transform: none;
+    margin-top: 0px;
+    line-height: .8;
+    letter-spacing: 10px;
+    font-weight: 700;
+}
+
+.sectionTitle p{
+    width: 60%;
+    margin:  0 auto 23px;
+    font-size: 14pt;
+    line-height: 35px;
+    font-family: Crimson Text;
+    font-style: italic;
+}
+.stBar{
+    width: 100px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+.stBar.lefts{
+    margin: 0;
+}
+.stBar:after{
+    background-color: #8e44ad;
+    height: 1px;
+    width: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    content: "";
+}
+.stBar:before{
+    background-color: #8e44ad;
+    height: 1px;
+    width: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    content: "";
+}
+.stBar span{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: #8e44ad;
+    transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+.sectionTitle.text-left{
+    text-align: left !important;
+}
+.sectionTitle.text-left p{
+    float: left;
+}
+
+
+
+
+.ImgDiv{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.ImgDiv img{
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+
+ul.ulitem{
+    margin: 0px;
+    padding: 0px;
+}
+ul.ulitem li{
+    list-style: none;
+    position: relative;
+    padding-left: 25px;
+    margin: 10px 0;
+    font-size: 14px;
+}
+.ulitem li:before{
+    content: "\f1b8";
+    font-family: FontAwesome;
+    font-size: 14px;
+    color: #8e44ad;
+    position: absolute;
+    left: 0;
+}
+
+
+
+.noPadding{
+    padding: 0px;
+}
+.noPaddingBottom{
+    padding-bottom: 0px !important;
+}
+.noPaddingLeft{
+    padding-left: 0px !important;
+}
+.noPaddingRight{
+    padding-right: 0px !important;
+}
+.noMarginBottom{
+    margin-bottom: 0px !important;
+}
+
+
+
+.white{
+    color: #fff !important;
+}
