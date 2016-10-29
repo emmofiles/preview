@@ -1,0 +1,262 @@
+/********** Featured Gallery ************************************************************/
+
+.spiral_featured_portfolio{
+	display: block;
+}
+
+.spiral_featured_portfolio .featured_item{
+	width: 25%;
+	float: left;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.spiral_featured_portfolio .featured_item.current{
+	position: relative;
+}
+
+.spiral_featured_portfolio .featured_item:hover .overlay{
+	height: 23%!important;
+}
+
+.spiral_featured_portfolio .featured_item .overlay i{
+	position: relative;
+	top: 8px;
+}
+
+#pointer{
+	position: absolute;
+	top: -10px;
+	left: 0;
+	width: 0;
+	height: 0;
+	z-index: 10;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #222;
+}
+
+#portfolio_content_details{
+	background: #222;
+	width: 100%;
+	display: none;
+	position: relative;
+	clear: both;
+	text-align: left;
+}
+
+#portfolio_content_details .featured_gallery_post_wrapper{
+	padding: 100px;
+	position: relative;
+}
+
+#portfolio_content_details .featured_gallery_post_wrapper #close_wrapper{
+	position: absolute;
+	display: inline-block;
+	top: 50px;
+	right: 50px;
+	cursor: pointer;
+	z-index: 100;
+}
+
+#portfolio_content_details .featured_gallery_post_wrapper #close_wrapper i{
+	color: #fff;
+	font-size: 16px;
+}
+
+#portfolio_content_details .featured_gallery_post_wrapper .gallery_post_image{
+	width: 30%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#portfolio_content_details .featured_gallery_post_wrapper .gallery_post_content{
+	width: 67%;
+	margin-left: 2%;
+	padding-left: 2%;
+	padding-bottom: 2.3%;
+	display: inline-block;
+	border-left: 1px solid #d3d7da;
+}
+
+#portfolio_content_details .featured_gallery_post_wrapper .gallery_post_content .gallery_post_title{
+	display: inline-block;
+	font-family: 'Open Sans', sans-serif;
+	color:  #fffefe;
+	font-size: 40px;
+	font-weight: 300;
+	line-height: 26px;
+	text-align: left;
+	margin-bottom: 17px;
+	margin-top: -5px;
+}
+
+#portfolio_content_details .featured_gallery_post_wrapper .gallery_post_content .gallery_post_title a{
+	color:  #fffefe;
+	line-height: 38px;
+}
+
+#portfolio_content_details .featured_gallery_post_wrapper .gallery_post_content .gallery_post_linkto{
+	display: inline-block;
+	margin-left: 49px;
+}
+
+#portfolio_content_details .featured_gallery_post_wrapper .gallery_post_content .gallery_post_linkto i{
+	font-size: 30px;
+	color: #ff503f;
+	position: relative;
+	top: -1px;
+}
+
+#portfolio_content_details .featured_gallery_post_wrapper .gallery_post_content .gallery_post_date{
+	font-family: 'Open Sans', sans-serif;
+	color:  #555555;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 54px;
+	text-align: left;
+}
+
+#portfolio_content_details .featured_gallery_post_wrapper .gallery_post_content .gallery_post_description{
+	margin-bottom: 38px;
+}
+
+#portfolio_content_details .featured_gallery_post_wrapper .gallery_post_content .gallery_post_description p{
+	font-family: 'Open Sans', sans-serif;
+	color:  #cccccc;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 22px;
+	text-align: left;
+}
+
+#portfolio_content_details .featured_gallery_post_wrapper .gallery_post_content .gallery_post_info{
+	margin-bottom: 50px;
+}
+
+#portfolio_content_details .featured_gallery_post_wrapper .gallery_post_content .gallery_post_info .gallery_post_category span,
+#portfolio_content_details .featured_gallery_post_wrapper .gallery_post_content .gallery_post_info .gallery_post_client span,
+#portfolio_content_details .featured_gallery_post_wrapper .gallery_post_content .gallery_post_info .gallery_post_skill span{
+	font-family: 'Open Sans', sans-serif;
+	color:  #555555;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 30px;
+	text-align: left;
+	min-width: 100px;
+	display: inline-block;
+	margin-right: 23px;
+}
+
+#portfolio_content_details .featured_gallery_post_wrapper .gallery_post_content .gallery_post_info .gallery_post_category span.cat_names,
+#portfolio_content_details .featured_gallery_post_wrapper .gallery_post_content .gallery_post_info .gallery_post_client span.client_names,
+#portfolio_content_details .featured_gallery_post_wrapper .gallery_post_content .gallery_post_info .gallery_post_skill span.skills_names{
+	font-family: 'Open Sans', sans-serif;
+	color:  #cccccc;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 30px;
+	text-align: left;
+}
+
+@media only screen and (min-width: 1311px) and (max-width: 1606px) {
+
+	.spiral_featured_portfolio .featured_item:hover .overlay{
+		height: 29%!important;
+	}
+
+}
+
+@media only screen and (min-width: 1171px) and (max-width: 1310px) {
+
+	.spiral_featured_portfolio .featured_item:hover .overlay{
+		height: 32%!important;
+	}
+
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1170px) {
+
+	.spiral_featured_portfolio .featured_item:hover .overlay{
+		height: 39%!important;
+	}
+
+	.portfolio_item .overlayed .overlay .overlay_title,
+	.section_body_fullwidth .portfolio_item .overlayed .overlay .overlay_title{
+		font-size: 19px!important;
+	}
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.spiral_featured_portfolio .featured_item:hover .overlay{
+		height: 23%!important;
+	}
+}
+
+@media only screen and (max-width: 767px){
+
+	.spiral_featured_portfolio .featured_item{
+		width: 100%;
+	}
+
+	.featured_gallery_post_wrapper{
+		padding: 30px!important;
+	}
+
+	#portfolio_content_details .featured_gallery_post_wrapper .gallery_post_image{
+		width: 100%;
+	}
+
+	#portfolio_content_details .featured_gallery_post_wrapper #close_wrapper{
+		top: 20px;
+		right: 20px;
+	}
+
+	#portfolio_content_details .featured_gallery_post_wrapper .gallery_post_content{
+		margin-top: 30px;
+		width: 100%;
+		border-left: 0;
+		padding-left: 0;
+		margin-left: 0;
+	}
+}
+
+
+/*** Gallery ***/
+
+.gallery_images .gallery-item{
+	margin: 3.333333% 3.3333333% 0 0;
+	width: 30%!important;
+	background: #f7f7f7;
+	position: relative;
+	display: inline-block;
+}
+
+.gallery_images .gallery-item:nth-child(3n+3){
+	margin-right: 0;
+}
+
+.gallery_images img{
+	width: 80px;
+	height: 80px;
+	border: 1px solid #d3d7da!important;
+}
+
+#manage_gallery{
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+#empty_gallery{
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+#icon-edit.icon32-posts-listings {
+	display: none;
+}
+
+.gallery-item a{
+	display: inline-block;
+}

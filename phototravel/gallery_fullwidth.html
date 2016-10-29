@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Photo Travel">
+    <meta name="keywords" content="Photo Travel">
+    <title>Photo Travel</title>
+    <!--pageMeta-->
+    <!-- Loading Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Loading Elements Styles -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/rt_icons.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css"  rel="stylesheet"/>
+    <!-- Favicons -->
+    <link rel="icon" href="images/favicons/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+    <script src="scripts/html5shiv.js"></script>
+    <script src="scripts/respond.min.js"></script>
+    <![endif]-->
+    <!--headerIncludes-->
+    </head>
+    <body>
+    <div id="preloader">
+        <div class="loading-data">
+            <div class="dot"></div>
+            <div class="dot2"></div>
+        </div>
+    </div>
+     <div id="wrap">
+         <nav class="navbar">
+             <div class="container">
+                 <a href="#" class="navbar-brand"><span>Photo</span><img height="29" alt="Your logo" src="./images/logo.png">Travel</a>
+                 <button class="navbar-toggle menu-collapse-btn collapsed" data-toggle="collapse" data-target=".navMenuCollapse"  aria-hidden="true">
+                     <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                 <div class="social_search-section">
+                     <form id="search_form" class="line-form" novalidate="novalidate">
+                         <div class="input-group search-header">
+                             <input class="form-control search-input" type="text" name="search" placeholder="Search">
+                            <span class="input-group-btn">
+                                <button type="submit" class="btn btn-primary search-btn" data-loading-text="•••"  aria-hidden="true"><span class="icon center-icon icon-search5"></span></button>
+                            </span>
+                         </div>
+                     </form>
+                     <ul class="soc-list">
+                         <li><a href="#" target="_blank" title="facebook"><span class="icon soc_facebook">f</span></a></li>
+                         <li><a href="#" target="_blank" title="twitter"><span class="icon soc_twitter">l</span></a></li>
+                         <li><a href="#" target="_blank" title="google plus"><span class="icon soc_google">g</span></a></li>
+                     </ul>
+                 </div>
+                 <div class="collapse navbar-collapse navMenuCollapse">
+                     <ul class="nav">
+                         <li class="menu-item dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Homepages</a>
+                             <ul class="dropdown-menu">
+                                 <li><a href="homepage_1.html">Homepage 1</a>
+                                 <li><a href="homepage_2.html">Homepage 2</a>
+                                 <li><a href="homepage_dark.html">Homepage dark</a>
+                                 <li><a href="homepage_boxed.html">Homepage boxed</a>
+                             </ul>
+                         </li>
+                         <li class="menu-item dropdown active"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Gallery</a>
+                             <ul class="dropdown-menu">
+                                 <li><a href="gallery_item.html">gallery item</a>
+                                 <li><a href="gallery_regular.html">gallery regular</a>
+                                 <li><a href="gallery_extended.html">gallery extended</a>
+                                 <li><a href="gallery_fullwidth.html">gallery fullwidth</a>
+                             </ul>
+                         </li>
+                         <li class="menu-item dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog</a>
+                             <ul class="dropdown-menu">
+                                 <li><a href="blog_mosaic.html">blog mosaic</a>
+                                 <li><a href="blog_post_image.html">blog post image</a>
+                                 <li><a href="blog_post_video.html">blog post video</a>
+                                 <li><a href="blog_right_sidebar.html">blog right sidebar</a>
+                             </ul>
+                         </li>
+                         <li><a href="about.html">about</a></li>
+                         <li><a href="contacts.html">Contacts</a></li>
+                     </ul>
+                 </div>
+             </div>
+         </nav>
+		<header id="breadcrumbs" class="dark">
+            <div class="container">
+                <div class="row">
+                    <ul>
+                        <li><a href="#" title="Homepage">Homepage</a> </li>
+                        <li><a href="#" title="Homepage">Gallery</a> </li>
+                        <li><a href="#" title="Homepage" class="active">Fullwidth</a> </li>
+                    </ul>
+                </div>
+            </div>
+		</header>
+
+     <main id="iso-gallery" class="light">
+        <div class="container-wider">
+            <div class="button-group filters-button-group">
+                <button class="button is-checked" data-filter="*">all</button>
+                <button class="button" data-filter=".mountains">mountains</button>
+                <button class="button" data-filter=".forest">forest</button>
+                <button class="button" data-filter=".photography">photography</button>
+                <button class="button" data-filter=".nature">nature</button>
+                <button class="button" data-filter=".travel">travel</button>
+            </div>
+
+            <div class="grid row-wider">
+                <div class="element-item travel nature col-sm-3 " data-category="nature">
+                    <a href="#" class="iso-pic gallery-image-full-1"></a>
+                    <div class="iso-relation">
+                        <h2>Lorem ipsum dolor</h2>
+                        <span class="pic-album">
+                             <a href="#">Nature</a>,
+                             <a href="#">Travel</a>
+                         </span>
+                    </div>
+                </div>
+                <div class="element-item photography mountains col-sm-3 " data-category="mountains">
+                    <a href="#" class="iso-pic gallery-image-full-2"></a>
+                    <div class="iso-relation">
+                        <h2>Sit amet consetetur</h2>
+                        <span class="pic-album">
+                             <a href="#">Photography</a>,
+                             <a href="#">Mountains</a>
+                         </span>
+                    </div>
+                </div>
+                <div class="element-item forest nature col-sm-3 " data-category="forest">
+                    <a href="#" class="iso-pic gallery-image-full-3"></a>
+                    <div class="iso-relation">
+                        <h2>Elitr sed diam nonumy</h2>
+                        <span class="pic-album">
+                             <a href="#">Forest</a>,
+                             <a href="#">Nature</a>
+                         </span>
+                    </div>
+                </div>
+                <div class="element-item nature photography col-sm-3 " data-category="nature">
+                    <a href="#" class="iso-pic gallery-image-full-4"></a>
+                    <div class="iso-relation">
+                        <h2>Tempor invidunt</h2>
+                        <span class="pic-album">
+                             <a href="#">Nature</a>,
+                             <a href="#">Photography</a>
+                         </span>
+                    </div>
+                </div>
+                <div class="element-item nature photography col-sm-3 " data-category="mountains">
+                    <a href="#" class="iso-pic gallery-image-full-5"></a>
+                    <div class="iso-relation">
+                        <h2>Voluptua at vero eos</h2>
+                        <span class="pic-album">
+                             <a href="#">Nature</a>,
+                             <a href="#">Photography</a>
+                         </span>
+                    </div>
+                </div>
+                <div class="element-item nature travel col-sm-3 " data-category="nature">
+                    <a href="#" class="iso-pic gallery-image-full-6"></a>
+                    <div class="iso-relation">
+                        <h2>Aliquyam erat sed</h2>
+                        <span class="pic-album">
+                             <a href="#">Nature</a>,
+                             <a href="#">Travel</a>
+                         </span>
+                    </div>
+                </div>
+                <div class="element-item photography mountains col-sm-3 " data-category="mountains">
+                    <a href="#" class="iso-pic gallery-image-full-7"></a>
+                    <div class="iso-relation">
+                        <h2>Voluptua at vero eos</h2>
+                        <span class="pic-album">
+                             <a href="#">Photography</a>,
+                             <a href="#">Mountains</a>
+                         </span>
+                    </div>
+                </div>
+                <div class="element-item forest nature col-sm-3 " data-category="transition">
+                    <a href="#" class="iso-pic gallery-image-full-8"></a>
+                    <div class="iso-relation">
+                        <h2>Ocusam et justo duo</h2>
+                        <span class="pic-album">
+                             <a href="#">Forest</a>,
+                             <a href="#">Nature</a>
+                         </span>
+                    </div>
+                </div>
+                <div class="element-item nature travel col-sm-3" data-category="alkaline-earth">
+                    <a href="#" class="iso-pic gallery-image-full-9"></a>
+                    <div class="iso-relation">
+                        <h2>Lorem ipsum dolor</h2>
+                        <span class="pic-album">
+                             <a href="#">Nature</a>,
+                             <a href="#">Travel</a>
+                         </span>
+                    </div>
+                </div>
+                <div class="element-item photography mountains col-sm-3" data-category="travel">
+                    <a href="#" class="iso-pic gallery-image-full-10"></a>
+                    <div class="iso-relation">
+                        <h2>Sit amet consetetur</h2>
+                        <span class="pic-album">
+                             <a href="#">Photography</a>,
+                             <a href="#">Mountains</a>
+                         </span>
+                    </div>
+                </div>
+                <div class="element-item nature forest col-sm-3" data-category="travel">
+                    <a href="#" class="iso-pic gallery-image-full-11"></a>
+                    <div class="iso-relation">
+                        <h2>Elitr sed diam nonumy</h2>
+                        <span class="pic-album">
+                             <a href="#">Forest</a>,
+                             <a href="#">Nature</a>
+                         </span>
+                    </div>
+                    </div>
+                <div class="element-item nature photography col-sm-3" data-category="travel">
+                    <a href="#" class="iso-pic gallery-image-full-12"></a>
+                    <div class="iso-relation">
+                        <h2>Tempor invidunt</h2>
+                        <span class="pic-album">
+                             <a href="#">Nature</a>,
+                             <a href="#">Photography</a>
+                         </span>
+                    </div>
+                </div>
+            </div>
+            <div class="clear_h"></div>
+            <button aria-hidden="true" data-loading-text="•••" class="btn btn_main bard" type="submit">Load More</button>
+        </div>
+     </main>
+         <section id="instagram">
+             <h4>Follow Instagram</h4>
+             <ul class="instagram-list gallery">
+                 <li> <a href="./images/insta_01.jpg" class="PhotoZoom" title="Description" ><img src="images/insta_01.jpg" alt=""></a></li>
+                 <li> <a href="./images/insta_02.jpg" class="PhotoZoom" title="Description"><img src="images/insta_02.jpg" alt=""></a> </li>
+                 <li> <a href="./images/insta_03.jpg" class="PhotoZoom" title="Description"><img src="images/insta_03.jpg" alt=""></a> </li>
+                 <li> <a href="./images/insta_04.jpg" class="PhotoZoom" title="Description"><img src="images/insta_04.jpg" alt=""></a> </li>
+                 <li> <a href="./images/insta_05.jpg" class="PhotoZoom" title="Description"><img src="images/insta_05.jpg" alt=""></a> </li>
+                 <li> <a href="./images/insta_06.jpg" class="PhotoZoom" title="Description"><img src="images/insta_06.jpg" alt=""></a> </li>
+                 <li> <a href="./images/insta_07.jpg" class="PhotoZoom" title="Description"><img src="images/insta_07.jpg" alt=""></a> </li>
+                 <li> <a href="./images/insta_08.jpg" class="PhotoZoom" title="Description"><img src="images/insta_08.jpg" alt=""></a> </li>
+             </ul>
+         </section>
+        <footer class="footer-social-sec dark">
+            <div class="container">
+                <div class="row">
+                    <ul class="social-footer text-center soc-inv">
+                        <li><a href="#" title="facebook"><span class="icon soc_facebook">f</span>Facebook</a></li>
+                        <li><a href="#" title="twitter"><span class="icon soc_twitter">l</span>Twitter</a></li>
+                        <li><a href="#" title="google"><span class="icon soc_google">g</span>Google Plus</a></li>
+                        <li><a href="#" title="linkedin"><span class="icon soc_linkedin">i</span>Linked In</a></li>
+                        <li><a href="#" title="pinterest"><span class="icon soc_pinterest">:</span>Pinterest</a></li>
+                        <li><a href="#" title="flickr"><span class="icon soc_flickr">n</span>Flickr</a></li>
+                        <li><a href="#" title="rss"><span class="icon soc_rss">r</span>RSS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <footer class="underground dark">
+            <div class="container">
+                <div class="row">
+                    <p>
+                        &copy; PhotoTravel 2016 | Created with <span class="icon-heart"></span> by <span> MW Templates </span>
+                    </p>
+                </div>
+            </div>
+        </footer>
+     </div>
+    <!-- /#wrap -->
+     <script src="scripts/jquery-1.12.3.min.js"></script>
+     <script src="scripts/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+     <script src="scripts/jquery.validate.min.js"></script>
+     <script src="scripts/placeholders.jquery.min.js"></script>
+     <script src="scripts/external-iso.js"></script>
+     <script src="scripts/isotope.pkgd.min.js"></script>
+     <script src="scripts/bootstrap.min.js"></script>
+     <script src="scripts/preloader.js"></script>
+</body></html>

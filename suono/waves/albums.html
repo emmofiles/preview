@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<!--[if lte IE 9]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Suono - HTML Theme</title>
+<!--=================================
+Meta tags
+=================================-->
+<meta name="description" content="">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no"/>
+<!--=================================
+Style Sheets
+=================================-->
+<link href="http://fonts.googleapis.com/css?family=Lato:400,900,700,400italic,300,700italic" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700' rel='stylesheet' type='text/css'>    
+    
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/flexslider.css">
+<link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="assets/css/animations.css">
+<link rel="stylesheet" type="text/css" href="assets/css/dl-menu.css">
+<link rel="stylesheet" type="text/css" href="assets/css/jquery.datetimepicker.css">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="../customizer.css">
+<link id="skinColorChanger" rel="stylesheet" href="../empty.css">
+<!--=================================
+Place color files here ( right after main.css ) for example
+<link rel="stylesheet" type="text/css" href="assets/css/colors/color-name.css">
+===================================-->
+
+<script src="assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    
+</head>
+<body>
+<!--===============================
+Preloading Splash Screen
+===================================-->
+<div class="pageLoader"></div> 
+    
+<div class="majorWrap">
+<!--========================================
+Header Content
+===========================================-->
+    <header id="sticktop" class="doc-header">
+        <!--========================================
+        wave Player
+        ===========================================-->
+        <div class="waveSurferPlayer">
+            <div class="container">
+                <div class="waveSurferInner">
+                    <div id="waveform" class="wavesurfSelector" data-wave-color="rgba(0,0,0,0.2)"
+                     data-wave-progress="#ffffff" data-cursor="#7cbf1d" data-height="50"></div>
+                    <h5 class="waveTitle">Song Title Goes here that will make it more cooler</h5>
+                    <div class="WaveControlStuff clearfix">
+                        <a href="#" class="pc-back backWave"></a>
+                        <a href="#" class="pc-play playWave"></a>
+                        <a href="#" class="pc-pause pauseWave"></a>
+                        <a href="#" class="pc-next nextWave"></a>
+                        <a href="#" class="pc-volume muteWave"></a>
+                    </div><!--WaveControlStuff-->
+                </div><!--\\waveSurferInner-->
+            </div><!--\\container-->
+        </div><!--\\waveSurferPlayer-->
+        
+        <!--========================================
+        Nav
+        ===========================================-->
+        <nav class="navbar navbar-default">
+            <div class="container">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/basic/logo.png" alt=""/>
+                </a>
+              </div>
+              
+              <div id="dl-menu" class="radio-style xv-menuwrapper responsive-menu">
+                  <button class="menuTrigger"><i class="fa fa-navicon"></i></button>
+                  <div class="clearfix"></div>
+                  <ul class="dl-menu">
+                      <li class="parent"><a href="#">Home</a>
+                          <ul class="dl-submenu">
+                              <li><a href="index.html">Home</a></li>
+                              <li><a href="index2.html">Home Two</a></li>
+                              <li><a href="index3.html">Home Three</a></li>
+                          </ul>
+                      </li>
+                      <li class="active"><a href="albums.html">Albums</a></li>
+                      <li><a href="blog.html">News &amp; Blog</a></li>
+                      <li><a href="gallery.html">Gallery</a></li>
+                      <li><a href="store.html">Store</a></li>
+                      <li class="parent"><a href="#">Pages</a>
+                          <ul class="dl-submenu">
+                              <li><a href="contact.html">Contact</a></li>
+                              <li><a href="album-single.html">Album Single Page</a></li>
+                              <li><a href="blog-single.html">Blog Single Page</a></li>
+                              
+                          </ul>
+                      </li>
+                  </ul>
+              </div><!-- /dl-menuwrapper -->
+            </div>
+        </nav>
+    </header>
+    <div id="ajaxArea"> 
+    <!--=================================
+    Albums Section
+    =================================-->
+        <section>
+            <div class="container mt-30 mb-30 hidden-xs">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="multiSearchWrapper">
+                            <div class="multiSearchWrapper-inner">
+                                <div class="custome-select clearfix">
+                                    <b class="fa fa-angle-down"></b>
+                                    <span>Song Category</span>
+                                    <select name="albumType" >
+                                        <option value="">Select a Category</option>
+                                        <option value="01">Hip-Hop</option>
+                                        <option value="02">Rock</option>
+                                        <option value="03">Clasic</option>
+                                    </select>
+                                </div>
+                                <input placeholder="Search album" type="text" />
+                            </div><!--inner-->
+                            <button class="btn btn-default"><i class="fa fa-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div><!--container-->
+
+            <div class="container">
+                <div class="search-filters text-uppercase text-bold">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-5">
+                            <div class="searched-for" data-before="Results For : ">
+                                <span class="s-keyword">Hip-Hop</span>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-7 text-right">
+                            <div class="search-actions">
+                                <ul>
+                                    <li class="active"><a href="#">Latest</a></li>
+                                    <li><a href="#">Trending</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="active"><a href="#">Week</a></li>
+                                    <li><a href="#">Month</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--row-->
+            </div><!--container-->
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="album-grid-wrap style2">
+                            <div class="album-grid text-uppercase clearfix">
+                                <a href="album-single.html" class="album-unit">
+                                    <figure><img src="assets/demo-data/a1.jpg" width="265" height="265" alt=""/>
+                                        <figcaption>
+                                            <span>Lorem</span>
+                                            <h3>Ipsum Albumb</h3>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                                <a href="album-single.html" class="album-unit">
+                                    <figure><img src="assets/demo-data/a2.jpg" width="265" height="265" alt=""/>
+                                        <figcaption>
+                                            <span>Lorem</span>
+                                            <h3>Ipsum Albumb</h3>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                                <a href="album-single.html" class="album-unit">
+                                    <figure><img src="assets/demo-data/a3.jpg" width="265" height="265" alt=""/>
+                                        <figcaption>
+                                            <span>Lorem</span>
+                                            <h3>Ipsum Albumb</h3>
+                                        </figcaption>
+                                    </figure>
+                                </a>    
+                                <a href="album-single.html" class="album-unit">
+                                    <figure><img src="assets/demo-data/a4.jpg" width="265" height="265" alt=""/>
+                                        <figcaption>
+                                            <span>Lorem</span>
+                                            <h3>Ipsum Albumb</h3>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                                <a href="album-single.html" class="album-unit">
+                                    <figure><img src="assets/demo-data/a5.jpg" width="265" height="265" alt=""/>
+                                        <figcaption>
+                                            <span>Lorem</span>
+                                            <h3>Ipsum Albumb</h3>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+
+                                <a href="album-single.html" class="album-unit">
+                                    <figure><img src="assets/demo-data/a6.jpg" width="265" height="265" alt=""/>
+                                        <figcaption>
+                                            <span>Lorem</span>
+                                            <h3>Ipsum Albumb</h3>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                                <a href="album-single.html" class="album-unit">
+                                    <figure><img src="assets/demo-data/a7.jpg" width="265" height="265" alt=""/>
+                                        <figcaption>
+                                            <span>Lorem</span>
+                                            <h3>Ipsum Albumb</h3>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                                <a href="album-single.html" class="album-unit">
+                                    <figure><img src="assets/demo-data/a8.jpg" width="265" height="265" alt=""/>
+                                        <figcaption>
+                                            <span>Lorem</span>
+                                            <h3>Ipsum Albumb</h3>
+                                        </figcaption>
+                                    </figure>
+                                </a>    
+                                <a href="album-single.html" class="album-unit">
+                                    <figure><img src="assets/demo-data/a9.jpg" width="265" height="265" alt=""/>
+                                        <figcaption>
+                                            <span>Lorem</span>
+                                            <h3>Ipsum Albumb</h3>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                                <a href="album-single.html" class="album-unit">
+                                    <figure><img src="assets/demo-data/a10.jpg" width="265" height="265" alt=""/>
+                                        <figcaption>
+                                            <span>Lorem</span>
+                                            <h3>Ipsum Albumb</h3>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+
+                                <a href="album-single.html" class="album-unit">
+                                    <figure><img src="assets/demo-data/a11.jpg" width="265" height="265" alt=""/>
+                                        <figcaption>
+                                            <span>Lorem</span>
+                                            <h3>Ipsum Albumb</h3>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                                <a href="album-single.html" class="album-unit">
+                                    <figure><img src="assets/demo-data/a12.jpg" width="265" height="265" alt=""/>
+                                        <figcaption>
+                                            <span>Lorem</span>
+                                            <h3>Ipsum Albumb</h3>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                                <a href="album-single.html" class="album-unit">
+                                    <figure><img src="assets/demo-data/a13.jpg" width="265" height="265" alt=""/>
+                                        <figcaption>
+                                            <span>Lorem</span>
+                                            <h3>Ipsum Albumb</h3>
+                                        </figcaption>
+                                    </figure>
+                                </a>    
+                                <a href="album-single.html" class="album-unit">
+                                    <figure><img src="assets/demo-data/a14.jpg" width="265" height="265" alt=""/>
+                                        <figcaption>
+                                            <span>Lorem</span>
+                                            <h3>Ipsum Albumb</h3>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                                <a href="album-single.html" class="album-unit">
+                                    <figure><img src="assets/demo-data/a15.jpg" width="265" height="265" alt=""/>
+                                        <figcaption>
+                                            <span>Lorem</span>
+                                            <h3>Ipsum Albumb</h3>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+
+                            </div><!--album-grid-->
+                         </div><!--album-grid-wrap-->  
+                    </div><!--column-->     
+                </div><!--row-->
+            </div><!--container-->
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <nav>
+                          <ul class="pagination" data-before="Use pagination to find out more cool tracks &raquo;">
+                            <li>
+                              <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                              </a>
+                            </li>
+                            <li><a href="#">1</a></li>
+                            <li class="active"><span>2</span></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li>
+                              <a href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div><!--container-->
+        </section>
+    </div>
+<!--=================================
+Footer
+=================================-->
+    <footer class="doc-footer text-uppercase text-center text-bold">
+        <div class="container">
+            <ul class="social-list style2 circular">
+                <li><a href="#" class="fa fa-facebook"></a></li>
+                <li><a href="#" class="fa fa-twitter"></a></li>
+                <li><a href="#" class="fa fa-google-plus"></a></li>
+                <li><a href="#" class="fa fa-tumblr"></a></li>
+                <li><a href="#" class="fa fa-instagram"></a></li>
+                <li><a href="#" class="fa fa-dribbble"></a></li>
+                <li><a href="#" class="fa fa-tumblr"></a></li>
+                <li><a href="#" class="fa fa-vimeo"></a></li>
+            </ul>
+            <div class="row">
+                <div class="col-xs-12">
+                    <strong>&copy; Copyright  2015  suono</strong>
+                    <p>on suono you can listen to thousands songs and buy your favorite songs or albums.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<div class="customizer">
+    <a href="#" class="customizerTrigger"><img src="../setting.gif" alt=""> </a>
+    <div class="customizerInner">
+        <h3>Theme Base</h3>
+        <div class="actionsWrap">
+            <a href="#" class="darkSkinBg"></a>
+            <a href="#" class="lightSkinBg"></a>
+        </div>
+        <div class="notYet">
+            <h3>Theme Skin Colors</h3>
+            <div class="actionsWrap skinColorPickers">
+                <a href="#" data-css="assets/css/colors/blue.css" class="skin-c1"></a>
+                <a href="#" data-css="assets/css/colors/yellow.css" class="skin-c2"></a>
+                <a href="#" data-css="assets/css/colors/orange.css" class="skin-c3"></a>
+                <a href="#" data-css="assets/css/colors/red.css" class="skin-c4"></a>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!--=================================
+Script Source
+=================================-->
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/ajaxify.min.js"></script>
+<script src="assets/js/jquery.downCount.js"></script>
+<script src="assets/js/jquery.datetimepicker.full.min.js"></script>
+<script src="assets/js/jquery.bxslider.min.js"></script> <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&#038;sensor=false&#038;ver=3.0'></script>
+<script src="assets/js/jplayer/jquery.jplayer.min.js"></script>
+<script src="assets/js/jplayer/jplayer.playlist.min.js"></script>
+<script src="assets/js/jquery.flexslider-min.js"></script>
+<script src="assets/js/jquery.stellar.min.js"></script>
+<script src="assets/js/jquery.sticky.js"></script>
+<script src="assets/js/jquery.waitforimages.js"></script>
+<script src="assets/js/masonry.pkgd.min.js"></script>
+<script src="assets/js/packery.pkgd.min.js"></script>
+<script src="assets/js/tweetie.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/wavesurfer/wavesurfer.min.js"></script>
+<script src="assets/js/wavesurfer/wavesurfer.swf.js"></script>
+<script src="assets/js/main.js"></script>    
+<script src="../customizer.js"></script>    
+
+</body>
+</html>
+    

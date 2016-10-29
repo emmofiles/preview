@@ -1,0 +1,276 @@
+/* Thank boz: http://stackoverflow.com/questions/16443380/common-css-media-queries-break-points */
+/* tablets and desktop */
+@media only screen and (max-width: 1080px ) {
+  
+    /* General
+    -------------------------------------------------------------------------------------- */
+    .container {
+        width: 940px;
+    }
+    
+}
+
+@media only screen and (max-width: 940px ) {
+    
+    /* General
+    -------------------------------------------------------------------------------------- */
+    .container {
+        width: 740px;
+    }
+    
+    /* Header
+    -------------------------------------------------------------------------------------- */
+    /* topbar */
+    #topbarnav .menu ul li:not(:last-child) a {
+        font-size: 11px;
+        margin-right: 16px;
+    }
+    .topbar-left,
+    .topbar-right {
+        float: none;
+        text-align: center;
+    }
+    .topbar-left >*,
+    .topbar-right> *{
+        display: inline-block;
+        float: none;
+        vertical-align: middle;
+    }
+    #topbarnav .menu ul li a {
+        line-height: 36px;
+    }
+    .searchform form {
+        margin-top: 0;
+    }
+    
+    /* logo */
+    .wi-tagline {
+        letter-spacing: 2px;
+        letter-spacing: .125rem;
+    }
+    
+    /* General Classes
+    -------------------------------------------------------------------------------------- */
+    .row {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    .col {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    /* Layout
+    -------------------------------------------------------------------------------------- */
+    #primary {
+        padding-right: 30px;
+    }
+    .sidebar-left #primary {
+        padding-right: 0;
+        padding-left: 30px;
+    }
+    
+    /* Blog
+    -------------------------------------------------------------------------------------- */
+    .wi-article {
+        padding-top: 5rem;
+        margin-top: 5rem;
+    }
+    .wi-article:first-of-type {
+        padding-top: 0;
+        margin-top: 0;
+    }
+    .sticky,
+    .sticky:first-of-type {
+        background: none;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+    .sticky:first-of-type {
+        padding-top: 0;
+    }
+    
+    /* Portfolio --> 2 cols
+    -------------------------------------------------------------------------------------- */
+    .wi-portfolio.column-3 .portfolio-item {
+        width: 50%;
+    }
+    .wi-portfolio.column-3 .portfolio-item:nth-child(3n+1) {
+        clear: none;
+    }
+    .wi-portfolio.column-3 .portfolio-item:nth-child(2n+1) {
+        clear: left;
+    }
+    
+    .wi-rollover {
+        opacity: 1;
+        visibility: visible;
+    }
+    .rollover-title,
+    .rollover-meta {
+        opacity: 1;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+    .rollover-overlay {
+        opacity: .5;
+    }
+    
+}
+
+/* everything falls into a single column */
+@media only screen and (max-width: 740px) {
+    
+    /* General
+    -------------------------------------------------------------------------------------- */
+    .container {
+        width: 480px;
+    }
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .col {
+        width: 100% !important;
+        float: none;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+    .col:last-child {
+        margin-bottom: 0;
+    }
+    
+    /* Header
+    -------------------------------------------------------------------------------------- */
+    #wi-logo {
+        padding: 3rem 0;
+    }
+    #wi-mainnav,
+    #wi-mainnav.before-sticky + #mainnav-height {
+        display: none;
+    }
+    #mobilemenu {
+        display: block;
+    }
+    
+    /* Layout
+    -------------------------------------------------------------------------------------- */
+    
+    /* Main Layout
+    --------------------- */
+    #primary,
+    #secondary {
+        display: block;
+        width: 100%;
+        float: none !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    
+    #secondary {
+        margin-top: 3rem;
+    }
+    
+    /* Wrapper
+    --------------------- */
+    #page-wrapper {
+        padding: 2rem 0 4rem;
+    }
+    
+    /* Blog
+    -------------------------------------------------------------------------------------- */
+    .entry-meta > * {
+        display: block;
+        padding: 6px 0;
+        border-bottom: 1px solid #f9f9f9;
+    }
+    .entry-meta > *:after {
+        display: none;
+    }
+    
+    
+    /* Visual Composer
+    -------------------------------------------------------------------------------------- */
+    .vc_row  {
+        padding: 0 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .vc_row .wpb_column {
+        padding: 0 !important;
+        margin-bottom: 2rem;
+    }
+    .wpb_column:last-child {
+        margin-bottom: 0;
+    }
+    
+    /* Portfolio
+    -------------------------------------------------------------------------------------- */
+    
+    /* Catlist
+    --------------------- */
+    .catlist-wrapper .row {
+        display: block;
+    }
+    .catlist-wrapper .col {
+        display: block;
+    }
+    .content-along {
+        margin-bottom: 2rem;
+    }
+    .catlist-wrapper .col-cats {
+        text-align: inherit;
+    }
+    
+    /* Portfolio
+    --------------------- */
+    .wi-portfolio {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .portfolio-item {
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+    .portfolio-item:last-of-type {
+        margin-bottom: 0;
+    }
+    .wi-portfolio.column-3 .portfolio-item {
+        width: 100%;
+        float: none;
+        clear: both;
+    }
+    
+}
+
+@media only screen and (max-width: 480px ) {
+    
+    /* General
+    -------------------------------------------------------------------------------------- */
+    .container {
+        width: 370px; /* best for iphone 6 & 6 plus */
+    }
+    #wi-topbar .searchform form {
+        width: 100px;
+    }
+
+    .tp-caption {
+        display: none !important;
+    }
+    
+}
+
+
+/* iPhone 4 + 5 */
+@media only screen and (max-width: 370px ) {
+    
+    /* General
+    -------------------------------------------------------------------------------------- */
+    .container {
+        width: 300px;
+    }
+    
+}

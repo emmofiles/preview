@@ -1,0 +1,287 @@
+/*
+  Theme Name: Poseidon - MultiPurpose Responsive HTML5 Template
+  Theme URL: http://themewar.com/html/poseidon
+  Author: ExpandTheme
+  Author URI:http://themeforest.net/user/expandtheme
+  Description: Poseidon
+  Version: 1.0.0
+*/
+
+
+/*=======================================================================
+[Table of contents]
+=========================================================================
+1. Fonts
+2. Normalization
+3. Section setup
+4. Margin and padding setup
+5. Border SetUp
+==========================================================================*/
+
+/*=======================================================================
+// Fonts
+=========================================================================*/
+@import url(https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+htm,body{
+    color: #777777;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+} 
+a{
+    color: #222222;
+    transition: all ease 500ms;
+    -moz-transition: all ease 500ms;
+    -webkit-transition: all ease 500ms;
+    -ms-transition: all ease 500ms;
+    -o-transition: all ease 500ms;
+}
+a:hover{
+    text-decoration: none;
+    color: #01b1ae;
+}
+a:focus{
+    outline: 0;
+    text-decoration: none;
+}
+ul,
+ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+button{
+    border: none;
+}
+p.lead{
+    font-size: 16px;
+    font-style: italic;
+    line-height: 26px;
+    margin-bottom: 15px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Raleway', sans-serif;
+    color: #181818;
+    font-weight: 700;
+    margin: 0;
+    line-height: .8;
+}
+
+/*=======================================================================
+//  Button Style
+=========================================================================*/
+.poseidon_btn{
+    background: #01b1ae;
+    font-family: 'Lato', sans-serif;
+    font-size: 11px;
+    letter-spacing: 1.1px;
+    line-height: .8;
+    height: 50px;
+    display: inline-block;
+    padding: 20px 43px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    overflow: hidden;
+    position: relative;
+}
+.btnfont12 {
+    font-size: 12px;
+    padding: 21px 43px;
+}
+.noBg{
+    background: transparent;
+    border: 1px solid #fff;
+}
+.noBg2{
+    background: transparent;
+    border: 2px solid #fff;
+    height: 47px;
+    letter-spacing: .286px;
+    padding: 17px 43px;
+}
+.radius{
+    border-radius: 30px;
+    height: 43px;
+    font-size: 11px;
+    padding: 16px 32px;
+}
+.border{
+    border-color: #01b1ae;
+    color: #01b1ae;
+    font-size: 11px;
+}
+.btn45{
+    height: 45px;
+    padding: 17px 43px;
+}
+.poseidon_btn span {
+    background: #fff ;
+    display: block;
+    height: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease 0s, height 0.6s ease 0s;
+    width: 0;
+}
+.poseidon_btn b{
+    font-style: normal;
+    position: relative;
+    z-index: 2;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+.poseidon_btn:hover b{
+    color: #333;
+}
+.poseidon_btn:hover span {
+    height: 562.5px;
+    width: 562.5px;
+}
+.hover_green span{
+    background: #01B1AE;
+}
+.hover_green:hover b,
+.hover_black:hover b{
+    color: #fff;
+}
+.hover_black span{
+    background: #333;;
+}
+
+/*=======================================================================
+//  Section Setup
+=========================================================================*/
+.common_section{
+    padding: 150px 0; 
+    position: relative;
+}
+.sectionTitle{
+    margin-bottom: 70px;
+}
+.sectionTitle h2{
+    font-size: 42px;
+    font-weight: 700;
+    line-height: .8;
+    color:#000;
+    margin:0px 0px 40px; 
+}
+.sectionTitle.white h2{
+    color: #fff;
+}
+.innersecTitle{
+    margin-bottom: 33px;
+}
+.innersecTitle h2{
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+.secbar {
+    background: rgba(0, 0, 0, 0) url("../images/doted.png") no-repeat scroll center center;
+    display: block;
+    height: 7px;
+}
+.secbar.left {
+    background: rgba(0, 0, 0, 0) url("../images/doted.png") no-repeat scroll left center;
+}
+.underPera{
+    margin-bottom: 35px;
+}
+.graybg{
+    background: #f7f7f7;
+}
+.overlay90,
+.overlay75{
+    position: relative;
+}
+.overlay90:before,
+.overlay75:before,
+.overlay85:before,
+.overlay80:before{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+}
+.overlay90:before{
+    background: rgba(0, 0, 0, .90);
+}
+.overlay85:before{
+    background: rgba(0, 0, 0, .85);
+}
+.overlay80:before{
+    background: rgba(0, 0, 0, .80);
+}
+.overlay75:before{
+    background: rgba(0, 0, 0, .75);
+}
+
+
+
+/*=======================================================================
+//  Margin and padding setup
+=========================================================================*/
+.noPadding{
+    padding: 0px;
+}
+.noPaddingBottom{
+    padding-bottom: 0px !important;
+}
+.noPaddingLeft{
+    padding-left: 0px !important;
+}
+.noPaddingRight{
+    padding-right: 0px !important;
+}
+.noMarginBottom{
+    margin-bottom: 0px !important;
+}
+.noMarginRight{
+    margin-right: 0px !important;
+}
+.noPaddingTop{
+    padding-top: 0px !important;
+}
+.marginBottom30{
+    margin-bottom: 30px;
+}
+
+/*=======================================================================
+//  Border Setup
+=========================================================================*/
+.noBorder{
+    border: none;
+}
+.borderLeft{
+    border-left: 1px solid #c0c0c0;
+}
+.borderRight{
+    border-right: 1px solid #c0c0c0;
+}
+.borderBottom{
+    border-bottom: 1px solid #c0c0c0;
+}
+.borderTop{
+    border-top: 1px solid #c0c0c0;
+}
+.extraPadding{
+    padding-right: 65px;
+}
+.marginTop60{
+    margin-top: 60px;
+}

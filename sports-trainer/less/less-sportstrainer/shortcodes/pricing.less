@@ -1,0 +1,89 @@
+/*
+ * Shortcode: pricing.less
+ * -----------------------------------------------
+*/
+.pricing-table{
+	margin-bottom: 30px;
+	position: relative;
+	.table-price {
+		color: @black-111;
+		font-size: 45px;
+
+		span {
+			font-size: 13px;
+			vertical-align: middle;
+		}
+	}
+	.package-type {
+		margin-top: 0;
+	}
+
+	&.featured {
+		border: 1px solid @black-111;
+	}
+
+	.table-type {
+		display: inline;
+	}
+
+	.btn-signup {
+		margin-right: 0;
+		width: 100%;
+	}
+
+	.table-list {
+		list-style: outside none none;
+		padding: 10px 0;
+		background: @white-f8;
+
+		&.list { 
+			&.check-circle {
+				li {
+					&:before {
+						content: "";
+					    font-family: fontawesome;
+					    font-size: 24px;
+					    vertical-align: middle;
+					}
+				}
+			}
+		}
+
+		li {
+			border-bottom: 1px solid @white-f2;
+			padding: 15px 0;
+
+			i {
+			  	margin-right: 8px;
+			}
+			
+			&:last-child {
+		        border-bottom: none;	    
+			 }
+		}
+	}
+	.price-amount {
+		width: auto;
+		height: auto;
+		margin-top:  0;
+		// line-height: 80px;
+		font-size: 2rem;
+	}
+}
+
+.pricing-style2 {
+	padding: 30px;
+}
+
+.pricing-table.style2 .table-list li {
+	border: none;
+	padding: 8px 0;
+}
+
+
+
+
+
+
+
+

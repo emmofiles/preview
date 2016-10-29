@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Photo Travel">
+    <meta name="keywords" content="Photo Travel">
+    <title>Photo Travel</title>
+    <!--pageMeta-->
+    <!-- Loading Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Loading Elements Styles -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/rt_icons.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css"  rel="stylesheet"/>
+    <!-- Favicons -->
+    <link rel="icon" href="images/favicons/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+    <script src="scripts/html5shiv.js"></script>
+    <script src="scripts/respond.min.js"></script>
+    <![endif]-->
+    <!--headerIncludes-->
+    </head>
+    <body>
+    <div id="preloader">
+        <div class="loading-data">
+            <div class="dot"></div>
+            <div class="dot2"></div>
+        </div>
+    </div>
+     <div id="wrap">
+        <nav class="navbar">
+             <div class="container">
+                 <a href="#" class="navbar-brand"><span>Photo</span><img height="29" alt="Your logo" src="./images/logo.png">Travel</a>
+                 <button class="navbar-toggle menu-collapse-btn collapsed" data-toggle="collapse" data-target=".navMenuCollapse"  aria-hidden="true">
+                     <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                 <div class="social_search-section">
+                     <form id="search_form" class="line-form" novalidate="novalidate">
+                         <div class="input-group search-header">
+                             <input class="form-control search-input" type="text" name="search" placeholder="Search">
+                            <span class="input-group-btn">
+                                <button type="submit" class="btn btn-primary search-btn" data-loading-text="•••"  aria-hidden="true"><span class="icon center-icon icon-search5"></span></button>
+                            </span>
+                         </div>
+                     </form>
+                     <ul class="soc-list">
+                         <li><a href="#" target="_blank" title="facebook"><span class="icon soc_facebook">f</span></a></li>
+                         <li><a href="#" target="_blank" title="twitter"><span class="icon soc_twitter">l</span></a></li>
+                         <li><a href="#" target="_blank" title="google plus"><span class="icon soc_google">g</span></a></li>
+                     </ul>
+                 </div>
+                 <div class="collapse navbar-collapse navMenuCollapse">
+                     <ul class="nav">
+                         <li class="menu-item dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Homepages</a>
+                             <ul class="dropdown-menu">
+                                 <li><a href="homepage_1.html">Homepage 1</a>
+                                 <li><a href="homepage_2.html">Homepage 2</a>
+                                 <li><a href="homepage_dark.html">Homepage dark</a>
+                                 <li><a href="homepage_boxed.html">Homepage boxed</a>
+                             </ul>
+                         </li>
+                         <li class="menu-item dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Gallery</a>
+                             <ul class="dropdown-menu">
+                                 <li><a href="gallery_item.html">gallery item</a>
+                                 <li><a href="gallery_regular.html">gallery regular</a>
+                                 <li><a href="gallery_extended.html">gallery extended</a>
+                                 <li><a href="gallery_fullwidth.html">gallery fullwidth</a>
+                             </ul>
+                         </li>
+                         <li class="menu-item dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog</a>
+                             <ul class="dropdown-menu">
+                                 <li><a href="blog_mosaic.html">blog mosaic</a>
+                                 <li><a href="blog_post_image.html">blog post image</a>
+                                 <li><a href="blog_post_video.html">blog post video</a>
+                                 <li><a href="blog_right_sidebar.html">blog right sidebar</a>
+                             </ul>
+                         </li>
+                         <li><a href="about.html">about</a></li>
+                         <li class="active"><a href="contacts.html">Contacts</a></li>
+                     </ul>
+                 </div>
+             </div>
+         </nav>
+		<header id="breadcrumbs" class="dark">
+            <div class="container">
+                <div class="row">
+                    <ul>
+                        <li><a href="#" title="Homepage">Homepage</a> </li>
+                        <li><a href="#" title="Homepage">Gallery</a> </li>
+                        <li><a href="#" title="Homepage" class="active">Contacts</a> </li>
+                    </ul>
+                </div>
+            </div>
+		</header>
+
+        <main id="contacts" class="text-center">
+            <div class="embed-responsive embed-responsive-contacts">
+                <div id="map-canvas" class="embed-responsive-item"></div>
+            </div>
+            <div class="container">
+
+                <div class="row data-map">
+                    <div class="col-sm-4 col-md-4 col-lg-3 col-lg-offset-1 editContent">
+                        <h4>Address</h4>
+                        <p>
+                            PO Box 97845 Baker st. 567, <br>
+                            Los Angeles, California, United States
+                        </p>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-4 editContent">
+                        <h4>Opening Hours</h4>
+                        <p>
+                            Weekdays 8:00 - 17:00 <br>
+                            Saturday 10:00 - 12:00 <br>
+                            Sunday Closed
+                        </p>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-3 col-lg-offset-right-1 editContent">
+                        <h4>Contact Us</h4>
+                        <p>
+                            8 (800) 695-2684 <br>
+                            <span class="bard-text">phototravel@support.com</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row common-block light">
+                 <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
+                      <h1><span>Contact</span>Form</h1>
+                      <h4>Write Us</h4>
+                         <div class="form-container">
+                             <form action="scripts/contact.php" id="contact_form">
+                                 <div class="form-group">
+                                     <input type="text" class="form-control" id="contact_name" placeholder="Full Name" name="name">
+                                 </div>
+                                 <div class="form-group">
+                                     <input type="tel" class="form-control" id="number" placeholder="Phone Number" name="phone">
+                                 </div>
+                                 <div class="form-group">
+                                     <textarea class="form-control" rows="4" placeholder="Message" id="contact_message" name="message"></textarea>
+                                 </div>
+                                 <button type="submit" id="contact_submit" data-loading-text="&bull;&bull;&bull;" class="btn btn_main bard">Contact Me</button>
+                             </form>
+                         </div>
+                 </div>
+            </div>
+
+        </main>
+         <section id="instagram">
+             <h4>Follow Instagram</h4>
+             <ul class="instagram-list gallery">
+                 <li> <a href="./images/insta_01.jpg" class="PhotoZoom" title="Description" ><img src="images/insta_01.jpg" alt=""></a></li>
+                 <li> <a href="./images/insta_02.jpg" class="PhotoZoom" title="Description"><img src="images/insta_02.jpg" alt=""></a> </li>
+                 <li> <a href="./images/insta_03.jpg" class="PhotoZoom" title="Description"><img src="images/insta_03.jpg" alt=""></a> </li>
+                 <li> <a href="./images/insta_04.jpg" class="PhotoZoom" title="Description"><img src="images/insta_04.jpg" alt=""></a> </li>
+                 <li> <a href="./images/insta_05.jpg" class="PhotoZoom" title="Description"><img src="images/insta_05.jpg" alt=""></a> </li>
+                 <li> <a href="./images/insta_06.jpg" class="PhotoZoom" title="Description"><img src="images/insta_06.jpg" alt=""></a> </li>
+                 <li> <a href="./images/insta_07.jpg" class="PhotoZoom" title="Description"><img src="images/insta_07.jpg" alt=""></a> </li>
+                 <li> <a href="./images/insta_08.jpg" class="PhotoZoom" title="Description"><img src="images/insta_08.jpg" alt=""></a> </li>
+             </ul>
+         </section>
+        <footer class="footer-social-sec dark">
+            <div class="container">
+                <div class="row">
+                    <ul class="social-footer text-center soc-inv">
+                        <li><a href="#" title="facebook"><span class="icon soc_facebook">f</span>Facebook</a></li>
+                        <li><a href="#" title="twitter"><span class="icon soc_twitter">l</span>Twitter</a></li>
+                        <li><a href="#" title="google"><span class="icon soc_google">g</span>Google Plus</a></li>
+                        <li><a href="#" title="linkedin"><span class="icon soc_linkedin">i</span>Linked In</a></li>
+                        <li><a href="#" title="pinterest"><span class="icon soc_pinterest">:</span>Pinterest</a></li>
+                        <li><a href="#" title="flickr"><span class="icon soc_flickr">n</span>Flickr</a></li>
+                        <li><a href="#" title="rss"><span class="icon soc_rss">r</span>RSS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <footer class="underground dark">
+            <div class="container">
+                <div class="row">
+                    <p>
+                        &copy; PhotoTravel 2016 | Created with <span class="icon-heart"></span> by <span> MW Templates </span>
+                    </p>
+                </div>
+            </div>
+        </footer>
+     </div>
+    <!-- /#wrap -->
+     <script src="scripts/jquery.validate.min.js"></script>
+     <script src="scripts/placeholders.jquery.min.js"></script>
+     <script>
+         function runScript() {
+             $('#contact_form').validate({
+                 onfocusout: false,
+                 onkeyup: false,
+                 rules: {
+                     name: "required",
+                     message: "required",
+                     phone: "required"
+                 },
+                 errorPlacement: function (error, element) {
+                     error.insertAfter(element);
+                 },
+                 messages: {
+                     name: "What's your name?",
+                     message: "Type your message",
+                     phone: "Enter your phone"
+                 },
+
+                 highlight: function (element) {
+                     $(element)
+                             .text('').addClass('error')
+                 },
+
+                 success: function (element) {
+                     element
+                             .text('').addClass('valid')
+                 }
+             });
+
+             $('#contact_form').submit(function () {
+                 // submit the form
+                 if ($(this).valid()) {
+                     $('#contact_submit').button('loading');
+                     var action = $(this).attr('action');
+                     $.ajax({
+                         url: action,
+                         type: 'POST',
+                         data: {
+                             contactname: $('#contact_name').val(),
+                             contactphone: $('#number').val(),
+                             contactmessage: $('#contact_message').val()
+                         },
+                         success: function () {
+                             $('#contact_submit').button('reset');
+                             //Use modal popups to display messages
+                             $('#modalContactSuccess').modal('show');
+                         },
+                         error: function () {
+                             $('#contact_submit').button('reset');
+                             //Use modal popups to display messages
+                             $('#modalContactError').modal('show');
+                         }
+                     });
+                 } else {
+                     $('#contact_submit').button('reset')
+                 }
+                 return false;
+             });
+         }
+
+         runScript();
+
+         document.addEventListener('reload-script',function(){
+             runScript();
+         });
+     </script>
+     <script src="scripts/jquery-1.12.3.min.js"></script>
+     <script src="scripts/jquery.prettyPhoto.js"></script>
+     <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+     <script src="scripts/preloader.js"></script>
+     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+     <script>
+         var map;
+         var egglabs = new google.maps.LatLng(51.9730757, 1.1502547);
+         var mapCoordinates = new google.maps.LatLng(51.9730757, 1.1502547);
+         var markers = [];
+         var image = new google.maps.MarkerImage(
+                 'images/marker.png',
+                 new google.maps.Size(84,56),
+                 new google.maps.Point(0,0),
+                 new google.maps.Point(42,56)
+         );
+
+         function addMarker()
+         {
+             markers.push(new google.maps.Marker({
+                 position: egglabs,
+                 raiseOnDrag: false,
+                 icon: image,
+                 map: map,
+                 draggable: false
+             }));
+
+         }
+
+         function initialize() {
+             var mapOptions = {
+                 backgroundColor: "#f2e5d4",
+                 zoom: 14,
+                 disableDefaultUI: true,
+                 center: mapCoordinates,
+                 mapTypeId: google.maps.MapTypeId.ROADMAP,
+                 styles: [
+                     {
+                         "featureType": "landscape.natural",
+                         "elementType": "geometry.fill",
+                         "stylers": [
+                             { "color": "#f2e5d4" }
+                         ]
+                     },
+                     {
+                         "featureType": "landscape.man_made",
+                         "stylers": [
+                             { "color": "#f2e5d4" },
+                             { "visibility": "off" }
+                         ]
+                     },
+                     {
+                         "featureType": "water",
+                         "stylers": [
+                             { "color": "#80C8E5" },
+                             { "saturation": 0 }
+                         ]
+                     },
+                     {
+                         "featureType": "road.arterial",
+                         "elementType": "geometry",
+                         "stylers": [
+                             { "color": "#e5d8c8" }
+                         ]
+                     }
+                     ,{
+                         "elementType": "labels.text.stroke",
+                         "stylers": [
+                             { "visibility": "off" }
+                         ]
+                     }
+                     ,{
+                         "elementType": "labels.text",
+                         "stylers": [
+                             { "color": "#3e3933" }
+                         ]
+                     }
+
+                     ,{
+                         "featureType": "road.local",
+                         "stylers": [
+                             { "color": "#dedede" }
+                         ]
+                     }
+                     ,{
+                         "featureType": "road.local",
+                         "elementType": "labels.text",
+                         "stylers": [
+                             { "color": "#989898" }
+                         ]
+                     }
+                     ,{
+                         "featureType": "transit.station.bus",
+                         "stylers": [
+                             { "saturation": -57 }
+                         ]
+                     }
+                     ,{
+                         "featureType": "road.highway",
+                         "elementType": "labels.icon",
+                         "stylers": [
+                             { "visibility": "off" }
+                         ]
+                     },{
+                         "featureType": "poi",
+                         "stylers": [
+                             { "visibility": "off" }
+                         ]
+                     }
+
+                 ]
+
+             };
+             map = new google.maps.Map(document.getElementById('map-canvas'),mapOptions);
+             addMarker();
+
+         }
+         google.maps.event.addDomListener(window, 'load', initialize);
+
+     </script>
+</body></html>

@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<!--[if lte IE 9]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Suono - HTML Theme</title>
+<!--=================================
+Meta tags
+=================================-->
+<meta name="description" content="">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no"/>
+<!--=================================
+Style Sheets
+=================================-->
+<link href="http://fonts.googleapis.com/css?family=Lato:400,900,700,400italic,300,700italic" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700' rel='stylesheet' type='text/css'>    
+    
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/flexslider.css">
+<link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="assets/css/animations.css">
+<link rel="stylesheet" type="text/css" href="assets/css/dl-menu.css">
+<link rel="stylesheet" type="text/css" href="assets/css/jquery.datetimepicker.css">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="../customizer.css">
+<link id="skinColorChanger" rel="stylesheet" href="../empty.css">
+<!--=================================
+Place color files here ( right after main.css ) for example
+<link rel="stylesheet" type="text/css" href="assets/css/colors/color-name.css">
+===================================-->
+
+<script src="assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    
+</head>
+<body>
+<!--===============================
+Preloading Splash Screen
+===================================-->
+<div class="pageLoader"></div> 
+    
+<div class="majorWrap">
+<!--========================================
+Header Content
+===========================================-->
+    <header id="sticktop" class="doc-header">
+        <!--========================================
+        wave Player
+        ===========================================-->
+        <div class="waveSurferPlayer">
+            <div class="container">
+                <div class="waveSurferInner">
+                    <div id="waveform" class="wavesurfSelector" data-wave-color="rgba(0,0,0,0.2)"
+                     data-wave-progress="#ffffff" data-cursor="#7cbf1d" data-height="50"></div>
+                    <h5 class="waveTitle">Song Title Goes here that will make it more cooler</h5>
+                    <div class="WaveControlStuff clearfix">
+                        <a href="#" class="pc-back backWave"></a>
+                        <a href="#" class="pc-play playWave"></a>
+                        <a href="#" class="pc-pause pauseWave"></a>
+                        <a href="#" class="pc-next nextWave"></a>
+                        <a href="#" class="pc-volume muteWave"></a>
+                    </div><!--WaveControlStuff-->
+                </div><!--\\waveSurferInner-->
+            </div><!--\\container-->
+        </div><!--\\waveSurferPlayer-->
+        
+        <!--========================================
+        Nav
+        ===========================================-->
+        <nav class="navbar navbar-default">
+            <div class="container">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/basic/logo.png" alt=""/>
+                </a>
+              </div>
+              
+              <div id="dl-menu" class="radio-style xv-menuwrapper responsive-menu">
+                  <button class="menuTrigger"><i class="fa fa-navicon"></i></button>
+                  <div class="clearfix"></div>
+                  <ul class="dl-menu">
+                      <li class="parent"><a href="#">Home</a>
+                          <ul class="dl-submenu">
+                              <li><a href="index.html">Home</a></li>
+                              <li><a href="index2.html">Home Two</a></li>
+                              <li><a href="index3.html">Home Three</a></li>
+                          </ul>
+                      </li>
+                      <li class="active"><a href="albums.html">Albums</a></li>
+                      <li><a href="blog.html">News &amp; Blog</a></li>
+                      <li><a href="gallery.html">Gallery</a></li>
+                      <li><a href="store.html">Store</a></li>
+                      <li class="parent"><a href="#">Pages</a>
+                          <ul class="dl-submenu">
+                              <li><a href="contact.html">Contact</a></li>
+                              <li><a href="album-single.html">Album Single Page</a></li>
+                              <li><a href="blog-single.html">Blog Single Page</a></li>
+                              
+                          </ul>
+                      </li>
+                  </ul>
+              </div><!-- /dl-menuwrapper -->
+            </div>
+        </nav>
+    </header>
+    
+    <div id="ajaxArea"> 
+    <!--=================================
+    Albums
+    =================================-->
+
+        <section class="album-header">
+            <figure class="album-cover-wrap">
+                <div class="album-cover_overlay"></div>
+                <img class="album-cover" src="assets/demo-data/demo-cover.jpg" alt="" data-stellar-ratio="0.5">
+            </figure>
+            <div class="container">
+                <div class="cover-content">
+                    <a href="store.html" class="btn btn-default text-bold btn-lg text-uppercase backStore"><i class="icon-angle-circled-left"></i> Back to Store</a>
+                    <hr>
+                    <div class="clearfix text-uppercase album_overview">
+                        <figure class="album-thumb">
+                            <img src="assets/demo-data/a1.jpg" alt="">
+                        </figure>
+                        <h1>utopia - deluxe edition <span class="price-tag pull-right">$10.30</span></h1>
+                        <cite class="album-author mb-20">matias manelli</cite>
+                        <a class="btn btn-transparent-2 btn-tag" href="#">hip-hop</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-100 mb-50">
+
+            <div class="container">
+                <ul class="song-list text-uppercase text-bold clearfix">
+
+                    <li id="singleSongPlayer-1" class="song-unit singleSongPlayer clearfix" data-before="1">
+
+                        <div id="singleSong-jplayer-4" class="singleSong-jplayer" data-title="Tranquil Landscape" data-mp3="https://0.s3.envato.com/files/165571267/preview.mp3">
+                        </div>
+
+                        <figure><img src="assets/demo-data/a1.jpg" alt="" width="265" height="265"/></figure>
+
+                        <span class="playit controls jp-controls-holder">
+                            <i class="jp-play pc-play"></i> 
+                            <i class="jp-pause pc-pause"></i>
+                        </span>
+                        <span class="song-title jp-title" data-before="title"></span>
+                        <span class="song-author" data-before="Author">Prostage</span>
+                        <span class="song-time jp-duration" data-before="Time"></span>
+                        <a class="song-btn" href="#">$1.29</a>
+
+
+                            <div class="audio-progress">
+                                <div class="jp-seek-bar">
+                                    <div class="jp-play-bar" style="width:20%;"></div>
+                                </div><!--jp-seek-bar--> 
+                            </div><!--audio-progress--> 
+                    </li><!--song-->
+
+                    <li id="singleSongPlayer-2" class="song-unit singleSongPlayer clearfix" data-before="2">
+
+                        <div id="singleSong-jplayer-5" class="singleSong-jplayer" data-title="Melodic Story" data-mp3="https://0.s3.envato.com/files/165242182/preview.mp3">
+                        </div>
+
+                        <figure><img src="assets/demo-data/a2.jpg" alt="" width="265" height="265"/></figure>
+
+                        <span class="playit controls jp-controls-holder">
+                            <i class="jp-play pc-play"></i> 
+                            <i class="jp-pause pc-pause"></i>
+                        </span>
+                        <span class="song-title jp-title" data-before="title"></span>
+                        <span class="song-author" data-before="Author">Prostage</span>
+                        <span class="song-time jp-duration" data-before="Time"></span>
+                        <a class="song-btn" href="#">$1.29</a>
+
+
+                            <div class="audio-progress">
+                                <div class="jp-seek-bar">
+                                    <div class="jp-play-bar" style="width:20%;"></div>
+                                </div><!--jp-seek-bar--> 
+                            </div><!--audio-progress--> 
+                    </li><!--song--> 
+
+                    <li id="singleSongPlayer-3" class="song-unit singleSongPlayer clearfix" data-before="3">
+
+                        <div id="singleSong-jplayer-6" class="singleSong-jplayer" data-title="Trance From Heaven" data-mp3="https://0.s3.envato.com/files/166379244/preview.mp3">
+                        </div>
+
+                        <figure><img src="assets/demo-data/a3.jpg" alt="" width="265" height="265"/></figure>
+
+                        <span class="playit controls jp-controls-holder">
+                            <i class="jp-play pc-play"></i> 
+                            <i class="jp-pause pc-pause"></i>
+                        </span>
+                        <span class="song-title jp-title" data-before="title"></span>
+                        <span class="song-author" data-before="Author">Prostage</span>
+                        <span class="song-time jp-duration" data-before="Time"></span>
+                        <a class="song-btn" href="#">$1.29</a>
+
+
+                            <div class="audio-progress">
+                                <div class="jp-seek-bar">
+                                    <div class="jp-play-bar" style="width:20%;"></div>
+                                </div><!--jp-seek-bar--> 
+                            </div><!--audio-progress--> 
+                    </li><!--song-->
+
+                    <li id="singleSongPlayer-4" class="song-unit singleSongPlayer clearfix" data-before="4">
+
+                        <div id="singleSong-jplayer-7" class="singleSong-jplayer" data-title="Trudie Pettis" data-mp3="https://0.s3.envato.com/files/149812296/preview.mp3">
+                        </div>
+
+                        <figure><img src="assets/demo-data/a4.jpg" alt="" width="265" height="265"/></figure>
+
+                        <span class="playit controls jp-controls-holder">
+                            <i class="jp-play pc-play"></i> 
+                            <i class="jp-pause pc-pause"></i>
+                        </span>
+                        <span class="song-title jp-title" data-before="title"></span>
+                        <span class="song-author" data-before="Author">Prostage</span>
+                        <span class="song-time jp-duration" data-before="Time"></span>
+                        <a class="song-btn" href="#">$1.29</a>
+
+
+                            <div class="audio-progress">
+                                <div class="jp-seek-bar">
+                                    <div class="jp-play-bar" style="width:20%;"></div>
+                                </div><!--jp-seek-bar--> 
+                            </div><!--audio-progress--> 
+                    </li><!--song-->
+
+                    <li id="singleSongPlayer-5" class="song-unit singleSongPlayer clearfix" data-before="5">
+
+                        <div id="singleSong-jplayer-8" class="singleSong-jplayer" data-title="Let's Metal" data-mp3="https://0.s3.envato.com/files/139661456/preview.mp3">
+                        </div>
+
+                        <figure><img src="assets/demo-data/a5.jpg" alt="" width="265" height="265"/></figure>
+
+                        <span class="playit controls jp-controls-holder">
+                            <i class="jp-play pc-play"></i> 
+                            <i class="jp-pause pc-pause"></i>
+                        </span>
+                        <span class="song-title jp-title" data-before="title"></span>
+                        <span class="song-author" data-before="Author">Prostage</span>
+                        <span class="song-time jp-duration" data-before="Time"></span>
+                        <a class="song-btn" href="#">$1.29</a>
+
+
+                            <div class="audio-progress">
+                                <div class="jp-seek-bar">
+                                    <div class="jp-play-bar" style="width:20%;"></div>
+                                </div><!--jp-seek-bar--> 
+                            </div><!--audio-progress--> 
+                    </li><!--song-->
+
+                </ul>
+            </div>
+
+        </section>
+
+    <!--=================================
+    Similar Album Content
+    =================================-->
+        <section class="mt-50 mb-100">
+            <header>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h2 class="text-uppercase">More Albums from same Genere.</h2>
+                        </div>                
+                    </div>
+                </div>
+            </header><!--section header-->
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="store-grid text-uppercase text-bold store-grid-slider">
+                            <div class="store-product">
+                                <figure>
+                                    <img src="assets/demo-data/a1.jpg" width="265" height="265" />
+                                    <figcaption>
+                                        <a class="btn btn-grey" href="#"><i class="fa fa-shopping-basket"></i> Buy</a>
+                                    </figcaption>
+                                </figure>
+                                <div class="product-info">
+                                    <h3>Product Name</h3>
+                                    <h6>Author</h6>
+                                    <span class="price-tag">$16.90</span>
+                                </div>
+                            </div> <!--store-product-->
+
+                            <div class="store-product">
+                                <figure>
+                                    <img src="assets/demo-data/a2.jpg" width="265" height="265" />
+                                    <figcaption>
+                                        <a class="btn btn-grey" href="#"><i class="fa fa-shopping-basket"></i> Buy</a>
+                                    </figcaption>
+                                </figure>
+                                <div class="product-info">
+                                    <h3>Long Product Name can ruin the design</h3>
+                                    <h6>Author</h6>
+                                    <span class="price-tag">$16.90</span>
+                                </div>
+                            </div> <!--store-product-->
+
+                            <div class="store-product">
+                                <figure>
+                                    <img src="assets/demo-data/a3.jpg" width="265" height="265" />
+                                    <figcaption>
+                                        <a class="btn btn-grey" href="#"><i class="fa fa-shopping-basket"></i> Buy</a>
+                                    </figcaption>
+                                </figure>
+                                <div class="product-info">
+                                    <h3>Product Name</h3>
+                                    <h6>Author</h6>
+                                    <span class="price-tag">$16.90</span>
+                                </div>
+                            </div> <!--store-product-->
+
+                            <div class="store-product">
+                                <figure>
+                                    <img src="assets/demo-data/a4.jpg" width="265" height="265" />
+                                    <figcaption>
+                                        <a class="btn btn-grey" href="#"><i class="fa fa-shopping-basket"></i> Buy</a>
+                                    </figcaption>
+                                </figure>
+                                <div class="product-info">
+                                    <h3>Product Name</h3>
+                                    <h6>Author</h6>
+                                    <span class="price-tag">$16.90</span>
+                                </div>
+                            </div> <!--store-product-->
+
+                            <div class="store-product">
+                                <figure>
+                                    <img src="assets/demo-data/a5.jpg" width="265" height="265" />
+                                    <figcaption>
+                                        <a class="btn btn-grey" href="#"><i class="fa fa-shopping-basket"></i> Buy</a>
+                                    </figcaption>
+                                </figure>
+                                <div class="product-info">
+                                    <h3>Product Name</h3>
+                                    <h6>Author</h6>
+                                    <span class="price-tag">$16.90</span>
+                                </div>
+                            </div> <!--store-product-->
+
+
+                            <div class="store-product">
+                                <figure>
+                                    <img src="assets/demo-data/a6.jpg" width="265" height="265" />
+                                    <figcaption>
+                                        <a class="btn btn-grey" href="#"><i class="fa fa-shopping-basket"></i> Buy</a>
+                                    </figcaption>
+                                </figure>
+                                <div class="product-info">
+                                    <h3>Product Name</h3>
+                                    <h6>Author</h6>
+                                    <span class="price-tag">$16.90</span>
+                                </div>
+                            </div> <!--store-product-->
+
+                            <div class="store-product">
+                                <figure>
+                                    <img src="assets/demo-data/a7.jpg" width="265" height="265" />
+                                    <figcaption>
+                                        <a class="btn btn-grey" href="#"><i class="fa fa-shopping-basket"></i> Buy</a>
+                                    </figcaption>
+                                </figure>
+                                <div class="product-info">
+                                    <h3>Product Name</h3>
+                                    <h6>Author</h6>
+                                    <span class="price-tag">$16.90</span>
+                                </div>
+                            </div> <!--store-product-->
+
+                            <div class="store-product">
+                                <figure>
+                                    <img src="assets/demo-data/a8.jpg" width="265" height="265" />
+                                    <figcaption>
+                                        <a class="btn btn-grey" href="#"><i class="fa fa-shopping-basket"></i> Buy</a>
+                                    </figcaption>
+                                </figure>
+                                <div class="product-info">
+                                    <h3>Product Name</h3>
+                                    <h6>Author</h6>
+                                    <span class="price-tag">$16.90</span>
+                                </div>
+                            </div> <!--store-product-->
+
+                            <div class="store-product">
+                                <figure>
+                                    <img src="assets/demo-data/a9.jpg" width="265" height="265" />
+                                    <figcaption>
+                                        <a class="btn btn-grey" href="#"><i class="fa fa-shopping-basket"></i> Buy</a>
+                                    </figcaption>
+                                </figure>
+                                <div class="product-info">
+                                    <h3>Product Name</h3>
+                                    <h6>Author</h6>
+                                    <span class="price-tag">$16.90</span>
+                                </div>
+                            </div> <!--store-product-->
+
+                        </div><!--album-grid-->
+                    </div><!--column-->     
+                </div><!--row-->
+
+
+                <div class="navigators text-bold text-uppercase text-center">
+                    <div class="row" id="relatedAlbumsSlderNav"></div>
+                </div>
+            </div><!--container-->
+
+        </section>
+    </div>
+<!--=================================
+Footer
+=================================-->
+    <footer class="doc-footer text-uppercase text-center text-bold">
+        <div class="container">
+            <ul class="social-list style2 circular">
+                <li><a href="#" class="fa fa-facebook"></a></li>
+                <li><a href="#" class="fa fa-twitter"></a></li>
+                <li><a href="#" class="fa fa-google-plus"></a></li>
+                <li><a href="#" class="fa fa-tumblr"></a></li>
+                <li><a href="#" class="fa fa-instagram"></a></li>
+                <li><a href="#" class="fa fa-dribbble"></a></li>
+                <li><a href="#" class="fa fa-tumblr"></a></li>
+                <li><a href="#" class="fa fa-vimeo"></a></li>
+            </ul>
+            <div class="row">
+                <div class="col-xs-12">
+                    <strong>&copy; Copyright  2015  suono</strong>
+                    <p>on suono you can listen to thousands songs and buy your favorite songs or albums.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<div class="customizer">
+    <a href="#" class="customizerTrigger"><img src="../setting.gif" alt=""> </a>
+    <div class="customizerInner">
+        <h3>Theme Base</h3>
+        <div class="actionsWrap">
+            <a href="#" class="darkSkinBg"></a>
+            <a href="#" class="lightSkinBg"></a>
+        </div>
+        <div class="notYet">
+            <h3>Theme Skin Colors</h3>
+            <div class="actionsWrap skinColorPickers">
+                <a href="#" data-css="assets/css/colors/blue.css" class="skin-c1"></a>
+                <a href="#" data-css="assets/css/colors/yellow.css" class="skin-c2"></a>
+                <a href="#" data-css="assets/css/colors/orange.css" class="skin-c3"></a>
+                <a href="#" data-css="assets/css/colors/red.css" class="skin-c4"></a>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!--=================================
+Script Source
+=================================-->
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/ajaxify.min.js"></script>
+<script src="assets/js/jquery.downCount.js"></script>
+<script src="assets/js/jquery.datetimepicker.full.min.js"></script>
+<script src="assets/js/jquery.bxslider.min.js"></script> <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&#038;sensor=false&#038;ver=3.0'></script>
+<script src="assets/js/jplayer/jquery.jplayer.min.js"></script>
+<script src="assets/js/jplayer/jplayer.playlist.min.js"></script>
+<script src="assets/js/jquery.flexslider-min.js"></script>
+<script src="assets/js/jquery.stellar.min.js"></script>
+<script src="assets/js/jquery.sticky.js"></script>
+<script src="assets/js/jquery.waitforimages.js"></script>
+<script src="assets/js/masonry.pkgd.min.js"></script>
+<script src="assets/js/packery.pkgd.min.js"></script>
+<script src="assets/js/tweetie.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/wavesurfer/wavesurfer.min.js"></script>
+<script src="assets/js/wavesurfer/wavesurfer.swf.js"></script>
+<script src="assets/js/main.js"></script>    
+<script src="../customizer.js"></script>    
+
+</body>
+</html>
+    

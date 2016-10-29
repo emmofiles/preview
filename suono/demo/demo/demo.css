@@ -1,0 +1,181 @@
+/* CSS Document */
+
+
+
+body {
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: none;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-family: oswald;
+    background: url("home1-slider.jpg") fixed;
+}
+a,a:hover,a:focus{
+	color:#fff;
+	text-decoration:none !important;
+	outline:none !important;
+}
+a.btn-ajax{background: #26374a; color: #fff; }
+a.btn-noAjax{background: #FF527F;}
+a.btn:hover{color: #fff;}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+.overlayMaker{
+    position: relative;
+    z-index: 50;
+}
+
+.demo_banner {
+	padding-top: 60px;
+	padding-bottom: 60px;
+    margin-bottom: 50px;
+    position: relative;
+}
+.demo_banner .container{
+    position: relative;
+    z-index: 20;
+}
+
+
+.demo_banner h1{
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: lowercase;
+    color: #3A3F55;
+}
+
+.demo_banner h1 span{
+    color: #7AA93C;
+}
+
+span { color: #fff; }
+img {
+	max-width: 100%;
+	height: auto;
+}
+.demos_links {
+	position: relative;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+.demos_links li {
+	width: 27%;
+	display: inline-block;
+	list-style: none;
+	padding:30px;
+	margin-bottom: 15px;
+    padding-top: 0;
+}
+ .demos_links li img {
+	width: 100%;
+     display: block;
+}
+.demos_links li a{
+    display:inline-block;
+}
+
+
+.demos_links h2{
+    font-size: 16px;
+    margin-top: 0;
+    color: #fff;
+}
+
+.demos_links h2 a:hover{
+    color: #71BA0B;
+}
+
+
+/*==================================
+Preloader
+===================================*/
+#jpreOverlay {
+	background-color: #161616;
+	text-align: center;
+}
+#jpreSlide {
+	font-size: 20px;
+	font-weight: bold;
+	color: #ccc;
+	text-align: center;
+	width: 50%;
+	height: 30%;
+}
+.preload_logo{
+	position:absolute;
+	left:0px;
+	top:50%;
+	margin-top:-15px;
+}
+
+.preload_logo h2{
+    text-transform: lowercase;
+    color: #3A3F55;
+}
+
+.preload_logo h2 span{
+    color: #7AA93C;
+}
+
+#jpreLoader{
+	background:rgba(255,255,255,0.35);
+	max-width:300px;
+	width: 100%;
+	height: 35px;
+	margin-left:50px;
+}
+
+#jpreBar { background: #7AA93C; }
+#jprePercentage {
+	color: #fff;
+	font-size: 35px;
+	font-family:oswald;
+	font-weight: 300;
+	text-align: right;
+	line-height:35px;
+	top: -100%;
+	right:-95px;
+	padding-right: 20px;
+}
+#jpreButton {
+	background: #cc1313;
+	color: #fff;
+	height: auto !important;
+	display: inline-block;
+	padding: 5px 10px;
+	font-size:14px;
+	cursor: pointer;
+	line-height: normal;
+}
+
+
+@media(max-width:1024px){
+    .demos_links li{
+        width: 35%
+    }
+}
+
+@media(max-width:767px){
+    .demos_links li{
+        width: 50%
+    }
+}
+
+
+@media(max-width:550px){
+    .demos_links li{
+        width: 100%
+    }
+}
+

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- Making sure the web-site will scale fine on mobiles-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Trying to force IE to perform at its best-->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="assets/build/build.min.css?v=x">
+    <style>
+        .container {
+            padding: 4rem 0;
+        }
+
+        img {
+            display: block;
+        }
+        /*.remove-frame {
+            display: block;
+            top: 0;
+            right: 0;
+        }
+        #close-toast {
+            position: absolute;
+            top: 0;
+            right: 10px;
+            text-decoration: none;
+        }
+        #toast-container {
+            display: none;
+            top: 2%;
+            right: 2%;
+        }*/
+    </style>
+    <title>React: Choose Demo</title>
+</head>
+<body>
+<div class="spinner-container valign-wrapper">
+    <div class="spinner-double-dot-out"></div>
+</div>
+<div class="container">
+    <header class="center">
+        <h2><span>React</span></h2>
+        <h3>Make them remember your website</h3>
+    </header>
+</div>
+<section class="grey lighten-3">
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <p class="flow-text center">
+                    Choose your demo.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l6 padding-bottom">
+                <a href="tunnel.html">
+                    <img src="screens/tunnel.png" class="responsive-img" alt="Tunnel">
+                </a>
+            </div>
+            <div class="col s12 l6 padding-bottom">
+                <a href="combustion-yellow.html">
+                    <img src="screens/combustion-2.png" class="responsive-img" alt="Combustion Yellow">
+                </a>
+            </div>
+            <div class="col s12 l6 padding-bottom">
+                <a href="combustion-purple.html">
+                    <img src="screens/combustion.png" class="responsive-img" alt="Combustion Purple">
+                </a>
+            </div>
+            <div class="col s12 l6 padding-bottom">
+                <a href="fuzzy-saturation.html">
+                    <img src="screens/fuzzy-2.png" class="responsive-img" alt="Fuzzy Saturation">
+                </a>
+            </div>
+            <div class="col s12 l6 padding-bottom">
+                <a href="fuzzy-hue.html">
+                    <img src="screens/fuzzy.png" class="responsive-img" alt="Fuzzy Hue">
+                </a>
+            </div>
+            <div class="col s12 l6 padding-bottom">
+                <a href="ring-blue.html">
+                    <img src="screens/ring-2.png" class="responsive-img" alt="Ring Blue">
+                </a>
+            </div>
+            <div class="col s12 l6 padding-bottom">
+                <a href="ring-green.html">
+                    <img src="screens/ring.png" class="responsive-img" alt="Ring Green">
+                </a>
+            </div>
+            <div class="col s12 l6 padding-bottom">
+                <a href="waves-deep-purple.html">
+                    <img src="screens/waves-2.png" class="responsive-img" alt="Waves Deep Purple">
+                </a>
+            </div>
+            <div class="col s12 l6 padding-bottom">
+                <a href="waves-light-blue.html">
+                    <img src="screens/waves.png" class="responsive-img" alt="Waves Light Blue">
+                </a>
+            </div>
+            <div class="col s12 l6 padding-bottom">
+                <img src="screens/more-to-follow.png" class="responsive-img" alt="More to Follow">
+            </div>
+        </div>
+    </div>
+</section>
+<!--<div id="toast-container">
+    <div class="toast remove-frame">
+        Please, Remove Frame to enable scrolling. &uparrow;<br>We'll try to fix this issue as soon as possible.
+        <a href="#!" id="close-toast">&times;</a>
+    </div>
+</div>-->
+<script src="libs/jquery-2.1.1.min.js"></script>
+<script>
+    function loaded () {
+        var $body = $('body');
+        var spinnerContainer = $('.spinner-container');
+
+        // Locking body's scrolling
+        $body.addClass('locked');
+        $(window).on('load', function () {
+            // Unlocking body's scrolling and hiding the spinner
+            $body.removeClass('locked');
+            spinnerContainer.addClass('hide-spinner');
+            setTimeout(function () {
+                spinnerContainer.hide();
+            }, 400);
+        });
+    }
+
+    /*if (window.location !== window.parent.location) {
+        var $toastContainer = $('#toast-container');
+
+        $toastContainer.show();
+
+        $('#close-toast').on('click', function (e) {
+            e.preventDefault();
+            $toastContainer.hide();
+        });
+    }*/
+
+    loaded();
+</script>
+</body>
+</html>

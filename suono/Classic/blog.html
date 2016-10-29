@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<!--[if lte IE 9]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Suono - HTML Theme</title>
+<!--=================================
+Meta tags
+=================================-->
+<meta name="description" content="">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no"/>
+<!--=================================
+Style Sheets
+=================================-->
+<link href="http://fonts.googleapis.com/css?family=Lato:400,900,700,400italic,300,700italic" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700' rel='stylesheet' type='text/css'>    
+    
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/flexslider.css">
+<link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="assets/css/animations.css">
+<link rel="stylesheet" type="text/css" href="assets/css/dl-menu.css">
+<link rel="stylesheet" type="text/css" href="assets/css/jquery.datetimepicker.css">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="../customizer.css">
+<link id="skinColorChanger" rel="stylesheet" href="../empty.css">
+<!--=================================
+Place color files here ( right after main.css ) for example
+<link rel="stylesheet" type="text/css" href="assets/css/colors/color-name.css">
+===================================-->
+
+<script src="assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    
+</head>
+<body>
+<!--===============================
+Preloading Splash Screen
+===================================-->
+<div class="pageLoader"></div> 
+    
+<div class="majorWrap">
+<!--========================================
+Header Content
+===========================================-->
+    <header id="sticktop" class="doc-header">
+        <!--========================================
+        Player
+        ===========================================-->
+        <section id="audio-player" class="the-xv-Jplayer">
+            <div id="player-instance" class="jp-jplayer"></div>
+            <div class="controls jp-controls-holder">
+                <button class="playList-trigger pc-playlist2"></button>
+                <div class="jp-prev pc-back"></div>
+                <div class="play-pause jp-play pc-play"></div>
+                <div class="play-pause jp-pause fa pc-pause" style=" display:none"></div>
+                <div class="jp-next pc-next"></div>
+            </div>
+            <div class="jp-volume-controls">
+                <button class="sound-trigger pc-volume"></button>
+                <div class="jp-volume-bar" style="display: none;">
+                    <div class="jp-volume-bar-value" style="width: 1.4737%;"></div>
+                </div>
+            </div>
+            <h5 class="audio-title">&ensp;</h5>
+            <div class="player-status">
+                <div class="audio-progress">
+                    <div class="jp-seek-bar">
+                        <div class="audio-play-bar jp-play-bar" style="width:20%;"></div>
+                    </div><!--jp-seek-bar--> 
+                </div><!--audio-progress--> 
+            </div>
+            <!--player-status-->
+
+            <!--Add Songs In mp3 formate here-->
+            <ul class="hidden playlist-files">
+            <li data-title="Ukulele Story"
+                data-artist="Audio Jungle"
+                data-mp3="https://0.s3.envato.com/files/152256065/preview.mp3">
+            </li>
+            <li data-title="Bright and Inspiring"
+                data-artist="Audio Jungle"
+                data-mp3="https://0.s3.envato.com/files/152351972/preview.mp3">
+            </li>
+            <li data-title="Indie Rock"
+                data-artist="Audio Jungle"
+                data-mp3="https://0.s3.envato.com/files/162668841/preview.mp3">
+            </li>
+            <li data-title="Up in the Sky"
+                data-artist="Audio Jungle"
+                data-mp3="https://0.s3.envato.com/files/69092344/preview.mp3">
+            </li>
+            <li data-title="Inspiring"
+                data-artist="Audio Jungle"
+                data-mp3="https://0.s3.envato.com/files/167149310/preview.mp3">
+            </li>
+            <li data-title="Inspiring Thoughts"
+                data-artist="Audio Jungle"
+                data-mp3="https://0.s3.envato.com/files/156059055/preview.mp3">
+            </li>
+
+            <li data-title="Gypsy Jazz From France"
+                data-artist="Audio Jungle"
+                data-mp3="https://0.s3.envato.com/files/152733871/preview.mp3">
+            </li>
+            <li data-title="Happy"
+                data-artist="Audio Jungle"
+                data-mp3="https://0.s3.envato.com/files/166500700/preview.mp3">
+            </li>
+            <li data-title="The Water Clock"
+                data-artist="Audio Jungle"
+                data-mp3="https://0.s3.envato.com/files/151397943/preview.mp3">
+            </li>
+
+            </ul>
+            <!--Playlist ends-->
+
+            <div class="jp-playlist">
+                <ul>
+                  <li></li>
+                </ul>
+              </div>
+
+        </section> 
+        <!--========================================
+        Nav
+        ===========================================-->
+        <nav class="navbar navbar-default">
+            <div class="container">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/basic/logo.png" alt=""/>
+                </a>
+              </div>
+              
+              <div id="dl-menu" class="xv-menuwrapper responsive-menu">
+                  <button class="menuTrigger"><i class="fa fa-navicon"></i></button>
+                  <div class="clearfix"></div>
+                  <ul class="dl-menu">
+                      <li class="parent"><a href="#">Home</a>
+                          <ul class="dl-submenu">
+                              <li><a href="index.html">Home</a></li>
+                              <li><a href="index2.html">Home Two</a></li>
+                              <li><a href="index3.html">Home Three</a></li>
+                          </ul>
+                      </li>
+                      <li><a href="albums.html">Albums</a></li>
+                      <li class="active"><a href="blog.html">News &amp; Blog</a></li>
+                      <li><a href="gallery.html">Gallery</a></li>
+                      <li><a href="store.html">Store</a></li>
+                      <li class="parent"><a href="#">Pages</a>
+                          <ul class="dl-submenu">
+                              <li><a href="contact.html">Contact</a></li>
+                              <li><a href="album-single.html">Album Single Page</a></li>
+                              <li><a href="blog-single.html">Blog Single Page</a></li>
+                              
+                          </ul>
+                      </li>
+                  </ul>
+              </div><!-- /dl-menuwrapper -->
+            </div>
+        </nav>
+    </header>   
+    
+    <div id="ajaxArea"> 
+    <!--=================================
+    Blog Section
+        =================================-->
+        <section>
+
+            <header class="style4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h2>Latest News</h2>
+                        </div>
+                    </div>
+                </div>
+            </header><!--section header-->
+
+            <div class="container">
+                <div class="row">
+                    <div class="blog-wrapper">
+                        <article>
+                            <figure>
+                                <img src="assets/demo-data/n1.jpg" alt="" width="509" height="252"/>
+                            </figure>
+                            <div class="about-article text-center text-uppercase">
+                                <h2 class="text-semibold"><a href="blog-single.html">Post with image</a></h2>
+                                <span><i class="fa fa-clock-o"></i> 17 oct</span>
+                                <ul class="social-list">
+                                    <li><a class="fa fa-facebook fb-bg" href="http://www.facebook.com/sharer/sharer.php?u=YOUR-URL"></a></li>
+                                    <li><a class="fa fa-twitter tweet-bg" href="http://twitter.com/intent/tweet?status=URL"></a></li>
+                                </ul>
+                            </div>
+                            <p>Nulla facilisi. Pellentesque vel leo vestibulum, viverra enim nec, volutpat metus. Nulla facilisi. Phasellus at ullamcorper nulla, nec commodo quam. </p>
+                            <p>Nulla ac suscipit tortor. Vivamus iaculis libero urna, eu euismod ante pellentesque quis. Donec <a href="#">rutrum volutpat</a> nisi at semper. Nam condimentum felis uteros mollis molestie, utefom fringilla, mauris non sollicitudin lacinia.</p>
+                            <a href="blog-single.html" class="btn btn-transparent text-uppercase text-semibold">READ MORE</a>
+                            <ul class="article-meta">
+                                <li><a href="#"><i class="fa fa-picture-o"></i></a></li>
+                                <li><a href="#"><i class="fa fa-comments-o"></i> <span class="comments-count">5</span></a></li>
+                            </ul>
+                        </article>  
+                        <article>
+                            <div class="article-url text-center text-bold text-uppercase">
+                                <i class="fa fa-globe"></i> <a href="#">http://www.envato.com</a>
+                            </div>
+                            <div class="about-article text-center text-uppercase">
+                                <h2 class="text-semibold"><a href="blog-single.html">Visit Envato Market</a></h2>
+                                <span><i class="fa fa-clock-o"></i> 17 oct</span>
+                                <ul class="social-list">
+                                    <li><a class="fa fa-facebook fb-bg" href="http://www.facebook.com/sharer/sharer.php?u=YOUR-URL"></a></li>
+                                    <li><a class="fa fa-twitter tweet-bg" href="http://twitter.com/intent/tweet?status=URL"></a></li>
+                                </ul>
+                            </div>
+
+                            <ul class="article-meta">
+                                <li><a href="#"><i class="fa fa-paperclip"></i></a></li>
+                                <li><a href="#"><i class="fa fa-comments-o"></i> <span class="comments-count">5</span></a></li>
+                            </ul>
+                        </article>
+                        
+                        <article>
+                            <div id="post-jplayer-wrap-1" class="post-audio-player">
+
+                                <div id="player-instanc-1" class="jp-jplayer post-jplayer" data-title="Guè Pequeno:  Scappati Di Casa" data-mp3="http://www.jplayer.org/audio/mp3/TSP-01-Cro_magnon_man.mp3">
+                                </div>
+                                <h5 class="audio-title jp-title">&empty;</h5>
+                                <span class="jp-duration"></span>
+                                <div class="controls jp-controls-holder">
+                                    <div class="play-pause jp-play pc-play"></div>
+                                    <div class="play-pause jp-pause pc-pause" style=" display:none"></div>
+                                </div>
+                                <div class="jp-volume-controls">
+                                    <button class="sound-trigger icon-music_volume_up"></button>
+                                    <div class="jp-volume-bar" style="display: block;">
+                                        <div class="jp-volume-bar-value" style="width: 1.4737%;"></div>
+                                    </div>
+                                </div>
+
+                                <div class="player-status">
+                                    <div class="audio-progress">
+                                        <div class="jp-seek-bar">
+                                            <div class="audio-play-bar jp-play-bar" style="width:20%;">
+                                                <div class="jpcTimeWrap">
+                                                    <span class="jp-current-time"></span>
+                                                </div>
+                                            </div>
+                                        </div><!--jp-seek-bar--> 
+                                    </div><!--audio-progress--> 
+                                </div>    
+
+                            </div>
+                            
+
+                            <div class="about-article text-center text-uppercase">
+                                <h2 class="text-semibold"><a href="blog-single.html">Post with Audio Player</a></h2>
+                                <span><i class="fa fa-clock-o"></i> 16 oct</span>
+                                <ul class="social-list">
+                                    <li><a class="fa fa-facebook fb-bg" href="http://www.facebook.com/sharer/sharer.php?u=YOUR-URL"></a></li>
+                                    <li><a class="fa fa-twitter tweet-bg" href="http://twitter.com/intent/tweet?status=URL"></a></li>
+                                </ul>
+                            </div>
+                            
+                            
+
+                            <p>Nulla facilisi. Pellentesque vel leo vestibulum, viverra enim nec, volutpat metus. Nulla facilisi. Phasellus at ullamcorper nulla, nec commodo quam. </p>
+                            <a href="blog-single.html" class="btn btn-transparent text-uppercase text-semibold">READ MORE</a>
+                            
+                            <ul class="article-meta">
+                                <li><a href="#"><i class="fa fa-picture-o"></i></a></li>
+                                <li class="no-comments"><a href="#"><i class="fa fa-comments-o"></i></a></li>
+                            </ul>
+                            
+                        </article>
+                        
+                        <article>
+                            <figure class="article-slider">
+                                <img src="assets/demo-data/n1.jpg" alt="" width="509" height="252"/>
+                                <img src="assets/demo-data/n2.jpg" alt="" width="509" height="252"/>
+                            </figure>
+                            <div class="about-article text-center text-uppercase">
+                                <h2 class="text-semibold"><a href="blog-single.html">Post with Gallery</a></h2>
+                                <span><i class="fa fa-clock-o"></i> 17 oct</span>
+                                <ul class="social-list">
+                                    <li><a class="fa fa-facebook fb-bg" href="http://www.facebook.com/sharer/sharer.php?u=YOUR-URL"></a></li>
+                                    <li><a class="fa fa-twitter tweet-bg" href="http://twitter.com/intent/tweet?status=URL"></a></li>
+                                </ul>
+                            </div>
+                            <p>Nulla facilisi. Pellentesque vel leo vestibulum, viverra enim nec, volutpat metus. Nulla facilisi. Phasellus at ullamcorper nulla, nec commodo quam. </p>
+                            <p>Nulla ac suscipit tortor. Vivamus iaculis libero urna, eu euismod ante pellentesque quis. Donec <a href="#">rutrum volutpat</a> nisi at semper. Nam condimentum felis uteros mollis molestie, utefom fringilla, mauris non sollicitudin lacinia.</p>
+                            <a href="blog-single.html" class="btn btn-transparent text-uppercase text-semibold">READ MORE</a>
+                            <ul class="article-meta">
+                                <li><a href="#"><i class="fa fa-picture-o"></i></a></li>
+                                <li class="no-comments"><a href="#"><i class="fa fa-comments-o"></i></a></li>
+                            </ul>
+                        </article>
+                        <article>
+                            <blockquote>
+                                <q>Duis consequat sem vitae blandit laoreet. Suspendisse 
+        gravida nunc non ullamcorper tempor. Morbi in nulla quiso
+        tristique euismod, pellentesque.</q>
+                            </blockquote>
+                            <div class="about-article text-center text-uppercase">
+                                <h3><a href="#">Remarks of Sam</a></h3>
+                                <span><i class="fa fa-clock-o"></i> 16 oct</span>
+                                <ul class="social-list">
+                                    <li><a class="fa fa-facebook fb-bg" href="http://www.facebook.com/sharer/sharer.php?u=YOUR-URL"></a></li>
+                                    <li><a class="fa fa-twitter tweet-bg" href="http://twitter.com/intent/tweet?status=URL"></a></li>
+                                </ul>
+                            </div>
+                            <ul class="article-meta">
+                                <li><a href="#"><i class="fa fa-quote-left"></i></a></li>
+                                <li><a href="#"><i class="fa fa-comments-o"></i> <span class="comments-count">5</span></a></li>
+                            </ul>
+                        </article>
+                        <article>
+                            <div class="about-article text-center text-uppercase">
+                                <h2 class="text-semibold"><a href="blog-single.html">Standard Post</a></h2>
+                                <span><i class="fa fa-clock-o"></i> 17 oct</span>
+                                <ul class="social-list">
+                                    <li><a class="fa fa-facebook fb-bg" href="http://www.facebook.com/sharer/sharer.php?u=YOUR-URL"></a></li>
+                                    <li><a class="fa fa-twitter tweet-bg" href="http://twitter.com/intent/tweet?status=URL"></a></li>
+                                </ul>
+                            </div>
+                            <p>Nulla facilisi. Pellentesque vel leo vestibulum, viverra enim nec, volutpat metus. Nulla facilisi. Phasellus at ullamcorper nulla, nec commodo quam. </p>
+                            <p>Nulla ac suscipit tortor. Vivamus iaculis libero urna, eu euismod ante pellentesque quis. Donec <a href="#">rutrum volutpat</a> nisi at semper. Nam condimentum felis uteros mollis molestie, utefom fringilla, mauris non sollicitudin lacinia.</p>
+                            <p>Aenean imperdiet purus semper, ullamcorper nulla eto, laoreet metus estibulum 
+        maecenas semper velit non risus ornare scelerisque. Namuto imperdiet molliseri
+        elementum est vel ipsum euismod, feugiat elementum eros facilisis.</p>
+                            <a href="blog-single.html" class="btn btn-transparent text-uppercase text-semibold">READ MORE</a>
+                            <ul class="article-meta">
+                                <li><a href="#"><i class="fa fa-newspaper-o"></i></a></li>
+                                <li><a href="#"><i class="fa fa-comments-o"></i> <span class="comments-count">5</span></a></li>
+                            </ul>
+                        </article>
+                    </div><!--blog-wrapper-->      
+                </div><!--row-->
+            </div><!--container-->
+
+        </section>
+    </div>
+<!--=================================
+Footer
+=================================-->
+    <footer class="doc-footer text-uppercase text-center text-bold">
+        <div class="container">
+            <ul class="social-list style2 circular">
+                <li><a href="#" class="fa fa-facebook"></a></li>
+                <li><a href="#" class="fa fa-twitter"></a></li>
+                <li><a href="#" class="fa fa-google-plus"></a></li>
+                <li><a href="#" class="fa fa-tumblr"></a></li>
+                <li><a href="#" class="fa fa-instagram"></a></li>
+                <li><a href="#" class="fa fa-dribbble"></a></li>
+                <li><a href="#" class="fa fa-tumblr"></a></li>
+                <li><a href="#" class="fa fa-vimeo"></a></li>
+            </ul>
+            <div class="row">
+                <div class="col-xs-12">
+                    <strong>&copy; Copyright  2015  suono</strong>
+                    <p>on suono you can listen to thousands songs and buy your favorite songs or albums.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<div class="customizer">
+    <a href="#" class="customizerTrigger"><img src="../setting.gif" alt=""> </a>
+    <div class="customizerInner">
+        <h3>Theme Base</h3>
+        <div class="actionsWrap">
+            <a href="#" class="darkSkinBg"></a>
+            <a href="#" class="lightSkinBg"></a>
+        </div>
+        <div class="notYet">
+            <h3>Theme Skin Colors</h3>
+            <div class="actionsWrap skinColorPickers">
+                <a href="#" data-css="assets/css/colors/blue.css" class="skin-c1"></a>
+                <a href="#" data-css="assets/css/colors/yellow.css" class="skin-c2"></a>
+                <a href="#" data-css="assets/css/colors/orange.css" class="skin-c3"></a>
+                <a href="#" data-css="assets/css/colors/red.css" class="skin-c4"></a>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!--=================================
+Script Source
+=================================-->
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/ajaxify.min.js"></script>
+<script src="assets/js/jquery.downCount.js"></script>
+<script src="assets/js/jquery.datetimepicker.full.min.js"></script>
+<script src="assets/js/jquery.bxslider.min.js"></script> <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&#038;sensor=false&#038;ver=3.0'></script>
+<script src="assets/js/jplayer/jquery.jplayer.min.js"></script>
+<script src="assets/js/jplayer/jplayer.playlist.min.js"></script>
+<script src="assets/js/jquery.flexslider-min.js"></script>
+<script src="assets/js/jquery.stellar.min.js"></script>
+<script src="assets/js/jquery.sticky.js"></script>
+<script src="assets/js/jquery.waitforimages.js"></script>
+<script src="assets/js/masonry.pkgd.min.js"></script>
+<script src="assets/js/packery.pkgd.min.js"></script>
+<script src="assets/js/tweetie.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/main.js"></script>    
+<script src="../customizer.js"></script>    
+
+</body>
+</html>
+    
