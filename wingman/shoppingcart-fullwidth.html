@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Wingman</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
+	<link rel="stylesheet" type="text/css" href="css/chosen.css" />
+	<link rel="stylesheet" type="text/css" href="css/Pe-icon-7-stroke.css" />
+	<link rel="stylesheet" type="text/css" href="css/pgwslider.css" />
+	<link rel="stylesheet" type="text/css" href="css/flexslider.css" />
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Josefin+Slab:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<!-- HEADER -->
+	<header class="header-style1">
+		<div class="az-top-header">
+			<div class="container">
+				<div class="az-menu-top">
+					<a href="javascript:void(0)" class="touch-menutop"><i class="fa fa-bars"></i></a>
+					<div class="az-menubar">
+						<ul class="az-menutop-1">
+							<li><a href="javascript:void(0)" class="show-formlogin">My Account</a></li>
+							<li><a href="mywishlist.html">My Wishlist</a></li>
+							<li><a href="compare.html">Compare</a></li>
+							<li><a href="shoppingcart-fullwidth.html">My Cart</a></li>
+							<li><a href="checkout.html">Check out</a></li>
+						</ul>
+						<div class="az-currency">
+							<h4>Currency</h4>
+							<div class="item-currency"><input type="radio" name="currency" value="USD"> USD</div>
+							<div class="item-currency"><input type="radio" name="currency" value="EUR"> EUR</div>
+							<div class="item-currency"><input type="radio" name="currency" value="GBP"> GBP</div>
+							<div class="item-currency"><input type="radio" name="currency" value="CNY"> CNY</div>
+						</div>
+						<div class="az-language">
+							<h4>Language</h4>
+							<div id="flags_language_selector">
+								<a href="#"><img src="images/flag1.png" alt=""></a>
+								<a href="#"><img src="images/flag2.png" alt=""></a>
+								<a href="#"><img src="images/flag3.png" alt=""></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="logo"><img src="images/logo.png" alt=""></a>
+				<div class="header-cart">
+					<a href="#" class="touch-cart">
+						<i class="fa fa-shopping-cart"></i>
+						<span class="number-cart">4</span>
+					</a>
+					<div id="head-shopping" class="az-shoppingcart-header">
+						<div class="widget_shopping_cart_content">
+							<ul class="cart_list product_list_widget">
+								<li class="cart_item">
+									<a href="" class="remove" title="Remove this item">&times;</a>													
+									<a href="" class="product-thumb">
+										<img alt="" src="images/product/thumb9.png">
+									</a>
+						            <div class="widget-info-product">
+						                <a href="#">Product name</a>
+						                <span class="quantity">1 × <span class="amount">$56.00</span></span>
+						            </div>
+								</li>
+								<li class="cart_item">
+									<a href="" class="remove" title="Remove this item">&times;</a>													
+									<a href="" class="product-thumb">
+										<img alt="" src="images/product/thumb10.png">
+									</a>
+						            <div class="widget-info-product">
+						                <a href="#">Product name</a>
+						                <span class="quantity">1 × <span class="amount">$56.00</span></span>
+						            </div>
+								</li>
+								<li class="cart_item">
+									<a href="" class="remove" title="Remove this item">&times;</a>													
+									<a href="" class="product-thumb">
+										<img alt="" src="images/product/thumb11.png">
+									</a>
+						            <div class="widget-info-product">
+						                <a href="#">Product name</a>
+						                <span class="quantity">1 × <span class="amount">$56.00</span></span>
+						            </div>
+								</li>
+							</ul><!-- end product list -->
+							<p class="total"><strong>Total:</strong> <span class="amount">$168.00</span></p>
+							<p class="buttons">
+								<a href="" class="az-button dark wc-forward">View Cart</a>
+								<a href="" class="az-button primary checkout wc-forward">Checkout</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="header-search">
+					<a href="#" class="touch-search"><i class="fa fa-search"></i></a>
+					<div class="az-search-box">
+						<div class="search-ovelay"></div>
+						<div class="az-search-pos">
+							<div class="container">
+								<div class="inner-searchbox">
+									<span class="close-search"><i class="fa fa-close"></i></span>
+									<form action="" class="form-inline woo-search">
+										<select class="select-category">
+											<option value="All Categories">ALL CATEGORIES</option>
+											<option value="1">Men's fashion</option>
+											<option value="2">Hat</option>
+											<option value="3">Altan</option>
+											<option value="4">Bag</option>
+										</select>
+										<div class="form-search">
+											<input value="" type="text" name="s"  placeholder="Search..." />
+											<span><button type="submit" class="pull-right btn-search"><i class="fa fa-search"></i></button></span>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-header no-slide">
+			<div class="az-main-menu trans">
+				<span class="togole-menu">Main Menu</span>
+				<div class="container">
+					<ul class="navigation">
+						<li class="menu-item menu-parent">
+							<a href="#">Home<span class="caret"></span></a>
+							<ul class="sub-menu">
+								<li class="menu-item"><a href="home1.html">Home 1</a></li>
+								<li class="menu-item"><a href="home2.html">Home 2</a></li>
+								<li class="menu-item"><a href="home3.html">Home 3</a></li>
+							</ul>
+						</li>
+						<li class="menu-item menu-parent megamenu">
+							<a href="#">Mega menu 1<span class="caret"></span></a>
+							<div class="sub-menu">
+								<div class="row">
+									<div class="col-sm-7">
+										<div class="row">
+											<div class="col-sm-4 col-xs-12">
+												<div class="widget widget-menu">
+													<h3 class="title-widget">Men’s</h3>
+													<ul>
+														<li><a href="#">Coats</a></li>
+														<li><a href="#">Jackets</a></li>
+														<li><a href="#">Blazers</a></li>
+														<li><a href="#">Suits</a></li>
+														<li><a href="#">Edition</a></li>
+														<li><a href="#">Trousers</a></li>
+														<li><a href="#">Jeans</a></li>
+													</ul>
+												</div>
+											</div>
+											<div class="col-sm-4 col-xs-12">
+												<div class="widget widget-menu">
+													<h3 class="title-widget">WoMen’s</h3>
+													<ul>
+														<li><a href="#">Shirts</a></li>
+														<li><a href="#">T-shirts</a></li>
+														<li><a href="#">Sweatshirts</a></li>
+														<li><a href="#">Shoes</a></li>
+														<li><a href="#">Bags</a></li>
+														<li><a href="#">Accessories</a></li>
+														<li><a href="#">Trench coats</a></li>
+													</ul>
+												</div>
+											</div>
+											<div class="col-sm-4 col-xs-12">
+												<div class="widget widget-menu">
+													<h3 class="title-widget">accesories</h3>
+													<ul>
+														<li><a href="#">Shirts</a></li>
+														<li><a href="#">T-shirts</a></li>
+														<li><a href="#">Sweatshirts</a></li>
+														<li><a href="#">Shoes</a></li>
+														<li><a href="#">Bags</a></li>
+														<li><a href="#">Accessories</a></li>
+														<li><a href="#">Trench coats</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-5">
+										<div class="az-banner banner-style1 pos-center text-center">
+											<figure><img alt="" src="images/banner-mn1.png"></figure>
+											<div class="banner-content">
+												<h1 class="title">men’s</h1>
+												<span class="sub-title">collection 2015 </span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="menu-item menu-parent megamenu">
+							<a href="#">Mega menu 2<span class="caret"></span></a>
+							<div class="sub-menu">
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="row">
+											<div class="col-md-4 col-sm-5">
+												<div class="widget widget-menu">
+													<h3 class="title-widget">Men’s</h3>
+													<ul>
+														<li><a href="#">Coats</a></li>
+														<li><a href="#">Jackets</a></li>
+														<li><a href="#">Blazers</a></li>
+														<li><a href="#">Suits</a></li>
+														<li><a href="#">Edition</a></li>
+														<li><a href="#">Trousers</a></li>
+														<li><a href="#">Jeans</a></li>
+													</ul>
+												</div>
+											</div>
+											<div class="col-sm-7 col-md-7">
+												<div class="az-banner banner-style1 pos-center text-center">
+													<figure><img alt="" src="images/banner-mn2.png"></figure>
+													<div class="banner-content">
+														<h1 class="title">men’s</h1>
+														<span class="sub-title">fashion</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="row">
+											<div class="col-sm-5">
+												<div class="widget widget-menu">
+													<h3 class="title-widget">WoMen’s</h3>
+													<ul>
+														<li><a href="#">Shirts</a></li>
+														<li><a href="#">T-shirts</a></li>
+														<li><a href="#">Sweatshirts</a></li>
+														<li><a href="#">Shoes</a></li>
+														<li><a href="#">Bags</a></li>
+														<li><a href="#">Accessories</a></li>
+														<li><a href="#">Trench coats</a></li>
+													</ul>
+												</div>
+											</div>
+											<div class="col-sm-7">
+												<div class="az-banner banner-style1 pos-center text-center">
+													<figure><img alt="" src="images/banner-mn3.png"></figure>
+													<div class="banner-content">
+														<h1 class="title">shirt</h1>
+														<span class="sub-title">collections</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="menu-item menu-parent">
+							<a href="#">Shop <span class="caret"></span></a>
+							<ul class="sub-menu">
+								<li class="menu-item menu-parent">
+									<a href="#">Shop grid <span class="caret"></span></a>
+									<ul class="sub-menu">
+										<li class="menu-item"><a href="shopgrid-fullwidth.html">Shop grid full width</a></li>
+										<li class="menu-item"><a href="shopgrid-leftsidebar.html">Shop grid left sidebar</a></li>
+										<li class="menu-item"><a href="shopgrid-rightsidebar.html">Shop grid right sidebar</a></li>
+									</ul>
+								</li>
+								<li class="menu-item menu-parent">
+									<a href="#">Shop list <span class="caret"></span></a>
+									<ul class="sub-menu">
+										<li class="menu-item"><a href="shoplist-leftsidebar.html">Shop list left sidebar</a></li>
+										<li class="menu-item"><a href="shoplist-rightsidebar.html">Shop list right sidebar</a></li>
+									</ul>
+								</li>
+								<li class="menu-item menu-parent">
+									<a href="#">Shop detail <span class="caret"></span></a>
+									<ul class="sub-menu">
+										<li class="menu-item"><a href="shopdetail-fullwidth.html">Shop detail full width</a></li>
+										<li class="menu-item"><a href="shopdetail-leftsidebar.html">Shop detail left sidebar</a></li>
+										<li class="menu-item"><a href="shopdetail-rightsidebar.html">Shop detail right sidebar</a></li>
+									</ul>
+								</li>
+								<li class="menu-item menu-parent">
+									<a href="#">Shopping cart <span class="caret"></span></a>
+									<ul class="sub-menu">
+										<li class="menu-item"><a href="shoppingcart-fullwidth.html">Shopping cart full width</a></li>
+										<li class="menu-item"><a href="shoppingcart-leftsidebar.html">Shopping cart left sidebar</a></li>
+										<li class="menu-item"><a href="shoppingcart-rightsidebar.html">Shopping cart right sidebar</a></li>
+									</ul>
+								</li>
+								<li class="menu-item">
+									<a href="mywishlist.html">My wishlist</a>
+								</li>
+								<li class="menu-item">
+									<a href="compare.html">Compare</a>
+								</li>
+								<li class="menu-item">
+									<a href="checkout.html">checkout</a>
+								</li>
+							</ul>
+						</li>
+						<li class="menu-item menu-parent">
+							<a href="#">Page <span class="caret"></span></a>
+							<ul class="sub-menu">
+								<li class="menu-item"><a href="about.html">About</a></li>
+								<li class="menu-item"><a href="commingsoon.html">Comming soon</a></li>
+								<li class="menu-item"><a href="404.html">404</a></li>
+							</ul>
+						</li>
+						<li class="menu-item menu-parent">
+							<a href="#">Blog <span class="caret"></span></a>
+							<ul class="sub-menu">
+								<li class="menu-item menu-parent">
+									<a href="#">Bloglist <span class="caret"></span></a>
+									<ul class="sub-menu">
+										<li class="menu-item"><a href="bloglist-fullwidth.html">Blog list full width</a></li>
+										<li class="menu-item"><a href="bloglist-leftsidebar.html">Blog list left sidebar</a></li>
+										<li class="menu-item"><a href="bloglist-rightsidebar.html">Blog list right sidebar</a></li>
+									</ul>
+								</li>
+								<li class="menu-item"><a href="bloggrid-2columns.html">Blog grid 2 columns</a></li>
+								<li class="menu-item"><a href="bloggrid-3columns.html">Blog grid 3 columns</a></li>
+								<li class="menu-item"><a href="blog-masonry.html">Blog masonry</a></li>
+								<li class="menu-item"><a href="blog-detail.html">Blog detail</a></li>
+							</ul>
+						</li>
+						<li class="menu-item"><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="newsletter-popup">
+			<div class="overlay-body"></div>
+			<div class="newsletter-inner">
+				<span class="close-newsletter close-box"></span>
+				<h3 class="title-popup">Advanced Popup Module</h3>
+				<div class="az-banner banner-style1 text-center">
+					<figure><img alt="" src="images/banner-nesletter.png"></figure>
+				</div>
+				<div class="newsletter-form">
+					<h5>Sign up for out newsletter <br/>to receive special offers.</h5>
+					<form action="" class="form-newsletter">
+						<input type="text" placeholder="Email" value="">
+						<span>
+							<button type="submit"><i class="fa fa-long-arrow-right"></i></button>
+						</span>
+					</form>
+				</div>
+				<div class="message-box">
+					<label>
+						<input type="checkbox" value="">Don’t Show Again.
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="form-login-register">
+			<div class="overlay-form"></div>
+			<div class="inner-form">
+				<span class="close-formlogin close-box"></span>
+				<div id="kt-login" class="kt-form-login kt-form-account show slide">
+					<h3>Login</h3>
+					<form action="">
+						<input type="text" value="" placeholder="Username*:">
+						<input type="password" value="" placeholder="Password*:*:">
+						<input class="az-button primary" type="submit" value="Login">
+					</form>
+					<div class="link-form">
+						<a href="#kt-register" class="toggole-form">Register</a>
+						<a href="#" class="fogot-pass">Forgot Password</a>
+					</div>
+				</div>
+				<div id="kt-register" class="kt-form-register kt-form-account">
+					<h3>Register</h3>
+					<form action="">
+						<input type="text" value="" placeholder="Username*:">
+						<input type="password" value="" placeholder="Password*:*:">
+						<input class="az-button primary" type="submit" value="Login">
+					</form>
+					<div class="link-form">
+						<a href="#kt-login" class="toggole-form">Login</a>
+						<a href="#" class="fogot-pass">Forgot Password</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- /HEADER -->
+	<div class="main-container">
+		<div class="container">
+			<div class="az-toppage">
+				<div class="breadcrumbs">
+	                <a href="#">Home</a>
+	                <span>Shopping cart</span>
+	            </div>
+	            <h3 class="title-section text-center">full width</h3>
+			</div>
+			<div class="inner-container page-shoppingcart">
+				<table class="table-cart">
+					<thead>
+						<tr>
+							<th class="product-thumb">Image</th>
+							<th class="product-name">Name Product</th>
+							<th class="product-price">Price</th>
+							<th class="quantity">QUANTITY</th>
+							<th class="total">TOTAL</th>
+							<th class="remove-cart"><span class="remove"><i class="fa fa-close"></i></span></th>
+						</tr>
+					</thead>
+					<tbody>                     
+						<tr class="item-cart">
+							<td data-title="Image" class="product-thumb">
+								<a href="#"><img src="images/product/thumb5.png" alt=""></a>
+							</td>
+							<td data-title="Name Product" class="product-name"><a href="#">V-neck Blouse</a></td>
+							<td data-title="Price" class="product-price">$56.00</td>
+							<td data-title="QUANTITY" class="quantity">
+								<div class="quantity">
+									<input type="button" value="&lt;" class="plus">
+									<input type="text" value="2" title="Qty" class="input-text qty text">
+									<input type="button" value="&gt;" class="minus">
+								</div>
+							</td>
+							<td data-title="Total" class="price-total">$112.00</td>
+							<td date-title="Remove" class="remove-cart"><span class="remove"><i class="fa fa-close"></i></span></td>
+						</tr>
+						<tr class="item-cart">
+							<td data-title="Image" class="product-thumb">
+								<a href="#"><img src="images/product/thumb6.png" alt=""></a>
+							</td>
+							<td data-title="Name Product" class="product-name"><a href="#">V-neck Blouse</a></td>
+							<td data-title="Price" class="product-price">$56.00</td>
+							<td data-title="QUANTITY" class="quantity">
+								<div class="quantity">
+									<input type="button" value="&lt;" class="plus">
+									<input type="text" value="2" title="Qty" class="input-text qty text">
+									<input type="button" value="&gt;" class="minus">
+								</div>
+							</td>
+							<td data-title="Total" class="price-total">$112.00</td>
+							<td date-title="Remove" class="remove-cart"><span class="remove"><i class="fa fa-close"></i></span></td>
+						</tr>
+						<tr class="item-cart">
+							<td data-title="Image" class="product-thumb">
+								<a href="#"><img src="images/product/thumb7.png" alt=""></a>
+							</td>
+							<td data-title="Name Product" class="product-name"><a href="#">V-neck Blouse</a></td>
+							<td data-title="Price" class="product-price">$56.00</td>
+							<td data-title="QUANTITY" class="quantity">
+								<div class="quantity">
+									<input type="button" value="&lt;" class="plus">
+									<input type="text" value="2" title="Qty" class="input-text qty text">
+									<input type="button" value="&gt;" class="minus">
+								</div>
+							</td>
+							<td data-title="Total" class="price-total">$112.00</td>
+							<td date-title="Remove" class="remove-cart"><span class="remove"><i class="fa fa-close"></i></span></td>
+						</tr>
+						<tr class="item-cart">
+							<td data-title="Image" class="product-thumb">
+								<a href="#"><img src="images/product/thumb8.png" alt=""></a>
+							</td>
+							<td data-title="Name Product" class="product-name"><a href="#">V-neck Blouse</a></td>
+							<td data-title="Price" class="product-price">$56.00</td>
+							<td data-title="QUANTITY" class="quantity">
+								<div class="quantity">
+									<input type="button" value="&lt;" class="plus">
+									<input type="text" value="2" title="Qty" class="input-text qty text">
+									<input type="button" value="&gt;" class="minus">
+								</div>
+							</td>
+							<td data-title="Total" class="price-total">$112.00</td>
+							<td date-title="Remove" class="remove-cart"><span class="remove"><i class="fa fa-close"></i></span></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr class="button-cart">
+							<td colspan="6">
+								<a href="#" class="az-button primary pull-left">continue shopping</a>
+								<a href="#" class="az-button dark pull-right">update cart</a>
+							</td>
+						</tr>
+					</tfoot>
+				</table>
+				<div class="az-sidebar-cart">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="shipping-tax">
+								<h4 class="title-cart text-center">estimate shipping and tax</h4>
+								<span>Enter your destination to get shipping &amp; tax</span>
+								<table class="select-cart">
+									<tr>
+										<td><label for="country">COUNTRY *:</label></td>
+										<td>
+											<select name="country" id="">
+												<option value="0">Select options</option>
+												<option value="1">VietNam</option>
+												<option value="2">United States</option>
+												<option value="1">Canada</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td><label for="state">STATE / PROVINCE *:</label></td>
+										<td>
+											<select name="state" id="">
+												<option value="0">Select options</option>
+												<option value="1">State 1</option>
+												<option value="2">State 2</option>
+												<option value="1">State 3</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td><label for="postal">ZIP / POSTAL CODE *:</label></td>
+										<td>
+											<select name="postal" id="">
+												<option value="0">Select options</option>
+												<option value="1">000011</option>
+												<option value="2">000111 States</option>
+												<option value="1">001111</option>
+											</select>
+										</td>
+									</tr>
+								</table>
+								<button class="az-button dark">GET A QUOCTE</button>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="discounts">
+								<h4 class="title-cart text-center">DIscount codes</h4>
+								<form action="" class="coupin-form">
+									<span>Enter your coupin if you have one</span>
+									<div class="coupin">
+										<input type="text" value="">
+										<span><input class="az-button dark small" type="submit" value="SUBSCRIBE"></span>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="cart-total">
+								<h4 class="title-cart text-center">CART TOTAL</h4>
+								<table class="select-cart table-cart-total">
+									<tr>
+										<td class="label">SUB TOTAL:</td>
+										<td class="price-total">$1152.00</td>
+									</tr>
+									<tr>
+										<td class="label">GRAND TOTAL:</td>
+										<td class="price-total">$2173.00</td>
+									</tr>
+								</table>
+								<span class="mesage">Checkout with multiple address</span>
+								<button class="az-button primary">Proceed to checkout</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- FOOTER -->
+	<footer>
+		<div class="container">
+			<div class="top-footer">
+				<div class="row">
+					<div class="col-sm-3">
+						<div class="widget az-contact-info">
+							<h3 class="title-widget">Contact</h3>
+							<address>
+								<p class="address"><i class="icon-contact pe-icon pe-7s-map-marker"></i><span>81 Gordon Rd, Mandurah <br/> WA 6210, New York</span></p>
+								<p class="email"><i class="icon-contact pe-icon pe-7s-paper-plane"></i><span>tuanna.design@gmail.com</span></p>
+								<p class="phone-number"><i class="icon-contact pe-icon pe-7s-phone"></i><span>(00) 123 456 789</span></p>
+							</address>
+							<ul class="social">
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+								<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="widget widget-menu">
+							<h3 class="title-widget">MY ACCOUNT</h3>
+							<ul>
+								<li><a href="#">My account</a></li>
+								<li><a href="#">Wishlist</a></li>
+								<li><a href="#">Shoppingcart</a></li>
+								<li><a href="#">Check out</a></li>
+								<li><a href="#">My order</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="widget widget-menu">
+							<h3 class="title-widget">IMFOMATION</h3>
+							<ul>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Top Sellers</a></li>
+								<li><a href="#">Special Products</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+								<li><a href="#">Delivery Information</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="widget widget-menu">
+							<h3 class="title-widget">OUT SUPPORT</h3>
+							<ul>
+								<li><a href="#">Contact Us</a></li>
+								<li><a href="#">Shipping &amp; Taxes</a></li>
+								<li><a href="#">Return Policy</a></li>
+								<li><a href="#">Site Map</a></li>
+								<li><a href="#">Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main-footer">
+				<a href="#" class="logo-ft"><img src="images/logo-footer.png" alt=""></a>
+				<figure class="card-img"><img src="images/card.png" alt=""></figure>
+				<p class="copyright">Copyright © 2015 - Wing Man - All rights reserved.<br/> Powered by Wordpress</p>
+			</div>
+		</div>		
+	</footer>
+	<!-- /FOOTER -->
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/Modernizr.js"></script>
+	<script type="text/javascript" src="js/jquery.debouncedresize.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/jquery.countdown.min.js"></script>
+	<script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+	<script type="text/javascript" src="js/chosen.jquery.min.js"></script>
+	<script type="text/javascript" src="js/pgwslider.js"></script>
+	<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+
+	<script type="text/javascript" src="js/map.js"></script>
+	<script type="text/javascript" src="js/blog-masonry.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>

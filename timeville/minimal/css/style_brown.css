@@ -1,0 +1,516 @@
+/*================= FONT (OPEN SANS) IMPORT FROM GOOGLE FONTS =================*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:100,300|Josefin+Slab:300);
+
+
+
+/*=============================== COMMON STYLES BEGIN ================================*/
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	font-weight: 100;
+	color:#666;
+	background:#f3faff;
+	line-height:1.6;
+	text-align:center;
+}
+
+.logo{
+	background:url(../images/logo_brown.png) no-repeat center;  /* Change logo image */
+	height:81px;
+	width:221px;
+	margin:0 auto;
+}
+
+.soc_nav {
+    margin-bottom: 0;
+	padding:0;
+}
+	
+.soc_nav li {
+    margin:0 10px 20px 10px;
+    list-style: none;
+    display: inline-block;
+}
+.soc_nav li:first-child {
+    margin-left: 10px;
+}
+.soc_nav li a {
+    font-size: 28px;
+    display: block;
+    width: 80px;
+    height: 80px;
+    line-height: 75px;
+    text-align: center;
+    border-top-width:3px;
+    border-top-style:solid;
+    border-radius: 40px;
+	color: #FFF;
+    transition: all 0.1s ease;
+}
+
+.soc_nav li a:hover {
+	-webkit-transform:translateY(-4px);
+	-moz-transform:translateY(-4px);
+	transform:translateY(-4px);
+	-webkit-box-shadow: 0px 4px 1px 0px rgba(50, 50, 50, 0.15);
+	-moz-box-shadow:    0px 4px 1px 0px rgba(50, 50, 50, 0.15);
+	box-shadow:         0px 4px 1px 0px rgba(50, 50, 50, 0.15);
+
+}
+
+.soc_nav .mail a{
+	background:#c1baa5;
+	border-top-color:#cdc8b7;
+}
+.soc_nav .twitter a{
+	background:#55acee;
+	border-top-color:#77bdf1;
+}
+.soc_nav .fb a{
+	background:#4c6eb6;
+	border-top-color:#6783bf;
+}
+.soc_nav .gplus a{
+	background:#dd4b39;
+	border-top-color:#e26657;
+}
+.soc_nav .dribbble a{
+	background:#ea4c89;
+	border-top-color:#ec70a0;
+}
+.soc_nav .linkedin a{
+	background:#0073b2;
+	border-top-color:#2688bd;
+}
+
+/*=============================== COMMON STYLES END ================================*/
+
+
+/*=============================== CLOUDS STYLES BEGIN ================================*/
+#clouds{
+	height:150px;
+	overflow:hidden;
+	position:relative;
+	z-index:100;
+}
+#clouds > div{
+	position:absolute;
+	left:-350px;
+	-webkit-animation: sky 28s linear infinite;
+	-moz-animation: sky 28s linear infinite;
+	animation: sky 28s linear infinite;
+}
+#clouds .cloud1{
+	background:url(../images/cloud1.png) no-repeat center;
+	width:326px;
+	height:123px;
+	top:5px;
+}
+#clouds .cloud2{
+	background:url(../images/cloud2.png) no-repeat center;
+	width:140px;
+	height:99px;
+	-webkit-animation-delay: 7s;
+    -moz-animation-delay: 7s;
+    animation-delay: 7s;
+	top:10px;
+}
+#clouds .cloud3{
+	background:url(../images/cloud3.png) no-repeat center;
+	width:264px;
+	height:149px;
+	-webkit-animation-delay: 14s;
+    -moz-animation-delay: 14s;
+    animation-delay: 14s;
+	top:-5px;
+}
+#clouds .cloud4{
+	background:url(../images/cloud4.png) no-repeat center;
+	width:255px;
+	height:131px;
+	-webkit-animation-delay: 21s;
+    -moz-animation-delay: 21s;
+    animation-delay: 21s;
+	top:4px;
+}
+
+@-webkit-keyframes sky {
+	0%{
+ 		left:0%;
+		margin-left:-350px;
+	}
+ 	100% {
+ 		left:100%;
+		margin-left:0px;
+	}
+}
+@keyframes sky {
+	0%{
+		left:0%;
+		margin-left:-350px;
+	}
+	100% {
+		left:100%;
+		margin-left:0px;
+	}
+}
+/*=============================== CLOUDS STYLES END ================================*/
+
+
+/*=============================== INTRO STYLES BEGIN ================================*/
+#intro{
+	margin:0;
+	padding:0 0 250px 0;
+	background:url(../images/landscape.png) repeat-x center bottom;
+	position:relative;
+}
+
+#intro .soc_nav{
+	margin:50px 0 20px 0;
+}
+
+p.slogan{
+	margin:70px auto 20px;
+	font-family:'Josefin Slab','Open Sans', sans-serif;
+	font-size:40px;
+	text-transform:uppercase;
+}
+
+ul.countdown{
+	list-style:none;
+	padding:0;
+	font-family:'Josefin Slab','Open Sans', sans-serif;
+	font-weight:300;
+	margin:50px auto 0;
+	display:inline-block;
+}
+
+ul.countdown li{
+	float:left;
+	text-align:center;
+	position:relative;
+	margin:0 0 0 60px;
+}
+ul.countdown li:first-child{
+	margin-left:0px;
+}
+ul.countdown span{
+	font-size:80px;
+	color:#81624b;  /* Change color of the counter */
+	line-height:1;
+}
+ul.countdown em{
+	font-size:20px;
+	color:#b88c6c;  /* Change color of the counter descriptions*/
+	font-style:normal;
+}
+
+ul.countdown .sep{
+    width: 1px;
+    height: 20px;
+    position: absolute;
+    right: -30px;
+    top: 30px;
+	background:#e2d3c8; /* Change color of the counter separator */
+}
+
+ul.countdown:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+
+#subscribe_form {
+    margin: 0px;
+	width:600px;
+	margin:50px auto;
+}
+#subscribe_form .input-group {
+    border:none;
+    border-radius: 8px;
+    position: relative;
+}
+#subscribe_form .input-group .form-control {
+    height: 70px;
+    font-family: 'Open Sans', sans-serif;
+    background: #fff;
+    border: none;
+	
+    box-shadow: none;
+	font-size: 20px;
+	padding:0 20px;
+}
+
+#subscribe_form .btn {
+    height: 70px;
+    border: none;
+    padding: 0 25px;
+	background:#eee0d5; /* Change color of the subscribe input field button */
+	color:#ac6e44;
+	text-transform:uppercase;
+	font-size: 20px;
+}
+
+
+.flip-container {
+	perspective: 1000;
+	-webkit-perspective: 1000;
+	-moz-perspective: 1000;
+	-o-perspective: 1000;
+	-ms-perspective: 1000;
+	
+	-ms-transform: perspective(1000px);
+	-moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d; 
+    -ms-transform-style: preserve-3d; 
+	
+	position: relative;
+}
+
+.flip-container.flip .back  {
+	-webkit-transform: rotateX(0deg);
+	-moz-transform: rotateX(0deg);
+	-o-transform: rotateX(0deg);
+	-ms-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+}
+.flip-container.flip .front {
+	-webkit-transform: rotateX(180deg);
+	-moz-transform: rotateX(180deg);
+	-o-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+}
+
+
+
+.flip-container, .front, .back {
+	width: 100%;
+}
+
+.flipper {
+	-webkit-transition: 0.6s;
+	-webkit-transform-style: preserve-3d;
+	-ms-transition: 0.6s;
+
+	-moz-transition: 0.6s;
+	-moz-transform: perspective(1000px);
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+			
+	transform-origin: 100% 35px;
+	-webkit-transform-origin: 100% 35px;
+	-o-transform-origin: 100% 35px;
+	-moz-transform-origin: 100% 35px;
+	-ms-transform-origin: 100% 35px;
+}
+
+.front, .back {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	-webkit-transition: 0.6s;
+	-webkit-transform-style: preserve-3d;
+
+	-moz-transition: 0.6s;
+	-moz-transform-style: preserve-3d;
+
+	-o-transition: 0.6s;
+	-o-transform-style: preserve-3d;
+
+	-ms-transition: 0.6s;
+	-ms-transform-style: preserve-3d;
+
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.front {
+	z-index: 2;
+	-webkit-transform: rotateX(0deg);
+	-ms-transform: rotateX(0deg);
+}
+
+
+
+
+.back {
+	-webkit-transform: rotateX(180deg);
+	-moz-transform: rotateX(180deg);
+	-o-transform: rotateX(180deg);
+	-ms-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+	height:70px;
+	width:100%;
+	border:2px solid #b34141;
+    border-radius: 8px;
+    position: relative;
+	background:#cd4949;
+	color:#fff;
+	font-weight:100;
+	line-height:65px;
+	padding:0 20px;
+}
+
+.flipper .valid{
+	border:2px solid #498d44;
+	background:#4da946;
+	}
+
+#result{
+	text-align:left;
+}
+
+.back #result_close {
+    font-size: 30px;
+	line-height:1;
+	position:absolute;
+	right:20px;
+	top:20px;
+	color:#fff;
+	cursor:pointer;
+}
+
+
+/*=============================== INTRO STYLES END ================================*/
+
+
+/*=============================== CONTENT STYLES BEGIN ================================*/
+#content{
+	padding:100px 0;
+	background:#8e725d;
+	color:#fff;
+}
+#content h2{
+	margin:0 0 40px 0;
+	font-weight:bold;
+}
+#content p{
+	color:#ede1d8;
+}
+/*=============================== CONTENT STYLES END ================================*/
+
+
+/*=============================== FOOTER STYLES BEGIN ================================*/
+footer{
+	background:#795e4a;
+	padding:80px 0;
+}
+
+.copyright{
+	color:#b7a292;
+	font-size:16px;
+	font-weight:bold;
+	text-align:center;
+	margin-top:50px;
+	line-height:1;
+}
+/*=============================== FOOTER STYLES END ================================*/
+
+
+/*=============================== RESPONSIVE STYLES BEGIN ================================*/
+@media (max-width: 670px) {
+	body{
+		font-size: 16px;
+	}
+	#subscribe_form{
+		width:100%;
+	}
+	ul.countdown span {
+		font-size:41px;
+	}
+	ul.countdown em {
+		font-size: 12px;
+	}
+	#content {
+		padding: 70px 0;
+	}
+} @media (max-width: 480px) {
+	ul.countdown li{
+		float:none;
+		padding:0 0 10px;
+		margin:0 0 10px;
+		border-bottom:1px solid #e2d3c8;
+	}
+	ul.countdown{
+		display:block;
+	}
+	ul.countdown li p{
+		margin:0;
+	}
+	ul.countdown span {
+		font-size: 60px;
+	}
+	ul.countdown .sep {
+		display:none;
+	}
+	.back{
+		height:auto;
+		line-height:2;
+		padding:20px 60px 20px 20px;
+	}
+	#subscribe_form{
+		min-height:140px;
+		margin:0 auto;
+	}
+	#subscribe_form .input-group{
+		display:block;
+		overflow:hidden;
+	}
+	#subscribe_form .input-group .form-control{
+		text-align:center;
+		position:relative;
+		z-index:100;
+		border-radius:0;
+	}
+	.input-group-addon, .input-group-btn{
+		display:block;
+		white-space:normal;
+		width:100%;
+	}
+	#subscribe_form .btn {
+		display:block;
+		width:100%;
+		margin:0;
+		border-radius:0;
+	}
+}
+/*=============================== RESPONSIVE STYLES END ================================*/
+
+
+
+
+/*=============================== RETINA STYLES BEGIN ================================*/
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	.logo{
+		background:url(../images/logo_brown@2x.png) no-repeat center / 221px 81px;
+	}
+	#clouds .cloud1{
+		background:url(../images/cloud1@2x.png) no-repeat center / 326px 123px;
+	}
+	#clouds .cloud2{
+		background:url(../images/cloud2@2x.png) no-repeat center / 140px 99px;
+	}
+	#clouds .cloud3{
+		background:url(../images/cloud3@2x.png) no-repeat center / 264px 149px;
+	}
+	#clouds .cloud4{
+		background:url(../images/cloud4@2x.png) no-repeat center / 255px 131px;
+	}
+	#intro{
+		background-image:url(../images/landscape@2x.png);
+		background-size:918px 362px;
+		background-repeat:repeat-x;
+	}
+}
+/*=============================== RESPONSIVE STYLES END ================================*/

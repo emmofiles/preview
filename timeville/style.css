@@ -1,0 +1,133 @@
+
+/*================= FONT (OPEN SANS) IMPORT FROM GOOGLE FONTS =================*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,latin-ext,cyrillic);
+
+
+/*=============================== COMMON BEGIN ================================*/
+
+* {
+	margin:0; 
+	padding:0;
+}
+
+:focus {
+	outline:0;
+}
+
+img {
+	border: none;
+}
+
+html,
+body {
+	width:100%;
+	height:100%;
+	-webkit-text-size-adjust: none;
+}
+
+body {
+	background: url(img/bg.png) no-repeat center #cfe7ff;
+	background-size:cover;
+	font-family: 'Open Sans',sans-serif; 
+	font-size: 13px;
+	color: #fff;
+}
+
+ol,
+ul {
+	list-style:none;
+}
+
+a,
+a:hover{
+	color:#444;
+	text-decoration:none;
+}
+
+.wrap{ 
+	max-width:1400px;
+	height:100%;
+	margin: 0 auto;
+}
+
+ul{
+	display:block;
+	width:100%;
+	height:100%;
+}
+
+ul:after {
+	content: ""; 
+	display: block; 
+	clear: both;
+}
+
+ul li{
+	display:block;
+	width:33.3333%;
+	height:100%;
+	float:left;
+	text-align:center;
+	overflow:hidden;
+	position:relative;
+}
+
+ul li a{
+	position:absolute;
+	display:block;
+	margin-top:-190px;
+	top:50%;
+	right:0;
+	left:0;
+	text-decoration:none;
+}
+
+
+ul li img{
+	max-width:80%;
+	height:auto;
+	margin-bottom:20px;
+	transition: all 0.1s ease;
+}
+
+ul li a:hover img{
+	-webkit-transform:translateY(-6px);
+	-moz-transform:translateY(-6px);
+	transform:translateY(-6px);
+	-webkit-box-shadow: 0px 6px 0px 0px rgba(50, 50, 50, 0.1);
+	-moz-box-shadow:    0px 6px 0px 0px rgba(50, 50, 50, 0.1);
+	box-shadow:         0px 6px 0px 0px rgba(50, 50, 50, 0.1);
+}
+
+ul li span{
+	display:block;
+	font-size:24px;
+	font-weight:300;
+}
+
+
+
+
+@media (max-width: 955px) {
+	ul li{
+		display:block;
+		width:80%;
+		height:auto;
+		float:none;
+		text-align:center;
+		padding:20px 0;
+		margin:0 auto;
+	}
+	
+	ul li a{
+		position:relative;
+		top:0px;
+		margin-top:10px;
+	}
+	
+	ul li img{
+		max-width:100%;
+		height:auto;
+		margin:0 0 10px 0;
+	}
+}

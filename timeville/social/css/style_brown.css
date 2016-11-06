@@ -1,0 +1,737 @@
+/*================= FONT (OPEN SANS) IMPORT FROM GOOGLE FONTS =================*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:100,300);
+
+
+
+/*=============================== COMMON STYLES BEGIN ================================*/
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	font-weight: 100;
+	color:#666;
+	background:#f3faff;
+	line-height:1.6;
+}
+
+.logo{
+	background:url(../images/logo_brown.png) no-repeat center;  /* Change logo image */
+	height:81px;
+	width:221px;
+}
+
+.soc_nav {
+    margin-bottom: 0;
+	padding:0;
+}
+
+.soc_nav li {
+    margin-left: 20px;
+    list-style: none;
+    display: inline-block;
+}
+.soc_nav li:first-child {
+    margin-left: 0;
+}
+.soc_nav li a {
+    font-size: 28px;
+    display: block;
+    width: 80px;
+    height: 80px;
+    line-height: 75px;
+    text-align: center;
+    border-top-width:3px;
+    border-top-style:solid;
+    border-radius: 40px;
+	color: #FFF;
+    transition: all 0.1s ease;
+}
+
+.soc_nav li a:hover {
+	-webkit-transform:translateY(-4px);
+	-moz-transform:translateY(-4px);
+	transform:translateY(-4px);
+	-webkit-box-shadow: 0px 4px 1px 0px rgba(50, 50, 50, 0.15);
+	-moz-box-shadow:    0px 4px 1px 0px rgba(50, 50, 50, 0.15);
+	box-shadow:         0px 4px 1px 0px rgba(50, 50, 50, 0.15);
+
+}
+
+.soc_nav .mail a{
+	background:#c1baa5;
+	border-top-color:#cdc8b7;
+}
+.soc_nav .twitter a{
+	background:#55acee;
+	border-top-color:#77bdf1;
+}
+.soc_nav .fb a{
+	background:#4c6eb6;
+	border-top-color:#6783bf;
+}
+.soc_nav .gplus a{
+	background:#dd4b39;
+	border-top-color:#e26657;
+}
+.soc_nav .dribbble a{
+	background:#ea4c89;
+	border-top-color:#ec70a0;
+}
+.soc_nav .linkedin a{
+	background:#0073b2;
+	border-top-color:#2688bd;
+}
+
+/*=============================== COMMON STYLES END ================================*/
+
+
+/*=============================== CLOUDS STYLES BEGIN ================================*/
+#clouds{
+	height:150px;
+	overflow:hidden;
+	position:relative;
+	z-index:100;
+}
+#clouds > div{
+	position:absolute;
+	left:-350px;
+	-webkit-animation: sky 28s linear infinite;
+	-moz-animation: sky 28s linear infinite;
+	animation: sky 28s linear infinite;
+}
+#clouds .cloud1{
+	background:url(../images/cloud1.png) no-repeat center;
+	width:326px;
+	height:123px;
+	top:5px;
+}
+#clouds .cloud2{
+	background:url(../images/cloud2.png) no-repeat center;
+	width:140px;
+	height:99px;
+	-webkit-animation-delay: 7s;
+    -moz-animation-delay: 7s;
+    animation-delay: 7s;
+	top:10px;
+}
+#clouds .cloud3{
+	background:url(../images/cloud3.png) no-repeat center;
+	width:264px;
+	height:149px;
+	-webkit-animation-delay: 14s;
+    -moz-animation-delay: 14s;
+    animation-delay: 14s;
+	top:-5px;
+}
+#clouds .cloud4{
+	background:url(../images/cloud4.png) no-repeat center;
+	width:255px;
+	height:131px;
+	-webkit-animation-delay: 21s;
+    -moz-animation-delay: 21s;
+    animation-delay: 21s;
+	top:4px;
+}
+
+@-webkit-keyframes sky {
+	0%{
+ 		left:0%;
+		margin-left:-350px;
+	}
+ 	100% {
+ 		left:100%;
+		margin-left:0px;
+	}
+}
+@keyframes sky {
+	0%{
+		left:0%;
+		margin-left:-350px;
+	}
+	100% {
+		left:100%;
+		margin-left:0px;
+	}
+}
+/*=============================== CLOUDS STYLES END ================================*/
+
+
+/*=============================== INTRO STYLES BEGIN ================================*/
+#intro{
+	margin:0;
+	padding:0 0 250px 0;
+	background:url(../images/landscape.png) repeat-x center bottom;
+	position:relative;
+}
+
+p.slogan{
+	margin:60px 300px 0 0;
+
+}
+
+#intro .soc_nav{
+	margin:70px 0 0 0;
+}
+
+#subscribe_form {
+    margin: 0px;
+	width:600px;
+	margin:80px 0 0 0;
+}
+
+#subscribe_form .input-group {
+    border:2px solid #eee0d5;  /* Change color of the subscribe input field border */
+    border-radius: 8px;
+    position: relative;
+}
+#subscribe_form .input-group .form-control {
+    height: 70px;
+    font-family: 'Open Sans', sans-serif;
+    background: #fff;
+    border: none;
+    box-shadow: none;
+	font-size: 20px;
+	padding:0 20px;
+}
+
+#subscribe_form .btn {
+    height: 70px;
+    border: none;
+    padding: 0 25px;
+	background:#eee0d5; /* Change color of the subscribe input field button */
+	color:#ac6e44;
+	text-transform:uppercase;
+	font-size: 20px;
+}
+
+
+.flip-container {
+	perspective: 1000;
+	-webkit-perspective: 1000;
+	-moz-perspective: 1000;
+	-o-perspective: 1000;
+	-ms-perspective: 1000;
+	
+	-ms-transform: perspective(1000px);
+	-moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d; 
+    -ms-transform-style: preserve-3d; 
+	
+	position: relative;
+}
+
+.flip-container.flip .back  {
+	-webkit-transform: rotateX(0deg);
+	-moz-transform: rotateX(0deg);
+	-o-transform: rotateX(0deg);
+	-ms-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+}
+.flip-container.flip .front {
+	-webkit-transform: rotateX(180deg);
+	-moz-transform: rotateX(180deg);
+	-o-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+}
+
+
+
+.flip-container, .front, .back {
+	width: 100%;
+}
+
+.flipper {
+	-webkit-transition: 0.6s;
+	-webkit-transform-style: preserve-3d;
+	-ms-transition: 0.6s;
+
+	-moz-transition: 0.6s;
+	-moz-transform: perspective(1000px);
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+			
+	transform-origin: 100% 35px;
+	-webkit-transform-origin: 100% 35px;
+	-o-transform-origin: 100% 35px;
+	-moz-transform-origin: 100% 35px;
+	-ms-transform-origin: 100% 35px;
+}
+
+.front, .back {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	-webkit-transition: 0.6s;
+	-webkit-transform-style: preserve-3d;
+
+	-moz-transition: 0.6s;
+	-moz-transform-style: preserve-3d;
+
+	-o-transition: 0.6s;
+	-o-transform-style: preserve-3d;
+
+	-ms-transition: 0.6s;
+	-ms-transform-style: preserve-3d;
+
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.front {
+	z-index: 2;
+	-webkit-transform: rotateX(0deg);
+	-ms-transform: rotateX(0deg);
+}
+
+
+
+
+.back {
+	-webkit-transform: rotateX(180deg);
+	-moz-transform: rotateX(180deg);
+	-o-transform: rotateX(180deg);
+	-ms-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+	height:70px;
+	width:100%;
+	border:2px solid #b34141;
+    border-radius: 8px;
+    position: relative;
+	background:#cd4949;
+	color:#fff;
+	font-weight:100;
+	line-height:65px;
+	padding:0 20px;
+}
+
+.flipper .valid{
+	border:2px solid #498d44;
+	background:#4da946;
+	}
+
+#result{
+	text-align:left;
+}
+
+.back #result_close {
+    font-size: 30px;
+	line-height:1;
+	position:absolute;
+	right:20px;
+	top:20px;
+	color:#fff;
+	cursor:pointer;
+}
+
+.tower{
+	height:779px;
+	width:300px;
+	position:absolute;
+	bottom:-300px;
+	right:0;
+}
+
+.tower .body{
+	background: url(../images/tower.png) no-repeat center;
+	height:779px;
+	width:300px;
+	position:absolute;
+	left:0;
+	bottom:0;
+	z-index:5;
+}
+
+.tower .clock{
+	height:130px;
+	width:130px;
+	position:absolute;
+	z-index:6;
+	top:250px;
+	left:55px;
+}
+
+.tower .clock .arrow_sec{
+	position:absolute;
+	height:40px;
+	width:6px;
+	background:#81624b; /* Change color of the seconds arrow */
+	top:50%;
+	left:50%;
+	margin:-40px 0 0 -3px;
+	-webkit-animation:rotation 60s steps(60, end) 0s infinite;
+	-moz-animation:rotation 60s steps(60, end) 0s infinite;
+	animation:rotation 60s steps(60, end) 0s infinite;
+	-webkit-transform-origin: center bottom;
+	-moz-transform-origin: center bottom;
+	transform-origin: center bottom;
+}
+.tower .clock .arrow_sec:before{
+	content:"";
+	display:block;
+	position:absolute;
+	top:-10px;
+	left:-4px;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 0 7px 10px 7px; 
+	border-color: transparent transparent #81624b transparent; /* Change color of the seconds arrow */
+}
+.tower .clock .arrow_sec:after{
+	content:"";
+	display:block;
+	position:absolute;
+	bottom:-6px;
+	left:-3px;
+	width: 12px;
+	height: 12px;
+	border-radius:6px;
+	background:#81624b; /* Change color of the seconds arrow */
+}
+
+
+.tower .clock .arrow_min{
+	position:absolute;
+	height:25px;
+	width:6px;
+	background:#d5c3b6; /* Change color of the minutes arrow */
+	top:50%;
+	left:50%;
+	margin:-25px 0 0 -3px;
+	-webkit-animation:rotation 3600s linear 0s infinite;
+	-moz-animation:rotation 3600s linear 0s infinite;
+	animation:rotation 3600s linear 0s infinite;
+	-webkit-transform-origin: center bottom;
+	-moz-transform-origin: center bottom;
+	transform-origin: center bottom;
+}
+.tower .clock .arrow_min:before{
+	content:"";
+	display:block;
+	position:absolute;
+	top:-10px;
+	left:-4px;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 0 7px 10px 7px;
+	border-color: transparent transparent #d5c3b6 transparent; /* Change color of the minutes arrow */
+}
+
+.tower .window{
+	position:absolute;
+	height:100px;
+	width:90px;
+	background:url(../images/photo.png) center center no-repeat #ba714a; /* Change photo in window */
+	top:460px;
+	left:90px;
+	overflow:hidden;
+}
+
+.tower .window .left_blind{
+	position:absolute;
+	height:100px;
+	width:45px;
+	background:url(../images/blind.png) center center repeat-x #b28e7b; /* Change color of the blind */
+	top:0px;
+	left:-25px;
+	-webkit-animation:move_left 60s ease 0s infinite;
+	-moz-animation:move_left 60s ease 0s infinite;
+	animation:move_left 60s ease 0s infinite;
+}
+
+.tower .window .right_blind{
+	position:absolute;
+	height:100px;
+	width:45px;
+	background:url(../images/blind.png) center center repeat-x #b28e7b; /* Change color of the blind */
+	top:0px;
+	right:-25px;
+	-webkit-animation:move_right 60s ease 0s infinite;
+	-moz-animation:move_right 60s ease 0s infinite;
+	animation:move_right 60s ease 0s infinite;
+}
+
+.tower .bubble{
+	position:absolute;
+	z-index:8;
+	top:465px;
+	left:180px;
+	width:120px;
+	border-radius:20px;
+	background:#fff;
+	text-align:center;
+	padding:25px 0;
+	line-height:1.3;
+	-webkit-animation:bubble_move 60s ease 0s infinite;
+	-moz-animation:bubble_move 60s ease 0s infinite;
+	animation:bubble_move 60s ease 0s infinite;
+}
+
+.tower .bubble:before{
+	content:"";
+	display:block;
+	position:absolute;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 5px 10px 5px 0;
+	border-color: transparent #ffffff transparent transparent;
+	left:-10px;
+	top:30px;
+}
+
+
+@-webkit-keyframes bubble_move {
+	0%,9%,21%,100%{
+ 		margin-left:-20px;
+		opacity:0;
+	}
+ 	10%,20% {
+ 		margin-left:0;
+		opacity:1;
+	}
+}
+@keyframes bubble_move {
+	0%,9%,21%,100%{
+ 		margin-left:-20px;
+		opacity:0;
+	}
+ 	10%,20%{
+ 		margin-left:0;
+		opacity:1;
+	}
+}
+
+
+@-webkit-keyframes move_left {
+	0%,9%,21%,100%{
+ 		left:0px;
+	}
+ 	10%,20%{
+ 		left:-45px;
+	}
+}
+@keyframes move_left {
+	0%,9%,21%,100%{
+ 		left:0px;
+	}
+ 	10%,20%{
+ 		left:-45px;
+	}
+}
+
+@-webkit-keyframes move_right {
+	0%,9%,21%,100%{
+ 		right:0px;
+	}
+ 	10%,20% {
+ 		right:-45px;
+	}
+}
+@keyframes move_right {
+	0%,9%,21%,100%{
+ 		right:0px;
+	}
+ 	10%,20% {
+ 		right:-45px;
+	}
+}
+
+
+@-webkit-keyframes rotation {
+	0%{
+ 		-webkit-transform: rotate(0deg);
+	}
+ 	100% {
+ 		-webkit-transform: rotate(360deg);
+	}
+}
+@keyframes rotation {
+	0%{
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/*=============================== INTRO STYLES END ================================*/
+
+
+/*=============================== CONTENT STYLES BEGIN ================================*/
+#content{
+	padding:100px 0;
+	background:#8e725d;
+	color:#fff;
+}
+#content h2{
+	margin:0 0 40px 0;
+	font-weight:bold;
+}
+#content p{
+	color:#ede1d8;
+}
+/*=============================== CONTENT STYLES END ================================*/
+
+
+/*=============================== FOOTER STYLES BEGIN ================================*/
+footer{
+	background:#795e4a;
+	padding:80px 0;
+}
+
+.copyright{
+	color:#b7a292;
+	font-size:16px;
+	font-weight:bold;
+	line-height:80px;
+}
+/*=============================== FOOTER STYLES END ================================*/
+
+
+/*=============================== RESPONSIVE STYLES BEGIN ================================*/
+@media (max-width: 980px) {
+	body{
+		text-align:center;
+	}
+	.logo{
+		margin:0 auto;
+	}
+	.tower{
+		display:none;
+	}
+	p.slogan{
+		margin:60px auto 0 ;
+	}
+	ul.countdown{
+		margin:50px auto 0;
+		display:inline-block;		
+	}
+	#subscribe_form{
+		margin:50px auto 0 auto;
+	}
+	.soc_nav li{
+		margin:0 10px 20px 10px;
+	}
+	.soc_nav li:first-child {
+    	margin-left: 10px;
+	}
+	.copyright{
+		text-align:center;
+		line-height:1;
+	}
+} @media (max-width: 670px) {
+	body{
+		font-size: 16px;
+	}
+	#subscribe_form{
+		width:100%;
+	}
+	ul.countdown span {
+		font-size:41px;
+	}
+	ul.countdown em {
+		font-size: 12px;
+	}
+	#content {
+		padding: 70px 0;
+	}
+} @media (max-width: 480px) {
+	ul.countdown li{
+		float:none;
+		padding:0 0 10px;
+		margin:0 0 10px;
+		border-bottom:1px solid #e2d3c8;
+	}
+	ul.countdown{
+		display:block;
+	}
+	ul.countdown li p{
+		margin:0;
+	}
+	ul.countdown span {
+		font-size: 60px;
+	}
+	ul.countdown .sep {
+		display:none;
+	}
+	.back{
+		height:auto;
+		line-height:2;
+		padding:20px 60px 20px 20px;
+	}
+	#subscribe_form .input-group{
+		display:block;
+		overflow:hidden;
+	}
+	#subscribe_form .input-group .form-control{
+		text-align:center;
+		position:relative;
+		z-index:100;
+		border-radius:0;
+	}
+	.input-group-addon, .input-group-btn{
+		display:block;
+		white-space:normal;
+		width:100%;
+	}
+	#subscribe_form .btn {
+		display:block;
+		width:100%;
+		margin:0;
+		border-radius:0;
+	}
+}
+/*=============================== RESPONSIVE STYLES END ================================*/
+
+
+
+
+/*=============================== RETINA STYLES BEGIN ================================*/
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	.logo{
+		background:url(../images/logo_brown@2x.png) no-repeat center / 221px 81px;
+	}
+	#clouds .cloud1{
+		background:url(../images/cloud1@2x.png) no-repeat center / 326px 123px;
+	}
+	#clouds .cloud2{
+		background:url(../images/cloud2@2x.png) no-repeat center / 140px 99px;
+	}
+	#clouds .cloud3{
+		background:url(../images/cloud3@2x.png) no-repeat center / 264px 149px;
+	}
+	#clouds .cloud4{
+		background:url(../images/cloud4@2x.png) no-repeat center / 255px 131px;
+	}
+	.tower .body{
+		background: url(../images/tower@2x.png) no-repeat center / 300px 779px;
+	}
+	#intro{
+		background-image:url(../images/landscape@2x.png);
+		background-size:918px 362px;
+		background-repeat:repeat-x;
+	}
+	.tower .window{
+		background-image:url(../images/photo@2x.png);
+		background-size:90px 100px;
+		background-repeat:no-repeat;
+	}
+	.tower .window .left_blind, .tower .window .right_blind{
+		background-image:url(../images/blind@2x.png);
+		background-size:45px 100px;
+		background-repeat:repeat-x;
+	}
+}
+/*=============================== RESPONSIVE STYLES END ================================*/
