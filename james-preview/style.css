@@ -1,0 +1,691 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Mr.James creative portfolio template 
+    Template URI: http://usdtheme.com
+    Description: This is html5 template
+    Author: usdtheme
+    Author URI: http://usdtheme.com
+    Version: 1.0
+
+-----------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------  
+     CSS INDEX
+    ===================
+	
+    1. Theme Default CSS (body, link color, section etc)
+	2. Header Area
+	   2.1 Mobile Menu Area
+	3.About css
+    4.Add area
+    5.portfolio
+    6.Blog css
+    7.Contact css
+    8.Footer css
+    
+-----------------------------------------------------------------------------------*/
+
+/*----------------------------------------*/
+/*  1.  Theme default CSS
+/*----------------------------------------*/
+html, body {
+	height: 100%;
+}
+.floatleft {
+	float:left;
+}
+.floatright {
+	float:right;
+}
+.alignleft {
+	float:left;
+	margin-right:15px;
+	margin-bottom: 15px;
+}
+.alignright {
+	float:right;
+	margin-left:15px;
+	margin-bottom: 15px;
+}
+.aligncenter {
+	display:block;
+	margin:0 auto 15px;
+}
+a:focus {
+	outline:0px solid;
+}
+img {max-width:100%;
+	height:auto;
+}
+.fix {
+	overflow:hidden;
+}
+p {
+	margin:0 0 15px;
+    color: #444;
+}
+h1, h2, h3, h4, h5, h6 {
+   margin: 0 0 10px;
+   color: #444;
+  line-height: normal;
+  font-family: 'Ubuntu', sans-serif;
+}
+ a {
+	transition: all 0.3s ease 0s;
+	text-decoration:none;
+}
+a:hover {
+  color: #252525;
+  text-decoration: none;
+}
+a:active, a:hover {
+  outline: 0 none;
+}
+ul{
+list-style: outside none none;
+margin: 0;
+padding: 0;
+}
+#scrollUp {
+  background: #000 none repeat scroll 0 0;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  bottom: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  color: #fff;
+  font-size: 28px;
+  height: 45px;
+  line-height: 40px;
+  opacity: 0.6;
+  right: 15px;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+  width: 45px;
+}
+#scrollUp:hover {
+    background: #252525;
+    opacity: 1;
+    border: 1px solid #252525;
+}
+.area-padding {
+  padding: 60px 0;
+}
+.clear{
+	clear:both;
+}
+input, select, textarea, input[type="text"], input[type="date"], input[type="url"], input[type="email"], input[type="password"], input[type="tel"], button, button[type="submit"] {
+  -moz-appearance: none;
+  box-shadow: none !important;
+}
+div#preloader { position: fixed; left: 0; top: 0; z-index: 99999; width: 100%; height: 100%; overflow: visible; background: #fff url('img/logo/preloader.gif') no-repeat center center; }
+body {
+  background: #fff none repeat scroll 0 0;
+  color: #999999;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14px;
+  text-align: left;
+  overflow-x: hidden;
+  line-height: 22px;
+}
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+/*----------------------------------------*/
+/*  2. Header Area 
+/*----------------------------------------*/
+.header-area {
+  background: transparent none repeat scroll 0 0;
+  display: block;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
+}
+.intro-area {
+  overflow: hidden;
+  padding: 220px 0px;
+  width: 100%;
+}
+#home {
+    background: #ffffff;
+    display: -webkit-box;
+    display: -webkit-flex;
+     display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+     align-items: center;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+}
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+.logo {
+  display: block;
+  padding: 14px 0;
+}
+.logo a {
+  display: inline-block;
+  padding: 11px 0;
+}
+.mainmenu{
+    float: right;
+}
+.mainmenu ul#nav>li {
+  float: left;
+  position: relative;
+}
+.mainmenu ul#nav > li > a {
+  box-sizing: border-box;
+  color: #252525;
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  height: 80px;
+  line-height: 80px;
+  padding: 0 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.mainmenu ul#nav >li:hover>a {
+    color: #777;
+}
+/*----------------------------------------*/
+/*  2.1. Mobile Menu Area
+/*----------------------------------------*/
+.mobile-menu-area {
+  background: #f9f9f9 none repeat scroll 0 0;
+  left: 0;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999999;
+}
+.mean-container .mean-bar::after {
+  content: "";
+  font-size: 21px;
+  left: 5%;
+  position: absolute;
+  top: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.mean-container a.meanmenu-reveal:hover {
+   color:#252525
+}
+.mean-container .mean-nav ul {
+  list-style-type: none;
+  margin: 20px 0px;
+  padding: 0;
+  width: 100%;
+}
+.mean-container .mean-nav ul li a {
+  background: #f8f8f8 none repeat scroll 0 0;
+  color: #444;
+  display: block;
+  float: left;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0;
+  padding: 13px 0;
+  text-align: left;
+  text-decoration: none;
+  text-transform: capitalize;
+  width: 90%;
+}
+.mean-nav ul li.mean-last {
+  margin-bottom: 20px;
+}
+.mean-container .mean-nav ul li a.mean-expand {
+  color: #444;
+  line-height: 17px;
+}
+.mean-container .mean-nav ul li {
+    width: 99.7%;
+}
+.title1 {
+  font-size: 120px;
+}
+.title2 {
+  font-size: 30px;
+}
+/*--------------------------------*/
+/* 2.2. Stick menu
+/*--------------------------------*/
+.stick .navbar-header a.navbar-brand {
+  display: inline-block;
+  padding: 10px 0;
+  height: 50px;
+}
+.stick .main-menu ul.nav > li > a {
+  color: #333;
+  font-size: 13px;
+  line-height: 22px;
+  padding: 20px 15px;
+}
+.stick .main-menu ul.navbar-nav li.active a {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  position: relative;
+}
+.stick .logo {
+  height: 20px;
+}
+.stick .logo a{margin-top:0px}
+.header-area.stick {
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 2px 2px 50px #ddd;
+  position: fixed;
+  width: 100%;
+  z-index: 999999;
+}
+.stick .navbar-default .navbar-toggle .icon-bar {
+  width: 30px;
+  height: 2px;
+}
+.stick .navbar-default .navbar-toggle {
+  padding: 10px 0px;
+}
+/*----------------------------------------
+  3.About area css
+----------------------------------------*/
+.intro-content > h4 {
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  margin: 0;
+}
+.area-head {
+  display: inline-block;
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  position: relative;
+  text-align: left;
+}
+.area-head::after {
+  background: #333 none repeat scroll 0 0;
+  bottom: 15px;
+  content: "";
+  height: 8px;
+  position: absolute;
+  right: -50px;
+  width: 40px;
+}
+.about-area {
+  background: #f8f8f8 none repeat scroll 0 0;
+  display: block;
+  margin-top: 50px;
+  overflow: hidden;
+}
+.single-about a.about-icon {
+  color: #333;
+  display: inline-block;
+  font-size: 100px;
+  margin-bottom: 20px;
+  transition: all 0.5s ease 0s;
+}
+.single-about h4 {
+  color: #444;
+  font-size: 17px;
+  font-weight: 600;
+}
+.single-about p {
+  color: #333;
+  font-size: 14px;
+}
+.featured-area {
+  background: #fff none repeat scroll 0 0;
+  display: block;
+  overflow: hidden;
+}
+.skill-progress {
+  display: block;
+  overflow: hidden;
+  padding-top: 20px;
+  position: relative;
+}
+.progress-bar {
+  background-color: #333;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15) inset;
+  color: #fff;
+  float: left;
+  font-size: 12px;
+  height: 100%;
+  line-height: 20px;
+  text-align: center;
+  transition: width 0.6s ease 0s;
+  width: 0;
+  position: relative;
+}
+.web-per {
+  background: #333 none repeat scroll 0 0;
+  border-radius: 8px;
+  color: #fff;
+  padding: 2px 10px;
+  position: absolute;
+  right: 6%;
+  top: 12px;
+}
+.web-per::after {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 12px solid #333;
+  bottom: -12px;
+  content: "";
+  left: 20px;
+  position: absolute;
+}
+.web-per.bar-2 {
+  right: 16% !important;
+}
+.web-per.bar-3 {
+  right: 21% !important;
+}
+/*--------------------------------*/
+/* 4.Add Area
+/*--------------------------------*/
+.add-area {
+  background: #252525 none repeat scroll 0 0;
+  display: block;
+  overflow: hidden;
+  padding: 60px 0;
+  position: relative;
+}
+.add-text {
+  display: block;
+  overflow: hidden;
+}
+.add-content h2 {
+  color: #fff;
+  font-size: 51px;
+  line-height: 64px;
+  margin-bottom: 0;
+}
+.add-btn:hover{
+	background: #fff;
+	color:#333;
+}
+.add-btn {
+  background: #333 none repeat scroll 0 0;
+  border: 3px solid #fff;
+  border-radius: 50px;
+  color: #fff;
+  display: inline-block;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: 30px;
+  margin-top: 0;
+  padding: 16px 50px;
+  text-align: center;
+}
+/*--------------------------------*/
+/*  5.Portfolio Area
+/*--------------------------------*/
+.single-awesome-project {
+  float: left;
+  overflow: hidden;
+  width:100%;
+}
+.first-item {
+  margin-bottom: 30px;
+}
+.awesome-img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.awesome-img > a {
+  display: block;
+  position: relative;
+}
+.single-awesome-project:hover .awesome-img > a::after{
+	opacity: 1;
+}
+.single-awesome-project {
+  margin-bottom: 30px;
+}
+.awesome-img > a::after {
+  background: rgba(0, 0, 0, 0.85) none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  transition: 0.4s;
+}
+/*----------------------------------------*/
+/*  6. Blog Area
+/*----------------------------------------*/
+.blog-area {
+  background: #f1f1f1 none repeat scroll 0 0;
+}
+.blog-carousel .image-blog {
+    display: inline-block;
+}
+.img-blog {
+  position: relative;
+  display: block;
+}
+.single-blog .owl-buttons {
+	display: none;
+}
+.single-blog a h4.sec-head {
+  font-size: 24px;
+  padding: 15px 0 0;
+}
+.banner-box span.date-time {
+  background: #f4f4f4 none repeat scroll 0 0;
+  border: 1px solid #d0d0d0;
+  color: #444;
+  font-size: 14px;
+  font-weight: bold;
+  height: 53px;
+  left: 15px;
+  line-height: 1.1;
+  min-width: 53px;
+  padding: 10px 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+}
+.banner-box .date-time .days {display: block}
+.banner-box .date-time .months {
+    font-weight: normal;
+}
+.single-blog .blog-title {
+  display: block;
+}
+.single-blog .blog-title span {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.single-blog p {
+  font-size: 13px;
+}
+/*----------------------------------------*/
+/* 7.Contact CSS
+/*----------------------------------------*/
+.contact-main {
+  background: #f1f1f1 none repeat scroll 0 0;
+}
+.Cont-content {
+  margin-bottom: 12px;
+}
+.contact-icons > h3 {
+  border-bottom: 1px solid #ccc;
+  display: block;
+  padding: 0 0 10px;
+  position: relative;
+}
+.contact-icons h3:before{
+  content: "\f007";
+  display: inline-block;
+  font-family: FontAwesome;
+  margin-right: 5px;
+  vertical-align: text-bottom;
+}
+.contact-icons ul li {
+  float: left;
+  font-size: 15px;
+  line-height: 50px;
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.contact-icons ul li i {
+  color: #777;
+  font-size: 16px;
+  margin-right: 10px;
+}
+.contact-icons {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.contact-icons ul li a:hover {
+  text-decoration: underline;
+}
+.contact-icons ul li a {
+  color: #333;
+}
+.contact-form h3 {
+  margin-bottom: 30px;
+}
+.contact-form input[type="text"], .contact-form input[type="email"] {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border-color: -moz-use-text-color -moz-use-text-color #777;
+  border-image: none;
+  border-style: none none solid;
+  border-width: medium medium 2px;
+  color: #333;
+  height: 40px;
+  margin-bottom: 16px;
+  padding-left: 5px;
+  width: 100%;
+}
+.contact-form textarea#message {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border-color: -moz-use-text-color -moz-use-text-color #777;
+  border-image: none;
+  border-radius: 0;
+  border-style: none none solid;
+  border-width: medium medium 2px;
+  color: #444;
+  height: 140px;
+  padding: 9px 10px;
+  width: 100%;
+}
+.contact-form input[type="submit"]:hover{
+	background: #333;
+	color: #fff;
+}
+.contact-form input[type="submit"] {
+  background: #fff none repeat scroll 0 0;
+  border: 3px solid #333;
+  border-radius: 50px;
+  color: #333;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 30px;
+  padding: 19px 50px;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+}
+.icons-bottom ul li{
+  display: inline-block;
+}
+.icons-bottom ul li a:hover {
+  border: 2px solid #333;
+  background: #333;
+  color: #fff;
+}
+.icons-bottom ul li a {
+  border: 2px solid #444;
+  color: #444;
+  display: block;
+  font-size: 16px;
+  height: 40px;
+  line-height: 37px;
+  margin: 0 3px;
+  width: 40px;
+  text-align: center;
+}
+/*----------------------------------------
+  8.Footer css
+----------------------------------------*/
+.footer-area.text-center {
+  background: #333 none repeat scroll 0 0;
+  box-shadow: 1px 1px 20px #f1f1f1;
+  margin-top: 50px;
+  padding: 50px 0;
+}
+.footer-icons ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.footer-icons ul li {
+    display: inline-block;
+    margin: 10px;
+}
+.footer-icons ul li a {
+  color: #fff;
+  font-size: 26px;
+}
+.copyright.text-center a {
+  color: #000;
+}
+.copyright.text-center > p {
+  color: #ddd;
+}
+.copyright.text-center a {
+  color: #fff;
+}
+/*----------------------------------------
+ .End CSS
+----------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
