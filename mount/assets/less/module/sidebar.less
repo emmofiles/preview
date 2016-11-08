@@ -1,0 +1,513 @@
+
+/*------------------------------------*\
+	#SIDEBAR-SECTION
+\*------------------------------------*/
+.sidebar .widget {
+	padding: 32px;
+border: 2px solid @color-gray;
+.rounded(2px);
+	margin-bottom: 30px;
+}
+
+.sidebar-full .widget {
+	margin-bottom: 50px;
+border-bottom: 2px solid @color-gray;
+	padding-bottom: 50px;
+}
+
+.sidebar-full .widget:last-of-type {
+	border-bottom: none;
+	padding-bottom: 0;
+	margin-bottom: 0
+}
+
+/* Widget */
+.widget .widget-title {
+	position: relative;
+	padding-bottom: 20px
+}
+
+.widget .widget-title h5 {
+	color: #272930;
+	font-size: 18px;
+	line-height: 1;
+}
+
+.widget .widget-title:after {
+	content: "";
+	height: 2px;
+	width: 20px;
+	position: absolute;
+	display: inline-block;
+ background-color: @color-theme;
+}
+
+/* Category Widget */
+.widget-categories ul li a {
+ color: @color-gray3;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 36px;
+}
+
+.widget-categories ul li a:hover {
+color:@color-theme;
+}
+
+.widget-categories ul li a i {
+ color: @color-gray6;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 24px;
+	margin-right: 10px;
+}
+
+.widget-categories ul li a:hover i {
+color:@color-theme;
+}
+
+.widget-categories ul li a span {
+	margin-left: 5px;
+color:@color-theme
+}
+
+/* Tags Widget */
+.widget-tags ul {
+	margin-bottom: 0;
+	margin-left: 0
+}
+
+.widget-tags ul li {
+	padding-left: 0;
+	padding-right: 0
+}
+
+.widget-tags a {
+	display: inline-block;
+	background-color: rgba(246, 246, 246, 0.4);
+ border: 1px solid @color-gray;
+ .rounded(3px);
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 1;
+ color: @color-gray5;
+	margin-right: 6px;
+	margin-bottom: 6px;
+	text-transform: capitalize;
+	padding: 10px 12px;
+}
+
+.widget-tags a:hover {
+ background-color:@color-theme;
+ color:@color-white;
+ border:1px solid @color-theme
+}
+
+/* twitter Widegt */
+.widget-tweets ul li:before {
+	content: "\f099";
+font-family:@awesome;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+color:@color-theme;
+	width: 13px;
+	height: 12px;
+	float: left;
+	margin-right: 10px;
+}
+
+.widget-tweets ul li p.tweet {
+ color: @color-gray5;
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 22px;
+	margin-bottom: 5px;
+}
+
+.widget-tweets ul li a {
+ color: @color-gray3;
+	font-weight: 400;
+}
+
+.widget-tweets ul li a:hover {
+color:@color-theme
+}
+
+.widget-tweets ul li .timePosted {
+ color: @color-gray10;
+	font-size: 11px;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+.widget-tweets ul li:last-child .timePosted {
+	margin-bottom: 0
+}
+
+.widget-tweets .twitter-follow a {
+	margin-top: 20px;
+ border: 1px solid @color-gray3;
+.rounded(1px);
+ color: @color-gray3;
+font-family: @font-heading;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 49px;
+	padding: 8px 13px;
+}
+
+.widget-tweets .twitter-follow a:hover {
+background-color:@color-theme;
+color:@color-white;
+border-color:@color-theme
+}
+
+/* Recent Widegt */
+.widget-recent .entry {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.widget-recent .entry:last-of-type {
+	margin-bottom: 0
+}
+
+.widget-recent .entry img {
+	position: absolute;
+	left: 0;
+	top: 0
+}
+
+.widget-recent .entry .entry-desc {
+	position: relative;
+	margin-left: 65px;
+}
+
+.widget-recent .entry .entry-desc .entry-title {
+	margin-bottom: 10px;
+}
+
+.widget-recent .entry .entry-desc .entry-title a {
+ color: @color-heading;
+font-family: @font-heading;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 1;
+}
+
+.widget-recent .entry .entry-desc .entry-title a:hover {
+color:@color-theme
+}
+
+.widget-recent .entry .entry-desc .entry-meta {
+border-bottom: 1px solid @color-gray;
+	padding-bottom: 20px;
+}
+
+.widget-recent .entry:last-of-type .entry-meta {
+	border-bottom: none;
+	padding-bottom: 0
+}
+
+.widget-recent .entry .entry-desc .entry-meta {
+ font-family: @font-heading;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 1;
+ color: @color-gray5;
+	text-transform: capitalize
+}
+
+.widget-recent .entry .entry-desc .entry-meta .slash {
+	color: #414141;
+}
+
+/* Search Widget */
+.widget-search .form-search .form-control {
+	border: none;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+ color: @color-gray3;
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 22px;
+	text-transform: capitalize
+}
+
+.widget-search .form-search .btn {
+ background-color:@color-theme;
+ color:@color-white;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	width: 35px;
+	height: 49px;
+	line-height: 29px;
+	text-align: center;
+	font-size: 14px;
+	margin-left: 0;
+	padding: 0
+}
+
+.widget-search .form-search .btn:hover {
+ background-color:@color-heading;
+ border-color:@color-heading;
+}
+
+.widget-best-product .best-product .product-img {
+	width: 70px;
+	height: 70px;
+	text-align: center;
+	padding: 4px;
+}
+
+.widget-best-product .best-product .product-bio {
+	padding-top: 0
+}
+
+.widget-best-product .best-product .product-bio .product-price {
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 23px;
+}
+
+.widget-best-product .best-product a {
+	text-transform: uppercase
+}
+
+/* fiter product */
+.ui-slider {
+	position: relative;
+	text-align: left;
+}
+
+.ui-slider .ui-slider-handle {
+	position: absolute;
+	z-index: 2;
+	width: 1.2em;
+	height: 1.2em;
+	cursor: default;
+	-ms-touch-action: none;
+	touch-action: none;
+}
+
+.ui-slider .ui-slider-range {
+	position: absolute;
+	z-index: 1;
+	font-size: .7em;
+	display: block;
+	border: 0;
+	background-position: 0 0;
+}
+
+/* support: IE8 - See #6727 */
+.ui-slider.ui-state-disabled .ui-slider-handle,
+ .ui-slider.ui-state-disabled .ui-slider-range {
+	filter: inherit;
+}
+
+.ui-slider-horizontal {
+	height: .8em;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+	top: -.3em;
+	margin-left: -.6em;
+}
+
+.ui-slider-horizontal .ui-slider-range {
+	top: 0;
+	height: 100%;
+}
+
+.ui-slider-horizontal .ui-slider-range-min {
+	left: 0;
+}
+
+.ui-slider-horizontal .ui-slider-range-max {
+	right: 0;
+}
+
+.ui-slider-vertical {
+	width: .8em;
+	height: 100px;
+}
+
+.ui-slider-vertical .ui-slider-handle {
+	left: -.3em;
+	margin-left: 0;
+	margin-bottom: -.6em;
+}
+
+.ui-slider-vertical .ui-slider-range {
+	left: 0;
+	width: 100%;
+}
+
+.ui-slider-vertical .ui-slider-range-min {
+	bottom: 0;
+}
+
+.ui-slider-vertical .ui-slider-range-max {
+	top: 0;
+}
+
+.widget-filter .ui-slider {
+	height: 8px;
+	background-color: #d7d7d7;
+	border-radius: 2px;
+	margin-bottom: 20px;
+	margin-top: 5px;
+}
+
+.widget-filter .ui-slider-handle {/* Style for "Line" */
+	width: 15px;
+	height: 15px;
+	margin-left: 0;
+	background-color: #272930;
+	border-radius: 1px;
+}
+
+.widget-filter .ui-slider-range {
+	height: 8px;
+ background-color: @color-theme;
+	margin-bottom: 20px;
+}
+
+.widget-filter p {
+ font-family: @font-body;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 1;
+}
+
+.widget-filter label {
+ color: @color-gray3;
+}
+
+.widget-filter input {
+ color: @color-theme;
+	border: none;
+	background-color: transparent;
+}
+
+.widget-filter .btn {
+ border: 1px solid @color-gray3;
+	border-radius: 1px 2px 2px 1px;
+color: @color-gray3;
+font-family: @font-heading;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 28px;
+	width: 67px;
+	height: 28px;
+}
+
+.widget-filter .btn:hover {
+color:@color-white;
+background-color:@color-theme;
+border-color:@color-theme
+}
+
+/* ADS widget */
+.ads-widget img {
+	max-width: 100%;
+	height: auto
+}
+
+/* Recent Product Widegt */
+.widget-recent-products .product {
+	position: relative;
+	margin-bottom: 20px;
+ border-bottom: 1px solid @color-gray;
+	padding-bottom: 20px;
+}
+
+.widget-recent-products .product:last-of-type {
+	margin-bottom: 0;
+	border-bottom: none;
+	padding-bottom: 0
+}
+
+.widget-recent-products .product img {
+	position: absolute;
+	left: 0;
+	top: 0
+}
+
+.widget-recent-products .product .product-desc {
+	position: relative;
+	margin-left: 65px;
+}
+
+.widget-recent-products .product .product-title {
+	margin-bottom: 10px;
+}
+
+.widget-recent-products .product .product-title a {
+ color: @color-heading;
+font-family: @font-thirdary;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 1;
+	text-transform: uppercase;
+}
+
+.widget-recent-products .product .product-title a:hover {
+color:@color-theme
+}
+
+.widget-recent-products .product .product-desc .product-meta {
+font-family: @font-secondary;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) and (max-width : 479px) {
+
+.sidebar .widget {
+	padding: 28px;
+}
+
+.widget-recent .entry .entry-desc {
+	margin-left: 60px;
+}
+
+.sidebar-full .widget {
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+}
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px)and (max-width : 767px ) {
+
+.widget-recent .entry .entry-desc {
+	margin-left: 70px;
+}
+
+.sidebar-full .widget {
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+.widget-recent .entry .entry-desc {
+	margin-left: 70px;
+}
+
+.sidebar-full .widget {
+	padding-bottom: 40px;
+	margin-bottom: 40px;
+}
+}

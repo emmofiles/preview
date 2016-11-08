@@ -1,0 +1,27 @@
+
+/*------------------------------------*\
+    #HOVER-EFFECT
+\*------------------------------------*/
+nav .link-hover:hover {
+color:@color-gray3 !important
+}
+
+.link-hover::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	max-width: 0;
+ color:@color-theme;
+	content: attr(data-hover);
+	-webkit-transition: max-width 0.5s;
+	-moz-transition: max-width 0.5s;
+	transition: max-width 0.5s;
+	line-height: 24px;
+	padding: 45px 0 8px 0
+}
+
+.link-hover:hover::before,
+.link-hover:focus::before {
+	max-width: 100%;
+}

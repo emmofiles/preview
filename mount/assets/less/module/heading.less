@@ -1,0 +1,51 @@
+
+/*------------------------------------*\
+    #HEADING
+\*------------------------------------*/
+.heading p {
+	color: @color-gray6;
+font-family: @font-heading;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 1;
+	text-transform: uppercase;
+	margin-bottom: 0
+}
+
+.heading h2 {
+	color: @color-heading;
+font-family: @font-secondary;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1;
+	text-transform: uppercase;
+	padding-top: 20px;
+}
+
+.heading:after {
+	content: "";
+	height: 2px;
+	width: 20px;
+	position: absolute;
+	display: inline-block;
+ background-color: @color-theme;
+}
+
+.heading-1 p:last-child {
+	color: @color-gray3;
+font-family: @font-heading;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 23px;
+	padding-top: 20px;
+}
+
+.heading-2 {
+	padding-bottom: 20px
+}
+
+.heading-2:after,
+.heading-3:after {
+	left: 50%;
+	margin-left: -10px;
+}

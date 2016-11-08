@@ -1,0 +1,157 @@
+
+/*------------------------------------*\
+    #BUTTONS
+\*------------------------------------*/
+.btn {
+	position: relative;
+	z-index: 2;
+}
+
+.btn-primary,
+.btn-secondary {
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: capitalize;
+	text-align: center;
+ .rounded(1px);
+	padding: 0;
+	line-height: 42px;
+	width: 170px;
+	height: 45px;
+	text-align: center;
+ font-family:@font-heading;
+}
+
+.btn-primary {
+ background-color:@color-theme;
+ color:@color-white;
+	border: 2px solid transparent
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+	background-color: transparent;
+ color:@color-theme;
+ border:2px solid @color-theme
+}
+
+.btn-secondary {
+	background-color: transparent;
+ color:@color-gray3;
+ border:2px solid @color-gray3;
+ .rounded(1px);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active {
+ background-color:@color-gray3;
+ color:@color-white;
+ border:2px solid @color-gray3
+}
+
+.btn-primary.btn-white {
+ background-color:@color-white;
+ border-color:@color-white;
+ color:@color-heading;
+}
+
+.btn-primary.btn-white:hover,
+.btn-primary.btn-white:focus,
+.btn-primary.btn-white:active {
+ background-color:@color-heading;
+ color:@color-white;
+ border:2px solid @color-heading
+}
+
+.btn-primary.btn-black {
+ background-color:@color-heading;
+ border-color:@color-heading;
+ color:@color-white;
+}
+
+.btn-primary.btn-black:hover::before,
+.btn-primary.btn-black:hover::after {
+ background-color:@color-heading;
+}
+
+.btn-primary.btn-black:hover {
+	background-color: transparent;
+ border-color:@color-heading;
+ color:@color-heading;
+}
+
+.bg-overlay-theme .btn-primary.btn-black:hover {
+background-color:@color-white;
+color:@color-heading;
+border-color:@color-white
+}
+
+.btn-secondary.btn-filled {
+ background-color:@color-heading;
+ color:@color-white;
+}
+
+.btn-secondary.btn-white {
+ border-color:@color-white;
+ color:@color-white;
+}
+
+.btn-secondary.btn-filled:hover,
+.btn-secondary.btn-white:hover {
+ background-color:@color-theme;
+ color:@color-white;
+ border-color:@color-theme;
+}
+
+.btn.btn-block {
+	width: 100%;
+}
+
+.btn-auto {
+	width: auto
+}
+
+.bg-theme .btn-primary.btn-black:hover::before,
+.bg-theme .btn-primary.btn-black:hover::after {
+ background-color:@color-white;
+}
+
+.bg-theme .btn-primary.btn-black:hover {
+ background-color:@color-white;
+ color:@color-heading;
+ border-color:@color-white;
+}
+
+.bg-theme .btn-secondary.btn-white:hover {
+ border-color:@color-white;
+ background-color:@color-white;
+ color:@color-hover;
+}
+
+.btn-sm {
+	font-size: 12px;
+	line-height: 33px;
+	height: 35px;
+}
+
+.btn-lg {
+	font-size: 18px;
+	line-height: 53px;
+	height: 55px;
+}
+
+.btn-primary.btn-slider {
+ background-color:@color-white;
+ border-color:@color-white;
+ color:@color-theme;
+}
+
+.btn-primary.btn-slider:hover,
+.btn-primary.btn-slider:focus,
+.btn-primary.btn-slider:active {
+ background-color:@color-theme;
+ color:@color-white;
+ border:2px solid @color-theme
+}

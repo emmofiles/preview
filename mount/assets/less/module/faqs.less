@@ -1,0 +1,127 @@
+
+/*------------------------------------*\
+	#FAQS-SECTION
+\*------------------------------------*/
+.faqs .panel-group {
+	margin-bottom: 0
+}
+
+.faqs .panel {
+	box-shadow: none;
+	padding: 20px;
+	margin-bottom: 30px;
+	margin-top: 0 !important
+}
+
+.faqs .panel .panel-heading {
+	padding: 0
+}
+
+.faqs .panel .panel-title {
+	color: @color-gray9;
+font-family: @font-heading;
+	font-size: 17px;
+	font-weight: 500;
+	line-height: 1;
+}
+
+.faqs .panel .panel-title i {
+	margin-right: 15px;
+	font-size: 14px;
+}
+
+.faqs .panel .panel-body {
+	border-top: none !important
+}
+
+.faqs .panel .panel-title a {
+	color: @color-gray9;
+}
+
+/* FAQ #1 */
+.faqs-1 .panel {
+	border: 1px solid rgba(170, 170, 170, 0.5);
+.rounded(3px);
+}
+
+/* FAQ #2 */
+.faqs-2 .panel {
+	border-bottom: 1px solid rgba(170, 170, 170, 0.5);
+	margin-bottom: 0;
+	padding-left: 0
+}
+
+.faqs-2 .panel .panel-body {
+	padding-left: 30px;
+	padding-bottom: 0
+}
+
+/* FAQ #3 */
+.faqs-3 .panel {
+	border: none;
+	margin-bottom: 0;
+	padding-left: 0
+}
+
+.faqs-3 .panel .panel-body {
+	padding-left: 30px;
+	padding-bottom: 0
+}
+
+/* Faq with Filter */
+
+.faqs .faqs-filter ul {
+	margin-bottom: 0;
+	line-height: 1;
+}
+
+.faqs .faqs-filter ul li {
+	padding-right: 0;
+	line-height: 1
+}
+
+.faqs .faqs-filter a {
+ color: @color-gray3;
+font-family: @font-heading;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 1;
+	text-transform: uppercase;
+	margin-right: 30px;
+	position: relative;
+	padding-bottom: 10px;
+	margin-bottom: 30px;
+	display: block;
+}
+
+.faqs .faqs-filter a.active-filter,
+.faqs .faqs-filter a:hover {
+color:@color-theme
+}
+
+.faqs .faqs-filter a.active-filter:after,
+.faqs .faqs-filter a:hover:after {
+	content: "";
+	height: 1px;
+	width: 23px;
+	position: absolute;
+	display: inline-block;
+ background-color: @color-theme;
+	bottom: 0;
+	left: 0
+}
+
+#faqs-all .faqs-item {
+	min-height: 0px !important;
+	position: static !important;
+	transform: translate3d(0px, 0px, 0px) !important;
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) and (max-width : 767px) {
+
+.faqs .panel .panel-title {
+	line-height: 1.4
+}
+}
+

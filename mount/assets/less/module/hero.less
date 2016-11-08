@@ -1,0 +1,162 @@
+
+/*------------------------------------*\
+    #HERO-SECTION
+\*------------------------------------*/
+.hero {
+	padding-top: 0;
+	padding-bottom: 0;
+	margin: 0;
+	overflow: hidden;
+	position: relative;
+}
+
+.rs-bullets .tp-bullet {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: transparent;
+	border: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.arrows.ares {
+	border-radius: 0 !important;
+	min-width: 36px!important;
+	min-height: 70px !important;
+	background-color: white;
+	border-radius: 2px;
+}
+
+.ares.tparrows.tp-leftarrow:before {
+	content: "\f104" !important;
+font-family:@awesome;
+	font-size: 18px;
+	line-height: 70px
+}
+
+.ares.tparrows.tp-rightarrow:before {
+	content: "\f105" !important;
+font-family:@awesome;
+	font-size: 18px;
+	line-height: 70px
+}
+
+.arrows.ares .tp-title-wrap {
+	min-width: 110px;
+	min-height: 70px;
+	line-height: 1;
+	border-radius: 0 !important;
+ background-color:@color-white;
+	margin-left: 30px;
+}
+
+.arrows.ares .tp-title-wrap .tp-arr-imgholder {
+	width: 90px;
+	height: 50px;
+	top: 10px;
+	left: 0px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.rev_slider .btn-primary.btn-black {
+	margin-left: 20px;
+}
+
+.rev_slider .btn i {
+	margin-left: 10px;
+}
+
+/* Hero With Header #6 */
+.transparent-header + .hero {
+	padding-top: 0 !important
+}
+
+/* Hero Scroll to down */
+.scroll-down {
+	position: absolute;
+	bottom: 30px;
+	width: 100%;
+	text-align: center
+}
+
+.scroll-down a i {
+color:@color-white;
+	font-size: 32px;
+	margin-bottom: 30px;
+}
+
+.scroll-down h6 {
+color: @color-white;
+font-family: @font-secondary;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 1;
+	text-transform: uppercase;
+	margin-bottom: 0;
+	margin-top: 30px;
+}
+
+.scroll-down h6 a {
+color:@color-white;
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) and (max-width : 479px) {
+
+.rev_slider h1 {
+	font-size: 16px !important;
+}
+
+.rev_slider .btn {
+	width: 100px;
+	height: 20px;
+	line-height: 18px;
+	font-size: 11px;
+}
+
+.scroll-down {
+	display: none
+}
+.arrows.ares {
+	min-width: 20px!important;
+	min-height: 45px !important;
+}
+.arrows.ares .tp-title-wrap {
+	display:none
+}
+.ares.tparrows.tp-leftarrow:before {
+
+	line-height: 45px
+}
+
+.ares.tparrows.tp-rightarrow:before {
+	line-height: 45px
+}
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px)and (max-width : 767px ) {
+
+.rev_slider h1 {
+	font-size: 22px !important;
+}
+
+.rev_slider .btn {
+	width: 130px;
+	height: 30px;
+	line-height: 28px;
+	font-size: 13px;
+}
+
+.scroll-down {
+	display: none
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+.rev_slider h1 {
+	font-size: 28px !important;
+}
+}
