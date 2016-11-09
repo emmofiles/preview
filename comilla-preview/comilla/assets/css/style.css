@@ -1,0 +1,1196 @@
+/*
+Author       : Syed Ekram.
+Template Name: Comilla - Digital Agency One Page Template
+Version      : 1.0
+*/
+/*=============================================================
+    CSS INDEX
+    =============================
+    01. GENERAL STYLE (body, link color, section-title, preloader btn, overlay, section-padding etc)
+    02. BOOTSTRAP NAVIGATION OVERRIDES
+    03. START HOME DESIGN
+    04. START ABOUT DESIGN
+    05. START PROMOTION DESIGN
+    06. START PORTFOLIO DESIGN
+    07. START TESTIMONIAL DESIGN
+    08. START TEAM DESIGN
+    09. START COMPANY PARTNER LOGO
+    10. START CONTACT ADDRESS & CONTACT FORM AND MAP
+    11. START MAP DESIGN 
+    12. START FOOTER DESIGN
+    13. START SECTION TOP DESIGN
+    14. START PORTFOLIO DESIGN
+  =============================================================*/
+/*
+* ----------------------------------------------------------------------------------------
+* 01.GENERAL STYLE
+* ----------------------------------------------------------------------------------------
+*/
+body {
+    font-family: 'Cousine',sans-serif;
+    font-size: 13px;
+    color: #93989B;
+    overflow-x: hidden;
+    margin: auto;
+    background: #fff;
+}
+html,
+body { height: 100% }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #333;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 700;
+}
+a {
+    font-family: "Montserrat",sans-serif;
+    text-decoration: none;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+p {
+    line-height: 2;
+    margin-bottom: 0;
+}
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+fieldset {
+    border: 0 none;
+    margin: 0 auto;
+    padding: 0;
+}
+/*START PRELOADER DESIGN*/
+.preloader {
+    background:rgba(0, 0, 0, 0.6);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+}
+.status,
+.status-mes {
+    background-image: url(../img/status.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    left: 50%;
+    margin: -100px 0 0 -100px;
+    position: absolute;
+    top: 50%;
+    width: 200px;
+}
+.status-mes {
+    background: none;
+    left: 0;
+    margin: 0;
+    text-align: center;
+    top: 65%;
+}
+.status-mes h4 {
+    color: #333;
+    margin-top: 30px;
+}
+.no-padding { padding: 0 }
+/*END PRELOADER DESIGN*/
+/*START SCROLL TO TOP*/
+.topcontrol {
+    background: #dd3333 none repeat scroll 0 0;
+    border-radius: 50px;
+    bottom: 5px;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
+    color: #fff;
+    cursor: pointer;
+    font-size: 26px;
+    height: 40px;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    padding: 3px 12px;
+    position: fixed;
+    right: 5px;
+    -webkit-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+    width: 40px;
+}
+.topcontrol:hover {
+    background: #222;
+    color: #fff;
+}
+/*END SCROLL TO TOP*/
+.section-padding { padding: 60px 0 }
+/*START SECTION TITLE DESIGN*/
+.section-title { margin-bottom: 60px }
+.section-title  h2 {
+    color: #333;
+    margin: 0;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+	position:relative;
+}
+@media only screen and (max-width:768px) { 
+    .section-title h2 { text-align: center }
+}
+@media only screen and (max-width:480px) { 
+    .section-title h2 { font-size: 30px }
+}
+@media only screen and (max-width:360px) { 
+    .section-title h2 { font-size: 24px }
+}
+.section-title span {
+    background: #dd3333 none repeat scroll 0 0;
+    display: block;
+    height: 2px;
+    margin: 15px auto;
+    width: 70px;
+	position:relative;
+}
+.section-title-white { color: #fff!important;position:relative; }
+.section-title-white-span { background: #fff!important;position:relative; }
+.section-title p {
+  margin: auto;
+  padding: 0 20px;
+  width: 70%;
+}
+@media only screen and (max-width:768px) { 
+.section-title p {width: 100%;}
+}
+/*END SECTION TITLE DESIGN*/
+/*
+* ----------------------------------------------------------------------------------------
+* 01.END GENERAL STYLE
+* ----------------------------------------------------------------------------------------
+*/
+/*
+* ----------------------------------------------------------------------------------------
+* 02. START BOOTSTRAP NAVIGATION OVERRIDES
+* ----------------------------------------------------------------------------------------
+*/
+.navbar-default {
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+    width: 100%;
+    padding: 20px 0;
+    background: #fff;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #dd3333 !important;
+    background-color: transparent;
+}
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus {
+    color: #dd3333 !important;
+    background-color: transparent;
+}
+.navbar-brand { padding: 0px }
+.navbar-brand {
+float: left;
+font-size: 18px;
+height: auto;
+line-height: 20px;
+}
+.navbar-brand img {
+    width: 150px;
+    margin-left: 10px;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form { border-color: #fff }
+.menu-top { background: rgba(0, 0, 0, 0) none repeat scroll 0 0 }
+.menu-top li a {
+    color: #fff !important;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.menu-top li a:hover { color: #dd3333!important }
+@media only screen and (max-width:768px) { 
+    .navbar-default .navbar-nav > li > a {
+        margin-top: 10px;
+        padding: 8px;
+    }
+}
+@media only screen and (max-width:480px) { 
+    .menu-top { background-color: #fff }
+    .navbar-default .navbar-nav > li > a { color: #313131  !important }
+}
+.navbar-default.menu-shrink {
+    background-color: #fff;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    width: 100%;
+}
+@media only screen and (max-width:480px) { 
+    .menu-top {
+        color: #fff !important;
+        margin-left: 0px;
+    }
+}
+.navbar-default.menu-shrink li a { color: #313131!important }
+.navbar-default.menu-shrink li a:hover { color: #dd3333 !important }
+.navbar-default .navbar-toggle { background: #fff none repeat scroll 0 0 }
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus { background-color: #fff }
+.navbar-default .navbar-toggle .icon-bar { background-color: #dd3333 }
+/*
+* ----------------------------------------------------------------------------------------
+* 02.END BOOTSTRAP NAVIGATION OVERRIDES
+* ----------------------------------------------------------------------------------------
+*/
+/*
+* ----------------------------------------------------------------------------------------
+* 03.START HOME DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.btn-home-bg {
+background: #dd3333 none repeat scroll 0 0;
+border: 1px solid #dd3333;
+border-radius: 3px;
+color: #fff;
+display: inline-block;
+font-family: montserrat,sans-serif;
+font-size: 13px;
+margin-top: 20px;
+padding: 12px 25px;
+text-transform: uppercase;
+transition: all 0.2s ease 0s;
+}
+
+.btn-home-border {
+	background: transparent;
+	border: 2px solid #fff;
+	border-radius: 3px;
+	color: #fff;
+	font-family: montserrat,sans-serif;
+	font-size: 13px;
+	padding: 10px 25px;
+	text-transform: uppercase;
+	-webkit-transition: all 0.2s ease 0s;
+	transition: all 0.2s ease 0s;
+	margin-top: 20px;
+	display: inline-block;
+}
+.btn-home-border:hover,
+.btn-home-border:focus{
+	background: #fff none repeat scroll 0 0;
+	border-color: #fff;
+	color: #777;
+}
+.btn-home-bg:hover,
+.btn-home-bg:focus {
+    background: #fff;
+    color: #333;
+    border-color: #fff;
+}
+.border_btn{
+	border-color: #fff;
+	background: transparent;
+	margin-right: 20px;
+}
+.carousel-control{
+	z-index: 1;
+	background-image: none !important;
+	top: 46.6%;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	line-height: 45px;
+	background: rgba(0,0,0,0.5);
+}
+.carousel-control:hover{
+	background: #fff;
+	color: #dd3333;
+}
+.carousel-control.left{
+	margin-left: 20px;	
+}
+.carousel-control.right{
+	margin-right: 20px;	
+}
+
+/*START TEXT SLIDER*/
+.text_slider {
+position: relative;
+height:700px;
+}
+.text_slider:before {
+    background: rgba(0, 0, 0, 0.6);
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+/*START TEXT SLIDER*/
+
+/*START HTML5 VIDEO*/
+.html-video {
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.slider-caption {
+    position: absolute;
+    top: 33%;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    z-index: 15;
+    -webkit-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+}
+.slider-caption p {
+  width: 60% !important;
+}
+video { min-width: 100% }
+/*END HTML5 VIDEO*/
+/*START YOUTUBE HOME DESIGN*/
+.youtube_bg {
+position: relative;
+height:700px;
+}
+.youtube_bg:before {
+    background: rgba(0, 0, 0, 0.6);
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.home_text h2 {
+    color: #f8f8f8;
+    font-size: 40px;
+	padding-top:250px;
+    margin-top: 0;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.home_text p {
+    color: #fff;
+    margin: auto auto 30px;
+    width: 70%;
+}
+@media only screen and (max-width:768px) { 
+    .home_text p { width: 100% }
+}
+/*END YOUTUBE HOME DESIGN*/
+/*
+* ----------------------------------------------------------------------------------------
+* 03.END HOME DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 04.START SERVICE DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.our_service { background: #f7f7f7 }
+.single_service {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #eee;
+    margin-left: -1px;
+    margin-top: -1px;
+    padding: 40px;
+    -webkit-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+    position: relative;
+}
+.single_service:hover {
+    box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+.single_service i {
+    font-size: 40px;
+    padding-bottom: 20px;
+    color: #dd3333;
+    -webkit-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+}
+.single_service h4 {
+    color: #333;
+    margin: 0;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+    -webkit-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+}
+.single_service p {
+    margin-bottom: 0;
+    -webkit-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 04.END SERVICE DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 05.START PROMOTION DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.buy_now {
+    background: #dd3333 none repeat scroll 0 0;
+    padding: 30px 0;
+}
+.buy_now_title {
+    color: #fff;
+    font-family: montserrat,sans-serif;
+    font-weight: 300;
+    margin: 0;
+    text-transform: uppercase;
+}
+@media only screen and (max-width:768px) { 
+    .buy_now_title { font-size: 22px }
+}
+@media only screen and (max-width:360px) { 
+    .buy_now_title { font-size: 15px }
+}
+.btn-promotion-bg {
+background: #222 none repeat scroll 0 0;
+border: 1px solid #222;
+border-radius: 2px;
+box-shadow: 0 11px 11px 0 rgba(0, 0, 0, 0.2);
+color: #fff;
+font-size: 14px;
+margin-left: 100px;
+padding: 10px 30px;
+-webkit-transition: all 0.2s ease 0s;
+transition: all 0.2s ease 0s;
+}
+@media only screen and (max-width:480px) { 
+    .btn-promotion-bg {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+}
+.btn-promotion-bg:hover,
+.btn-promotion-bg:focus {
+    background: #fff;
+    border: 1px solid #fff;
+    color: #333;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 05.END PROMOTION DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+
+/*
+ * ----------------------------------------------------------------------------------------
+ * 06.START PORTFOLIO DESIGN
+ * ----------------------------------------------------------------------------------------
+ */
+
+.work_all_item .mix {
+  display: none;
+}
+.our_work_menu {
+  margin-bottom: 50px;
+}
+
+.our_work_menu ul{
+	list-style-type: none;
+	padding: 0;
+}
+.work_all_item .col-md-3{
+	padding: 0;
+}
+.our_work_menu ul li{
+	border: 1px solid #f7f7f7;
+	color: #777;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	margin: 0 7px;
+	padding: 6px 21px;
+	text-transform: uppercase;
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+.our_work_menu ul li:hover, .our_work_menu ul li.active{
+	border-color: #dd3333 ;
+	color:#dd3333;
+}
+#our_work .grid-item{
+	margin-top: 30px;
+}
+.single_project {
+  padding-bottom: 40px;
+}
+.single_our_work{
+	overflow: hidden;
+	text-align: center;
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+.sing_work_photo{
+	position: relative;
+}
+
+.single_our_work img{
+	width: 100%;
+	-webkit-transition: all 0.2s ease 0s;
+	transition: all 0.2s ease 0s;
+}
+
+.single_our_work figure{
+	margin-bottom: 0;	
+}
+.sing_work_text_link{
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	color: #fff;
+	background: rgba(221, 51, 51, .5);
+	-webkit-transition: .5s;
+	transition: .5s;
+	opacity: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	visibility: hidden;
+}
+.sing_work_content_wrap{
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+.sing_work_content{
+	display: table-cell;
+	vertical-align: middle;
+}
+.sing_work_text_link h5{
+	color: #fff;
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 5px;
+	margin-top: 20px;
+	text-transform: uppercase;
+}
+
+
+.sing_work_text_link p{
+	margin: 0 0 10px;
+}
+.sing_link_img a i.fa{
+	font-size: 14px;	
+}
+.sing_link_img a{
+	background: #fff none repeat scroll 0 0;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	color: #dd3333;
+	display: inline-block;
+	height: 40px;
+	line-height: 39px;
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	width: 40px;	
+}
+.sing_link_img a:hover{	
+	background: #fff none repeat scroll 0 0;
+	border-color: #fff;
+	color: #333;
+}
+.sing_link_img a.search{
+	margin-right: 16px;
+}
+.single_our_work:hover  .sing_link_img a.search{
+	-webkit-animation: slideInDown 800ms ease-in-out;
+	        animation: slideInDown 800ms ease-in-out;
+}
+.single_our_work:hover  .sing_link_img a.link{
+	-webkit-animation: slideInDown 800ms ease-in-out;
+	        animation: slideInDown 800ms ease-in-out;
+}
+.single_our_work:hover{
+	background: #32c5d2;
+	color: #fff;
+}
+.single_our_work:hover .sing_work_text_link{
+	opacity: 1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	visibility: visible;
+}
+.portfolio_btn { padding-top: 50px }
+
+.btn-portfolio-bg{
+background: #dd3333 none repeat scroll 0 0;
+box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+color: #fff;
+padding: 12px 30px;
+-webkit-transition: all 0.2s ease 0s;
+transition: all 0.2s ease 0s;
+text-transform: uppercase;
+}
+.btn-portfolio-bg:hover,.btn-portfolio-bg:focus{
+background:#333;
+color:#fff;
+}
+/*
+ * ----------------------------------------------------------------------------------------
+ * 06.END PORTFOLIO DESIGN
+ * ----------------------------------------------------------------------------------------
+ */
+ 
+ 
+ 
+ 
+ 
+/*
+ * ----------------------------------------------------------------------------------------
+ * 07.START TESTIMONIAL DESIGN
+ * ----------------------------------------------------------------------------------------
+ */
+.testimonials{
+position:relative;
+height: auto;
+z-index: 1;
+}
+.testimonials:before{
+
+    background: rgba(0, 0, 0, 0.8);
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+}
+.testimonials .flexslider {
+    background-color: #fff;
+    border: 0 none;
+    box-shadow: 0 7px 33px 0 rgba(0, 0, 0, 0.12);
+    margin: 0;
+}
+.testimonials .flexslider .testi-slider-item {
+    padding: 30px 60px;
+    text-align: center;
+}
+.testimonials .flexslider .testi-slider-item img {
+border: 3px solid #dd3333;
+border-radius: 50%;
+height: 100px;
+margin: 20px auto;
+width: 100px;
+}
+.testimonials .flexslider .testi-slider-item h6 {
+color: #dd3333;
+font-size: 14px;
+margin-bottom: 0;
+text-transform: uppercase;
+}
+.testimonials .flexslider .testi-slider-item p {
+font-size: 14px;
+}
+@media only screen and (max-width:360px) { 
+.testimonials .flexslider .testi-slider-item p  {line-height: 24px;font-size: 16px; }
+}
+.testimonials .flex-direction-nav a {
+    background: #dd3333 none repeat scroll 0 0;
+    border-radius: 100px;
+    box-shadow: 0 10px 11px 0 rgba(0, 0, 0, 0.2);
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    height: 45px;
+    line-height: 50px;
+    margin: -20px 0 0;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none !important;
+    top: 50%;
+    -webkit-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+    width: 45px;
+    z-index: 10;
+}
+.testimonials .flex-direction-nav a i {
+    display: inline-block;
+    font-size: 22px;
+}
+.testimonials .flex-direction-nav a:before { display: none }
+.testimonials .flex-direction-nav a.flex-next:before { display: none }
+.testimonials .flex-control-paging li a {
+    background: #222 none repeat scroll 0 0;
+    border: 1px solid #222;
+    border-radius: 20px;
+    cursor: pointer;
+    display: block;
+    height: 6px;
+    text-indent: -9999px;
+    width: 6px;
+}
+.testimonials .flex-control-paging li a:hover {
+    background: #00bcd4 none repeat scroll 0 0;
+    border-color: #00bcd4;
+}
+.testimonials .flex-control-paging li a.flex-active {
+    background: #00bcd4 none repeat scroll 0 0;
+    border-color: #00bcd4;
+    cursor: default;
+}
+.flex-control-nav {display: none;}
+/*
+ * ----------------------------------------------------------------------------------------
+ * 07.END TESTIMONIAL DESIGN
+ * ----------------------------------------------------------------------------------------
+ */
+ 
+ 
+ 
+ 
+/*
+ * ----------------------------------------------------------------------------------------
+ * 08.START TEAM DESIGN
+ * ----------------------------------------------------------------------------------------
+ */
+
+ @media only screen and (max-width:768px) { 
+    .tema-member { margin-bottom: 20px }
+}
+.tema-member .team-thumbnail {
+    border: 1px solid #e8e8e9;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    position: relative;
+}
+.tema-member .team-thumbnail .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    bottom: -1px;
+    height: 100%;
+    background-color: rgba(221,51,51,0.7);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.info { padding: 10px }
+.tema-member .team-thumbnail .social-media {
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    bottom: 0;
+    -webkit-transform: translateY(100%);
+    -moz-webkit-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+.tema-member .team-thumbnail .social-media a { display: inline-block }
+.tema-member .team-thumbnail .social-media a i {
+    font-size: 20px;
+    color: #fff;
+    width: 48px;
+    margin: -2px;
+    line-height: 48px;
+    height: 48px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.tema-member .team-thumbnail .social-media a i { color: #fff }
+.tema-member .team-thumbnail .social-media a.facebook i:hover { background: #507CBE }
+.tema-member .team-thumbnail .social-media a.twitter i:hover { background: #63CDF1 }
+.tema-member .team-thumbnail .social-media a.google i:hover { background: #F16261 }
+.tema-member .team-thumbnail .social-media a.linkedin i:hover { background: #90CADD }
+.tema-member .info h4 {
+    margin-top: 0;
+    text-transform: uppercase;
+    color: #fff;
+}
+.tema-member .info p {
+    color: #fff;
+    margin-bottom: 0;
+}
+.tema-member:hover .social-media {
+    -webkit-transform: translateY(-90%);
+    -moz-webkit-transform: translateY(-90%);
+    -webkit-transform: translateY(-90%);
+    transform: translateY(-90%);
+}
+.tema-member:hover .overlay {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+}
+ 
+/*
+ * ----------------------------------------------------------------------------------------
+ * 08.END TEAM DESIGN
+ * ----------------------------------------------------------------------------------------
+ */
+ 
+ 
+ 
+ 
+ 
+ 
+/*
+* ----------------------------------------------------------------------------------------
+* 09.START COMPANY PARTNER LOGO
+* ----------------------------------------------------------------------------------------
+*/
+.partner-logo { background: #dd3333 }
+.partner { text-align: center }
+.partner img {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    -webkit-transition: all 0.2s ease 0s;
+            transition: all 0.2s ease 0s;
+}
+.partner img:hover { border: 1px solid #fff }
+/*
+* ----------------------------------------------------------------------------------------
+* 09.END COMPANY PARTNER LOGO
+* ----------------------------------------------------------------------------------------
+*/
+
+
+
+/*
+ * ----------------------------------------------------------------------------------------
+ *  10.START CONTACT ADDRESS & CONTACT FORM DESIGN
+ * ----------------------------------------------------------------------------------------
+*/
+.contact_area{background:#f5f5f5;}
+@media only screen and (max-width:768px) { 
+    .contact_address { margin-bottom: 20px }
+}
+.contact_address {
+  background: #fff none repeat scroll 0 0;
+  padding: 30px;
+  box-shadow:0px 0px 10px 0px rgba(0,0,0,0.1);
+  height:425px;
+}
+@media only screen and (max-width:480px) { 
+.contact_address {height:auto;}
+}
+.single-address {
+    margin-bottom: 17px;
+    padding: 0 50px;
+}
+.single-address i {
+    color: #dd3333;
+    font-size: 22px;
+    float: left;
+    margin-right: 20px;
+    width: 30px;
+    height: 60px;
+    line-height: 30px;
+}
+.single-address h4 {
+font-size: 16px;
+text-transform: uppercase;
+}
+.single-address p {
+    color: #333;
+    margin-bottom: 0;
+}
+.mbnone{margin-bottom:0;}
+.contact {
+background: #dd3333 none repeat scroll 0 0;
+overflow: hidden;
+height:425px;
+padding: 30px;
+}
+.input_padding {
+    overflow: hidden;
+    padding: 0 40px 56px;
+}
+.form-control {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 0;
+    box-shadow: none;
+    color: #fff;
+    font-family: "Merriweather",sans-serif;
+    font-size: 12px;
+    height: 45px;
+}
+.form-control:hover,
+.form-control:focus {
+    border: 1px solid #fff;
+    box-shadow: none;
+    outline: 0 none;
+}
+.form-control::-moz-placeholder {
+  color: #fff;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.btn-contact-bg {
+background: #fff none repeat scroll 0 0;
+border-radius: 0;
+color: #333;
+font-family: montserrat,sans-serif;
+font-size: 14px;
+padding: 10px 40px;
+-webkit-transition: all 0.2s ease 0s;
+transition: all 0.2s ease 0s;
+text-transform: uppercase;
+}
+.btn-contact-bg:focus {
+    background: #333;
+    border: 1px solid #333;
+    color: #fff;
+}
+@media only screen and (max-width:320px) { 
+    .btn-contact-bg { padding: 10px 25px }
+}
+.mb0 { margin-bottom: 0 }
+/*
+ * ----------------------------------------------------------------------------------------
+ *  10.END CONTACT ADDRESS & CONTACT FORM DESIGN
+ * ----------------------------------------------------------------------------------------
+*/
+/*
+ * ----------------------------------------------------------------------------------------
+ *  11.START MAP DESIGN
+ * ----------------------------------------------------------------------------------------
+*/
+#map { height: 400px }
+/*
+ * ----------------------------------------------------------------------------------------
+ *  11.END MAP DESIGN
+ * ----------------------------------------------------------------------------------------
+*/
+/*
+* ----------------------------------------------------------------------------------------
+* 12.START FOOTER DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.footer {
+    background-color: #09121b;
+    padding: 30px 0;
+}
+@media only screen and (max-width:480px) { 
+    .footer_social {
+        float: none !important;
+        margin-top: 30px;
+    }
+}
+.footer_social ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+@media only screen and (max-width:480px) { 
+    .footer_social ul { text-align: center }
+}
+.footer_social ul li {
+    margin: 2px;
+    display: inline-block;
+}
+.footer_social ul li a {
+    box-shadow: 0 0 0 7px transparent;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    height: 45px;
+    line-height: 25px;
+    padding: 9px 12px;
+    text-align: center;
+    -webkit-transition: all 0.2s ease 0s;
+            transition: all 0.2s ease 0s;
+    width: 45px;
+}
+@media only screen and (max-width:768px) { 
+    .footer_social ul li a { font-size: 12px }
+}
+@media only screen and (max-width:360px) { 
+    .footer_social ul li a { font-size: 14px }
+}
+@media only screen and (max-width:320px) { 
+    .footer_social ul li a {
+        font-size: 14px;
+        height: 40px;
+        width: 40px;
+        line-height: 20px;
+    }
+}
+.footer_social ul li a:hover { color: #fff }
+.f_facebook:hover {
+    background: #5D82D1;
+    box-shadow: 0 0 0 0px #5D82D1;
+}
+.f_twitter:hover {
+    background: #40BFF5;
+    box-shadow: 0 0 0 0px #40BFF5;
+}
+.f_google:hover {
+    background: #EB5E4C;
+    box-shadow: 0 0 0 0px #EB5E4C;
+}
+.f_linkedin:hover {
+    background: #238CC8;
+    box-shadow: 0 0 0 0px #238CC8;
+}
+.f_youtube:hover {
+    background: #CC181E;
+    box-shadow: 0 0 0 0px #CC181E;
+}
+.f_skype:hover {
+    background: #00AFF0;
+    box-shadow: 0 0 0 0px #00AFF0;
+}
+.footer_copyright {
+    color: #aaa;
+    margin: 0;
+    padding-top: 10px;
+    font-family: "Merriweather",sans-serif;
+    font-size: 14px;
+}
+@media only screen and (max-width:480px) { 
+    .footer_copyright {
+        float: none !important;
+        text-align: center;
+    }
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 12.END FOOTER DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+/*
+ * ----------------------------------------------------------------------------------------
+ *  13.START SECTION TOP DESIGN
+ * ----------------------------------------------------------------------------------------
+ */
+.section-top{
+position:relative;
+}
+.section-top:before{
+
+    background: rgba(0, 0, 0, 0.8);
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+}
+.section-top-title h2 {
+    color: #fff;
+    font-size: 45px;
+    margin: 0;
+    text-transform: uppercase;
+}
+@media only screen and (max-width:320px) { 
+    .section-top-title h2 { font-size: 40px }
+}
+.section-top-title {
+padding-bottom: 90px;
+padding-top: 150px;
+}
+.section-top-title,
+.breadcrumb {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    margin-bottom: 0;
+}
+.section-top-title ol li { color: #fff!important }
+.section-top-title ol li a { color: #fff!important }
+.section-top-title ol li a:hover { color: #dd3333!important }
+/*
+ * ----------------------------------------------------------------------------------------
+ * 13.END SECTION TOP DESIGN
+ * ----------------------------------------------------------------------------------------
+*/
+
+/*
+ * ----------------------------------------------------------------------------------------
+ * 14.START PORTFOLIO DESIGN
+ * ----------------------------------------------------------------------------------------
+*/
+.about_project{
+	margin-bottom: 20px;
+}
+.about_project_details ul{
+	list-style: none;
+}
+.about_project_details ul li i{
+	padding-right: 10px;
+}
+.about_project_details ul li{
+	padding-bottom: 8px;
+}
+.about_project_details {
+	margin-bottom: 20px;
+}
+.about_project_details a {
+  color: #dd3333;
+}
+.related_porject{
+	padding-bottom: 30px;
+}
+#team .section-title div{
+	margin-bottom: 30px;
+}
+/*
+ * ----------------------------------------------------------------------------------------
+ * 14.END PORTFOLIO DESIGN
+ * ----------------------------------------------------------------------------------------
+*/
+
+.audio_music{margin-top:20px;}
