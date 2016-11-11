@@ -1,0 +1,1245 @@
+/* -----------------------------------------------------------
+    Author       : Tanvirul Haque
+    Template Name: Rongila - MultiPurpose Portfolio Template
+    Version      : 1.0
+------------------------------------------------------------*/
+/*============================================================
+    CSS TABLE OF CONTENTS
+==============================================================
+    01. GENAREL CSS STYLE
+    02. BOOTSTRAP NAVIGATION OVERRIDES CSS STYLE
+    03. START HEADER AREA CSS STYLE
+    04. START ABOUT AREA CSS STYLE
+    05. START PROCESS AREA, COUNTER AREA, BUY AREA,
+        HOW WORK AREA & PARTNER AREA CSS STYLE
+    06. START SERVICES AREA CSS STYLE
+    07. START CHOOSE AREA & FAQ AREA CSS STYLE
+    08. START TEAM AREA CSS STYLE
+    09. START PORTFOLIO AREA CSS STYLE
+    10. START TESTIMONIAL AREA CSS STYLE
+    11. START BLOG AREA CSS STYLE
+    12. START PRICING AREA CSS STYLE
+    13. START PRODUCT AREA CSS STYLE
+    14. START CONTACT AREA CSS STYLE
+    15. START FOOTER AREA CSS STYLE
+=============================================================*/
+/*
+* -------------------------------------------------------------
+*    01. GENAREL CSS STYLE
+* -------------------------------------------------------------
+*/
+body {
+    color: #999;
+    font-size: 13px;
+    background-color: #fff;
+    font-family: 'Cousine',sans-serif;
+}
+html,
+body { height: 100% }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    color: #444;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: "Montserrat",sans-serif;
+}
+a {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    -webkit-transition: all 0.36s;
+    transition: all 0.36s;
+}
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+p {
+    line-height: 2;
+    margin-bottom: 0;
+}
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+fieldset {
+    border: 0 none;
+    margin: 0 auto;
+    padding: 0;
+}
+.section-padding { padding: 80px 0 }
+.no-padding { padding: 0 }
+.no-padding-top { padding-top: 0 }
+.no-padding-bottom { padding-bottom: 0 }
+.section-title {
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 1;
+}
+.section-title span {
+    position: absolute;
+    font-weight: 700;
+    font-size: 90px;
+    z-index: -1;
+    color: #eee;
+    top: -50px;
+    right: 0;
+    left: 0;
+}
+.section-title h2 { padding-bottom: 15px }
+.section-title p {
+    margin: auto;
+    width: 80%;
+}
+.button{
+	font-family: "Montserrat",sans-serif;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 12px 25px;
+	position:relative;
+	font-size:12px;
+	color: #333;
+	letter-spacing:1px;
+	background: transparent;
+	border: 2px solid #3ac4fa;
+	-webkit-backface-visibility: hidden;
+	        backface-visibility: hidden;
+	-webkit-transform: translateZ(0px);
+	        transform: translateZ(0px);
+	-webkit-transition-duration: 0.3s;
+	        transition-duration: 0.3s;
+	-webkit-transition-property: color;
+	transition-property: color;
+	vertical-align: middle;
+	-webkit-transition: 0.36s;
+			transition:0.36s;
+}
+.button:before {
+	background: #3ac4fa none repeat scroll 0 0;
+	position: absolute;
+	content: "";
+	z-index: -1;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	top: 0;
+	-webkit-transform: scaleY(0);
+	        transform: scaleY(0);
+	-webkit-transition-duration: 0.3s;
+	        transition-duration: 0.3s;
+	-webkit-transform-origin: 50% 50% 0;
+	        transform-origin: 50% 50% 0;
+	-webkit-transition-property: -webkit-transform;
+	transition-property: -webkit-transform;
+	transition-property: transform;
+	transition-property: transform, -webkit-transform;
+	-webkit-transition-timing-function: ease-out;
+	        transition-timing-function: ease-out;
+}
+.button:hover {	color:#fff; }
+.button:hover.button:before{
+	-webkit-transform: scaleY(1);
+	        transform: scaleY(1);
+	-webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+	        transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+.preloader {
+    background: url(../img/preloader.gif) center no-repeat #fff;
+    position: fixed;
+    z-index: 9999;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+}
+/*
+* -------------------------------------------------------------
+*    01. END GENAREL CSS STYLE
+* -------------------------------------------------------------
+*/
+/*
+* -------------------------------------------------------------
+*    02. BOOTSTRAP NAVIGATION OVERRIDES CSS STYLE
+* -------------------------------------------------------------
+*/
+.home-area { height: 100% }
+.header-top-area {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 111;
+    -webkit-transition: all 0.36s ease-out;
+			transition: all 0.36s ease-out;
+}
+.navbar-default {
+    padding: 15px 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    background: none;
+    border: medium none;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+			transition: all 0.2s ease-in-out 0s;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus { background-color: transparent }
+.navbar-brand {
+    font-family: "Montserrat",sans-serif;
+    letter-spacing: 3px;
+    font-weight: 700;
+    font-size: 26px;
+    color: #fff !important;
+    text-transform: uppercase;
+    -webkit-transition: 0.36s;
+			transition: 0.36s;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form { border-color: #fff }
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus { background-color: #fff }
+.navbar-default .navbar-toggle .icon-bar { background-color: #3ac4fa }
+.mainmenu li a {
+    font-family: "Montserrat",sans-serif;
+    color: #fff !important;
+    font-weight: 400;
+    font-size: 12px;
+    margin: 0 5px;
+    text-transform: uppercase;
+    -webkit-transition: .36s;
+			transition: .36s;
+}
+.mainmenu ul.nav.navbar-nav li a:hover { color: #3ac4fa !important }
+.menu-bg .mainmenu ul.nav.navbar-nav li.active:before {
+    background: #3ac4fa;
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    top: 0;
+}
+.menu-bg .mainmenu ul.nav.navbar-nav li.active:after {
+    background: #3ac4fa;
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+}
+.navbar-default .navbar-toggle { background: #fff none repeat scroll 0 0 }
+.menu-bg {
+    background: #fff;
+    box-shadow: 0px 3px 4.7px 0.3px rgba(0, 0, 0, 0.24);
+    -webkit-transition: all 0.4s ease-out;
+			transition: all 0.4s ease-out;
+}
+.menu-bg .navbar-default { padding: 10px 0 }
+.menu-bg .navbar-brand {
+    font-size: 24px;
+    color: #3ac4fa !important;
+}
+.menu-bg .mainmenu .navbar-nav li a {
+    color: #333 !important;
+    -webkit-transition: .36s;
+			transition: .36s;
+}
+/*
+* -------------------------------------------------------------
+*    02. END BOOTSTRAP NAVIGATION OVERRIDES CSS STYLE
+* -------------------------------------------------------------
+*/
+/*
+* -------------------------------------------------------------
+*    03. START HEADER AREA CSS STYLE
+* -------------------------------------------------------------
+*/
+.home-image-area {
+    position: relative;
+    background: url(../img/bg/home-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+    z-index: 1;
+}
+.single-slide-bg {
+    position: relative;
+    z-index: 1;
+}
+.home-parallax-area {
+    position: relative;
+    background: url(../img/bg/parallax-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+    z-index: 1;
+}
+.home-video-area {
+    background-position: center center;
+	/* background: url(../img/bg/home-bg.jpg); */
+    background-size: cover;
+    position: relative;
+    height: 100%;
+    z-index: 1;
+}
+.home-image-area:after,
+.home-parallax-area:after,
+.single-slide-bg:after,
+.home-video-area:after {
+    background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: "";
+    z-index: -1;
+    left: 0;
+    top: 0;
+}
+.home-slide-area,
+.home-video-area,
+.home-image-area div,
+.home-parallax-area div,
+.home-slide-area div,
+.home-video-area div { height: 100% }
+.home-image-area div.home-display-table-cell,
+.home-image-area div.home-display-table-cell div,
+.home-parallax-area div.home-display-table-cell,
+.home-parallax-area div.home-display-table-cell div,
+.home-slide-area div.home-display-table-cell,
+.home-slide-area div.home-display-table-cell div,
+.home-video-area div.home-display-table-cell,
+.home-video-area div.home-display-table-cell div { height: auto }
+.home-display-table {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+.home-display-table-cell {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.slide-bg1 {
+    background: url(../img/bg/slide1.jpg) scroll 0 0;
+    background-size: cover;
+}
+.slide-bg2 {
+    background: url(../img/bg/slide2.jpg) scroll 0 0;
+    background-size: cover;
+}
+.slide-bg3 {
+    background: url(../img/bg/slide3.jpg) scroll 0 0;
+    background-size: cover;
+}
+#home-carousel .item h2 {
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+#home-carousel .item p {
+    width: 80%;
+    color: #fff;
+    margin: 0 auto 30px;
+}
+#home-carousel .item  .button { color: #fff }
+#home-carousel .slide-control {
+    top: 50%;
+    color: #fff;
+    font-size: 80px;
+    margin-top: -60px;
+    position: absolute;
+}
+#home-carousel .slide-control.right { left: auto }
+#home-carousel .left.slide-control {
+    left: 100px;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+#home-carousel .right.slide-control {
+    right: 100px;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+#home-carousel:hover .left.slide-control {
+    left: 30px;
+    opacity: .25;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=25)";
+}
+#home-carousel:hover .right.slide-control {
+    right: 30px;
+    opacity: .25;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=25)";
+}
+#home-carousel.slide-control:focus {
+    color: #fff;
+    opacity: .25;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=25)";
+}
+.carousel-fade .carousel-inner .item {
+    -webkit-transition-property: opacity;
+			transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+		filter: alpha(opacity=0);
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+		filter: alpha(opacity=100);
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+			transform: translate3d(0, 0, 0);
+}
+/*
+* -------------------------------------------------------------
+*    03. END HEADER AREA CSS STYLE
+* -------------------------------------------------------------
+*/
+/*
+* -------------------------------------------------------------
+*    04. START ABOUT AREA CSS STYLE
+* -------------------------------------------------------------
+*/
+.feature-area { margin-bottom: 50px }
+.single-feature {
+    padding: 25px;
+    position: relative;
+    -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
+			transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
+}
+.single-feature:hover {
+    box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.08);
+    -webkit-transform: scale(1.05);
+			transform: scale(1.05);
+}
+.single-feature i {
+    color: #3ac4fa;
+    font-size: 60px;
+}
+.single-feature h4 {
+    margin: 20px 0 15px;
+    -webkit-transition: all 0.36s ease 0s;
+			transition: all 0.36s ease 0s;
+}
+.single-feature:hover h4 { color: #3ac4fa }
+.skills-progress { overflow: hidden }
+.skills-progress .progress {
+    background: #ddd none repeat scroll 0 0;
+    position: relative;
+    overflow: visible;
+    margin: 40px 0 0;
+    box-shadow: none;
+    border-radius: 0;
+    height: 10px;
+}
+.skills-progress .progress-bar {
+    background: #3ac4fa none repeat scroll 0 0;
+    box-shadow: none;
+}
+.skills-progress .progress .lead {
+    left: 0;
+    top: -25px;
+    color: #555;
+    font-size: 12px;
+    font-weight: 700;
+    position: absolute;
+    text-transform: uppercase;
+    font-family: "Montserrat",sans-serif;
+}
+.skills-progress h3,
+.about-text h3 { margin-bottom: 20px }
+.about-text p { margin-bottom: 15px }
+/*
+* -------------------------------------------------------------
+*    04. END ABOUT AREA CSS STYLE
+* -------------------------------------------------------------
+*/
+/*
+* -------------------------------------------------------------
+*    05. START PROCESS AREA, COUNTER AREA, BUY AREA,
+        HOW WORK AREA, PARTNER AREA CSS STYLE
+* -------------------------------------------------------------
+*/
+.process-area { background: url("../img/bg/process-bg.jpg") }
+.count-area { background: url("../img/bg/count-bg.jpg") }
+.buy-area { background: url("../img/bg/buy-bg.jpg") }
+.how-work-area { background: url("../img/bg/how-work-bg.jpg") }
+.partner-area { background: url("../img/bg/partner-bg.jpg") }
+.process-area,
+.count-area,
+.buy-area,
+.how-work-area,
+.partner-area {
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.process-area .section-title span { color: #fff }
+.process-area:after,
+.count-area:after,
+.buy-area:after,
+.how-work-area:after,
+.partner-area:after {
+    background: rgba(255, 255, 255, 0.9) none repeat scroll 0 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: "";
+    left: 0;
+    top: 0;
+    z-index: -111;
+}
+.single-process,
+.counter {
+    padding: 25px;
+    background: #fff;
+    border: 1px solid #fff;
+    -webkit-transition: all 0.36s ease 0s;
+			transition: all 0.36s ease 0s;
+}
+.single-process:hover,
+.counter:hover {
+    border: 1px solid rgba(238, 238, 238, 0.65);
+    box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.09);
+}
+.single-process h4 > span {
+    color: #eaeaea;
+    font-size: 65px;
+    margin-right: 5px;
+    font-family: 'Cousine',sans-serif;
+}
+.counter i {
+    font-size: 35px;
+    color: #3ac4fa;
+}
+.counter h2 { margin: 10px 0 5px }
+.buy-text p { margin: 15px 0 }
+.how-work-area .section-title { margin-bottom: 25px }
+.video-area i {
+    color: #3ac4fa;
+    font-size: 70px;
+    -webkit-transition: all 0.36s ease 0s;
+			transition: all 0.36s ease 0s;
+}
+.video-area i:hover {
+    -webkit-transform: scale(1.05);
+			transform: scale(1.05);
+}
+.partner-area { padding-bottom: 50px }
+.signup .form-control { margin-bottom: 20px }
+/*
+* -------------------------------------------------------------
+*   05. END PROCESS AREA, COUNTER AREA, BUY AREA,
+        HOW WORK AREA, PARTNER AREA CSS STYLE
+* -------------------------------------------------------------
+*/
+/*
+* -------------------------------------------------------------
+*    06. START SERVICES AREA CSS STYLE
+* -------------------------------------------------------------
+*/
+.service-area {
+    background: #f6f6f6;
+    padding-bottom: 50px;
+}
+.single-service {
+    background: #fff;
+    position: relative;
+    padding: 30px 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.08);
+    -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
+			transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
+}
+.single-service:hover {
+    -webkit-transform: scale(1.05);
+			transform: scale(1.05);
+}
+.single-service i {
+    font-size: 45px;
+    color: #3ac4fa;
+}
+.single-service h3 {
+    font-size: 18px;
+    margin: 20px 0 15px;
+    -webkit-transition: all 0.36s ease 0s;
+			transition: all 0.36s ease 0s;
+}
+.single-service:hover h3 { color: #3ac4fa }
+/*
+* -------------------------------------------------------------
+*    06. END SERVICES AREA CSS STYLE
+* -------------------------------------------------------------
+*/
+/*
+* -------------------------------------------------------------
+*    07. START CHOOSE AREA, FAQ AREA CSS STYLE
+* -------------------------------------------------------------
+*/
+.according-area { margin-top: 20px }
+.panel-default .panel-heading {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    background-color: #f9f9f9;
+    border-color: #eee;
+    font-size: 16px;
+    padding: 16px;
+}
+.panel-group .panel {
+    border: medium none;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+.panel-body {
+    padding: 30px;
+    border-radius: 0px;
+}
+.panel-heading { border-radius: 0px }
+.panel-title a {
+    color: #333;
+    display: block;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.panel-title a:after {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    font: 16px fontAwesome;
+    margin-right: 15px;
+    content: "\f068";
+    color: #3ac4fa;
+    height: 49px;
+    width: 49px;
+    float: left;
+    margin-left: -16px;
+    margin-top: -16px;
+    line-height: 50px;
+    text-align: center;
+}
+.panel-title a.collapsed:after {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    font: 16px fontAwesome;
+    margin-right: 15px;
+    content: "\f067";
+    color: #3ac4fa;
+    height: 49px;
+    width: 49px;
+    float: left;
+    margin-left: -16px;
+    margin-top: -16px;
+    line-height: 50px;
+    text-align: center;
+}
+.faq-area .according-area { margin-top: 0 }
+/*
+* -------------------------------------------------------------
+*    07. END CHOOSE AREA, FAQ AREA CSS STYLE
+* -------------------------------------------------------------
+*/
+/*
+* -------------------------------------------------------------
+*    08. START TEAM AREA CSS STYLE
+* -------------------------------------------------------------
+*/
+.team-area { background: #f6f6f6 }
+.single-team {
+    box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.08);
+    -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
+			transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
+}
+.single-team:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+.team-img-thumb { position: relative }
+.thumb-overlay {
+    background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    left: 0;
+    top: 0;
+    -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
+			transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
+}
+.single-team:hover .thumb-overlay { opacity: 1; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)" }
+.team-social-link {
+    position: absolute;
+    top: 47%;
+    right: 0;
+    left: 0;
+}
+.team-social-link a { display: inline-block }
+.team-social-link a i {
+    color: #999;
+    font-size: 32px;
+    -webkit-transition: 0.36s;
+			transition: 0.36s;
+}
+.team-social-link a i:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    color: #3ac4fa;
+}
+.single-team  h3 { margin: 20px 0 5px }
+.single-team p { padding-bottom: 15px }
+/*
+* -------------------------------------------------------------
+*    08. END TEAM AREA CSS STYLE
+* -------------------------------------------------------------
+*/
+/*
+* -------------------------------------------------------------
+*    09. START PORTFOLIO AREA CSS STYLE
+* -------------------------------------------------------------
+*/
+.portfolio-filter ul {
+    list-style: outside none none;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.portfolio-filter ul li {
+    color: #999;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10px 20px;
+    display: inline-block;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    -webkit-transition: all 0.36s;
+			transition: all 0.36s;
+}
+.portfolio-filter ul li.active,
+.portfolio-filter ul li:hover { border: 2px solid #3ac4fa }
+.grid .mix {
+    display: none;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+.image-wrapper {
+    position: relative;
+    margin-top: 30px;
+    overflow: hidden;
+    -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
+			transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
+}
+.image-wrapper:hover {
+    -webkit-transform: scale(1.05);
+			transform: scale(1.05);
+}
+.image-wrapper img {
+    height: auto;
+    width: 100% !important;
+}
+.image-overlay {
+    background: rgba(36, 195, 248, 0.6) none repeat scroll 0 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    text-align: center;
+    position: absolute;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition: all 0.36s ease-out 0s;
+			transition: all 0.36s ease-out 0s;
+}
+.image-wrapper:hover .image-overlay {
+    -webkit-transform: scale(1);
+			transform: scale(1);
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.image-overlay i {
+    background: rgba(255, 255, 255, 0.6) none repeat scroll 0 0;
+    height: 50px;
+    width: 50px;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 60px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 30px;
+    -webkit-transform: translateY(-100%);
+			transform: translateY(-100%);
+    -webkit-transition: all 0.36s ease-out 0s;
+			transition: all 0.36s ease-out 0s;
+}
+.image-overlay i:hover {
+    background: #fff none repeat scroll 0 0;
+    color: #3ac4fa;
+}
+.image-wrapper:hover i {
+    -webkit-transform: translateY(0px);
+			transform: translateY(0px);
+}
+.image-overlay h5 {
+    color: #fff;
+    margin: 15px 0 5px;
+    -webkit-transform: translateX(-100%);
+			transform: translateX(-100%);
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
+			transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
+}
+.image-wrapper:hover .image-overlay h5 {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transform: translateX(0px);
+			transform: translateX(0px);
+}
+.image-overlay p {
+    color: #fff;
+    -webkit-transform: translateX(100%);
+			transform: translateX(100%);
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
+			transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
+}
+.image-wrapper:hover .image-overlay p {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transform: translateX(0px);
+			transform: translateX(0px);
+}
+.portfolio-btn { margin-top: 30px }
+.portfolio-btn a i {
+	font-size: 14px;
+	margin-right: 10px;
+}
+/*
+* -------------------------------------------------------------
+*    09. END PORTFOLIO AREA CSS STYLE
+* -------------------------------------------------------------
+*/
+/*
+* -------------------------------------------------------------
+*    10. START TESTIMONIAL AREA CSS STYLE
+* -------------------------------------------------------------
+*/
+.testimonial-area { background: #f6f6f6 none repeat scroll 0 0 }
+.testimonial-area .item img {
+    background: #eee none repeat scroll 0 0;
+    border-radius: 50%;
+    height: 100px;
+    margin: 0 auto 15px;
+    padding: 5px;
+}
+.testimonial-area .item h6 { margin: 5px 0 15px }
+/*
+* -------------------------------------------------------------
+*    10. END TESTIMONIAL AREA CSS STYLE
+* -------------------------------------------------------------
+*/
+/*
+* -------------------------------------------------------------
+*    11. START BLOG AREA CSS STYLE
+* -------------------------------------------------------------
+*/
+.single-blog {
+    box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.08);    
+    -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
+			transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
+}
+.single-blog img {
+    background: #fff;
+    padding: 10px;
+}
+.blog-content {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 25px;
+}
+.blog-content span {
+    font-size: 12px;
+    color: #333;
+}
+.blog-content a h2 {
+    font-size: 20px;
+    margin: 5px 0 15px;
+}
+.blog-content a.read-more {
+    color: #666;
+    display: block;
+    text-align: right;
+    -webkit-transition: 0.36s;
+			transition: 0.36s;
+}
+.single-blog:hover {
+    -webkit-transform: scale(1.05);
+			transform: scale(1.05);
+}
+.single-blog:hover .blog-content a.read-more { color: #3ac4fa }
+.blog-btn { margin-top: 30px }
+.blog-btn a i {
+	font-size: 14px;
+	margin-right: 10px;
+}
+/*
+* -------------------------------------------------------------
+*    11. END BLOG AREA CSS STYLE
+* -------------------------------------------------------------
+*/
+/*
+* -------------------------------------------------------------
+*    12. START PRICING AREA CSS STYLE
+* -------------------------------------------------------------
+*/
+.pricing-area { background: #f6f6f6 }
+.single_pricing {
+    box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.08);
+    -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
+			transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
+}
+.single_pricing h3 {
+    font-size: 20px;
+    padding: 30px 0 20px;
+}
+.price {
+    padding: 25px 0;
+    background: #e9e9e9;
+    -webkit-transition: all 0.6s ease 0s;
+			transition: all 0.6s ease 0s;
+}
+.price h4 { font-size: 52px }
+.price h4 sub { font-size: 18px }
+.price span { font-size: 14px }
+.pricing-list {
+    list-style: outside none none;
+    text-align: center;
+    padding: 0 25px;
+}
+.pricing-list li {
+    border-bottom: 1px solid #eee;
+    color: #161616;
+    padding: 15px 0;
+    -webkit-transition: all 0.36s ease 0s;
+			transition: all 0.36s ease 0s;
+}
+.pricing-btn { padding: 25px 0 }
+.single_pricing.recommended,
+.single_pricing:hover {
+    -webkit-transform: scale(1.05);
+			transform: scale(1.05);
+}
+.single_pricing.recommended .price,
+.single_pricing:hover .price { background: #3ac4fa }
+.single_pricing.recommended .price h4,
+.single_pricing:hover .price h4 { color: #fff }
+/*
+* -------------------------------------------------------------
+*    12. END PRICING AREA CSS STYLE
+* -------------------------------------------------------------
+*/
+/*
+* -------------------------------------------------------------
+*    13. START PRODUCT AREA CSS STYLE
+* -------------------------------------------------------------
+*/
+.products { background: #f6f6f6 }
+.single-product {
+    background: #fff;
+    position: relative;
+}
+.single-product i {
+    background: #3ac4fa none repeat scroll 0 0;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    margin-right: 15px;
+    line-height: 40px;
+    margin-top: -20px;
+    font-size: 18px;
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    float: left;
+    right: 0;
+    -webkit-transition: all 0.36s ease 0s;
+			transition: all 0.36s ease 0s;
+}
+.single-product:hover i {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+.product-info {
+    padding: 20px 25px;
+    box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.08);
+}
+.product-info h5 { margin: 5px 0 }
+/*
+* -------------------------------------------------------------
+*    13. END PRODUCT AREA CSS STYLE
+* -------------------------------------------------------------
+*/
+/*
+* -------------------------------------------------------------
+*    14. START CONTACT AREA CSS STYLE
+* -------------------------------------------------------------
+*/
+.form-control {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border-color: -moz-use-text-color -moz-use-text-color #ccc;
+    border-style: none none solid;
+    border-width: 0 0 1px;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 10px 0;
+    height: 45px;
+    padding: 0;
+    -webkit-transition: all 0.36s ease 0s;
+			transition: all 0.36s ease 0s;
+}
+.form-control::-moz-placeholder {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.form-control:hover,
+.form-control:focus {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border-color: -moz-use-text-color -moz-use-text-color #3ac4fa;
+    border-style: none none solid;
+    border-width: 0 0 1px;
+    border-radius: 0;
+    box-shadow: none;
+    outline: 0 none;
+}
+.btn-contact-bg:hover,
+.btn-contact-bg:focus {
+    background: #3ac4fa none repeat scroll 0 0;
+    color: #fff;
+}
+.success {
+    text-align: center;
+    margin: 80px 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+.single-contact-info { padding: 15px 0 }
+.single-contact-info i {
+    background: #3ac4fa;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    line-height: 50px;
+    font-size: 22px;
+    height: 50px;
+    color: #fff;
+    float: left;
+    width: 50px;
+}
+.single-contact-info h5 { margin-bottom: 5px }
+/*
+* -------------------------------------------------------------
+*    14. END CONTACT AREA CSS STYLE
+* -------------------------------------------------------------
+*/
+/*
+* -------------------------------------------------------------
+*    15. START FOOTER AREA CSS STYLE
+* -------------------------------------------------------------
+*/
+.subscribe-title {
+    margin-top: 60px;
+    padding-bottom: 10px;
+}
+.social-icon { margin-bottom: 20px }
+.social-icon h3 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+.social-icon i {
+    color: #fff;
+    font-size: 28px;
+    line-height: 28px;
+    -webkit-transition: all 0.36s ease 0s;
+			transition: all 0.36s ease 0s;
+}
+.social-icon i:hover { -webkit-transform: scale(1.05); transform: scale(1.05) }
+.copyright {
+    background: #3ac4fa;
+    padding: 60px 0;
+    color: #fff;
+}
+.copyright p { margin: 0 }
+/*
+* -------------------------------------------------------------
+*    15. END FOOTER AREA CSS STYLE
+* -------------------------------------------------------------
+*/
+/*
+* -------------------------------------------------------------
+*    16. SINGLE BLOG PAGE CSS STYLE
+* -------------------------------------------------------------
+*/
+.breadcrumb-main{
+	background:url(../img/bg/breadcrumb-bg.jpg);
+	background-position: center center;
+	background-size: cover;
+	position: relative;
+	height:  350px;
+	z-index:1;
+}
+.breadcrumb-main::after {
+  background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.breadcrumb-title{ padding-top: 150px }
+.breadcrumb-title h2{
+	font-weight: 700;
+	color: #fff;
+}
+.breadcrumb-title p,
+.breadcrumb-title p a{ color: #fff }
+.single-blog-details,
+.comments-area { padding-bottom: 50px }
+.single-blog-details img,
+.single-latest-post img { border: 5px solid #f0f0f0 }
+.single-blog-details h3 {
+	margin: 30px 0 20px;
+	font-weight: 700;
+}
+.single-blog-info{ margin: 0 0 20px }
+.single-blog-info span {
+	color: #999;
+	font-size: 12px;
+	margin-right: 10px;
+	display: inline-block;
+}
+.single-blog-info span i,
+.single-comment span i {
+	margin-right: 10px;
+	font-size: 14px;
+	color: #3ac4fa;
+}
+.comments-area h4,
+.comment-form h4 {
+    padding: 10px 0;
+	margin-bottom: 20px;
+	border-bottom: 4px double #eee;
+}
+.single-comment img {
+	float: left;
+	width: auto;
+	height: 100px;
+	margin-right: 15px;
+	border: 5px solid #f0f0f0;
+}
+.single-comment h5 { margin-bottom: 10px }
+.single-comment span {
+	color: #999;
+	display: block;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+.single-comment p {
+	font-size: 13px;
+	overflow: hidden;
+}
+.single-widget{	margin-bottom: 50px }
+.search-box {
+	background: #f0f0f0 none repeat scroll 0 0;
+	margin-bottom: 25px;
+	padding: 25px;
+}
+.search-box input{
+    margin: 0;
+	height: 50px;
+    padding: 0 0 0 15px;
+	border: 1px solid #ccc;
+	background: #fff none repeat scroll 0 0;
+}
+.search-box input:hover,
+.search-box input:focus {
+	border: 1px solid #3ac4fa;
+	background: #fff none repeat scroll 0 0;
+}
+.latest-post h4,
+.categories h4,
+.tags h4 {
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	border-bottom: 4px double #eee;
+}
+.single-latest-post{ margin-bottom: 30px }
+.single-latest-post a{
+	color: #555;
+	display: block;
+	margin: 15px 0 10px;
+}
+.single-latest-post span {
+	color: #999;
+	font-size: 12px;
+	display: inline-block;
+}
+.single-latest-post span i {
+	margin-right: 10px;
+	font-size: 14px;
+	color: #3ac4fa;
+}
+.categories li a {
+    color: #555;
+    display: block;
+    font-size: 14px;
+    padding: 0 0 10px 0;
+}
+.categories li a:hover {
+    color: #3ac4fa;
+}
+.categories li a i {
+    margin-right: 10px;
+	color: #3ac4fa;
+}
+.tags li a {
+    border: 1px solid #ccc;
+    color: #555;
+    display: block;
+    float: left;
+    font-size: 12px;
+    margin: 5px;
+    padding: 5px 15px;
+    text-transform: uppercase;    
+    -webkit-transition: all 0.36s ease 0s;
+			transition: all 0.36s ease 0s;
+}
+.tags li a:hover {
+    background: #3ac4fa none repeat scroll 0 0;
+    border: 1px solid #3ac4fa;
+    color: #fff;
+}
+/*
+* -------------------------------------------------------------
+*    16. END BLOG PAGE CSS STYLE
+* -------------------------------------------------------------
+*/
