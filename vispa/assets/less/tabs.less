@@ -1,0 +1,39 @@
+@import "mixins";
+
+/* Tabs */
+/*-----------------------------------*/
+
+.tabs {margin-bottom: @section-margin;}
+
+.tab-header {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+
+	li {
+		float: left;
+		width: 50%;
+		border-left: 1px solid @body-background;
+		&:first-child {border-left: none;}
+	}
+
+	a {
+		display: block;
+		opacity: 1;
+		height: 50px;
+		line-height: 50px;
+		font-family: @font2;
+		font-size: @font-size - 2;
+		color: @color-black;
+		text-align: center;
+		text-transform: uppercase;
+		padding: 0 5px;
+		background-color: @color-light;
+		.ellipsis();
+		.transition();
+	}
+
+	.active a {color: @color-white; background-color: @color-red;}
+}
+
+.tab-content {padding-top: 30px;}

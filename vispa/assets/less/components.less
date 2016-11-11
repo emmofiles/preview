@@ -1,0 +1,136 @@
+@import "mixins";
+
+/* Labels */
+/*-----------------------------------*/
+
+.label {
+	font-size: 12px;
+	font-weight: 400;
+	text-shadow: none;
+	padding: 0.64em 1em 0.5em;
+	border-radius: 1px;
+	display: inline-block;
+	margin-bottom: 4px;
+}
+
+/* ScrollBar Width Detection */
+/*-----------------------------------*/
+
+.scrollbar-detect {
+	height: 0;
+	opacity: 0;
+	visibility: hidden;
+	overflow: scroll;
+	span {display: block;}
+}
+
+/* Portfolio Filter */
+/*-----------------------------------*/
+
+.portfolio-filter {
+	overflow: hidden;
+	margin-bottom: 10px;
+	position: relative;
+	text-align: center;
+
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0 0 20px;
+	}
+
+	li {
+		display: inline-block;
+		margin: 0 20px 10px;
+		@media @sm {margin: 0 10px 10px;}
+		@media @xs {margin: 0 5px 10px;}
+
+		&.active a {
+			border-bottom-color: @link-color-hover;
+			color: @color-black;
+		}
+	}
+
+	a {
+		opacity: 1;
+		display: block;
+		font-family: @font2;
+		font-size: @font-size + 1;
+		@media @xs {font-size: @font-size - 1;}
+		line-height: 1;
+		color: @color-lightGray;
+		text-transform: uppercase;
+		padding: 0 0 .4em;
+		border-bottom: 2px solid transparent;
+		.transition();
+		&:hover, &:active {color: @color-black;}
+	}
+}
+
+/* Project Transitions */
+/*-----------------------------------*/
+
+.project {
+	.label {
+		.transform(translate3d(-20px, 0, 0));
+		.transition();
+	}
+
+	h3 {
+		.transform(translate3d(-20px, 0, 0));
+		.transition();
+	}
+
+	p {
+		.transform(translate3d(20px, 0, 0));
+		.transition();
+	}
+
+	.over-area {
+		opacity: 0;
+		background: fade(@color-black, 60%);
+		.transition();
+
+
+		&:hover, &:active {
+			opacity: 1;
+
+			h3, p, .label {
+				.transform(translate3d(0, 0, 0));
+			}
+		}
+	}
+}
+
+/* Portfolio Details */
+/*-----------------------------------*/
+
+.project-info {
+	text-transform: uppercase;
+	margin-bottom: 20px;
+
+	.item {
+		margin-bottom: 30px;
+		@media @xxs {margin-bottom: 20px;}
+
+		@media @md {
+			&:nth-child(2n + 1) {margin-left: 0;}
+		}
+
+		> strong {
+			font-family: @font2;
+			font-size: @font-size-h4 - 1;
+			@media @sm {font-size: @font-size + 1;}
+			@media @xxs {font-size: @font-size;}
+			display: block;
+			margin-bottom: .4em;
+		}
+
+		> span {
+			display: block;
+			font-size: 14px;
+			text-transform: none;
+			line-height: 1.4;
+		}
+	}
+}

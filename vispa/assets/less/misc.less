@@ -1,0 +1,28 @@
+@import "mixins";
+
+/* Misc */
+/*-----------------------------------*/
+
+blockquote p {
+	font-size: @font-size + 3;
+	font-style: italic;
+	color: @color-gray;
+}
+
+.button-get-started .btn {
+	min-width: 180px;
+	margin: 0 10px 10px;
+}
+
+.section .parallax .image {height: 100%;}
+
+.section-header .scroll-arrow {
+	.transition();
+
+	&:hover, &:active {
+		color: @color-red;
+		border-color: @color-red;
+	}
+}
+
+.team .col-sm-4:nth-child(3n + 1) {clear: left;}

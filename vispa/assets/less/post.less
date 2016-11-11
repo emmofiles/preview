@@ -1,0 +1,95 @@
+@import "mixins";
+
+/* Masonry Posts */
+/*-----------------------------------*/
+
+.postlist-masonry {
+	.clearfix();
+	margin: 0 -15px -10px;
+
+	.article {
+		width: 100%;
+		float: left;
+		padding: 0 15px;
+	}
+
+	&.postlist-double .article {
+		width: 50%;
+		padding: 0 50px;
+		@media @sm {padding: 0 15px;}
+		@media @xs {width: 100%;}
+	}
+
+	&.postlist-triple .article {
+		width: 33.33%;
+		@media @sm {width: 50%;}
+		@media @xs {width: 100%;}
+	}
+
+	&.postlist-quad .article {
+		width: 25%;
+		padding: 0 5px;
+		@media @xmd {width: 33.33%; padding: 0 15px;}
+		@media @sm {width: 50%;}
+		@media @xs {width: 100%;}
+	}
+}
+
+/* Odd/Even Posts */
+/*-----------------------------------*/
+
+.postlist-alternate {
+	.article {
+		margin-bottom: 60px;
+		&:last-child {margin-bottom: 0;}
+
+		&:nth-child(odd) {
+			.column-image {
+				float: left;
+				width: 50%;
+			}
+
+			.column-content {
+				float: right;
+				width: 40%;
+				margin-right: 4%;
+			}
+		}
+
+		&:nth-child(even) {
+			.column-image {
+				float: right;
+				width: 50%;
+			}
+
+			.column-content {
+				float: left;
+				width: 40%;
+				margin-left: 4%;
+			}
+		}
+
+		@media @md {
+			.content {padding: 0;}
+			h2 {font-size: 1.8em;}
+		}
+
+		@media @sm {
+			h2 {font-size: 1.4em;}
+			p {font-size: 12px;}
+			.btn {margin: 0;}
+		}
+
+		@media @xs {
+			&:nth-child(odd),
+			&:nth-child(even) {
+				.column-image,
+				.column-content {
+					float: none;
+					width: 100%;
+					margin: 0 0 20px;
+				}
+			}
+		}
+	}
+}

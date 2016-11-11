@@ -1,0 +1,143 @@
+// Media Queries
+@media-xxs:	479px; // appears 320px - 479px
+@media-xs:	767px; // appears 480px - 767px
+@media-sm:	991px; // appears 768px - 991px
+@media-md:	1229px; // appears 992px - 1229px
+@media-xmd:	1359px; // appears 1230px - 1359px
+@media-lg:	1599px; // appears 1360px - 1599px
+@media-xlg:	1799px; // appears 1600px - 1799px
+
+@xxs:		~'only screen and (max-width: @{media-xxs})';
+@xs:		~'only screen and (max-width: @{media-xs})';
+@sm:		~'only screen and (max-width: @{media-sm})';
+@md:		~'only screen and (max-width: @{media-md})';
+@xmd:		~'only screen and (max-width: @{media-xmd})';
+@lg:		~'only screen and (max-width: @{media-lg})';
+@xlg:		~'only screen and (max-width: @{media-xlg})';
+
+// Transition Options
+@transition-duration:   	.2s; // Transition Duration
+@transition-easing: 	    ease-out; // Transition Timing Function
+
+// Alternative Transition Options
+@transition-duration2:  	.4s; // Transition Duration
+@transition-easing2: 	    cubic-bezier(.36, .96, .54, 1.2); // Transition Timing Function
+
+// Section Bottom Margins
+@section-margin:            60px;
+
+// Images
+@images-path:			    '../img'; // Relative path from styles to the Images Folder
+
+// Fonts
+@fonts-path:			    'fonts'; // Relative path from styles to the Fonts Folder
+@iconic-font-name:		    'flyIcons'; // Iconic Font Name
+@iconic-font-name2:		    'FontAwesome'; // FontAwesome
+@font1:					    'Poppins', sans-serif;
+@font2:					    'Droid Serif', serif;
+
+// Base Colors
+@color-white:		    	#fff;
+@color-light:		    	#eaeaea;
+@color-lightGray:	    	#b4b4b4;
+@color-gray:		    	#5f5f5f;
+@color-dark:		    	#353535;
+@color-black:		    	#1a1a1a;
+@color-yellow:		    	#ffc47f;
+@color-yellow2:		    	#f9bc04;
+@color-orange:		    	#ff6000;
+@color-red:			        #ef7280;
+@color-purple:		    	#9560f5;
+@color-blue:		    	#4c80d0;
+@color-green:		    	#3aaa35;
+@color-brown:			    #7f5122;
+
+// difference(@color-white, #0a0a0a);   #0a0a0a
+// difference(@color-white, #0e0e0e);   #f1f1f1
+// difference(@color-white, #0a0a0a);   #f5f5f5
+// difference(@color-yellow, #06087b);  #f3b477
+
+// Global Font
+@font-family:				@font1; // Font Family
+@font-size:					13px; // Font Size
+@font-size-md:				@font-size - 1; // Font Size for Medium Devices
+@font-size-sm:				@font-size - 1; // Font Size for Small Devices
+@font-size-xs:				@font-size - 1; // Font Size for Extra Small Devices
+@font-weight:				400; // Font Weight
+@font-color:				@color-gray; // Font Color
+@letter-spacing:			0; // Letter Spacing
+@paragraph-line-height:     2.5; // line-height for <p>
+@paragraph-margin-bottom:   2em; // margin-bottom for <p>
+
+// Body Background
+@body-background:			@color-white;
+
+// Headings
+@headings-font-family:		@font2;
+@font-size-h1:				24px;
+@font-size-h2:				21px;
+@font-size-h3:				20px;
+@font-size-h4:				16px;
+@font-size-h5:				14px;
+@font-size-h6:				13px;
+@headings-font-weight:		400;
+@headings-line-height:		1;
+@headings-color:			@color-black;
+@headings-text-transform:	uppercase;
+@headings-letter-spacing:	0;
+@headings-margin-bottom:	.8em;
+
+// Links
+@link-color:				@color-red; // Link Color
+@link-color-hover:			@color-red; // Link Color on Hover
+
+// Buttons
+@button-color:				@color-black; // Button Color 1
+@button-color2:			    @color-white; // Button Color 2
+@button-font-family:		@font2; // Button Font Family
+@button-font-size:			@font-size - 3; // Button Font Size
+@button-font-weight:		400; // Button Font Weight
+@button-letter-spacing:		.02em; // Button Letter Spacing
+@button-height:				50px; // Button Height
+@button-sm-height:			36px; // Small Button Height
+@button-md-height:			44px; // Medium Button Height
+@button-lg-height:			60px; // Large Button Height
+@button-border-width:		1px; // Button Border Thickness
+@button-border-radius:		0; // Button Border Radius
+
+// Form Elements
+@input-height:				36px; // Input Height
+@input-padding:				1em; // Input Padding (left and right)
+@input-margin:				30px; // Input Margin (bottom)
+@input-border-width:		1px; // Input Border Thickness
+@input-border-color:		@color-light; // Input Border Color
+@input-border-color-focus:	@color-lightGray; // Input Border Color on Focus
+@input-border-radius:		0; // Input Border Radius
+@input-background-color:	transparent; // Input Background Color
+@input-font-size:			@font-size - 1; // Input Font Size
+@input-font-weight:			400; // Input Font Weight
+@input-font-style:			normal; // Input Font Style
+@input-font-color:			@color-dark; // Input Font Color
+@input-letter-spacing:		0; // Input Letter Spacing
+@placeholder-font-style:	italic; // Placeholder Font Style
+@placeholder-font-color:	@color-lightGray; // Placeholder Font Color
+@label-font-color:			@color-dark; // Label Font Color
+@checkbox-color:            @color-black; // CheckBox, RadioButton Main Color
+
+// Selection Colors
+@selection-font-color:      @color-white;
+@selection-bg-color:        @color-red;
+
+// Main Slider
+@loader-color:              @color-yellow; // Loader Color
+@slider-background:         @color-dark; // Slider Background
+@page-title-font-size:      50px; // Page Title Font Size
+
+// Main Menu Colors
+@menu-bg-color:             @color-red;
+@menu-sticky-bg-color:      difference(@color-white, #0a0a0a);
+@menu-font-color:           @color-white;
+@menu-font-color-hover:     @color-black;
+
+
+

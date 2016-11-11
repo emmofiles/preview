@@ -1,0 +1,367 @@
+@import "mixins";
+
+/* Dropdown Menu */
+/*-----------------------------------*/
+
+.nav-menu {
+	position: relative;
+	z-index: 98;
+	font-size: 0;
+	white-space: nowrap;
+	float: right;
+
+	li {
+		position: relative;
+
+		a.menu-link {
+			display: block;
+			font-family: @font2;
+			font-size: @font-size - 3;
+			font-weight: 400;
+			line-height: normal;
+			color: @menu-font-color;
+			letter-spacing: .16em;
+			text-transform: uppercase;
+			.ellipsis();
+		}
+
+		&:hover,
+		&:active,
+		&.active,
+		&.current-menu-item {
+			& > a.menu-link {color: @menu-font-color-hover;}
+		}
+
+		ul {
+			.animation-duration();
+			position: absolute;
+			top: 0;
+			left: 100%;
+			z-index: 1;
+			padding: 0;
+			white-space: normal;
+			.box-shadow(0 0 4px fade(@color-black, 36%));
+
+			&.left {
+				left: auto;
+				right: 100%;
+			}
+
+			li {
+				padding: 0;
+				background-color: @menu-bg-color;
+				.transition();
+
+				&:hover, &:active {
+					& > a.menu-link {
+						color: @menu-font-color-hover;
+					}
+				}
+
+				a.menu-link {
+					padding: 20px 44px 20px 50px;
+					@media @md {padding: 10px 44px 10px 50px;}
+					text-align: left;
+					color: @menu-font-color;
+				}
+
+				&:first-child a.menu-link {padding-top: 30px;}
+				&:last-child a.menu-link {padding-bottom: 30px;}
+
+				&.parent > a:before {
+					content: '\f0da';
+					.icon-font2();
+					position: absolute;
+					top: 20px;
+					@media @md {top: 11px;}
+					left: 22px;
+					font-size: 12px;
+				}
+
+				&:first-child.parent > a:before {top: 30px;}
+			}
+		}
+	}
+
+	// Level 0
+	& > li {
+		display: inline-block;
+		margin: 0;
+		padding: 0 0 3px;
+		.animation-duration(.4s);
+
+		& > a.menu-link {
+			height: 74px;
+			line-height: 100px;
+			padding: 0 18px;
+			.transition();
+
+			@media @sm {
+				height: 56px;
+				line-height: 68px;
+				padding: 0 10px;
+			}
+		}
+
+		&:hover,
+		&:active,
+		&.active,
+		&.current-menu-item {
+			& > a.menu-link {
+				color: @menu-font-color;
+				background-color: @menu-bg-color;
+			}
+		}
+
+		& > ul {
+			top: 100%;
+			//left: -9999px;
+			left: 0;
+			z-index: 98;
+			&.left {right: 0;}
+		}
+
+		.sticky &,
+		.static & {
+			& > a.menu-link {color: @menu-font-color-hover;}
+
+			&:hover,
+			&:active,
+			&.active,
+			&.current-menu-item {
+				& > a.menu-link {color: @menu-font-color;}
+			}
+		}
+	}
+
+	// Mobile Menu
+	@media @xs {
+		padding: 15px;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		z-index: 98;
+		background-color: fade(@menu-bg-color, 96%);
+		height: auto;
+		overflow: auto;
+		will-change: transform;
+		.transform(translateX(-100%));
+		.transition(transform .4s ease-out);
+
+		&.active {
+			.transform(translateX(0));
+		}
+
+		li {
+			a.menu-link {
+				display: block;
+				font-size: 12px;
+				color: @menu-font-color;
+				background-color: transparent !important;
+			}
+
+			&.parent > a:before {
+				content: '\f0da';
+				.icon-font2();
+				position: absolute;
+				top: 14px;
+				left: 8px;
+				font-size: 12px;
+			}
+
+			&.active,
+			&.current-menu-item {
+				& > a.menu-link {color: @menu-font-color-hover;}
+
+				&.parent > a.menu-link {
+					&:before {
+						left: 5px;
+						.transform(rotateZ(180deg));
+					}
+				}
+			}
+
+			.sticky &,
+			.static & {
+				& > a.menu-link {color: @menu-font-color;}
+
+				&.active,
+				&.current-menu-item {
+					& > a.menu-link {color: @menu-font-color-hover;}
+				}
+			}
+
+			ul {
+				.animation(none);
+				position: static;
+				.box-shadow(none);
+
+				li {
+					&:first-child a.menu-link {padding-top: 15px;}
+					&:last-child a.menu-link {padding-bottom: 15px;}
+
+					ul {padding-left: 10px;}
+
+					a.menu-link {
+						font-size: 10px;
+						padding: 8px 0 8px 30px;
+					}
+
+					&.parent > a:before {
+						top: 8px;
+						left: 15px;
+					}
+
+					&.active,
+					&.current-menu-item {
+						&.parent > a.menu-link:before {
+							left: 12px;
+						}
+					}
+				}
+			}
+		}
+
+		// Level 0
+		& > li {
+			height: auto;
+			line-height: normal;
+			padding: 0;
+			display: block;
+			.animation(none);
+
+			& > a.menu-link {
+				height: 40px;
+				line-height: 40px;
+				padding: 0 5px 0 26px;
+			}
+		}
+	}
+}
+
+/* Button for Dropdown Menu */
+/*-----------------------------------*/
+
+.navigation-link {
+	a {
+		position: relative;
+		display: inline-block;
+		.size(26px, 17px);
+		border-top: 3px solid @menu-font-color;
+		border-bottom: 3px solid @menu-font-color;
+		line-height: 18px;
+		text-align: center;
+		.transition();
+
+		&:before, &:after {
+			content: '';
+			position: absolute;
+			top: 4px;
+			left: 0;
+			right: 0;
+			height: 3px;
+			background-color: @menu-font-color;
+			.transition();
+		}
+
+		&:after {
+			top: -7px;
+			left: 11px;
+			right: auto;
+			bottom: -7px;
+			.size(3px, auto);
+			background-color: transparent;
+		}
+
+		.sticky &,
+		.static & {
+			border-color: @menu-font-color-hover;
+			&:before {background-color: @menu-font-color-hover;}
+		}
+
+		&, .sticky &, .static & {
+			&.active {
+				border-color: transparent;
+				.transform(rotateZ(45deg));
+				&:before, &:after {background-color: @menu-bg-color;}
+			}
+		}
+	}
+}
+
+/* Navigation Bar */
+/*-----------------------------------*/
+
+.navigation {
+	position: absolute;
+	top: auto;
+	left: 0;
+	right: 0;
+	z-index: 4;
+	padding: 0 80px 22px;
+	@media @md {padding: 0 40px 22px;}
+	@media @sm {padding: 0 15px 10px;}
+
+	a {opacity: 1;}
+
+	.logo {
+		float: left;
+		font-size: 30px;
+		color: @color-white;
+		margin-top: 30px;
+		@media @sm {margin-top: 14px;}
+
+		.sticky&, .static& {color: @color-dark;}
+		&:hover, &:active {color: @link-color-hover;}
+	}
+
+	.search,
+	.navigation-link,
+	.navigation-full-link {
+		float: right;
+		height: 74px;
+		line-height: 100px;
+		padding-left: 26px;
+		position: relative;
+
+		@media @sm {
+			height: 56px;
+			line-height: 68px;
+			//padding-left: 16px;
+		}
+
+		> a {
+			font-size: 12px;
+			color: @color-white;
+			&:hover, &:active {color: @link-color-hover;}
+
+			@media @xs {font-size: 15px;}
+		}
+	}
+
+	.navigation-link {
+		@media @sm {line-height: 72px;}
+	}
+
+	&.sticky, &.static {
+		position: relative;
+		background-color: @menu-sticky-bg-color;
+		.transition(top .4s linear);
+
+		.search,
+		.navigation-full-link {
+			> a {
+				color: @color-black;
+				&:hover, &:active {color: @link-color-hover;}
+			}
+		}
+	}
+
+	&.sticky {
+		position: fixed;
+		top: -120px;
+
+		&.sticky-moved {top: 0;}
+	}
+}

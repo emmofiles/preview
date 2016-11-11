@@ -1,0 +1,58 @@
+@import "mixins";
+
+/* General Layout */
+/*-----------------------------------*/
+
+.content,
+.sidebar {
+	width: 100%;
+	padding: 0 15px;
+	margin-bottom: 50px;
+}
+
+.sidebar {display: none;}
+
+.page-sidebar,
+.page-sidebar-left {
+	.content {
+		float: left;
+		width: 66.66%;
+	}
+
+	.sidebar {
+		display: block;
+		float: right;
+		width: 33.33%;
+		padding-top: 10px;
+		padding-left: 30px;
+		@media @sm {padding-left: 15px;}
+	}
+
+	@media @xs {
+		.content,
+		.sidebar {
+			width: 100%;
+			float: none !important;
+		}
+	}
+}
+
+.page-sidebar-left {
+	.content {float: right;}
+	.sidebar {
+		float: left;
+		padding-left: 15px;
+		padding-right: 30px;
+		@media @sm {padding-right: 15px;}
+	}
+}
+
+.page-narrow {
+	.content {
+		max-width: 900px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.sidebar {display: none;}
+}

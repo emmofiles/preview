@@ -1,0 +1,147 @@
+@import "mixins";
+
+/* General Styles */
+/*-----------------------------------*/
+
+html.hidden {
+	display: block !important;
+	visibility: visible !important;
+}
+
+body {
+	font-family: @font1;
+	background: @body-background;
+	.background-size(cover);
+	position: relative;
+	overflow-x: hidden;
+}
+
+.oldie body {
+	background: none;
+	filter: none;
+	font-size: @font-size + 6;
+	color: @color-dark;
+	text-align: center;
+	padding-top: 200px;
+}
+
+::-moz-selection {
+	background: @selection-bg-color;
+	color: @selection-font-color;
+	text-shadow: none;
+}
+
+::selection {
+	background: @selection-bg-color;
+	color: @selection-font-color;
+	text-shadow: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	&.inline {display: inline-block;}
+	.gm-style & {display: inline-block; max-width: none;} // For Google Maps
+}
+
+embed, iframe {max-width: 100%; border: none;}
+.video-player {width: 100%;}
+
+/* Helper Classes */
+/*-----------------------------------*/
+
+.lowercase {text-transform: lowercase;}
+.uppercase {text-transform: uppercase;}
+.notransform {text-transform: none !important;}
+.italic {font-style: italic !important;}
+.overflow-hidden {overflow: hidden !important;}
+.inline-block {display: inline-block !important;}
+
+.position-static {position: static !important;}
+.position-relative {position: relative !important;}
+.position-absolute {position: absolute !important;}
+.position-fixed {position: fixed !important;}
+
+.font-thin {font-weight: 100 !important;}
+.font-light {font-weight: 300 !important;}
+.font-normal {font-weight: 400 !important;}
+.font-medium {font-weight: 500 !important;}
+.font-semi {font-weight: 600 !important;}
+.font-bold {font-weight: 700 !important;}
+
+.no-padding {padding: 0 !important;}
+.no-padding-top {padding-top: 0 !important;}
+.no-padding-bottom {padding-bottom: 0 !important;}
+
+.text-md {font-size: @font-size !important;}
+.text-sm {font-size: @font-size-sm !important;}
+.text-xs {font-size: @font-size-xs !important;}
+
+.color-yellow, .link-yellow {color: @color-yellow;}
+.color-orange, .link-orange {color: @color-orange;}
+.color-red, .link-red {color: @color-red;}
+.color-purple, .link-purple {color: @color-purple;}
+.color-blue, .link-blue {color: @color-blue;}
+.color-green, .link-green {color: @color-green;}
+.color-brown, .link-brown {color: @color-brown;}
+
+.link-yellow,
+.link-orange,
+.link-red,
+.link-purple,
+.link-blue,
+.link-green,
+.link-brown {
+	&:hover, &:active {color: @link-color-hover;}
+}
+
+// Generate Paddings
+
+@paddingMax: 200;
+
+.padding-generator(@index: 0) when (@index <= @paddingMax) {
+.padding-top-@{index} {padding-top: @index*1px !important;}
+.padding-bottom-@{index} {padding-bottom: @index*1px !important;}
+
+@media @md {
+	.padding-top-@{index} {padding-top: @index*.6px !important;}
+	.padding-bottom-@{index} {padding-bottom: @index*.6px !important;}
+}
+
+@media @xs {
+	.padding-top-@{index} {padding-top: @index*.4px !important;}
+	.padding-bottom-@{index} {padding-bottom: @index*.4px !important;}
+}
+
+	.padding-generator(@index + 10);
+}
+
+.padding-generator();
+
+// Generate Margins
+
+@marginMax: 200;
+
+.margin-generator(@index: 0) when (@index <= @marginMax) {
+.margin-top-@{index} {margin-top: @index*1px !important;}
+.margin-bottom-@{index} {margin-bottom: @index*1px !important;}
+
+@media @md {
+	.margin-top-@{index} {margin-top: @index*.6px !important;}
+	.margin-bottom-@{index} {margin-bottom: @index*.6px !important;}
+}
+
+@media @xs {
+	.margin-top-@{index} {margin-top: @index*.4px !important;}
+	.margin-bottom-@{index} {margin-bottom: @index*.4px !important;}
+}
+
+	.margin-generator(@index + 10);
+}
+
+.margin-generator();
+
+
+
+

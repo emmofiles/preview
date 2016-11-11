@@ -1,0 +1,326 @@
+@import "mixins";
+
+/* Form Fields */
+/*-----------------------------------*/
+
+[placeholder] {
+	.placeholder();
+}
+
+:focus[placeholder] {
+	.placeholder(@placeholder-font-color: ~'transparent !important');
+}
+
+label {
+	.user-select();
+}
+
+input, button, textarea {
+	.appearance();
+	border: none;
+	background: none;
+	outline: none;
+	border-radius: @input-border-radius;
+	.box-shadow(none);
+}
+
+.form-control,
+.wpcf7-form-control {
+	.appearance();
+	display: block;
+	.size(100%, @input-height);
+	padding: 0 @input-padding;
+	margin-bottom: @input-margin;
+	font-size: @input-font-size;
+	font-weight: @input-font-weight;
+	color: @input-font-color;
+	line-height: normal;
+	letter-spacing: @input-letter-spacing;
+	background-color: @input-background-color;
+	border: @input-border-width solid @input-border-color;
+	border-radius: @input-border-radius;
+	.box-shadow(none);
+	.transition();
+
+	&:focus {
+		border-color: @input-border-color-focus;
+		outline: none;
+		.box-shadow(none);
+	}
+
+	.ie8 & {line-height: @input-height - @input-border-width * 2;}
+}
+
+textarea {
+	&.form-control, &.wpcf7-form-control {
+		min-height: 260px;
+		@media @xs {min-height: 200px;}
+		@media @xxs {min-height: 160px;}
+		padding: @input-padding;
+		resize: vertical;
+	}
+}
+
+.form-group {
+	label {
+		display: inline-block;
+		font-family: @font2;
+		font-size: @font-size - 1;
+		color: @color-dark;
+		text-transform: uppercase;
+		margin-bottom: 1em;
+	}
+
+	&.required label:after {
+		content: '*';
+		font-size: 1.33em;
+		color: @color-red;
+	}
+}
+
+/* CheckBoxes, Radios */
+/*-----------------------------------*/
+
+.checkbox, .radio {
+	margin: 0 0 20px;
+
+	input {
+		visibility: hidden;
+		.opacity(0);
+		.ie8 & {visibility: visible; .size(0);}
+	}
+
+	label {
+		position: relative;
+		padding-left: 26px;
+		line-height: 16px;
+		@media @sm {line-height: 18px;}
+		.transition();
+
+		&:before, &:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			.size(16px);
+			border: 2px solid @checkbox-color;
+		}
+
+		&:after {
+			top: 4px;
+			left: 4px;
+			.size(8px);
+			border: none;
+			background-color: transparent;
+			.transition();
+		}
+
+		&.checked {
+			color: @checkbox-color;
+			&:after {background-color: @checkbox-color;}
+		}
+
+		&:hover, &:focus, &:active {color: @checkbox-color;}
+	}
+}
+
+.radio label {
+	&:before, &:after {
+		border-radius: 50%;
+	}
+}
+
+/* Search Form in Header */
+/*-----------------------------------*/
+
+.form-search-header {
+	width: 320px;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	z-index: 99;
+	line-height: normal;
+	padding: 5px;
+	overflow: hidden;
+	visibility: hidden;
+	opacity: 0;
+	.transition();
+
+	@media @xxs {width: 220px; right: -40px;}
+
+	.inner {
+		background-color: @color-white;
+		padding: 15px 15px 5px;
+		.box-shadow(0 1px 4px fade(@color-black, 20%));
+		.transform(translateX(102%));
+		.transition();
+	}
+
+	&.active {
+		visibility: visible;
+		opacity: 1;
+
+		.inner {
+			.transform(translateX(0));
+		}
+	}
+
+	.form-control {
+		border-color: @color-lightGray;
+		margin-bottom: 10px;
+
+		&:focus {border-color: @color-gray;}
+	}
+
+	.btn {
+		margin-bottom: 10px;
+		height: 36px;
+		line-height: 36px;
+		padding: 0 20px;
+		border-radius: 0;
+
+		&.btn-wide {
+			display: block;
+			padding: 0 5px;
+			width: 100%;
+		}
+	}
+}
+
+/* Widget Search, Subscribe */
+/*-----------------------------------*/
+
+.form-search,
+.widget_mc4wp_form_widget {
+	position: relative;
+
+	.submit {
+		position: absolute;
+		top: 11px;
+		right: 8px;
+		font-size: 12px;
+		color: @color-lightGray;
+		.transition();
+	}
+
+	.form-control {
+		padding-right: 32px;
+
+		&:focus + .submit {
+			color: @color-gray;
+			&:hover, &:active {color: @link-color-hover;}
+		}
+	}
+}
+
+/* Widget Subscribe */
+/*-----------------------------------*/
+
+.form-subscribe {
+	.submit {
+		top: 15px;
+		font-size: 8px;
+	}
+
+	.form-control {
+		border-width: 0 0 1px 0;
+	}
+}
+
+/* Widget Login */
+/*-----------------------------------*/
+
+.form-login {
+	.form-control {
+		float: left;
+		width: 48%;
+		& + .form-control {margin-left: 4%;}
+	}
+
+	.checkbox {
+		float: left;
+		font-family: @font2;
+		font-size: 12px;
+		color: @color-black;
+		margin: 0 0 10px;
+		label {line-height: 18px;}
+	}
+
+	.submit {
+		float: right;
+		font-family: @font2;
+		font-size: 12px;
+		color: @color-black;
+		text-transform: uppercase;
+		padding: 0;
+		margin: 0;
+		border: none;
+		margin-bottom: 10px;
+		.transition();
+		&:hover, &:active {color: @link-color-hover;}
+	}
+
+	.forgot {
+		float: right;
+		font-family: @font2;
+		font-size: 10px;
+		color: @color-red;
+		&:hover, &:active {color: @link-color-hover;}
+	}
+}
+
+/* Comment Form */
+/*-----------------------------------*/
+
+.form-comment {
+	.form-control {margin-bottom: 16px;}
+
+	.inputs .form-control {
+		float: left;
+		width: 32%;
+		& + .form-control {margin-left: 2%;}
+
+		@media @xxs {
+			float: none;
+			width: 100%;
+			& + .form-control {margin-left: 0;}
+		}
+	}
+
+	#submit {
+		display: inline-block;
+		margin-bottom: 0;
+		text-align: center;
+		white-space: nowrap;
+		vertical-align: middle;
+		-ms-touch-action: manipulation;
+		touch-action: manipulation;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		background-image: none;
+		border: 1px solid #ef7280;
+		.transition();
+		font-weight: 600;
+		border-radius: 3px;
+		font-size: 12px;
+		line-height: 1.6em;
+		filter: alpha(opacity=80);
+		padding: 10px 20px;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		background-color: @color-red;
+		opacity: 1;
+
+		&:hover, &:active {background-color: #ed606f;}
+	}
+}
+
+/* Contact Form */
+/*-----------------------------------*/
+
+.wpcf7-submit {
+	display: inline-block;
+	.size(auto, 50px);
+}

@@ -1,0 +1,222 @@
+@import "mixins";
+
+/* Responsive Styles */
+/*-----------------------------------*/
+
+@media @md {
+	.tab-content {
+		padding-top: 0;
+		.fw-widget-posts & {padding-top: 20px;}
+	}
+
+	.card-blog {
+		.content {
+			margin-bottom: 0;
+		}
+
+		h3 {
+			font-size: 20px;
+		}
+	}
+
+	.section-header .content, .section-header-blog .content, .section-presentation-page .content {
+		margin-bottom: 0;
+	}
+
+	.section-header h1, .section-header-blog h1, .section-presentation-page h1 {
+		//font-size: 3em;
+	}
+
+	.post-content, .post-content p {
+		font-size: 16px;
+	}
+
+	.section-contact-form {padding: 60px 0;}
+	.section-signup, .section-info-presentation {padding: 0;}
+
+	.info-pricing .text-description, .section-faq .text-description {
+		font-size: 14px;
+		max-width: none;
+	}
+
+	.section.section-info .info-pricing {
+		margin: 20px auto 0;
+	}
+
+	.section-pricing {padding: 0;}
+}
+
+@media @sm {
+	.section {padding: 50px 0;}
+	.section-contact-form {padding: 60px 0;}
+	.section-signup, .section-info-presentation, .section-get-started, .section-pricing {padding: 0;}
+
+	.section-signin {
+		.content {padding: 40px 0;}
+	}
+
+	.section-signin .form-container .title-area {
+		padding-top: 40px;
+	}
+
+    .section-signup {
+	    padding: 0;
+	    .static-image {padding-top: 40px;}
+    }
+
+	.btn-social.btn-simple {
+		font-size: 12px;
+	}
+
+	.postlist-alternate .article h2 {
+		font-size: 20px;
+	}
+
+	.content-blog .post-title {
+		font-size: 26px;
+	}
+
+	p {font-size: 12px;}
+
+	.project .content {
+		padding: 0;
+	}
+
+	.services-wrapper .col-sm-6:nth-child(2n + 1) {clear: left;}
+
+	.card-member .content {
+		margin-bottom: 0;
+	}
+
+	.section-contact-us .contact-container .address-container {
+		padding: 20px;
+	}
+
+	.section-contact-us .contact-container .map,
+	.section-contact-us .contact-container .address-container  {
+		height: 360px;
+	}
+
+	.address h4 {
+		font-size: 1.2em;
+	}
+
+	.address p {
+		font-size: 12px;
+	}
+
+	.info-pricing .title-info {
+		margin-top: 10px;
+	}
+
+	.info-pricing .text-description, .section-faq .text-description {
+		font-size: 12px;
+	}
+}
+
+@media @xs {
+	.section {padding: 30px 0;}
+	.section-contact-form {padding: 60px 0;}
+	.section-signup, .section-info-presentation, .section-get-started, .section-pricing {padding: 0;}
+
+	.section .parallax-small {
+		height: auto;
+		min-height: 200px;
+	}
+
+	.footer-big .copyright {
+		font-size: 12px;
+	}
+
+	footer .row .info {
+		margin-bottom: 20px;
+	}
+
+	.footer-big .container > hr {
+		margin-top: 10px;
+	}
+
+	.card-blog {
+		margin-bottom: 0;
+		&.card-white {margin-bottom: 40px;}
+		.card-blog .content {padding: 15px 15px 25px;}
+	}
+
+	.section-header h1, .section-header-blog h1, .section-presentation-page h1 {
+		font-size: 27px;
+	}
+
+	.section-header .content .separator {
+		display: none;
+	}
+
+	.section-header .content h3 {
+		font-size: 14px;
+	}
+
+	.content-blog .post-title {
+		font-size: 22px;
+	}
+
+	.section-numbers .description, .section-numbers-2 .description, .section-numbers-3 .description {
+		margin-bottom: 40px;
+	}
+
+	.section-numbers .card, .section-numbers-2 .card, .section-numbers-3 .card {
+		padding: 0;
+	}
+
+	.section .text-area .description, .section .text-area .description p {
+		font-size: 12px;
+	}
+
+	.section .title-area {
+		margin-bottom: 40px;
+	}
+
+	.section-contact-us .contact-container .address-container {
+		position: relative;
+		.size(100%, auto);
+	}
+
+	.section-info-presentation .image-container {
+		height: auto;
+		width: auto;
+		margin: 0 -15px;
+
+		img {
+			max-width: 100%;
+			width: auto;
+			height: auto;
+			position: static;
+		}
+	}
+
+	.section-pricing .container > .content {
+		margin-top: 90px;
+	}
+}
+
+@media @xxs {
+	.card-blog h3 {
+		font-size: 16px;
+	}
+
+	.postlist-alternate .article h2 {
+		font-size: 18px;
+	}
+
+	.postlist-alternate .article {
+		margin-bottom: 40px;
+	}
+
+	.content-blog .post-title {
+		font-size: 20px;
+	}
+
+	.post-content, .post-content p {
+		font-size: 13px;
+	}
+
+	.project .over-area {padding: 0 4%;}
+}
