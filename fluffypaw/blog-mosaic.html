@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+	<title>FluffyPaw</title>
+	<meta charset="utf-8">
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css" id="color-switcher-link">
+	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+
+	<div class="preloader">
+		<div class="preloader_image"></div>
+	</div>
+
+
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+		<div class="widget widget_search">
+			<form method="get" class="searchform form-inline" action="/">
+				<div class="form-group">
+					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input">
+				</div>
+				<button type="submit" class="theme_button">Search</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+
+			<!-- template sections -->
+
+			<section class="page_toplogo ls table_section table_section_md section_padding_15">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 text-center text-md-left">
+							<a href="./" class="logo">
+
+								<svg width="60" height="60" viewBox="0 0 60 60">
+									<path class="logo-svg" d="M394.666,58.931a0.79,0.79,0,1,0,.058,1.374A1.054,1.054,0,0,0,394.666,58.931Zm13.749-12.461a1.074,1.074,0,0,1,.242,1.371A1.44,1.44,0,1,1,408.415,46.469ZM417.825,83h-25.65a0.645,0.645,0,0,1-.645-0.646V79.747a0.665,0.665,0,0,1,.029-0.193,42.86,42.86,0,0,0,1.452-5.374,6.746,6.746,0,0,1,.467-1.66,32.952,32.952,0,0,1,1.593-3.288l0.184-.346a1.783,1.783,0,0,1,2.011-.952,1.468,1.468,0,0,0,.776-0.048,1.525,1.525,0,0,0,.917-0.782l0.069-.119a2.373,2.373,0,0,1,1.852-1.094,2.913,2.913,0,0,0,1.541-1.561,4.742,4.742,0,0,0,.674-2.512,3.232,3.232,0,0,1-.136-2.157,1.415,1.415,0,0,0-.212-0.725,0.638,0.638,0,0,0-.525-0.2,25.557,25.557,0,0,1-4.611-.24l-0.165-.025a2.48,2.48,0,0,1-1.8-1.09,1.184,1.184,0,0,0-.545-0.563,5.288,5.288,0,0,1-1.516-.52l-0.354-.161c-0.6-.347-1.47-0.625-3.761-0.3a10.241,10.241,0,0,0-4.5,1.723,4.645,4.645,0,0,0-1.456,2.254,5.535,5.535,0,0,1-2.036,2.548,7.03,7.03,0,0,0-2.1,3.67,0.645,0.645,0,0,1-.613.444h-3.116A0.645,0.645,0,0,1,375,65.825V40.175a0.645,0.645,0,0,1,.646-0.646H391.53V23.646A0.645,0.645,0,0,1,392.175,23h25.65a0.645,0.645,0,0,1,.645.646v8.21a0.647,0.647,0,0,1-.511.632,19.565,19.565,0,0,0-4.417,1.6,10.587,10.587,0,0,1-5.477.868,18.973,18.973,0,0,0-5.437.217,1.342,1.342,0,0,0,.269.362,8.4,8.4,0,0,0,1.066.752c1.21,0.773,2.869,1.831,2.366,3.712a14.186,14.186,0,0,1-.519,1.505,10.016,10.016,0,0,0-.569,1.79,6.375,6.375,0,0,0,0,1.657l0.04,0.524a5.635,5.635,0,0,0,1.017,2.335,4.855,4.855,0,0,1,.951,3.176,3.955,3.955,0,0,0,.373,1.559,0.534,0.534,0,0,0,.486.2,2.459,2.459,0,0,1,1.481.344,0.731,0.731,0,0,0,.507-0.042c0.133-.033.267-0.065,0.4-0.086a1.332,1.332,0,0,1,.837.135,1.71,1.71,0,0,0,1.045-.1,1.933,1.933,0,0,0,1.015-.947c0.085-.127.174-0.258,0.272-0.392a2.8,2.8,0,0,1,.871-0.774,5.7,5.7,0,0,0,.93-0.728,6.323,6.323,0,0,1,1.386-1.024h0a40.13,40.13,0,0,1,17.51-4.473A0.646,0.646,0,0,1,435,45.3V65.825a0.645,0.645,0,0,1-.646.646H418.47V82.354A0.645,0.645,0,0,1,417.825,83Zm15.883-37.047V65.178H417.824a0.647,0.647,0,0,0-.646.646V81.708H392.822V79.846a46.151,46.151,0,0,0,1.472-5.522,5.748,5.748,0,0,1,.386-1.334,32.422,32.422,0,0,1,1.527-3.148l0.192-.358a0.525,0.525,0,0,1,.686-0.271l0.128,0.015a2.563,2.563,0,0,0,1.267-.127,2.888,2.888,0,0,0,1.654-1.447,1.231,1.231,0,0,1,1.025-.5,4.362,4.362,0,0,0,2.512-2.426c0.538-1.092.959-2.631,0.614-3.412a2.087,2.087,0,0,1-.076-1.356,2.531,2.531,0,0,0-.472-1.851,1.946,1.946,0,0,0-1.5-.661,26.094,26.094,0,0,1-4.43-.223l-0.2-.031a1.278,1.278,0,0,1-.841-0.439,2.325,2.325,0,0,0-1.484-1.211,4.144,4.144,0,0,1-1.162-.415l-0.31-.136c-0.733-.426-1.841-0.812-4.528-0.435a11.472,11.472,0,0,0-5.053,1.936,5.762,5.762,0,0,0-1.923,2.832,4.311,4.311,0,0,1-1.625,2.009,7.653,7.653,0,0,0-2.394,3.847h-2V40.822h15.884a0.647,0.647,0,0,0,.646-0.646V24.292h24.356v7.05a20.761,20.761,0,0,0-4.227,1.594,9.29,9.29,0,0,1-4.742.731,20.115,20.115,0,0,0-5.92.254,1.189,1.189,0,0,0-.886.873,1.761,1.761,0,0,0,.627,1.694,9.531,9.531,0,0,0,1.238.882c1.29,0.823,2.056,1.387,1.814,2.291a13.307,13.307,0,0,1-.476,1.371,11.09,11.09,0,0,0-.636,2.028,7.525,7.525,0,0,0-.021,1.991l0.039,0.5a6.557,6.557,0,0,0,1.218,2.952,3.635,3.635,0,0,1,.758,2.314,4.736,4.736,0,0,0,.631,2.517,1.826,1.826,0,0,0,1.507.7,1.238,1.238,0,0,1,.807.153,1.809,1.809,0,0,0,1.492.111,1.286,1.286,0,0,1,.373-0.039,1.911,1.911,0,0,0,.284.115,3.213,3.213,0,0,0,3.4-1.6c0.077-.114.159-0.234,0.247-0.356a1.564,1.564,0,0,1,.463-0.41,6.61,6.61,0,0,0,1.153-.889,5.276,5.276,0,0,1,1.1-.83A39.572,39.572,0,0,1,433.708,45.953Z"
+													transform="translate(-375 -23)" />
+								</svg>
+
+								<span class="logo-meta">
+									<span class="site-name grey">Fluffy
+										<strong>Paw</strong>
+									</span>
+									<span class="small-text">veterinary clinic</span>
+								</span>
+							</a>
+						</div>
+
+						<div class="col-md-9 text-center text-md-right">
+							<div class="media inline-block text-left">
+								<div class="media-left media-middle fontsize_20">
+									<i class="fa fa-map-marker"></i>
+								</div>
+								<div class="media-body media-middle">
+									<span class="small-text lightfont">Our location</span>
+									<p class="fontsize_18 highlight semibold">2418 Nancy St, New York</p>
+								</div>
+							</div>
+							<div class="media inline-block text-left">
+								<div class="media-left media-middle fontsize_20">
+									<i class="fa fa-clock-o"></i>
+								</div>
+								<div class="media-body media-middle">
+									<span class="small-text lightfont">We are open</span>
+									<p class="fontsize_18 highlight semibold">08:00 - 21:00</p>
+								</div>
+							</div>
+							<div class="media inline-block text-left">
+								<div class="media-left media-middle fontsize_20">
+									<i class="fa fa-phone"></i>
+								</div>
+								<div class="media-body media-middle">
+									<span class="small-text lightfont">Call us now</span>
+									<p class="fontsize_18 highlight semibold">0 (800) 337 7737</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<header class="page_header cs header_color">
+				<div class="container">
+					<div class="row display_table columns_padding_0">
+						<div class="col-md-10 col-xs-4 display_table_cell">
+							<!-- main nav start -->
+							<nav class="mainmenu_wrapper">
+								<ul class="mainmenu nav sf-menu">
+									<li class="active">
+										<a href="index.html">Home</a>
+									</li>
+
+
+									<li>
+										<a href="about.html">Pages</a>
+										<ul>
+											<!-- features -->
+											<li>
+												<a href="shortcodes_teasers.html">Shortcodes&amp;Widgets</a>
+												<ul>
+
+													<li>
+														<a href="shortcodes_teasers.html">Teasers</a>
+													</li>
+													<li>
+														<a href="shortcodes_buttons.html">Buttons</a>
+													</li>
+													<li>
+														<a href="shortcodes_progress.html">Progress</a>
+													</li>
+													<li>
+														<a href="shortcodes_pricing.html">Pricing</a>
+													</li>
+													<li>
+														<a href="shortcodes_socialicons.html">Social Icons</a>
+													</li>
+													<li>
+														<a href="shortcodes_tabs.html">Tabs &amp; Collapse</a>
+													</li>
+													<li>
+														<a href="shortcodes_bootstrap.html">Bootstrap Elements</a>
+													</li>
+													<li>
+														<a href="shortcodes_typography.html">Typography</a>
+													</li>
+													<li>
+														<a href="shortcodes_widgets.html">Widgets</a>
+													</li>
+													<li>
+														<a href="shortcodes_animation.html">Animation</a>
+													</li>
+													<li>
+														<a href="shortcodes_icons.html">Template Icons</a>
+													</li>
+												</ul>
+											</li>
+											<!-- eof features -->
+
+											<!-- header -->
+											<li>
+												<a href="header1.html">Headers</a>
+												<ul>
+													<li>
+														<a href="header1.html">Header 1</a>
+													</li>
+													<li>
+														<a href="header2.html">Header 2</a>
+													</li>
+													<li>
+														<a href="header3.html">Header 3</a>
+													</li>
+													<li>
+														<a href="header4.html">Header 4</a>
+													</li>
+													<li>
+														<a href="header5.html">Header 5</a>
+													</li>
+													<li>
+														<a href="header6.html">Header 6</a>
+													</li>
+													<li>
+														<a href="header_side1.html">Side Headers</a>
+														<ul>
+															<li>
+																<a href="header_side1.html">Side Left Header</a>
+															</li>
+															<li>
+																<a href="header_side2.html">Side Right Header</a>
+															</li>
+															<li>
+																<a href="header_side3.html">Side Push Left Header</a>
+															</li>
+															<li>
+																<a href="header_side4.html">Side Push Right Header</a>
+															</li>
+														</ul>
+													</li>
+
+												</ul>
+											</li>
+											<!-- eof header -->
+
+											<!-- breadcrumbs -->
+											<li>
+												<a href="breadcrumbs1.html">Breadcrumbs</a>
+												<ul>
+													<li>
+														<a href="breadcrumbs1.html">Breadcrumbs 1</a>
+													</li>
+													<li>
+														<a href="breadcrumbs2.html">Breadcrumbs 2</a>
+													</li>
+													<li>
+														<a href="breadcrumbs3.html">Breadcrumbs 3</a>
+													</li>
+													<li>
+														<a href="breadcrumbs4.html">Breadcrumbs 4</a>
+													</li>
+													<li>
+														<a href="breadcrumbs5.html">Breadcrumbs 5</a>
+													</li>
+													<li>
+														<a href="breadcrumbs6.html">Breadcrumbs 6</a>
+													</li>
+												</ul>
+											</li>
+											<!-- eof breadcrumbs -->
+
+											<!-- footer -->
+											<li>
+												<a href="footer1.html">Footer</a>
+												<ul>
+													<li>
+														<a href="footer1.html">Footer 1</a>
+													</li>
+													<li>
+														<a href="footer2.html">Footer 2</a>
+													</li>
+													<li>
+														<a href="footer3.html">Footer 3</a>
+													</li>
+													<li>
+														<a href="footer4.html">Footer 4</a>
+													</li>
+													<li>
+														<a href="footer5.html">Footer 5</a>
+													</li>
+												</ul>
+											</li>
+											<!-- eof footer -->
+
+											<!-- copyright -->
+											<li>
+												<a href="copyright1.html">Copyright</a>
+												<ul>
+													<li>
+														<a href="copyright1.html">Copyright 1</a>
+													</li>
+													<li>
+														<a href="copyright2.html">Copyright 2</a>
+													</li>
+													<li>
+														<a href="copyright3.html">Copyright 3</a>
+													</li>
+													<li>
+														<a href="copyright4.html">Copyright 4</a>
+													</li>
+													<li>
+														<a href="copyright5.html">Copyright 5</a>
+													</li>
+												</ul>
+											</li>
+											<!-- eof copyright -->
+
+											<!-- events -->
+											<li>
+												<a href="events-left.html">Events</a>
+												<ul>
+													<li>
+														<a href="events-left.html">Left Sidebar</a>
+													</li>
+													<li>
+														<a href="events-right.html">Right Sidebar</a>
+													</li>
+													<li>
+														<a href="events-full.html">Full Width</a>
+													</li>
+													<li>
+														<a href="event-single-left.html">Single Event</a>
+														<ul>
+															<li>
+																<a href="event-single-left.html">Left Sidebar</a>
+															</li>
+															<li>
+																<a href="event-single-right.html">Right Sidebar</a>
+															</li>
+															<li>
+																<a href="event-single-full.html">Full Width</a>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+											<!-- eof events -->
+
+											<li>
+												<a href="team.html">Team</a>
+												<ul>
+													<li>
+														<a href="team.html">Team</a>
+													</li>
+													<li>
+														<a href="team2.html">Team 2</a>
+													</li>
+													<li>
+														<a href="team-single.html">Team Single</a>
+													</li>
+												</ul>
+											</li>
+
+											<li>
+												<a href="appointment.html">Appointment</a>
+											</li>
+
+											<li>
+												<a href="about.html">About</a>
+											</li>
+
+											<li>
+												<a href="typography.html">Typography</a>
+											</li>
+
+											<li>
+												<a href="comingsoon1.html">Comingsoon</a>
+												<ul>
+													<li>
+														<a href="comingsoon1.html">Comingsoon</a>
+													</li>
+													<li>
+														<a href="comingsoon2.html">Comingsoon 2</a>
+													</li>
+												</ul>
+											</li>
+
+											<li>
+												<a href="pricing.html">Pricing</a>
+											</li>
+											<li>
+												<a href="timetable.html">Timetable</a>
+											</li>
+											<li>
+												<a href="faq.html">FAQ</a>
+												<ul>
+													<li>
+														<a href="faq.html">FAQ</a>
+													</li>
+													<li>
+														<a href="faq2.html">FAQ 2</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="404.html">404</a>
+											</li>
+
+										</ul>
+									</li>
+									<!-- eof pages -->
+
+									<li>
+										<a href="services.html">Services</a>
+										<ul>
+											<li>
+												<a href="services.html">Services</a>
+											</li>
+											<li>
+												<a href="wellness-care.html">Wellness Care</a>
+											</li>
+										</ul>
+									</li>
+
+									<!-- gallery -->
+									<li>
+										<a href="gallery-regular.html">Gallery</a>
+										<ul>
+											<!-- Gallery regular -->
+											<li>
+												<a href="gallery-regular.html">Gallery Regular</a>
+												<ul>
+													<li>
+														<a href="gallery-regular.html">1 column</a>
+													</li>
+													<li>
+														<a href="gallery-regular-2-cols.html">2 columns</a>
+													</li>
+													<li>
+														<a href="gallery-regular-3-cols.html">3 columns</a>
+													</li>
+													<li>
+														<a href="gallery-regular-4-cols.html">4 columns</a>
+													</li>
+												</ul>
+											</li>
+											<!-- eof Gallery regular -->
+
+											<!-- Gallery full width -->
+											<li>
+												<a href="gallery-fullwidth.html">Gallery Full Width</a>
+												<ul>
+													<li>
+														<a href="gallery-fullwidth.html">2 column</a>
+													</li>
+													<li>
+														<a href="gallery-fullwidth-3-cols.html">3 columns</a>
+													</li>
+													<li>
+														<a href="gallery-fullwidth-4-cols.html">4 columns</a>
+													</li>
+												</ul>
+											</li>
+											<!-- eof Gallery full width -->
+
+											<!-- Gallery extended -->
+											<li>
+												<a href="gallery-extended.html">Gallery Extended</a>
+												<ul>
+													<li>
+														<a href="gallery-extended.html">1 column</a>
+													</li>
+													<li>
+														<a href="gallery-extended-2-cols.html">2 columns</a>
+													</li>
+													<li>
+														<a href="gallery-extended-3-cols.html">3 columns</a>
+													</li>
+												</ul>
+											</li>
+											<!-- eof Gallery extended -->
+
+											<!-- Gallery carousel -->
+											<li>
+												<a href="gallery-carousel.html">Gallery Carousel</a>
+												<ul>
+													<li>
+														<a href="gallery-carousel.html">1 column</a>
+													</li>
+													<li>
+														<a href="gallery-carousel-2-cols.html">2 columns</a>
+													</li>
+													<li>
+														<a href="gallery-carousel-3-cols.html">3 columns</a>
+													</li>
+												</ul>
+											</li>
+											<!-- eof Gallery carousel -->
+
+											<!-- Gallery tile -->
+											<li>
+												<a href="gallery-tile.html">Gallery Tile</a>
+											</li>
+											<!-- eof Gallery tile -->
+
+											<!-- Gallery left sidebar -->
+											<li>
+												<a href="gallery-left.html">Gallery Left Sidebar</a>
+												<ul>
+													<li>
+														<a href="gallery-left.html">1 column</a>
+													</li>
+													<li>
+														<a href="gallery-left-2-cols.html">2 columns</a>
+													</li>
+												</ul>
+											</li>
+											<!-- eof Gallery left sidebar -->
+
+											<!-- Gallery right sidebar -->
+											<li>
+												<a href="gallery-right.html">Gallery Right Sidebar</a>
+												<ul>
+													<li>
+														<a href="gallery-right.html">1 column</a>
+													</li>
+													<li>
+														<a href="gallery-right-2-cols.html">2 columns</a>
+													</li>
+												</ul>
+											</li>
+											<!-- eof Gallery right sidebar -->
+
+											<!-- Gallery item -->
+											<li>
+												<a href="gallery-single.html">Gallery Item</a>
+												<ul>
+													<li>
+														<a href="gallery-single.html">Style 1</a>
+													</li>
+													<li>
+														<a href="gallery-single2.html">Style 2</a>
+													</li>
+													<li>
+														<a href="gallery-single3.html">Style 3</a>
+													</li>
+												</ul>
+											</li>
+											<!-- eof Gallery item -->
+										</ul>
+									</li>
+									<!-- eof Gallery -->
+
+									<!-- blog -->
+									<li>
+										<a href="blog-right.html">Blog</a>
+										<ul>
+
+											<li>
+												<a href="blog-right.html">Right Sidebar</a>
+											</li>
+											<li>
+												<a href="blog-left.html">Left Sidebar</a>
+											</li>
+											<li>
+												<a href="blog-full.html">No Sidebar</a>
+											</li>
+											<li>
+												<a href="blog-mosaic.html">Blog Grid</a>
+											</li>
+
+											<li>
+												<a href="blog-single-right.html">Post</a>
+												<ul>
+													<li>
+														<a href="blog-single-right.html">Right Sidebar</a>
+													</li>
+													<li>
+														<a href="blog-single-left.html">Left Sidebar</a>
+													</li>
+													<li>
+														<a href="blog-single-full.html">No Sidebar</a>
+													</li>
+												</ul>
+											</li>
+
+											<li>
+												<a href="blog-single-video-right.html">Video Post</a>
+												<ul>
+													<li>
+														<a href="blog-single-video-right.html">Right Sidebar</a>
+													</li>
+													<li>
+														<a href="blog-single-video-left.html">Left Sidebar</a>
+													</li>
+													<li>
+														<a href="blog-single-video-full.html">No Sidebar</a>
+													</li>
+												</ul>
+											</li>
+
+										</ul>
+									</li>
+									<!-- eof blog -->
+
+									<li>
+										<a href="#">Features</a>
+										<div class="mega-menu">
+											<ul class="mega-menu-row">
+												<li class="mega-menu-col">
+													<a href="#">Headers</a>
+													<ul>
+														<li>
+															<a href="header1.html">Header Type 1</a>
+														</li>
+														<li>
+															<a href="header2.html">Header Type 2</a>
+														</li>
+														<li>
+															<a href="header3.html">Header Type 3</a>
+														</li>
+														<li>
+															<a href="header4.html">Header Type 4</a>
+														</li>
+														<li>
+															<a href="header5.html">Header Type 5</a>
+														</li>
+														<li>
+															<a href="header6.html">Header Type 6</a>
+														</li>
+													</ul>
+												</li>
+												<li class="mega-menu-col">
+													<a href="#">Side Menus</a>
+													<ul>
+														<li>
+															<a href="header_side1.html">Slide Left Light</a>
+														</li>
+														<li>
+															<a href="header_side2.html">Slide Right Light</a>
+														</li>
+														<li>
+															<a href="header_side3.html">Push Left Light</a>
+														</li>
+														<li>
+															<a href="header_side4.html">Push Right Light</a>
+														</li>
+														<li>
+															<a href="header_side5.html">Slide Left Dark</a>
+														</li>
+														<li>
+															<a href="header_side6.html">Slide Right Dark</a>
+														</li>
+														<li>
+															<a href="header_side7.html">Push Left Dark</a>
+														</li>
+														<li>
+															<a href="header_side8.html">Push Right Dark</a>
+														</li>
+														<li>
+															<a href="header_side_superfish.html">Superfish Menu</a>
+														</li>
+													</ul>
+												</li>
+												<li class="mega-menu-col">
+													<a href="breadcrumbs1.html">Breadcrumbs</a>
+													<ul>
+														<li>
+															<a href="breadcrumbs1.html">Breadcrumbs 1</a>
+														</li>
+														<li>
+															<a href="breadcrumbs2.html">Breadcrumbs 2</a>
+														</li>
+														<li>
+															<a href="breadcrumbs3.html">Breadcrumbs 3</a>
+														</li>
+														<li>
+															<a href="breadcrumbs4.html">Breadcrumbs 4</a>
+														</li>
+														<li>
+															<a href="breadcrumbs5.html">Breadcrumbs 5</a>
+														</li>
+														<li>
+															<a href="breadcrumbs6.html">Breadcrumbs 6</a>
+														</li>
+													</ul>
+												</li>
+												<li class="mega-menu-col">
+													<a href="footer1.html">Footers</a>
+													<ul>
+														<li>
+															<a href="footer1.html">Footer Type 1</a>
+														</li>
+														<li>
+															<a href="footer2.html">Footer Type 2</a>
+														</li>
+														<li>
+															<a href="footer3.html">Footer Type 3</a>
+														</li>
+														<li>
+															<a href="footer4.html">Footer Type 4</a>
+														</li>
+														<li>
+															<a href="footer5.html">Footer Type 5</a>
+														</li>
+													</ul>
+												</li>
+												<li class="mega-menu-col">
+													<a href="copyright1.html">Copyrights</a>
+
+													<ul>
+														<li>
+															<a href="copyright1.html">Copyrights 1</a>
+														</li>
+														<li>
+															<a href="copyright2.html">Copyrights 2</a>
+														</li>
+														<li>
+															<a href="copyright3.html">Copyrights 3</a>
+														</li>
+														<li>
+															<a href="copyright4.html">Copyrights 4</a>
+														</li>
+														<li>
+															<a href="copyright5.html">Copyrights 5</a>
+														</li>
+													</ul>
+												</li>
+
+											</ul>
+										</div>
+										<!-- eof mega menu -->
+									</li>
+									<!-- eof features -->
+
+									<!-- contacts -->
+									<li>
+										<a href="contact.html">Contacts</a>
+										<ul>
+											<li>
+												<a href="contact.html">Contact 1</a>
+											</li>
+											<li>
+												<a href="contact2.html">Contact 2</a>
+											</li>
+											<li>
+												<a href="contact3.html">Contact 3</a>
+											</li>
+										</ul>
+									</li>
+									<!-- eof contacts -->
+								</ul>
+							</nav>
+							<!-- eof main nav -->
+							<span class="toggle_menu">
+								<span></span>
+							</span>
+						</div>
+						<div class="col-md-2 col-xs-8 text-right display_table_cell">
+							<span class="greylinks">
+								<a href="#" class="social-icon soc-facebook"></a>
+								<a href="#" class="social-icon soc-twitter"></a>
+								<a href="#" class="social-icon soc-pinterest"></a>
+								<a href="#" class="social-icon soc-google"></a>
+							</span>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<section class="page_breadcrumbs ls ms columns_margin_0">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 ">
+							<ol class="breadcrumb">
+								<li>
+									<a href="./">
+										Home
+									</a>
+								</li>
+								<li>
+									<a href="#">Blog</a>
+								</li>
+								<li class="active"> Mosaic</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="ls page_portfolio section_padding_110">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+
+							<div class="isotope_container isotope row masonry-layout columns_margin_bottom_30">
+
+								<div class="isotope-item col-lg-4 col-md-6 col-sm-12">
+
+									<article class="vertical-item content-padding mosaic-post post format-standard text-center with_border">
+
+										<div class="item-media entry-thumbnail">
+											<img src="images/gallery/01.jpg" alt="">
+											<div class="media-links">
+												<a class="abs-link" title="" href="blog-single-right.html"></a>
+											</div>
+										</div>
+
+										<div class="item-content entry-content">
+											<header class="entry-header">
+
+												<h3 class="entry-title">
+													<a href="blog-single-right.html" rel="bookmark">Consetetur elitr tempor</a>
+												</h3>
+
+												<span class="date small-text type2 highlight">
+													<time datetime="2016-01-10T15:05:23+00:00" class="entry-date">
+														Jan 10, 2016
+													</time>
+												</span>
+
+											</header>
+											<!-- .entry-header -->
+
+											<p>Duis autem eumre dolor hendrerit vulputate eros et accumsan et iusto odio dignissim.</p>
+
+										</div>
+										<!-- .item-content.entry-content -->
+										<div class="post-social-links text-center ls">
+											<a href="#" class="social-icon color-icon soc-twitter"></a>
+											<a href="#" class="social-icon color-icon soc-facebook"></a>
+											<a href="#" class="social-icon color-icon soc-google"></a>
+											<a href="#" class="social-icon color-icon soc-flickr"></a>
+										</div>
+									</article>
+
+								</div>
+
+								<div class="isotope-item col-lg-4 col-md-6 col-sm-12">
+
+									<article class="vertical-item content-padding mosaic-post post format-standard text-center with_border">
+
+										<div class="item-media entry-thumbnail">
+											<img src="images/gallery/02.jpg" alt="">
+											<div class="media-links">
+												<a class="abs-link" title="" href="blog-single-right.html"></a>
+											</div>
+										</div>
+
+										<div class="item-content entry-content">
+											<header class="entry-header">
+
+												<h3 class="entry-title">
+													<a href="blog-single-right.html" rel="bookmark">Diam nonumy eirmod tempor </a>
+												</h3>
+
+												<span class="date small-text type2 highlight">
+													<time datetime="2016-01-10T15:05:23+00:00" class="entry-date">
+														Jan 10, 2016
+													</time>
+												</span>
+
+											</header>
+											<!-- .entry-header -->
+
+											<p>Duis autem eumre dolor hendrerit vulputate veliesse molestie consequat vel illum dolore at vero eros et accumsan et iusto odio dignissim.</p>
+
+										</div>
+										<!-- .item-content.entry-content -->
+										<div class="post-social-links text-center ls">
+											<a href="#" class="social-icon color-icon soc-twitter"></a>
+											<a href="#" class="social-icon color-icon soc-facebook"></a>
+											<a href="#" class="social-icon color-icon soc-google"></a>
+											<a href="#" class="social-icon color-icon soc-flickr"></a>
+										</div>
+									</article>
+
+								</div>
+
+								<div class="isotope-item col-lg-4 col-md-6 col-sm-12">
+									<article class="vertical-item content-padding mosaic-post post format-standard text-center with_border">
+
+										<div class="item-media entry-thumbnail">
+											<img src="images/gallery/03.jpg" alt="">
+											<div class="media-links">
+												<a class="abs-link" title="" href="blog-single-right.html"></a>
+											</div>
+										</div>
+
+										<div class="item-content entry-content">
+											<header class="entry-header">
+
+												<h3 class="entry-title">
+													<a href="blog-single-right.html" rel="bookmark">Eirmod elitr diam nonumy tempor</a>
+												</h3>
+
+												<span class="date small-text type2 highlight">
+													<time datetime="2016-01-10T15:05:23+00:00" class="entry-date">
+														Jan 10, 2016
+													</time>
+												</span>
+
+											</header>
+											<!-- .entry-header -->
+
+											<p>Hendrerit vulputate veliesse molestie consequat vel illum dolore at vero eros et accumsan et iusto odio dignissim.</p>
+
+										</div>
+										<!-- .item-content.entry-content -->
+										<div class="post-social-links text-center ls">
+											<a href="#" class="social-icon color-icon soc-twitter"></a>
+											<a href="#" class="social-icon color-icon soc-facebook"></a>
+											<a href="#" class="social-icon color-icon soc-google"></a>
+											<a href="#" class="social-icon color-icon soc-flickr"></a>
+										</div>
+									</article>
+								</div>
+
+								<div class="isotope-item col-lg-4 col-md-6 col-sm-12">
+									<article class="vertical-item content-padding mosaic-post post format-standard text-center with_border">
+
+										<div class="item-media entry-thumbnail">
+											<img src="images/gallery/04.jpg" alt="">
+											<div class="media-links">
+												<a class="abs-link" title="" href="blog-single-right.html"></a>
+											</div>
+										</div>
+
+										<div class="item-content entry-content">
+											<header class="entry-header">
+
+												<h3 class="entry-title">
+													<a href="blog-single-right.html" rel="bookmark">Tempor elitr diam nonumy</a>
+												</h3>
+
+												<span class="date small-text type2 highlight">
+													<time datetime="2016-01-10T15:05:23+00:00" class="entry-date">
+														Jan 10, 2016
+													</time>
+												</span>
+
+											</header>
+											<!-- .entry-header -->
+
+											<p>Duis autem eumre dolor hendrerit vulputate veliesse molestie at vero eros et accumsan et iusto odio dignissim.</p>
+
+										</div>
+										<!-- .item-content.entry-content -->
+										<div class="post-social-links text-center ls">
+											<a href="#" class="social-icon color-icon soc-twitter"></a>
+											<a href="#" class="social-icon color-icon soc-facebook"></a>
+											<a href="#" class="social-icon color-icon soc-google"></a>
+											<a href="#" class="social-icon color-icon soc-flickr"></a>
+										</div>
+									</article>
+								</div>
+
+								<div class="isotope-item col-lg-4 col-md-6 col-sm-12">
+									<article class="vertical-item content-padding mosaic-post post format-standard text-center with_border">
+
+										<div class="item-media entry-thumbnail">
+											<img src="images/gallery/05.jpg" alt="">
+											<div class="media-links">
+												<a class="abs-link" title="" href="blog-single-right.html"></a>
+											</div>
+										</div>
+
+										<div class="item-content entry-content">
+											<header class="entry-header">
+
+												<h3 class="entry-title">
+													<a href="blog-single-right.html" rel="bookmark">Consetetur elitr diam eirmod tempor </a>
+												</h3>
+
+												<span class="date small-text type2 highlight">
+													<time datetime="2016-01-10T15:05:23+00:00" class="entry-date">
+														Jan 10, 2016
+													</time>
+												</span>
+
+											</header>
+											<!-- .entry-header -->
+
+											<p>Duis autem eumre dolor hendrerit vulputate veliesse molestie consequat vel illum dolore at vero eros et accumsan et iusto odio dignissim.</p>
+
+										</div>
+										<!-- .item-content.entry-content -->
+										<div class="post-social-links text-center ls">
+											<a href="#" class="social-icon color-icon soc-twitter"></a>
+											<a href="#" class="social-icon color-icon soc-facebook"></a>
+											<a href="#" class="social-icon color-icon soc-google"></a>
+											<a href="#" class="social-icon color-icon soc-flickr"></a>
+										</div>
+									</article>
+								</div>
+
+								<div class="isotope-item col-lg-4 col-md-6 col-sm-12">
+									<article class="vertical-item content-padding mosaic-post post format-standard text-center with_border">
+
+										<div class="item-media entry-thumbnail">
+											<img src="images/gallery/06.jpg" alt="">
+											<div class="media-links">
+												<a class="abs-link" title="" href="blog-single-right.html"></a>
+											</div>
+										</div>
+
+										<div class="item-content entry-content">
+											<header class="entry-header">
+
+												<h3 class="entry-title">
+													<a href="blog-single-right.html" rel="bookmark">Nonumy onsetetur elitr diam eirmod tempor </a>
+												</h3>
+
+												<span class="date small-text type2 highlight">
+													<time datetime="2016-01-10T15:05:23+00:00" class="entry-date">
+														Jan 10, 2016
+													</time>
+												</span>
+
+											</header>
+											<!-- .entry-header -->
+
+											<p>Duis autem eumre dolor hendrerit vulputate veliesse molestie consequat vel illum dolore at vero eros et accumsan et iusto odio dignissim.</p>
+
+										</div>
+										<!-- .item-content.entry-content -->
+										<div class="post-social-links text-center ls">
+											<a href="#" class="social-icon color-icon soc-twitter"></a>
+											<a href="#" class="social-icon color-icon soc-facebook"></a>
+											<a href="#" class="social-icon color-icon soc-google"></a>
+											<a href="#" class="social-icon color-icon soc-flickr"></a>
+										</div>
+									</article>
+								</div>
+
+								<div class="isotope-item col-lg-4 col-md-6 col-sm-12">
+									<article class="vertical-item content-padding mosaic-post post format-standard text-center with_border">
+
+										<div class="item-media entry-thumbnail">
+											<img src="images/gallery/07.jpg" alt="">
+											<div class="media-links">
+												<a class="abs-link" title="" href="blog-single-right.html"></a>
+											</div>
+										</div>
+
+										<div class="item-content entry-content">
+											<header class="entry-header">
+
+												<h3 class="entry-title">
+													<a href="blog-single-right.html" rel="bookmark">Tempor consetetur elitr diam nonumy eirmod </a>
+												</h3>
+
+												<span class="date small-text type2 highlight">
+													<time datetime="2016-01-10T15:05:23+00:00" class="entry-date">
+														Jan 10, 2016
+													</time>
+												</span>
+
+											</header>
+											<!-- .entry-header -->
+
+											<p>Duis autem eumre dolor hendrerit vulputate veliesse molestie consequat vel illum dolore at vero eros et accumsan et iusto odio dignissim.</p>
+
+										</div>
+										<!-- .item-content.entry-content -->
+										<div class="post-social-links text-center ls">
+											<a href="#" class="social-icon color-icon soc-twitter"></a>
+											<a href="#" class="social-icon color-icon soc-facebook"></a>
+											<a href="#" class="social-icon color-icon soc-google"></a>
+											<a href="#" class="social-icon color-icon soc-flickr"></a>
+										</div>
+									</article>
+								</div>
+
+								<div class="isotope-item col-lg-4 col-md-6 col-sm-12">
+									<article class="vertical-item content-padding mosaic-post post format-standard text-center with_border">
+
+										<div class="item-media entry-thumbnail">
+											<img src="images/gallery/08.jpg" alt="">
+											<div class="media-links">
+												<a class="abs-link" title="" href="blog-single-right.html"></a>
+											</div>
+										</div>
+
+										<div class="item-content entry-content">
+											<header class="entry-header">
+
+												<h3 class="entry-title">
+													<a href="blog-single-right.html" rel="bookmark">Consetetur elitr diam nonumy eirmod tempor </a>
+												</h3>
+
+												<span class="date small-text type2 highlight">
+													<time datetime="2016-01-10T15:05:23+00:00" class="entry-date">
+														Jan 10, 2016
+													</time>
+												</span>
+
+											</header>
+											<!-- .entry-header -->
+
+											<p>Duis autem eumre dolor hendrerit vulputate veliesse molestie consequat vel illum dolore at vero eros et accumsan et iusto odio dignissim.</p>
+
+										</div>
+										<!-- .item-content.entry-content -->
+										<div class="post-social-links text-center ls">
+											<a href="#" class="social-icon color-icon soc-twitter"></a>
+											<a href="#" class="social-icon color-icon soc-facebook"></a>
+											<a href="#" class="social-icon color-icon soc-google"></a>
+											<a href="#" class="social-icon color-icon soc-flickr"></a>
+										</div>
+									</article>
+								</div>
+
+								<div class="isotope-item col-lg-4 col-md-6 col-sm-12">
+									<article class="vertical-item content-padding mosaic-post post format-standard text-center with_border">
+
+										<div class="item-media entry-thumbnail">
+											<img src="images/gallery/09.jpg" alt="">
+											<div class="media-links">
+												<a class="abs-link" title="" href="blog-single-right.html"></a>
+											</div>
+										</div>
+
+										<div class="item-content entry-content">
+											<header class="entry-header">
+
+												<h3 class="entry-title">
+													<a href="blog-single-right.html" rel="bookmark">Eirmod tempor consetetur elitr diam nonumy </a>
+												</h3>
+
+												<span class="date small-text type2 highlight">
+													<time datetime="2016-01-10T15:05:23+00:00" class="entry-date">
+														Jan 10, 2016
+													</time>
+												</span>
+
+											</header>
+											<!-- .entry-header -->
+
+											<p>Duis autem eumre dolor hendrerit vulputate veliesse molestie consequat vel illum dolore at vero eros et accumsan et iusto odio dignissim.</p>
+
+										</div>
+										<!-- .item-content.entry-content -->
+										<div class="post-social-links text-center ls">
+											<a href="#" class="social-icon color-icon soc-twitter"></a>
+											<a href="#" class="social-icon color-icon soc-facebook"></a>
+											<a href="#" class="social-icon color-icon soc-google"></a>
+											<a href="#" class="social-icon color-icon soc-flickr"></a>
+										</div>
+									</article>
+								</div>
+
+								<div class="isotope-item col-lg-4 col-md-6 col-sm-12">
+									<article class="vertical-item content-padding mosaic-post post format-standard text-center with_border">
+
+										<div class="item-media entry-thumbnail">
+											<img src="images/gallery/10.jpg" alt="">
+											<div class="media-links">
+												<a class="abs-link" title="" href="blog-single-right.html"></a>
+											</div>
+										</div>
+
+										<div class="item-content entry-content">
+											<header class="entry-header">
+
+												<h3 class="entry-title">
+													<a href="blog-single-right.html" rel="bookmark">Diam nonumy consetetur elitr eirmod tempor </a>
+												</h3>
+
+												<span class="date small-text type2 highlight">
+													<time datetime="2016-01-10T15:05:23+00:00" class="entry-date">
+														Jan 10, 2016
+													</time>
+												</span>
+
+											</header>
+											<!-- .entry-header -->
+
+											<p>Duis autem eumre dolor hendrerit vulputate dolore at vero eros et accumsan et iusto odio dignissim.</p>
+
+										</div>
+										<!-- .item-content.entry-content -->
+										<div class="post-social-links text-center ls">
+											<a href="#" class="social-icon color-icon soc-twitter"></a>
+											<a href="#" class="social-icon color-icon soc-facebook"></a>
+											<a href="#" class="social-icon color-icon soc-google"></a>
+											<a href="#" class="social-icon color-icon soc-flickr"></a>
+										</div>
+									</article>
+								</div>
+
+								<div class="isotope-item col-lg-4 col-md-6 col-sm-12">
+									<article class="vertical-item content-padding mosaic-post post format-standard text-center with_border">
+
+										<div class="item-media entry-thumbnail">
+											<img src="images/gallery/11.jpg" alt="">
+											<div class="media-links">
+												<a class="abs-link" title="" href="blog-single-right.html"></a>
+											</div>
+										</div>
+
+										<div class="item-content entry-content">
+											<header class="entry-header">
+
+												<h3 class="entry-title">
+													<a href="blog-single-right.html" rel="bookmark">Consetetur elitr diam nonumy eirmod tempor </a>
+												</h3>
+
+												<span class="date small-text type2 highlight">
+													<time datetime="2016-01-10T15:05:23+00:00" class="entry-date">
+														Jan 10, 2016
+													</time>
+												</span>
+
+											</header>
+											<!-- .entry-header -->
+
+											<p>Duis veliesse molestie consequat vel illum dolore at vero eros et accumsan et iusto odio dignissim.</p>
+
+										</div>
+										<!-- .item-content.entry-content -->
+										<div class="post-social-links text-center ls">
+											<a href="#" class="social-icon color-icon soc-twitter"></a>
+											<a href="#" class="social-icon color-icon soc-facebook"></a>
+											<a href="#" class="social-icon color-icon soc-google"></a>
+											<a href="#" class="social-icon color-icon soc-flickr"></a>
+										</div>
+									</article>
+								</div>
+
+								<div class="isotope-item col-lg-4 col-md-6 col-sm-12">
+									<article class="vertical-item content-padding mosaic-post post format-standard text-center with_border">
+
+										<div class="item-media entry-thumbnail">
+											<img src="images/gallery/12.jpg" alt="">
+											<div class="media-links">
+												<a class="abs-link" title="" href="blog-single-right.html"></a>
+											</div>
+										</div>
+
+										<div class="item-content entry-content">
+											<header class="entry-header">
+
+												<h3 class="entry-title">
+													<a href="blog-single-right.html" rel="bookmark">Elitr diam nonumy consetetur eirmod tempor </a>
+												</h3>
+
+												<span class="date small-text type2 highlight">
+													<time datetime="2016-01-10T15:05:23+00:00" class="entry-date">
+														Jan 10, 2016
+													</time>
+												</span>
+
+											</header>
+											<!-- .entry-header -->
+
+											<p>Duis autem eumre dolor hendrerit vulputate illum dolore at vero eros et accumsan et iusto odio dignissim.</p>
+
+										</div>
+										<!-- .item-content.entry-content -->
+										<div class="post-social-links text-center ls">
+											<a href="#" class="social-icon color-icon soc-twitter"></a>
+											<a href="#" class="social-icon color-icon soc-facebook"></a>
+											<a href="#" class="social-icon color-icon soc-google"></a>
+											<a href="#" class="social-icon color-icon soc-flickr"></a>
+										</div>
+									</article>
+								</div>
+
+							</div>
+							<!-- eof .isotope_container.row -->
+
+							<div class="row">
+								<div class="col-sm-12 text-center">
+									<img src="./img/loading.png" alt="" class="fa-spin">
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<footer class="ds page_footer section_padding_top_50 section_padding_bottom_65">
+				<div class="container">
+					<div class="row bottommargin_5">
+						<div class="col-md-3 col-sm-6 to_animate" data-animation="scaleAppear">
+							<div class="widget widget_text topmargin_5">
+								<a href="./" class="logo">
+									<svg width="60" height="60" viewBox="0 0 60 60">
+										<path class="logo-svg" d="M394.666,58.931a0.79,0.79,0,1,0,.058,1.374A1.054,1.054,0,0,0,394.666,58.931Zm13.749-12.461a1.074,1.074,0,0,1,.242,1.371A1.44,1.44,0,1,1,408.415,46.469ZM417.825,83h-25.65a0.645,0.645,0,0,1-.645-0.646V79.747a0.665,0.665,0,0,1,.029-0.193,42.86,42.86,0,0,0,1.452-5.374,6.746,6.746,0,0,1,.467-1.66,32.952,32.952,0,0,1,1.593-3.288l0.184-.346a1.783,1.783,0,0,1,2.011-.952,1.468,1.468,0,0,0,.776-0.048,1.525,1.525,0,0,0,.917-0.782l0.069-.119a2.373,2.373,0,0,1,1.852-1.094,2.913,2.913,0,0,0,1.541-1.561,4.742,4.742,0,0,0,.674-2.512,3.232,3.232,0,0,1-.136-2.157,1.415,1.415,0,0,0-.212-0.725,0.638,0.638,0,0,0-.525-0.2,25.557,25.557,0,0,1-4.611-.24l-0.165-.025a2.48,2.48,0,0,1-1.8-1.09,1.184,1.184,0,0,0-.545-0.563,5.288,5.288,0,0,1-1.516-.52l-0.354-.161c-0.6-.347-1.47-0.625-3.761-0.3a10.241,10.241,0,0,0-4.5,1.723,4.645,4.645,0,0,0-1.456,2.254,5.535,5.535,0,0,1-2.036,2.548,7.03,7.03,0,0,0-2.1,3.67,0.645,0.645,0,0,1-.613.444h-3.116A0.645,0.645,0,0,1,375,65.825V40.175a0.645,0.645,0,0,1,.646-0.646H391.53V23.646A0.645,0.645,0,0,1,392.175,23h25.65a0.645,0.645,0,0,1,.645.646v8.21a0.647,0.647,0,0,1-.511.632,19.565,19.565,0,0,0-4.417,1.6,10.587,10.587,0,0,1-5.477.868,18.973,18.973,0,0,0-5.437.217,1.342,1.342,0,0,0,.269.362,8.4,8.4,0,0,0,1.066.752c1.21,0.773,2.869,1.831,2.366,3.712a14.186,14.186,0,0,1-.519,1.505,10.016,10.016,0,0,0-.569,1.79,6.375,6.375,0,0,0,0,1.657l0.04,0.524a5.635,5.635,0,0,0,1.017,2.335,4.855,4.855,0,0,1,.951,3.176,3.955,3.955,0,0,0,.373,1.559,0.534,0.534,0,0,0,.486.2,2.459,2.459,0,0,1,1.481.344,0.731,0.731,0,0,0,.507-0.042c0.133-.033.267-0.065,0.4-0.086a1.332,1.332,0,0,1,.837.135,1.71,1.71,0,0,0,1.045-.1,1.933,1.933,0,0,0,1.015-.947c0.085-.127.174-0.258,0.272-0.392a2.8,2.8,0,0,1,.871-0.774,5.7,5.7,0,0,0,.93-0.728,6.323,6.323,0,0,1,1.386-1.024h0a40.13,40.13,0,0,1,17.51-4.473A0.646,0.646,0,0,1,435,45.3V65.825a0.645,0.645,0,0,1-.646.646H418.47V82.354A0.645,0.645,0,0,1,417.825,83Zm15.883-37.047V65.178H417.824a0.647,0.647,0,0,0-.646.646V81.708H392.822V79.846a46.151,46.151,0,0,0,1.472-5.522,5.748,5.748,0,0,1,.386-1.334,32.422,32.422,0,0,1,1.527-3.148l0.192-.358a0.525,0.525,0,0,1,.686-0.271l0.128,0.015a2.563,2.563,0,0,0,1.267-.127,2.888,2.888,0,0,0,1.654-1.447,1.231,1.231,0,0,1,1.025-.5,4.362,4.362,0,0,0,2.512-2.426c0.538-1.092.959-2.631,0.614-3.412a2.087,2.087,0,0,1-.076-1.356,2.531,2.531,0,0,0-.472-1.851,1.946,1.946,0,0,0-1.5-.661,26.094,26.094,0,0,1-4.43-.223l-0.2-.031a1.278,1.278,0,0,1-.841-0.439,2.325,2.325,0,0,0-1.484-1.211,4.144,4.144,0,0,1-1.162-.415l-0.31-.136c-0.733-.426-1.841-0.812-4.528-0.435a11.472,11.472,0,0,0-5.053,1.936,5.762,5.762,0,0,0-1.923,2.832,4.311,4.311,0,0,1-1.625,2.009,7.653,7.653,0,0,0-2.394,3.847h-2V40.822h15.884a0.647,0.647,0,0,0,.646-0.646V24.292h24.356v7.05a20.761,20.761,0,0,0-4.227,1.594,9.29,9.29,0,0,1-4.742.731,20.115,20.115,0,0,0-5.92.254,1.189,1.189,0,0,0-.886.873,1.761,1.761,0,0,0,.627,1.694,9.531,9.531,0,0,0,1.238.882c1.29,0.823,2.056,1.387,1.814,2.291a13.307,13.307,0,0,1-.476,1.371,11.09,11.09,0,0,0-.636,2.028,7.525,7.525,0,0,0-.021,1.991l0.039,0.5a6.557,6.557,0,0,0,1.218,2.952,3.635,3.635,0,0,1,.758,2.314,4.736,4.736,0,0,0,.631,2.517,1.826,1.826,0,0,0,1.507.7,1.238,1.238,0,0,1,.807.153,1.809,1.809,0,0,0,1.492.111,1.286,1.286,0,0,1,.373-0.039,1.911,1.911,0,0,0,.284.115,3.213,3.213,0,0,0,3.4-1.6c0.077-.114.159-0.234,0.247-0.356a1.564,1.564,0,0,1,.463-0.41,6.61,6.61,0,0,0,1.153-.889,5.276,5.276,0,0,1,1.1-.83A39.572,39.572,0,0,1,433.708,45.953Z"
+														transform="translate(-375 -23)" />
+									</svg>
+									<span class="logo-meta">
+										<span class="site-name grey">Fluffy
+											<strong>Paw</strong>
+										</span>
+										<span class="small-text">veterinary clinic</span>
+									</span>
+								</a>
+								<p class="bottommargin_10">
+									Ex magna shoulder meatloaf boudin swine ullamco veniam turducken tur fatback sirloin pork loin sed.
+								</p>
+								<div class="inline-block darklinks">
+									<a class="social-icon soc-facebook theme-icon" href="#" title="Facebook"></a>
+									<a class="social-icon soc-twitter theme-icon" href="#" title="Twitter"></a>
+									<a class="social-icon soc-google theme-icon" href="#" title="Google"></a>
+									<a class="social-icon soc-youtube theme-icon" href="#" title="Youtube"></a>
+								</div>
+
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 to_animate" data-animation="scaleAppear">
+							<div class="widget widget_text topmargin_20">
+								<h4 class="fontsize_24 bottommargin_35">Contact
+									<strong>Info</strong>
+								</h4>
+								<div class="media">
+									<div class="media-left fontsize_20">
+										<i class="fa fa-map-marker highlight"></i>
+									</div>
+									<div class="media-body">
+										28 Lincoln Blvd, Santa Monica
+									</div>
+								</div>
+								<div class="media">
+									<div class="media-left fontsize_20">
+										<i class="fa fa-clock-o highlight"></i>
+									</div>
+									<div class="media-body">
+										09:00 - 22:00
+									</div>
+								</div>
+								<div class="media">
+									<div class="media-left fontsize_20">
+										<i class="fa fa-phone highlight"></i>
+									</div>
+									<div class="media-body">
+										0 (800) 375 45 65
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-md-3 col-sm-6 to_animate" data-animation="scaleAppear">
+							<div class="widget widget_last_news topmargin_20">
+								<h4 class="fontsize_24 bottommargin_40">Latest
+									<strong>News</strong>
+								</h4>
+								<ul class="no-bullets">
+									<li>
+										<h5 class="semibold fontsize_18">
+											<a href="blog-single-right.html">Ribeye aliquip culpa</a>
+										</h5>
+										<p class="bottommargin_0">
+											Pancetta sirloin ut meatball dolore et salami in picanha nisi incididunt.
+										</p>
+										<span class="date small-text type2 highlight">
+											<time datetime="2016-08-01T15:05:23+00:00" class="entry-date">
+												july 28, 2016
+											</time>
+										</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 to_animate" data-animation="scaleAppear">
+							<div class="widget widget_flickr topmargin_20">
+								<h4 class="fontsize_24 bottommargin_40">Flickr
+									<strong>widget</strong>
+								</h4>
+								<ul id="footer-flickr"></ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+			<section class="page_copyright ls section_padding_20">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<p class="darklinks">&copy; 2016 FluffyPaw. Created with
+								<i class="fa fa-heart-o highlight"></i> by
+								<a href="http://modernwebtemplates.com" class="semibold">MWTemplates</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+		<!-- eof #box_wrapper -->
+	</div>
+	<!-- eof #canvas -->
+
+	<script src="js/compressed.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/switcher.js"></script>
+
+</body>
+
+</html>
