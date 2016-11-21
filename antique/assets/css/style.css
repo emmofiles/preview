@@ -1,0 +1,319 @@
+
+body{
+    background-color: #323232;
+}
+::-moz-selection{
+    background-color: #cfa144!important;
+    color: #ffffff!important;
+}
+::selection{
+    background-color: #cfa144!important;
+    color: #ffffff!important;
+}
+
+/*-- 1.preloader css
+======================================== --*/
+#tb-preloader {
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    background: #fff;
+}
+.tb-preloader-wave {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    margin: -30px 0 0 -30px;
+}
+.tb-preloader-wave:before,
+.tb-preloader-wave:after {
+    position: absolute;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    content: "";
+    -webkit-animation: preloader-wave 1.6s linear infinite;
+    animation: preloader-wave 1.6s linear infinite; 
+    border-radius: 50%;
+    background: #222;
+}
+.tb-preloader-wave:after {
+    -webkit-animation-delay: -.8s;
+    animation-delay: -.8s;
+}
+@-webkit-keyframes preloader-wave {
+    0% {
+        -webkit-transform: scale(0, 0);
+        transform: scale(0, 0);
+        opacity: .5;
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+        opacity: 0;
+    }
+}
+@keyframes preloader-wave {
+    0% {
+        -webkit-transform: scale(0, 0);
+        transform: scale(0, 0);
+        opacity: .5;
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+        opacity: 0;
+    }
+}
+
+
+/*-- Banner css
+============================================= --*/
+
+.banner{
+    background: #292929 url(../images/landing_2.jpg) center top no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.banner .content{
+    background-color: rgba(17,17,17,.95);
+    padding: 250px 0;
+    width: 100%;
+}
+.banner h1{
+    font-size: 20px;
+    line-height: 1.5;
+    color: #ffffff;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 2px;
+}
+.banner img{
+    padding: 10px;
+    border: 2px solid #555555;
+    margin-bottom: 20px;
+}
+
+
+/*-- Demo css
+============================================= --*/
+.demo{
+    padding: 100px 0 50px;
+    background: #ffffff;
+}
+h2{
+    font-size: 16px;
+    line-height: 1.2;
+    color: #363636;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0 20px;
+    letter-spacing: 2px;
+}
+.heading{
+    font-size: 30px;
+    margin-bottom: 80px;
+    font-weight: 700;
+}
+.demo .bg_container{
+    max-width: 350px;
+    margin: 0 auto 20px;
+    height: 335px;
+    background: #ffffff;
+    background-size: cover;
+    overflow: hidden;
+    -webkit-box-shadow: 0 5px 20px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 5px 20px rgba(0,0,0,.2);
+    -ms-box-shadow: 0 5px 20px rgba(0,0,0,.2);
+    box-shadow: 0 5px 20px rgba(0,0,0,.2);
+}
+.demo .img_container{
+    width: 100%;
+    background: transparent;
+    overflow: hidden;
+    display: block;
+    cursor: pointer;
+}
+.demo img{
+    width: 100%;
+    transform: translateY(0);
+    -webkit-transition: all 3s ease;
+    -moz-transition: all 3s ease;
+    -ms-transition: all 3s ease;
+    transition: all 3s ease;
+}
+.demo .img_container:hover img{
+    -webkit-transform: translateY(-200px);
+    -moz-transform: translateY(-200px);
+    -ms-transform: translateY(-200px);
+    transform: translateY(-200px);
+}
+.demo .anchor{
+        margin-bottom: 70px;  
+}
+.demo h6{
+    text-align: center;
+}
+.demo .btn{
+    font-size: 12px;
+    line-height: 40px;
+    padding: 0 30px;
+    letter-spacing:2px;
+    font-weight: 700;
+    background-color: #252525;
+    color: #ffffff!important;
+    text-transform: uppercase;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    transition: all .5s;
+    border-radius:0;
+}
+.demo .btn:hover{
+    background-color: #cfa144!important;
+}
+
+.light{
+    background: #323232;
+}
+.light h2{
+    color: #ffffff;
+}
+.light .btn{
+    background-color: #ffffff!important;
+    color: #323232!important;
+}
+
+
+/*-- Features css
+=========================================== --*/
+.features{
+    background-color: #ffffff;
+    padding: 100px 0;
+}
+.features h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.features p{
+    font-size: 15px;
+    line-height: 24px;
+    color: #cfa144;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.features ul{
+    list-style: none;
+    padding-left: 0;
+}
+.features ul li{
+    font-size: 14px;
+    line-height: 50px;
+    color: #555555;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+/*-- Footer css
+============================================--*/
+.footer_top{
+    background-color: #323232;
+    padding: 100px 0 80px;
+}
+.footer_top .col-sm-3{
+    margin-bottom: 20px;
+}
+.footer_top ul{
+    padding: 0;
+}
+.footer_top h3{
+    font-size: 16px;
+    line-height: 1.5;
+    color: #cfa144;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.footer_top p{
+    font-size: 13px;
+    line-height: 30px;
+    color: #666666;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding-right: 20px;
+}
+.footer_top li a{
+    font-size: 13px;
+    line-height: 30px;
+    color: #666666;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    -webkit-transition: color .3s;
+    -moz-transition: color .3s;
+    -ms-transition: color .3s;
+    transition: color .3s;
+}
+.footer_top li a:hover{
+    color: #cfa144;
+    text-decoration: none;
+}
+.footer_top li a .fa{
+    width: 20px;
+    height: 21px;
+    font-size: 12px;
+    line-height: 21px;
+    color: #ffffff;
+    background-color: #666666;
+    text-align: center;
+    margin-right: 20px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+}
+.footer_bottom{
+    background-color: #222222;
+    padding: 20px;
+}
+.footer_bottom h5{
+    font-size: 12px;
+    line-height: 1;
+    color: #888888;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 7px;
+    margin-bottom: 3px;
+}
+.footer_bottom h6{
+    font-size: 11px;
+    line-height: 15px;
+    color: #888888;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+
+@media screen and (max-width: 767px){
+    .footer_top{
+        padding: 60px 0 40px;
+    }
+}
+
+/*-- End of css
+============================================= --*/
