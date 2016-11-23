@@ -1,0 +1,176 @@
+/*
+Template Name: Uno Photography
+Template URL: http://www.codesymbol.com/templates/uno/
+Version: 1.0
+Author: CodeSymbol
+Author URL: http://themeforest.net/user/codesymbol/
+*/
+
+
+/*==========================================================================================================================================
+/*==========================================================================================================================================
+	1.Typography Setup
+============================================================================================================================================
+============================================================================================================================================*/
+
+    @font-face {
+        font-family: 'effra';
+        src: url('../dark/includes/font/effra-regular.eot');
+        src: url('../dark/includes/font/effra-regular.eot?#iefix') format('embedded-opentype'),
+             url('../dark/includes/font/effra-regular.woff') format('woff'),
+             url('../dark/includes/font/effra-regular.ttf') format('truetype'),
+             url('../dark/includes/font/effra-regular.svg#effraregular') format('svg');
+    }
+    html {
+    	height: 100%;
+        background-color: #000000;
+        overflow: hidden;
+    }
+    body {
+    	z-index: 0;
+        height: 100%;
+        width: 100%;
+    	color: #959595;
+    	font-size: 12px;
+    	line-height: 25px;
+    	overflow: hidden;
+        letter-spacing: 2.3px;
+    	overflow: hidden;
+    	background-color: #000000;
+    	font-family: effra, arial;
+    }
+    p {
+        color: inherit;
+        font-size: 12px;
+        line-height: 25px;
+        margin-bottom: 20px;
+        font-family: effra, arial;
+        letter-spacing: 2.3px;
+        font-weight: normal;
+        -webkit-font-smoothing: antialiased;
+    }
+    a {
+        color: #ffffff;
+    }
+    h1, h2, h3, h4, h5, h6 {
+    	color: #ffffff;
+    	position: relative;
+    	font-family: effra;
+    	font-weight: normal;
+    	margin-bottom: 20px;
+        letter-spacing: 4px;
+    }
+    h1 {
+    	font-size: 30px;
+    	line-height: 36px;
+    }
+    h2 {
+    	font-size: 24px;
+    	line-height: 31px;
+    }
+    h3 {
+    	font-size: 20px;
+    	line-height: 26px;
+    }
+    h4 {
+    	font-size: 18px;
+    	line-height: 24px;
+    }
+    h5 {
+    	font-size: 14px;
+    	line-height: 22px;
+    }
+    h6 {
+    	font-size: 13px;
+    	line-height: 20px;
+    }
+
+
+/*==========================================================================================================================================
+/*==========================================================================================================================================
+	2.Template Basics
+============================================================================================================================================
+============================================================================================================================================*/
+    
+    body .main-container {
+        background-color: #000000;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        margin: 0;
+        z-index: 3;
+    }
+    body .main-container .col {
+        display: inline-block;
+        position: relative;
+        float: left;
+        width: 50%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    body .main-container .col.dark {
+        background-image: url(../dark/images/index.png);
+    }
+    body .main-container .col.light {
+        background-image: url(../light/images/index.png);
+    }
+    body .main-container .col span {
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: #ffffff;
+        font-size: 30px;
+        letter-spacing: 25px;
+        cursor: pointer
+        -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+    }
+    body .main-container .col.light span {
+        color: #000000;
+    }
+    body .main-container .col:hover span {
+        -webkit-animation: logo_animate 1.2s 1; /* Safari 4+ */
+        -moz-animation:    logo_animate 1.2s 1; /* Fx 5+ */
+        -o-animation:      logo_animate 1.2s 1; /* Opera 12+ */
+        animation:         logo_animate 1.2s 1; /* IE 10+, Fx 29+ */
+    }
+
+    .clear {
+    	clear: both;
+    	margin: 0px;
+    	padding: 0px;
+    	display: block;
+    }
+    .clearfix:before, .row:before,
+    .clearfix:after, .row:after {
+        content:"";
+        display:table;
+    }
+    .clearfix:after, .row:after {
+        clear:both;
+    }
+
+    @-webkit-keyframes logo_animate {
+        0% {opacity: 1}
+        50% {opacity: 0.3}
+        100% {opacity: 1}
+    }
+    @-moz-keyframes logo_animate {
+        0% {opacity: 1}
+        50% {opacity: 0.3}
+        100% {opacity: 1}
+    }
+    @-o-keyframes logo_animate {
+        0% {opacity: 1}
+        50% {opacity: 0.3}
+        100% {opacity: 1}
+    }
+    @keyframes logo_animate {
+        0% {opacity: 1}
+        50% {opacity: 0.3}
+        100% {opacity: 1}
+    }
