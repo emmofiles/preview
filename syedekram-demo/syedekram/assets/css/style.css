@@ -1,0 +1,747 @@
+/*
+Author       : Syed Ekram.
+Template Name: SyedEkram - Personal Portfolio HTML Template
+Version      : 1.0
+*/
+/*=============================================================
+    CSS INDEX
+    =============================
+    01. GENERAL STYLE (body, link color, section-title, preloader btn, overlay, section-padding etc)
+    02. BOOTSTRAP NAVIGATION OVERRIDES
+    03. START HOME DESIGN
+    04. START ABOUT DESIGN
+    05. START FEATURES DESIGN
+    06. START PORTFOLIO DESIGN
+    07. START ADDRESS & CONTACT FORM DESIGN
+    08. START FOOTER DESIGN
+  =============================================================*/
+/*
+* ----------------------------------------------------------------------------------------
+* 01.GENERAL STYLE
+* ----------------------------------------------------------------------------------------
+*/
+body {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1px;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    background: #000;
+    color: #ccc;
+}
+html,
+body { height: 100% }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #333;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 700;
+}
+a {
+    font-family: "Montserrat",sans-serif;
+    text-decoration: none;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+p {
+    margin-bottom: 0;
+	line-height:32px;
+}
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+fieldset {
+    border: 0 none;
+    margin: 0 auto;
+    padding: 0;
+}
+/*START PRELOADER DESIGN*/
+.preloader {
+    background: #fff;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+}
+
+.status-mes {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -40px 0 0 -40px;
+    font-size: 10px;
+    text-indent: -12345px;
+    border-top: 2px solid rgba(0, 0, 0, 0.08);
+    border-right: 2px solid rgba(0, 0, 0, 0.08);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.08);
+    border-left: 2px solid #000;
+    border-radius: 50%;
+    -webkit-animation: spinner 700ms infinite linear;
+    animation: spinner 700ms infinite linear;
+    z-index: 10000;
+}
+
+@-webkit-keyframes spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+.no-padding { padding: 0 }
+/*END PRELOADER DESIGN*/
+.section-padding { padding: 60px 0 }
+/*START SECTION TITLE DESIGN*/
+.section-title { margin-bottom: 50px }
+.section-title  h2 {
+color: #fff;
+font-size: 18px;
+font-weight: 700;
+letter-spacing: 6px;
+margin-top: 0;
+text-transform: uppercase;
+}
+.section-title span {
+    background: #c80a48 none repeat scroll 0 0;
+    display: block;
+    height: 2px;
+    margin: 15px auto;
+    width: 70px;
+    position: relative;
+}
+/*END SECTION TITLE DESIGN*/
+/*
+* ----------------------------------------------------------------------------------------
+* 01.END GENERAL STYLE
+* ----------------------------------------------------------------------------------------
+*/
+/*
+* ----------------------------------------------------------------------------------------
+* 02. START BOOTSTRAP NAVIGATION OVERRIDES
+* ----------------------------------------------------------------------------------------
+*/
+.navbar-default {
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+    width: 100%;
+    padding: 20px 0;
+    background: #fff;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #c80a48 !important;
+    background-color: transparent;
+}
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus {
+    color: #171717 !important;
+    background-color: transparent;
+}
+.navbar-brand {
+color: #fff !important;
+float: left;
+font-size: 24px;
+line-height: 20px;
+padding: 15px;
+text-transform: uppercase;
+ }
+.navbar-brand img {
+    width: 150px;
+    margin-left: 10px;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form { border-color: #fff }
+.menu-top { margin-top:-90px}
+.menu-top li a {
+    color: #fff !important;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.menu-top li a:hover { color: #171717!important }
+@media only screen and (max-width:768px) { 
+    .navbar-default .navbar-nav > li > a {
+        margin-top: 10px;
+        padding: 8px;
+    }
+}
+@media only screen and (max-width:480px) { 
+    .menu-top { background-color: #fff }
+    .navbar-default .navbar-nav > li > a { color: #313131  !important }
+}
+.navbar-default.menu-shrink {
+background-color: #000;
+box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.1);
+padding: 10px 0;
+width: 100%;
+ margin-top:0px
+}
+@media only screen and (max-width:480px) { 
+    .menu-top {
+        color: #fff !important;
+        margin-left: 0px;
+    }
+}
+.navbar-default.menu-shrink li a { color: #fff!important }
+.navbar-default.menu-shrink li a:hover { color: #c80a48 !important }
+.navbar-default .navbar-toggle { background: #fff none repeat scroll 0 0 }
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus { background-color: #fff }
+.navbar-default .navbar-toggle .icon-bar { background-color: #c80a48 }
+/*
+* ----------------------------------------------------------------------------------------
+* 02.END BOOTSTRAP NAVIGATION OVERRIDES
+* ----------------------------------------------------------------------------------------
+*/
+/*
+* ----------------------------------------------------------------------------------------
+* 03.START HOME DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.welcome-area,
+.welcome-slider-area,
+.welcome-slider-area div { height: 700px }
+.welcome-slider-area div.single-slide-item-tablecell,
+.welcome-slider-area div.single-slide-item-tablecell div { height: auto }
+.single-slide-item-table {
+    display: table;
+    text-align: center;
+    width: 100%;
+}
+.single-slide-item-tablecell {
+    display: table-cell;
+    vertical-align: middle;
+}
+.single-slide-item {
+    position: relative;
+    z-index: 1;
+}
+.single-slide-item:after {
+    position: absolute;
+    background: rgba(0,0,0,0.6);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+}
+.slide-1 {
+    background: url(../img/bg/slide1.jpg) scroll 0 0;
+    background-size: cover;
+}
+.slide-2 {
+    background: url(../img/bg/slide2.jpg) scroll 0 0;
+    background-size: cover;
+}
+.slide-3 {
+    background: url(../img/bg/slide3.jpg) scroll 0 0;
+    background-size: cover;
+}
+.carousel-fade .carousel-inner .item {
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+.single-slide-item h2 {
+color: #f8f8f8;
+font-size: 75px;
+margin-bottom: 20px;
+margin-top: 0;
+text-transform: capitalize;
+}
+@media only screen and (max-width:480px) { 
+.single-slide-item h2 {font-size: 40px;}
+}
+@media only screen and (max-width:360px) { 
+.single-slide-item h2 {font-size: 30px;}
+}
+.btn-home-bg{
+background-color: #c80a48;
+border: medium none;
+border-radius: 3px;
+box-shadow: 0 3px 0 #970837;
+color: #fff;
+font-size: 17px;
+font-weight: 700;
+letter-spacing: 1px;
+padding: 10px 20px;
+text-transform: uppercase;
+transition: all 0.3s ease 0s;
+}
+.btn-home-bg:hover,
+.btn-home-bg:focus {background: #b0093f;color:#fff;}
+
+/*OTHER HOME VERSION*/
+.index_parallax { position: relative; height: 700px  }
+.index_parallax:before {
+    background: rgba(0, 0, 0, 0.6);
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.hero-text {
+  padding-top: 250px;
+}
+.hero-text h2 {
+color: #f8f8f8;
+font-size: 75px;
+margin-bottom: 20px;
+margin-top: 0;
+text-transform: capitalize;
+}
+@media only screen and (max-width:480px) { 
+.hero-text h2 {font-size: 40px;}
+}
+@media only screen and (max-width:360px) { 
+.hero-text h2 {font-size: 30px;}
+}
+/*OTHER HOME VERSION*/
+/*
+* ----------------------------------------------------------------------------------------
+* 03.END HOME DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+/*
+* ----------------------------------------------------------------------------------------
+* 04.START ABOUT DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+@media only screen and (max-width:480px) { 
+.about_me_img img {width: 100%;}
+}
+.about_me_img h4{
+background: #191919 none repeat scroll 0 0;
+color: #fff;
+font-weight: normal;
+letter-spacing: 2px;
+margin: 0;
+padding: 12px 0;
+text-align: center;
+text-transform: uppercase;
+}
+
+@media only screen and (max-width:480px) { 
+.about_me_content {
+  padding-top: 40px;
+}
+}
+.about_me_content h3{
+color: #fff;
+font-size: 30px;
+font-weight: 400;
+margin-bottom: 30px;
+margin-top: 0;
+text-transform: uppercase;
+}
+.about_me_content p {
+  margin-bottom: 15px;
+}
+.basic_info{margin-top: 30px;}
+.basic_info h4{
+color: #fff;
+text-transform: uppercase;
+font-weight: 400;
+letter-spacing: 1px;
+margin-bottom: 20px;
+margin-top: 0;
+}
+.basic_info table tr td span{
+color: #fff;
+line-height: 26px;
+margin-right: 20px;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 04.END ABOUT DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+/*
+* ----------------------------------------------------------------------------------------
+* 05.START FEATURES DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.template_feature{padding-top:60px;padding-bottom:10px;}
+.single_feature {   
+margin-bottom: 50px;
+padding-right: 30px;
+transition: all 0.3s ease 0s;
+}
+@media only screen and (max-width:480px) { 
+.single_feature {   padding:0 30px;}
+}
+.single_feature i {
+    background: #c80a48 none repeat scroll 0 0;
+    border-radius: 30px;
+    box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.1);
+    color: #fff;
+	text-align:center;
+    font-size: 18px;
+    height: 55px;
+    line-height: 55px;
+    margin-bottom: 20px;
+    -webkit-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+    width: 55px;
+}
+.single_feature h4 {
+color: #fff;
+font-size: 14px;
+font-weight: 400;
+letter-spacing: 4px;
+margin-top: 0;
+text-transform: uppercase;
+transition: all 0.3s ease 0s;
+}
+.single_feature p {
+    margin-bottom: 0;
+	line-height:32px;
+    -webkit-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+}
+.single_feature:hover i {
+    box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.1);
+    background: #fff;
+    color: #c80a48;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 05.END FEATURES DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+/*
+ * ----------------------------------------------------------------------------------------
+ * 06.START PORTFOLIO DESIGN
+ * ----------------------------------------------------------------------------------------
+ */
+.works_area{padding-top:60px;padding-bottom:30px;}
+.work_all_item .mix {
+  display: none;
+}
+.our_work_menu {
+  margin-bottom: 50px;
+}
+
+.our_work_menu ul{
+	list-style-type: none;
+	padding: 0;
+}
+.work_all_item .col-md-3{
+	padding: 0;
+}
+.our_work_menu ul li{
+color: #fff;
+cursor: pointer;
+display: inline-block;
+font-family: montserrat,sans-serif;
+font-size: 12px;
+letter-spacing: 2px;
+padding: 8px 15px;
+text-transform: uppercase;
+transition: all 0.3s ease 0s;
+}
+.our_work_menu ul li:hover, .our_work_menu ul li.active{
+color: #c80a48;
+}
+.single_project {
+  padding-bottom: 40px;
+}
+.single_our_work{
+	margin-bottom:30px;
+	overflow: hidden;
+	text-align: center;
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+.sing_work_photo{
+	position: relative;
+}
+
+.single_our_work img{
+	width: 100%;
+	-webkit-transition: all 0.2s ease 0s;
+	transition: all 0.2s ease 0s;
+}
+
+.single_our_work figure{
+	margin-bottom: 0;	
+}
+.sing_work_text_link{
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	color: #fff;
+	background: rgba(0,0,0, 0.6);
+	-webkit-transition: .5s;
+	transition: .5s;
+	opacity: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	visibility: hidden;
+}
+.sing_work_content_wrap{
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+.sing_work_content{
+	display: table-cell;
+	vertical-align: middle;
+}
+.sing_work_text_link h5{
+	color: #fff;
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 5px;
+	margin-top: 20px;
+	text-transform: uppercase;
+}
+
+.sing_link_img a i.fa{
+	font-size: 14px;	
+}
+.sing_link_img a{
+	background: #c80a48 none repeat scroll 0 0;
+	border: 1px solid #c80a48;
+	border-radius: 50%;
+	color: #fff;
+	display: inline-block;
+	height: 40px;
+	line-height: 39px;
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	width: 40px;	
+}
+.sing_link_img a:hover{	
+	background: #fff none repeat scroll 0 0;
+	border-color: #fff;
+	color: #c80a48;
+}
+.sing_link_img a.search{
+	margin-right: 16px;
+}
+.single_our_work:hover  .sing_link_img a.search{
+	-webkit-animation: slideInDown 800ms ease-in-out;
+	        animation: slideInDown 800ms ease-in-out;
+}
+.single_our_work:hover  .sing_link_img a.link{
+	-webkit-animation: slideInDown 800ms ease-in-out;
+	        animation: slideInDown 800ms ease-in-out;
+}
+.single_our_work:hover{
+	background: #c80a48;
+	color: #fff;
+}
+.single_our_work:hover .sing_work_text_link{
+	opacity: 1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	visibility: visible;
+}
+/*
+ * ----------------------------------------------------------------------------------------
+ * 06.END PORTFOLIO DESIGN
+ * ----------------------------------------------------------------------------------------
+ */
+/*
+* ----------------------------------------------------------------------------------------
+* 07.START ADDRESS & CONTACT FORM DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+/*START CONTACT ADDRESS*/
+.single_promotion{
+border: 1px solid rgba(204, 204, 204, 0.5);
+padding: 30px 20px;
+transition: all 0.2s ease 0s;
+}
+@media only screen and (max-width:480px) { 
+    .single_promotion {margin-bottom:30px; }
+}
+.single_promotion i {
+color: #fff;
+font-size: 30px;
+margin-bottom: 10px;
+-webkit-transition: all 0.2s ease 0s;
+transition: all 0.2s ease 0s;
+}
+.single_promotion h4{
+	color: #fff;
+	font-weight: 400;
+	text-transform: uppercase;
+	transition: all 0.2s ease 0s;
+}
+/*END CONTACT ADDRESS*/
+
+.contact {
+padding-top: 60px;
+}
+.contact input {
+background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+border-color: rgba(204, 204, 204, 0.5);
+border-radius: 4px;
+border-style: none none solid;
+border-width: 0 0 1px;
+box-shadow: none;
+color: #fff;
+height: 52px;
+padding: 10px;
+width: 100%;
+}
+.contact textarea {
+background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+border-color: rgba(204, 204, 204, 0.5);
+border-radius: 4px;
+border-style: none none solid;
+border-width: 0 0 1px;
+box-shadow: none;
+color: #fff;
+padding: 10px;
+width: 100%;
+}
+.contact input:focus {
+border-color: -moz-use-text-color -moz-use-text-color #c80a48;
+border-style: none none solid;
+border-width: 0 0 1px;
+    box-shadow: none;
+    outline: 0 none;
+}
+.contact textarea:focus {
+border-color: -moz-use-text-color -moz-use-text-color #c80a48;
+border-radius: 4px;
+border-style: none none solid;
+    box-shadow: none;
+    outline: 0 none;
+}
+.btn-contact-bg {
+border: 1px solid rgba(204, 204, 204, 0.5) !important;
+border-radius: 50px !important;
+box-shadow: none;
+color: #fff;
+font-family: montserrat,sans-serif;
+font-size: 14px;
+letter-spacing: 1px;
+text-transform: uppercase;
+transition: all 0.2s ease 0s;
+width: 200px !important;
+}
+.btn-contact-bg:hover,
+.btn-contact-bg:focus {
+    background: #c80a48!important;
+    color: #fff;
+    border: 1px solid #c80a48!important;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 07.END ADDRESS & CONTACT FORM DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+/*
+* ----------------------------------------------------------------------------------------
+* 08.START FOOTER DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+.footer {
+  border-top: 1px solid #1f2428;
+}
+.footer_social { margin-bottom: 10px }
+.footer_social ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.footer_social ul li { display: inline-block }
+.footer_social ul li a {
+background-color: #171717;
+border: 1px solid #171717;
+border-radius: 4px;
+box-shadow: 0 3px 0 #212121;
+color: rgba(255, 255, 255, 0.5);
+display: block;
+font-size: 20px;
+height: 48px;
+line-height: 48px;
+margin: 2px;
+transition: all 0.2s ease 0s;
+width: 48px;
+}
+@media only screen and (max-width:480px) { 
+.footer_social ul li a{margin:5px;}
+}
+.footer_social ul li a:hover { color: #fff }
+/*END FOOTER SOCIAL DESIGN*/
+.copyright p {
+font-size: 14px;
+margin-bottom: 0;
+padding-top: 20px;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 08.END FOOTER DESIGN
+* ----------------------------------------------------------------------------------------
+*/

@@ -1,0 +1,113 @@
+/*
+Author       : Syed Ekram.
+Template Name: SyedEkram - Personal Portfolio HTML Template
+Version      : 1.0
+*/
+body {
+background:#fff;
+	font-family: "Montserrat",sans-serif;
+    color: #444;
+}
+a {
+    color: #444;
+    outline: none;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+a:hover,
+a:focus {
+    outline: none;
+    text-decoration: none;
+    color: #03a9f4;
+}
+/*START PRELOADER DESIGN*/
+.preloader {
+    background: #fff;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+}
+
+.status-mes {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -40px 0 0 -40px;
+    font-size: 10px;
+    text-indent: -12345px;
+    border-top: 2px solid rgba(0, 0, 0, 0.08);
+    border-right: 2px solid rgba(0, 0, 0, 0.08);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.08);
+    border-left: 2px solid #000;
+    border-radius: 50%;
+    -webkit-animation: spinner 700ms infinite linear;
+    animation: spinner 700ms infinite linear;
+    z-index: 10000;
+}
+
+@-webkit-keyframes spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+/*END PRELOADER DESIGN*/
+/*START BTN*/
+.btn-light-bg {
+border: 2px solid #fff;
+color: #fff;
+padding: 12px 30px;
+text-transform: uppercase;
+transition: all 0.4s ease 0s;
+}
+
+.btn-light-bg:hover, .btn-light-bg:focus{
+background:#fff;
+border: 2px solid #fff;
+color:#333;
+}
+
+/*END BTN*/
+.hero-text h1{
+font-size: 30px;
+line-height: 48px;
+margin: 0;
+overflow: hidden;
+padding-bottom: 45px;
+text-transform: uppercase;
+}
+.demo {
+  padding-top: 60px;
+}
+.demo_img h3 {
+font-size: 18px;
+font-weight: 700;
+margin: 0;
+text-transform: uppercase;
+transition: all 0.4s ease 0s;
+}
+.demo_img:hover h3 {
+    color: #c80a48;
+    -webkit-transition: all 0.4s ease 0s;
+            transition: all 0.4s ease 0s;
+}
