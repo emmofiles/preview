@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
+
+
+	/*  ==========================================================================
+    1.0 Common Styles
+    ========================================================================== */
+*{
+	padding:0;
+	margin:0;
+}
+html, body{
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 23px;
+    color: #333;
+    font-weight: 400;
+	letter-spacing: 1px;
+    position: relative;
+    overflow-x: hidden;
+}
+h1, h2, h3, h4, h5, h6{
+    color: #111;
+    letter-spacing: 1px;
+}
+h1{
+	font-size: 24px;
+    font-weight: 700;
+}
+h2{
+	font-size: 18px;
+    font-weight: 600;
+}
+h3{
+	font-size: 16px;
+	font-weight: 600;
+}
+h4,h5,h6{
+	font-size: 14px;
+}
+img{
+    border: none;
+    outline:none;
+	width:100%;
+}
+ul{
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+p{
+    font-size: 14px;
+	margin-bottom: 15px;
+}
+a, a:hover{
+	text-decoration: none;
+}
+a:focus{
+    outline: 0;
+    text-decoration: none;
+}
+
+/* Helper Class */
+.padding{
+    padding: 100px 0;
+}
+
+/* Preloader Styles */
+#preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background: #FFF;
+    height: 100%;
+    width: 100%;
+    -webkit-transition: all .5s .5s ease;
+    -moz-transition: all .5s .5s ease;
+    transition: all .5s .2s ease;
+}
+.loader{
+    position:absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: auto;
+    margin-top: -50px;
+}
+body.loaded #preloader{
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+/* ==========================================================================
+   Header Area
+   ========================================================================== */
+
+.header_area{
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 999;
+}
+.navbar{
+	background-color: rgba(255,255,255,0.4);
+	border: medium none;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	-ms-border-radius: 0;
+	border-radius: 0;
+	height: 80px;
+	margin: 0;
+    position: relative;
+	-moz-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.navbar-header{
+	padding: 20px 0;
+	-moz-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.scrollActive .navbar-header{
+	padding: 15px 0;
+	-moz-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.navbar-header .brand{}
+.navbar-header .brand img{
+    width: 177px;
+    height: 40px;
+}
+.scrollActive .navbar{
+	height: 70px;
+	background-color: rgba(255,255,255,1);
+	-moz-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
+   
+.hero_section{
+    background: url(../img/hero-bg.jpg) no-repeat fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    position: relative;
+    z-index: 1;
+}
+.hero_section:before{
+    background-color: rgba(255,255,255,0.5);
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.hero_inner,
+.demo_inner{
+    width: 100%;
+    height: 100%;
+    display: table;
+    text-align: center;
+}
+.table_cell{
+    display: table-cell;
+    vertical-align: middle;
+}
+.hero_content{}
+.hero_content h1{
+    font-size: 50px;
+    line-height: 65px;
+    margin: 0 0 25px;
+    font-weight: 700;
+}
+.hero_content h2{
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0 0 20px;
+} 
+.hero_content p{
+    margin: 0 0 40px;
+}
+.hero_btn{
+    background-color: #00adb4;
+    font-size: 16px;
+    line-height: 60px;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 0 25px;
+    color: #fff;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.hero_btn:hover{
+    background-color: #111;
+    color: #fff;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+   
+/* ==========================================================================
+   Demo Item
+   ========================================================================== */
+
+.thumbnail_section{}
+.thumbnail_section figure{
+    overflow: hidden;
+	height: 350px;
+    -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    -ms-box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+.thumbnail_section figure img{
+    width: 100%;
+	-moz-transform: translateY(0);
+	-webkit-transform: translateY(0);
+	-ms-transform: translateY(0);
+	transform: translateY(0);
+    -webkit-transition: all 1.5s;
+	-moz-transition: all 1.5s;
+	-ms-transition: all 1.5s;
+	transition: all 1.5s;
+}
+.thumbnail_section figure:hover img{
+    -webkit-transform: translateY(-1000px);
+	-moz-transform: translateY(-1000px);
+	-ms-transform: translateY(-1000px);
+	transform: translateY(-1000px);
+    -webkit-transition: all 3s;
+	-moz-transition: all 3s;
+	-ms-transition: all 3s;
+	transition: all 3s;
+}  
+.thumbnail_section .col-sm-4{
+    
+}
+.thumbnail_section .col-sm-4:nth-child(4),
+.thumbnail_section .col-sm-4:nth-child(5),
+.thumbnail_section .col-sm-4:nth-child(6){
+	margin-bottom: 0;
+}
+.thumbnail_section .col-sm-4 h3{
+    font-size: 18px;
+    margin: 15px 0;
+}
+   
+   
+/* ==========================================================================
+  Footer Section
+   ========================================================================== */
+
+.footer_section{
+    background-color: #f9f9f9;
+    padding: 35px 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.footer_section p{
+    margin: 0;
+    font-size: 16px;
+    color: #111;
+}
+   
+/* ==========================================================================
+   Area Name Here
+   ========================================================================== */
+
+.duration-1-5s{
+    -webkit-animation-duration: 1.5s;
+    -o-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+}
+.duration-1s{
+    -webkit-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+}
+.delay-1{
+    -webkit-animation-delay: 0.3s;
+    -o-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+.delay-2{
+    -webkit-animation-delay: 0.6s;
+    -o-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+.delay-3{
+    -webkit-animation-delay: 0.9s;
+    -o-animation-delay: 0.9s;
+    animation-delay: 0.9s;
+}
+.delay-3{
+    -webkit-animation-delay: 1.2s;
+    -o-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+}
+.delay-4{
+    -webkit-animation-delay: 1.5s;
+    -o-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+.delay-5{
+    -webkit-animation-delay: 1.8s;
+    -o-animation-delay: 1.8s;
+    animation-delay: 1.8s;
+}
+   
+   
+   
+
+
+
+
