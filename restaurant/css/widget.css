@@ -1,0 +1,1479 @@
+/*==================================================
+  Author : kodeforest
+
+  /**
+  * Table of Contents :
+  * 1.0 - Side Bar left:
+  * 2.0 - checkbox side bar service
+  * 3.0 - Side Bar food- religion
+  * 4.0 - Side Bar Eating Food-s Qty
+  * 5.0 - Side Bar Range Slider
+  * 6.0 - Right bar restaurant 
+  * 7.0 - Right bar restaurant 02
+  * 8.0 - food- side bar 02 search
+  * 9.0 - food- side bar vol 02
+  * 10.0 - food- side bar scroll bar
+  * 11.0 - food- filter menus side bars
+  * 12.0 - food- search velue vol 3
+  * 13.0 - food- categories lists
+  * 14.0 - food- insta slider feild
+  * 15.0 - food- Related posts
+  * 16.0 - food- twitter columns
+  * 17.0 - SideBar With Services
+
+
+
+
+/*======================================*/
+/*         Side Bar left:               */
+/*======================================*/
+
+.accordien-search,
+.food-leftbar,
+.section-price-manage,
+.food-leftside-section,
+.search-felid,
+.search-felid form,
+.select-menu-search,
+.accordien-content,
+.search-pair01,
+.search-pair03{
+  float: left;
+  width:100%;
+}
+.food-leftside-section{
+  padding-bottom: 40px;
+}
+.content .food-leftside-section.simple-blog-vo2{
+  padding-bottom: 70px;
+}
+.search-pair01,
+.search-pair03{
+  border:1px solid #e1e1e1;
+  margin-bottom: 15px;
+}
+.accordien-title{
+  cursor:pointer;
+}
+.section-price-manage .accordien-title.accordion-close{
+  margin-bottom: 0px;
+  border-bottom: transparent;
+  border-bottom: 1px solid transparent;
+  background: #fff;
+  line-height: normal;
+}
+.accordien-search{
+  border-bottom:1px solid #e1e1e1;
+  padding: 18px 14px 17px;
+  position: relative;
+}
+.accordien-search h5{
+  margin-bottom: 0px;
+}
+.accordien-search span {
+    border: 1px solid #e1e1e1;
+    border-radius: 100%;
+    color: #666666;
+    font-size: 14px;
+    height: 28px;
+    line-height: 28px;
+    margin-top: -13px;
+    position: absolute;
+    right: 20px;
+    text-align: center;
+    top: 50%;
+    width: 28px;
+}
+.accordien-content{
+  padding: 15px 15px 30px;
+}
+.search-pair01  .accordien-content > div{
+  margin-bottom: 10px;
+}
+.search-pair01  .accordien-content > div.checkbox-service{
+  padding-top: 0;
+}
+.search-pair01  .accordien-content > div:last-child{
+  margin-bottom: 0;
+}
+.section-price-manage form .search-felid input{
+  width:100%;
+  height: 46px;
+}
+.chosen-container-single .chosen-single,
+.section-price-manage form .search-felid input{
+  border:1px solid #e1e1e1;
+}
+.section-price-manage h5{
+  font-weight: bold;
+  color:#666666;
+  text-transform: uppercase;
+}
+.select-menu-search .chosen-container-single .chosen-single,
+.select-menu-simple .chosen-container-single .chosen-single{
+  box-shadow: none;
+  height: 46px;
+  border-radius: 0;
+  line-height: 43px;
+}
+.select-menu-search .chosen-container-single .chosen-single span,
+.select-menu-simple .chosen-container-single .chosen-single span{
+  font-size: 15px;
+  font-weight: bold;
+  color:#999999;
+}
+.select-menu-search .chosen-container-single .chosen-single div,
+.select-menu-simple .chosen-container-single .chosen-single div{
+  border-left: 1px solid #e1e1e1;
+  background-color: transparent;
+  width:46px;
+}
+.select-menu-search .chosen-container-single .chosen-single div b::before{
+  content: "\f002";
+  font-family: fontawesome;
+  font-size: 16px;
+  top:2px;
+}
+.select-menu-simple .chosen-container-single .chosen-single div b::before{
+  content: "\f103";
+  font-family: fontawesome;
+  font-size: 16px;
+  top:12px;
+}
+.select-menu-simple .chosen-container-single .chosen-single div b{
+  line-height: 24px;
+}
+.select-menu-simple .chosen-search{
+  display: none;
+}
+.select-menu-simple,
+.price-control-50{
+  position: relative;
+  float: left;
+  width:100%;
+}
+
+.price-control-50 .select-menu-simple{
+  float: left;
+  width:46%;
+}
+.price-control-50 .select-menu-simple{
+  margin-right: 26px;
+}
+.price-control-50 .select-menu-simple:last-of-type{
+  margin-right: 0px;
+}
+.price-control-50 .select-menu-simple .chosen-container-single .chosen-single div{
+  width:27%;
+}
+/*======================================*/
+/*   checkbox side bar service     */
+/*    ============================  */
+.checkbox-service,
+.checkbox-service label,
+.filter-button{
+  float: left;
+  width:100%;
+}
+.checkbox-service input{
+  float: left;
+  display: none;
+}
+.checkbox-service span{
+  background-color: #fff;
+  border: 1px solid;
+  display: inline-block;
+  border-color:#999999;
+  height: 12px;
+  position: relative;
+  width: 12px;
+  margin-top: 6px;
+}
+.checkbox-service span:before{
+  transform:scale(0); 
+  content: "";
+    height: 6px;
+    left: 2px;
+    position: absolute;
+    top: 2px;
+    width: 6px;
+}
+.checkbox-service label span{
+  float: left;
+}
+.checkbox-service input[type='checkbox']:checked + span:before {
+  background-color: #999999;
+  content: "";
+  height: 6px;
+  left: 2px;
+  position: absolute;
+  top: 2px;
+  width: 6px;
+  transform:scale(1); 
+}
+.food-listviews-sidebar04 .checkbox-service{
+  margin: 0px;
+  
+}
+.food-listviews-sidebar04 .radio-service {
+  padding: 14px 20px 16px;
+}
+.food-listviews-sidebar04 .checkbox-service label{
+  margin-bottom: 8px;
+}
+.food-listviews-sidebar04 .checkbox-service input[type='checkbox']:checked + span:before{
+  background-color: #666666;
+}
+.food-listviews-sidebar04 .checkbox-service label input[type='checkbox']:checked ~ small{
+  color:#666666;
+  font-weight: 600;
+}
+.food-listviews-sidebar04 .checkbox-service label:last-child{margin-bottom: 0px;}
+.checkbox-service label small{
+  margin-left: 15px;
+  width:auto;
+  margin-bottom: 0px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor:pointer;
+}
+.checkbox-service{
+  margin-top: 11px;
+  margin-bottom: 14px;
+}
+.checkbox-service button{
+  font-size: 13px;
+  font-weight: bold;
+  color:#333333;
+  margin-bottom: 5px;
+  background: transparent;
+}
+.filter-button button{
+  padding: 15px 63px 14px;
+  background-color: #808080;
+  color:#fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+/*======================================*/
+/*    Side Bar food- religion      */
+/*    ============================  */
+.food-religion,
+.food-religion label{
+  float: left;
+  width:100%;
+}
+.eating-foods-qty,
+.range-price-adjustment,
+.checkbox-service,
+.food-religion{
+  padding: 15px 15px 0;
+}
+.food-religion label{
+  margin-bottom: 16px;
+  cursor:pointer;
+}
+.food-religion label > input{ /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+.food-religion label > input + i{ /* IMAGE STYLES */
+  cursor:pointer;
+  border:2px solid transparent;
+  float: left;
+}
+.food-religion label > input:checked + i{ /* (RADIO CHECKED) IMAGE STYLES */
+  border:2px solid #333;
+  border-radius: 100%;
+  float: left;
+}
+.food-religion label > input:checked + small{
+  color:#000;
+}
+.food-religion label > input:checked + span{
+  color:#000;
+}
+.food-religion small{
+  float: left;
+  width: auto;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 7px 0px 0px;
+  margin-bottom: 0px;
+  margin-left: 18px;
+}
+.food-religion i{
+  font-size: 36px;
+}
+.food-religion span{
+  float: right;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px 0px 0px;
+}
+/*======================================*/
+/*   Side Bar Eating Food-s Qty      */
+/*    ============================  */
+
+.eating-foods-qty{
+  float: left;
+  width:100%;
+  padding-bottom: 10px;
+}
+.eating-foods-qty label{
+  float: left;
+  width:20%;
+  text-align: center;
+  position: relative;
+  margin-bottom: 0px;
+}
+.eating-foods-qty label > input{ 
+  visibility: hidden; 
+  position: absolute; 
+}
+.eating-foods-qty label > input + i{ 
+  cursor:pointer;
+  display: inline-block;
+  font-size: 40px;
+}
+.eating-foods-qty label > input:checked + i{ 
+  border-radius: 100%;
+  font-size: 35px;
+  display: inline-block;
+}
+.eating-foods-qty label i{
+}
+.search-pair03{
+}
+.eating-foods-qty label span{
+  bottom: -10px;
+  font-size: 12px;
+  font-weight: bold;
+  left: 0;
+  margin-bottom: -25px;
+  position: absolute;
+  right: 0;
+  text-transform: uppercase;
+  background-color: #333;
+  color:#fff;
+  width:115%;
+  border-radius: 20px;
+  z-index: 10;
+  opacity: 0;
+}
+.eating-foods-qty label span:before{
+  position: absolute;
+  content: "";
+  top:-9px;
+  left: 20px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 6px 9px 6px;
+  border-color: transparent transparent #333 transparent;
+}
+.eating-foods-qty label:hover > span{
+  bottom: 0px;
+  opacity: 1;
+}
+.eating-foods-qty label:checked + span{
+  bottom: 0px;
+  opacity: 1;
+}
+/*======================================*/
+/*    Side Bar Range Slider     */
+/*    ============================  */
+.range-price-adjustment{
+  float: left;
+  width:100%;
+  padding: 12px 20px 20px;
+}
+.range-price-adjustment .ui-widget-content{
+  border:none;
+  background-color: #e6e6e6;
+  height: 3px;
+  margin-top: 7px;
+  margin-bottom: 31px;
+}
+.range-price-adjustment .ui-slider .ui-slider-range{
+  background-color: #808080;
+}
+.range-price-adjustment .ui-state-default, 
+.range-price-adjustment .ui-widget-content .ui-state-default, 
+.range-price-adjustment .ui-widget-header .ui-state-default{
+  background:none;
+}
+.range-price-adjustment .ui-slider .ui-slider-handle{
+   background: #fff none repeat scroll 0 0;
+    border: 4px solid #808080;
+    border-radius: 100%;
+}
+.range-price-adjustment .ui-slider-horizontal .ui-slider-handle{
+  top:-0.5em;
+  cursor:pointer;
+}
+.range-price-adjustment label{
+  float: left;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  margin-top: -1px;
+}
+.range-price-adjustment .amount,
+.range-price-adjustment label{
+  width:auto;
+  height: auto;
+  font-size: 15px;
+  font-weight: bold;
+  color:#999999;
+  padding:10px 4px 0px;
+}
+.range-price-adjustment .amount{
+  width: 110px;
+  background: transparent;
+  border:none;
+}
+.range-price-adjustment .filter-button{
+  width:auto;
+  float: right;
+}
+.range-price-adjustment .filter-button button{
+  padding: 10px 33px 9px;
+  float: right;
+}
+/*======================================*/
+/*    ============================  */
+
+.amount-right label{
+  margin-bottom: 5px;
+}
+.amount-right label b{
+  float: right;
+  position: relative;
+  margin-top: -3px;
+}
+.amount-right label b:before{
+  content:"(";
+  left:0px;
+}
+.amount-right label b:after{
+  content:")";
+  right:0px;
+}
+.amount-right label b:before,
+.amount-right label b:after{
+   margin: 0 -6px;
+    position: absolute;
+    top: 1px;
+}
+.amount-right button{
+  font-size: 14px;
+  font-weight: bold;
+  color:#666666;
+  padding: 13px 0px 9px;
+  background-color: transparent;
+}
+.amount-right button i{
+  margin-left: 14px;
+}
+.amount-right input[type="checkbox"]:checked + span::before{
+  background-color: #666666;
+}
+.checkbox-service label > input:focus + p{
+  color:#333;
+}
+/*================================================*/
+/*    Restaurent rightside bar                    */
+/*================================================*/
+
+.restaurent-rightside-sections,
+.restaurent-food-rbar,
+.restaurent-food-rbar h5,
+.restaurent-rs-column{
+  float: left;
+  width:100%;
+}
+.restaurent-rs-column{
+  border:1px solid #eaeaea;
+  margin-bottom: 26px;
+  /*margin-bottom: 30px;*/
+  background-color: #fff;
+}
+.restaurent-food-rbar h5{
+  display: inline-block;
+  color:#fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 17px 20px 18px;
+}
+.restaurent-food-rbar h5 i{
+  float: right;
+  position: relative;
+  bottom: -1px;
+}
+.food-rbar-caption,
+.food-rbar-caption ul,
+.food-rbar-caption ul li,
+.food-rbar-caption ul li a{
+  float: left;
+  width:100%;
+}
+.food-rbar-caption ul li{
+  padding: 12px 19px 10px;
+  border-bottom: 1px solid #eaeaea;
+}
+.food-rbar-caption ul li:last-child{
+  margin-bottom: 0px;
+  border:none;
+}
+.food-rbar-caption > ul{
+}
+.food-rbar-caption ul li a{
+  display: inline-block;
+  text-align: right;
+  font-size: 14px;
+  color:#999999;
+  line-height: normal;
+}
+.food-rbar-caption ul li a span{
+  float: left;
+  text-align: left;
+  font-weight: 600;
+}
+.food-rbar-caption ul li.more-plus-active a i{
+  font-size: 18px;
+}
+.food-public-adds,
+.food-public-adds figure{
+  float: left;
+  width:100%;
+  background-color: #fff;
+}
+.food-public-adds figure{
+  border:1px solid #eaeaea;
+  padding: 5px;
+}
+.food-public-adds figure img{
+  width: 100%;
+}
+/*==============================================*/
+/*       Right bar restaurant  02               */
+/*=============================================*/
+.food-right-sidebar,
+.food-title-rightside,
+.food-right-sidebar form,
+.map-located,
+.opening-detail{
+  float: left;
+  width:100%;
+}
+.food-title-rightside{
+  border-bottom:1px solid #e3e3e3;
+  margin-bottom: 20px;
+}
+.food-right-sidebar{
+  border:1px solid #e3e3e3;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+.map-located{
+  padding: 0px 20px;
+}
+.food-title-rightside h6{
+  font-weight: bold;
+  color:#666666;
+  text-transform: uppercase;
+  padding: 20px 20px 14px;
+}
+.food-title-rightside h6:before{
+
+}
+.food-title-rightside h6 i{
+  float: right;
+   font-size: 20px;
+    line-height: 16px;
+}
+.food-right-sidebar form .no-margin{
+  margin-right: 0px;
+}
+.food-right-sidebar form{
+  padding: 0px 20px;
+}
+.food-right-sidebar form input{
+  width:100%;
+  height: 43px;
+  border:1px solid #e3e3e3;
+  margin-bottom: 20px;
+}
+.food-right-sidebar .chosen-container-single .chosen-single span,
+.food-right-sidebar form input,
+.food-right-sidebar .search-date-calender label input,
+.food-m-button button,
+.opening-detail ul li,
+.related-posts .opening-veiw{
+  font-size: 13px;
+  color:#666666;
+  font-weight: bold;
+}
+.food-right-sidebar .search-date-calender label .datepicker input:-moz-placeholder,
+.food-right-sidebar form input:-moz-placeholder{
+  color:#666;
+}
+.food-right-sidebar .search-date-calender label .datepicker input::-moz-placeholder,
+.food-right-sidebar form input::-moz-placeholder{
+  color:#666;
+}
+.food-right-sidebar .search-date-calender label .datepicker input::-webkit-placeholder,
+.food-right-sidebar form input::-webkit-placeholder{
+  color:#666;
+}
+.food-right-sidebar .search-date-calender{
+  float: left;
+    margin-right: 17px;
+    width: 46%;
+    margin-bottom: 20px;
+}
+.food-right-sidebar form .search-date-calender:last-child{
+  margin-right: 0px;
+}
+.food-right-sidebar .search-date-calender label{
+  position: relative;
+  border:1px solid #e3e3e3;
+}
+.food-right-sidebar .search-date-calender label i{
+  float: left;
+  right: 10px;
+  position: absolute;
+  top: 14px;
+}
+.food-right-sidebar .search-date-calender label .datepicker input{
+  background-color: transparent;
+  height: 43px;
+  margin-bottom: 0px;
+  width:100%;
+  padding-left: 0px;
+}
+.food-right-sidebar .search-date-calender label input{
+  height: auto;
+  line-height: 34px;
+  margin-bottom: 0;
+  border:none;
+}
+.food-right-sidebar .chosen-container-single .chosen-single div b::before{
+  left:3px;
+  color:#666;
+  top:11px;
+}
+.food-right-sidebar .search-date-calender .datepicker{
+  padding: 0px 12px;
+}
+.food-right-sidebar .chosen-container-single .chosen-single{
+  background: transparent none repeat scroll 0 0;
+  border-radius: 0;
+  box-shadow: none;
+  height: 45px;
+  line-height: 43px;
+  padding-left: 14px;
+}
+.food-right-sidebar .chosen-container-single .chosen-single div{
+  top:-10px;
+  background-color: transparent;
+}
+.food-right-sidebar .chosen-container{
+  margin-bottom: 20px;
+  width:100% !important;
+}
+.food-m-button button,
+.food-m-button{
+  float: left;
+  width:100%;
+}
+.food-m-button button{
+  padding: 11px 0px;
+  color:#fff;
+  background-color: #ebc131;
+  text-transform: uppercase;
+}
+.retried-posts-section{
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.opening-detail ul,
+.opening-detail ul li{
+  float: left;
+  width:100%;
+  text-transform: uppercase;
+}
+.opening-detail ul{
+  padding: 0px 20px;
+}
+.opening-detail ul li{
+  margin-bottom: 7px;
+}
+.opening-detail ul li:last-child{
+  margin-bottom: 0px;
+}
+.opening-detail ul li span{
+  float: right;
+  color:#999999;
+}
+.opening-detail figure{
+  float: left;
+  width: 30%;
+  padding: 3px 0px;
+}
+.opening-detail figure img{
+  width:100%;
+  border-radius: 5px;
+}
+.related-posts{
+  border-bottom: 1px solid #e3e3e3;
+  float: left;
+  margin-bottom: 20px;
+  padding: 0 15px 20px;
+  width: 100%;
+}
+.food-right-sidebar .opening-detail .related-posts .opening-veiw{
+  font-size: 11px;
+  color:#999999;
+  float: left;
+  line-height: 23px;
+}
+.food-right-sidebar .opening-detail .related-posts .rateing-starts{
+  margin-bottom: 0px;
+}
+.ralated-detail-captions p a,
+.food-right-sidebar .opening-detail .related-posts p{
+  color: #666666;
+  float: left;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  width:100%;
+}
+.ralated-detail-captions p{
+  margin-bottom: 3px;
+}
+.food-right-sidebar .opening-detail .related-posts small{
+  margin-bottom: 0px;
+  float: left;
+  font-size: 11px;
+  line-height: normal;
+}
+.food-right-sidebar .opening-detail .related-posts:last-of-type{
+  margin-bottom: 0px;
+}
+.ralated-detail-captions{
+  float: none;
+  width: auto;
+  overflow: hidden;
+  padding:4px 0 0 10px;
+}
+.food-loading-button,
+.food-loading-button a{
+  float: left;
+  width:100%;
+  text-align: center;
+}
+.food-loading-button a{
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  color:#999999;
+  padding: 10px 0px;
+  text-transform: uppercase;
+}
+.food-loading-button a:hover{
+  color:#fff;
+}
+.ralated-detail-captions p a{
+  display: inline-block;
+}
+
+/*
+=====================================
+  food- side bar 02 search
+=====================================
+*/
+.food-search-side04,
+.food-listviews-sidebar,
+.side-title,
+.food-search-side04 form,
+.food-search-side04 form input,
+.find-location-sidebar,
+.find-located-codes{
+  float: left;
+  width:100%;
+}
+.food-search-side04{
+  border: 1px solid #e3e3e3;
+  padding-bottom: 20px;
+}
+.side-title{
+  background-color: #212121;
+  padding: 23px 20px 21px;
+  border-left: 3px solid ;
+}
+.side-title h6{
+  font-weight: bold;
+  color:#fff;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+.food-search-side04 span{
+  font-size: 13px;
+  color:#999999;
+  margin-bottom: 11px;
+  display: inline-block;
+  padding-top: 13px;
+}
+.food-search-side04 .find-located-codes{
+  padding: 0px 20px;
+}
+.radio-service{
+  padding: 15px 20px 10px;
+  border:1px solid #e3e3e3;
+}
+.find-location-sidebar{
+  position: relative;
+}
+.food-search-side04 input{
+  height: 50px;
+  border:1px solid #e3e3e3;
+  font-size: 13px;
+  margin-bottom: 15px;
+  width:100%;
+}
+.food-search-side04 .find-location-sidebar input{
+  margin-bottom: 0px;
+}
+.food-search-side04 button{
+  background-color: #f1efef;
+  font-size: 13px;
+  height: 48px;
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  width: 50px;
+}
+/*
+=====================================
+  food- side bar vol 02
+=====================================
+*/
+.food-sidebar-rateing,
+.radio-service label,
+.radio-stars-rateing,
+.radio-service{
+  float: left;
+  width:100%;
+}
+.food-sidebar-rateing .side-title h6{
+  position: relative;
+}
+.side-title.accordien-title.accordion-open h6:before{
+	line-height: 21px;
+}
+.food-sidebar-rateing .side-title h6:before{
+  position: absolute;
+  content: "\-";
+  right: 0px;
+  top:50%;
+  font-family: fontawesome;
+  text-align: center;
+  line-height: 25px;
+  width:30px;
+  font-size: 18px;
+  height: 30px;
+  border-radius: 100%;
+  border:2px solid #fff;
+  color:#fff;
+  margin-top: -15px;
+}
+.side-title.accordien-title.accordion-close h6:before{
+  content: "\+";
+}
+.radio-stars-rateing{
+  margin-bottom: 4px;
+}
+.radio-stars-rateing label{
+  margin-bottom: 0px;
+  float: left;
+  width: auto;
+}
+.food-sidebar-rateing form{
+  padding: 15px 20px 10px;
+}
+.radio-service label input{
+  float: left;
+  display: none;
+}
+.radio-service b{
+  background-color: #fff;
+  border: 2px solid #999;
+  display: inline-block;
+  border-color:#999999;
+  height: 13px;
+  position: relative;
+  width: 13px;
+  margin-top: 5px;
+  border-radius: 100%;
+}
+.radio-service b:before{
+  transform:scale(0); 
+  content: "";
+  height:9px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 9px;
+  border-radius: 100%;
+}
+.radio-service label b{
+  float: left;
+  margin-right: 20px;
+}
+.radio-service label input[type="radio"]:checked + b{
+  border-color:#000;
+}
+.radio-service label input[type="radio"]:checked + b:before {
+    transform:scale(1); 
+}
+.food-sidebar-rateing .radio-service label input[type="radio"]:checked ~ span.stars-rateing-doubles:before{
+  position: absolute;
+  content:"\f005";
+  font-family: fontawesome;
+  top:0px;
+  left:0px;
+  right: 0px;
+  opacity: 1;
+}
+.food-sidebar-rateing .radio-service .checkbox-service span{
+  height: 10px;
+  margin-top: 6px;
+  width: 10px;
+}
+.food-sidebar-rateing .radio-service .checkbox-service input[type="checkbox"]:checked + span::before{
+  height: 6px;
+  width:6px;
+  left:1px;
+  top:1px;
+  border-radius: 2px;
+}
+.food-sidebar-rateing .radio-service input[type="radio"]:checked ~ .para{
+  color:#666;
+}
+.radio-service label small{
+  margin-left: 15px;
+  width:auto;
+  margin-bottom: 0px;
+  font-size: 15px;
+  font-weight: normal;
+  cursor:pointer;
+}
+.radio-service .rateing-starts{
+  float: left;
+}
+.stars-rateing-doubles{
+  display: inline-block;
+  position: relative;
+  margin-right: 3px;
+}
+.stars-rateing-doubles:before{
+  position: absolute;
+  content:"\f005";
+  font-family: fontawesome;
+  top:0px;
+  left:0px;
+  right: 0px;
+  opacity: 0;
+}
+.food-sidebar-rateing,
+.food-search-side04{
+  margin-bottom: 30px;
+}
+.food-listviews-sidebar04 .food-sidebar-rateing{
+  margin-bottom: 0px;
+}
+.food-sidebar-rateing .radio-service .para{
+  float: left;
+}
+.food-sidebar-rateing .radio-service .para p{
+  margin-bottom: 0px;
+}
+.food-sidebar-rateing .radio-service input[type="radio"]:checked + .para p{
+  color:#000;
+}
+/*
+=====================================
+
+  food- side bar scroll bar
+
+=====================================
+*/
+.scroll-pane{
+  width: 100%;
+  height: 200px;
+  overflow: auto;
+}
+.horizontal-only
+{
+  height: auto;
+  max-height: 200px;
+  background-color: #000;
+}
+.range-slider-food .range-price-adjustment .ui-widget-content{
+  margin-bottom: 10px;
+}
+.range-slider-food .range-price-adjustment{
+  padding: 34px 20px 20px;
+  border:1px solid #e3e3e3;
+}
+
+
+/*
+  =====================================
+    food- filter menus side bars
+  =====================================
+*/
+.filter-find-menus{
+  float: left;
+  width:85%;
+}
+.filter-find-menus > li{
+  float: left;
+  width:20%;
+  padding-right: 15px;
+}
+.filter-find-menus > li:last-child{
+  padding-right: 0px;
+}
+.filter-find-menus .chosen-container-single .chosen-single div{
+  background-color: transparent;
+}
+.filter-find-menus .chosen-container-single .chosen-single{
+  height: 48px;
+  line-height: 46px;
+}
+.filter-find-menus .chosen-container-active .chosen-single{
+  box-shadow: none;
+  border-color:#e3e3e3;
+}
+.filter-find-menus .chosen-container-single .chosen-search input[type="text"]{
+  border-color:#e3e3e3;
+}
+.food-restrurent-service-filter .grid-velue-02 ul{
+  padding:12px 0 0 20px;
+
+}
+/*
+  =====================================
+
+    food- search velue vol 3
+
+  =====================================
+*/
+.food-searchvelue-change,
+.food-blogdetial,
+.food-searchvelue-change form input{
+  float: left;
+  width:100%;
+}
+.food-searchvelue-change{
+  border:1px solid #e3e3e3;
+  padding: 20px 30px 16px;
+  margin-bottom: 30px;
+}
+.food-searchvelue-change form{
+  line-height: normal;
+  text-align: center;
+}
+.food-searchvelue-change form a{
+  display: inline-block;
+  height: 46px;
+  width:46px;
+  border:1px solid #e3e3e3;
+  text-align: center;
+  line-height: 46px;
+  color:#666;
+  border-radius: 100%;
+  font-size: 18px;
+  margin-bottom: 13px;
+}
+.food-searchvelue-change form h5{
+  font-weight: bold;
+  color:#666666;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.food-searchvelue-change form input{
+  border-color:#e3e3e3;
+  margin-bottom: 12px;
+}
+.food-searchvelue-change form button{
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color:#666666;
+  line-height: normal;
+  background-color: transparent;
+}
+/*
+  =====================================
+
+    food- categories lists
+
+  =====================================
+*/
+.food-categories-lists,
+.food-categories-lists ul,
+.food-categories-lists ul li{
+  float: left;
+  width:100%;
+}
+.food-categories-lists{
+  border:1px solid #e3e3e3;
+  margin-bottom: 30px;
+}
+.food-side-title{
+  text-align: left;
+  padding: 19px 20px 17px;
+  border-bottom: 1px solid #e3e3e3;
+}
+.food-side-title h6{
+  font-weight: bold;
+  color:#666666;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+.food-categories-lists ul{
+  padding: 24px 20px 23px;
+}
+.food-categories-lists .food-twis-columns ul{
+  padding: 14px 20px 16px;
+}
+.food-categories-lists ul li{
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 7px;
+}
+.food-categories-lists ul li:last-child{
+  margin-bottom: 0px;
+}
+.food-categories-lists ul li a{
+  float: left;
+  font-size: 15px;
+  color: #999999;
+}
+.food-categories-lists ul li:before{
+  position: absolute;
+  content:"\f105";
+  font-family: fontawesome;
+  top:0px;
+  left:0px;
+}
+.food-categories-lists ul li span{
+  float: right;
+  font-size: 14px;
+  color: #999999;
+  position: relative;
+  padding: 0px 6px;
+}
+.food-categories-lists ul li span:before{
+  content:"(";
+  left:0px;
+}
+.food-categories-lists ul li span:after{
+  content:")";
+  right:0px;
+}
+.food-categories-lists ul li span:before,
+.food-categories-lists ul li span:after{
+  position: absolute;
+  top:0px;
+}
+/*
+  =====================================
+
+    food- insta slider feild
+
+  =====================================
+*/
+.insta-silder-felid,
+.insta-slide-gram,
+.insta-slide-gram figure
+.controls-for-slider{
+  float: left;
+  width:100%;
+}
+.insta-silder-felid{
+  border:1px solid #e3e3e3;
+  margin-bottom: 30px;
+}
+.insta-slide-gram figure img{
+  width:100%;
+}
+.insta-slide-gram figure{
+
+}
+.insta-slide-gram{
+  padding: 20px 20px 60px;
+}
+.insta-slide-gram .bx-wrapper{
+  margin-bottom: 0px;
+}
+.insta-slide-gram .bx-wrapper .bx-viewport{
+  background-color: transparent;
+  border:none;
+  box-shadow: none;
+  left:0;
+}
+.insta-slide-gram .bx-wrapper .bx-controls .bx-pager.bx-default-pager{
+  bottom:-53px;
+}
+.insta-slide-gram .bx-wrapper .bx-pager.bx-default-pager a.active,
+.insta-slide-gram  .bx-wrapper .bx-pager.bx-default-pager a:hover{
+  background: #aaaaaa;
+}
+.insta-slide-gram  .bx-wrapper .bx-pager.bx-default-pager a{
+  background: #e0e0e0;
+}
+.insta-slide-gram .bx-wrapper .bx-controls-direction a{
+  background: none;
+  position: relative;
+  top:100%;
+  margin-top: 0px;
+  text-indent: -9999px;
+  white-space: nowrap;  
+  font-size: 0px;
+  margin: 0px 72px;
+}
+.insta-slide-gram .bx-wrapper .bx-controls-direction{
+  bottom: -53px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+}
+.insta-slide-gram .bx-wrapper .bx-controls-direction .bx-next:before{
+  content:"\f105";
+  right:0px;
+}
+.insta-slide-gram .bx-wrapper .bx-controls-direction .bx-prev:after{
+  content:"\f104";
+  left:0px;
+}
+.insta-slide-gram .bx-wrapper .bx-controls-direction .bx-next:before,
+.insta-slide-gram .bx-wrapper .bx-controls-direction .bx-prev:after{
+  font-family: fontawesome;
+  top:0px;
+  font-size: 20px;
+  color:#aaaaaa;
+}
+/*
+  =====================================
+
+    food- Related posts
+
+  =====================================
+*/
+.opening-side-columns,
+.food-related-posts{
+  float: left;
+  width:100%;
+}
+.opening-side-columns{
+  border: 1px solid #e3e3e3;
+  margin-bottom: 30px;
+}
+.food-ralated-cap{
+}
+.food-related-posts{
+  padding: 20px 20px 20px;
+  border-bottom: 1px solid #e3e3e3;
+}
+.food-related-posts figure{
+  float: left;
+  margin-right: 20px;
+}
+.food-related-posts figure img{
+  border-radius: 5px;
+}
+.food-ralated-cap a{
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+  color:#666666;
+}
+.food-ralated-cap p{
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  line-height: 21px;
+}
+.food-ralated-cap a:hover{
+
+}
+/*
+  =====================================
+
+    food- twitter columns
+
+  =====================================
+*/
+.food-twis-columns,
+.food-twis-columns ul,
+.food-twis-columns ul li{
+  float: left;
+  width:100%;
+}
+.food-twis-columns ul li{
+  margin-bottom: 28px;
+}
+.food-twis-columns ul li:last-child{
+  margin-bottom: 0px;
+}
+.food-twis-columns ul li p{
+  float: left;
+  font-size: 14px;
+  color:#666666;
+  padding-left: 13px;
+  margin-bottom: 0px;
+}
+.food-twis-columns ul li p a{
+  display: inline-block;
+  font-size: 14px;
+}
+.food-twis-columns ul li:before{
+  content:"\f099";
+  font-size: 16px;
+
+}
+.food-twis-columns .food-loading-button{
+  border-top:1px solid #e3e3e3;
+}
+
+/*================================================
+            SideBar With Services  
+================================================*/
+.food-services{
+  float: left;
+  width:100%;
+  background-image: url(../images/confurmation-services-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 70px 0 0px;
+  background-position: center -191px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.food-services:before{
+  position: absolute;
+  content:"";
+  top:0px;
+  left:0px;
+  right: 0px;
+  bottom:191px;
+  background-color:rgba(48,48,48,0.9);
+}
+.restrurent-radius-block{
+  /*padding:0 0 31px;*/
+  border-bottom: 1px solid #e8e8e8;
+}
+.restaurent-service4{
+  margin-top:0px;
+  position: relative;
+}
+.restaurent-service4 ul li{
+  position: relative;
+  padding-bottom: 62px;
+}
+.restaurent-service4 ul li:before{
+  border-bottom: 1px solid;
+  bottom: 0px;
+  content: "";
+  left: 0;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  transform: translateX(-300px) perspective(200px);
+  width: 100%;
+  z-index: 99999;
+}
+.restaurent-service4 ul li:hover:before{
+  width:100%;
+  opacity: 1;
+  transform: translateX(0px) perspective(100px);
+}
+
+.food-services .restaurent-food-titles,
+.restaurent-service4{
+  position: relative;
+}
+.food-services .restaurent-food-titles p{
+  margin-bottom:0px;
+}
+.food-services .restaurent-food-titles h2,
+.food-services .restaurent-food-titles p{
+  color:#fff;
+}
+
+.restaurent-service4,
+.restaurent-service4 ul{
+  float: left;
+  width:100%;
+}
+.restaurent-service4 ul li {
+  display: inline-block;
+  text-align: center;
+}
+.restaurent-service4 ul li:last-child{
+  margin-right: 0px;
+}
+.restaurent-service4 ul li span{
+  display: inline-block;
+  width:170px;
+  height: 170px;
+  color:rgba(0,0,0,0.86);
+  text-align: center;
+  line-height: 0px;
+  background: #fff;
+  padding: 52px 0;
+  position: relative;
+  border-radius: 100%;
+  font-size: 32px;
+  box-shadow:0 0 9px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 21px;
+}
+.restaurent-service4 ul li span.starts{
+}
+.restaurent-service4 ul li:hover span{
+  color:#fff;
+}
+.restaurent-service4 ul li span:before{
+  position: absolute;
+  content:"";
+  top:0px;
+  left: 0px;
+  right: 0px;
+  bottom:0px;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
+}
+.restaurent-service4 h5{
+  display: block;
+  font-weight: bold;
+  color:#303030;
+  text-transform: uppercase;
+}
+.restaurent-service4 > ul{
+  left: 0;
+  margin: -30px auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+

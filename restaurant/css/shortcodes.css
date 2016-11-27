@@ -1,0 +1,248 @@
+
+/*==================================================
+
+	Project: RESTAURANT FOOD
+	Author : KodeForest
+
+	/**
+	* Table of Contents :
+	* 1.0 - template buttons
+	* 2.0 - template pagination
+	* 3.0 - template hover effects
+	* 4.0 - food checked links
+	* 5.0 - RATEING STARTS
+
+	
+
+
+/*
+	=====================================
+		template buttons 
+	=====================================
+*/
+
+.button-more{
+	float: left;
+	width:100%;
+	text-align: center;
+	border-top: 1px solid #e3e3e3;
+}
+.button-more a{
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: capitalize;
+	color:#999999;
+	padding: 15px 0 13px;
+	width: 100%;
+}
+.button a:hover,
+.button-more a:hover{
+	color:#fff;
+}
+.button{
+	float: left;
+	width:100%;
+}
+.button a{
+	font-size: 14px;
+	padding: 8px 20px;
+	text-transform: uppercase;
+	background: #808080;
+	color:#fff;
+	border-radius: 5px;
+	float: left;
+	width: auto;
+}
+
+/*============================
+	template pagination
+============================*/
+
+.pagination-list{
+	float: left;
+	width:100%;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.pagination-list ul{
+	float: left;
+	width:100%;
+	text-align: center;
+	margin-bottom: -7px;
+	margin-top: -5px;
+}
+.pagination-list ul li a{	
+	background:#fff;
+}
+.pagination-list ul li .prev-pagination,
+.pagination-list ul li .next-pagination{
+	font-size: 13px;
+	font-weight: bold;
+	color:#999999;
+	border:1px solid #e3e3e3;
+	text-transform: capitalize;
+	display: inline-block;
+	border-radius: 100px;
+	width:88px;
+	line-height: 31px;
+	height: 35px;
+	margin-top: 5px;
+	float: left;
+}
+.pagination-list ul li{
+	margin-right: 7px;
+	display: inline-block;
+}
+.pagination-list ul li:hover a{
+	color:#fff;
+}
+.pagination-list ul li:last-child{
+	margin-right: 0px;
+}
+.pagination-list ul li a{
+	display: inline-block;
+	height: 35px;
+	width:35px;
+	text-align: center;
+	line-height: 35px;
+	font-size: 16px;
+	font-weight: bold;
+	float: left;
+	color:#999999;
+	border:1px solid #e3e3e3;
+	border-radius: 100%;
+	margin-top: 5px;
+}
+
+/*
+	=====================================
+		template hover effects 
+	=====================================
+*/
+.only-hover figure,
+.post-blog-recent-posts figure{
+	position: relative;
+}
+.only-hover figure:before,
+.post-blog-recent-posts figure:before,
+.food-aticles figure:before{
+	position: absolute;
+	content:"";
+	top:0px;
+	left:0px;
+	right: 0px;
+	bottom:0px;
+	background-color: rgba(0,0,0,0.0);
+	z-index: 999;
+}
+.only-hover figure figcaption,
+.post-blog-recent-posts figure figcaption,
+.food-aticles figure figcaption{
+	position: absolute;
+	top:50%;
+	left:0px;
+	right: 0px;
+	margin:-0px auto 0;
+	text-align: center;
+	opacity: 0;
+	z-index: 9999;
+	visibility: hidden;
+}
+.only-hover:hover figure figcaption,
+.post-blog-recent-posts:hover figure figcaption,
+.food-aticles:hover figure figcaption{
+	opacity: 1;
+	margin:-20px auto 0;
+	visibility: visible;
+}
+.only-hover:hover figure:before,
+.post-blog-recent-posts:hover figure:before,
+.food-aticles:hover figure:before{
+	background-color: rgba(0,0,0,0.5);
+}
+.food-restrurent-colum.only-hover figure figcaption{
+	visibility: visible;
+	opacity: 1;
+	margin:-20px auto 0;
+}
+.food-restrurent-colum.only-hover figure figcaption .new-hover{
+	margin:-20px auto 0;
+	opacity: 0;
+}
+.food-restrurent-colum.only-hover figure figcaption span{
+	
+	bottom:-122px;
+}
+.food-restrurent-colum.only-hover:hover figure figcaption span{
+	bottom:-102px;
+}
+.food-restrurent-colum.only-hover:hover figure figcaption .new-hover{
+	margin:0px auto 0;
+	opacity: 1;
+}
+/*
+	=====================================
+		food checked links
+	=====================================
+*/
+.food-checked-links{
+	float: left;
+	width:100%;
+	margin-bottom: 15px;
+}
+.food-checked-links li{
+	float: left;
+	width:50%;
+	padding-left: 30px;
+	text-align: left;
+	position: relative;
+	margin-bottom: 5px;
+}
+.food-checked-links li a{
+	display: inline-block;
+	font-size: 15px;
+	color:#999999;
+}
+.food-checked-links li:before{
+	position: absolute;
+	content: "\f00c";
+	top:0px;
+	left:0px;
+	color:#999999;
+	font-size: 15px;
+	font-family: fontawesome;
+}
+
+/*
+=====================================
+	RATEING STARTS
+=====================================
+*/
+.rateing-starts{
+	height: 13px;
+	width:70px;
+	position: relative;
+	background-image: url(../extra-images/rate.png);
+	background-repeat: repeat-x;
+	background-position: 0 0;
+	text-align: left;
+	overflow: hidden;
+	float: left;
+	margin-bottom: 0;
+	margin-top: 5px;
+    margin-right: 10px; 
+}
+.food-menu-column .rateing-starts{
+	margin-bottom: 15px;
+    margin-right: 10px;
+    margin-top: 0px;
+}
+.rateing-star-img{
+	background-image: url(../extra-images/rate02.png);
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    height: 13px;
+    z-index: 9999;
+    position: absolute;
+}
