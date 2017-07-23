@@ -1,0 +1,524 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Mounter // Corporate Html Template Preview</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+	
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Dosis|Open+Sans">
+
+	<!-- Bootstrap CSS
+	============================================ -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- Icon Font CSS
+	============================================ -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Mean Menu CSS
+	============================================ -->
+	<link rel="stylesheet" href="css/meanmenu.min.css">
+	<!-- Animate CSS
+	============================================ -->
+	<link rel="stylesheet" href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css">
+	<!-- Style CSS
+	============================================ -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<!-- Responsive CSS 
+	============================================ -->
+	<link rel="stylesheet" href="css/responsive.css">
+
+<style type="text/css">
+
+body {
+  color: #666666;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
+  font-variant-ligatures: common-ligatures;
+  font-weight: 400;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.hero-content h3 {
+	color: #fff;
+}
+.hero-content p span {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-family: 'Open Sans', sans-serif;
+}
+.hero-content p {
+  color: #fff;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.header-area.bg-off-white {
+  background: #000 none repeat scroll 0 0;
+}
+.hero-wrapper {
+  background-attachment: scroll;
+  background-image: url("img/mounter/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 270px 30px;
+  background-position: center center;
+}
+.hero-wrapper {
+    position: relative;
+    z-index: 1;
+}
+.hero-wrapper::before {
+    background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.main-menu ul li a {
+  color: #fff;
+}
+.logo {
+  margin-top: 0;
+}
+.main-menu ul li ul li a {
+  color: #444;
+}
+.section-title h1 {
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+.demo-img a::before {
+  background: #000 none repeat scroll 0 0;
+}
+.single-demo:hover .demo-img a::before {
+  opacity: 0.9;
+}
+.support-team > a {
+  background: #000 none repeat scroll 0 0;
+}
+.main-menu ul li:hover > a {
+  color: #fff;
+}
+
+.main-menu ul li a {
+  font-family: 'Open Sans', sans-serif;
+}
+.header-area.header-sticky.bg-off-white .row {
+    align-items: center;
+    display: flex;
+}
+.logo a {
+    display: block;
+}
+.button {
+  background: transparent none repeat scroll 0 0;
+  border-color: #fff;
+  border-radius: 30px;
+}
+.button.color-hover:hover {
+  background: #00bcd4 none repeat scroll 0 0;
+  border-color: #00bcd4;
+  color: #fff;
+}
+.section-title h1 {
+  text-transform: uppercase;
+}
+.demo-img a::before {
+  background: #00bcd4 none repeat scroll 0 0;
+}
+.button.large {
+  line-height: 40px;
+}
+.menu li ul li:hover a {
+  color: #000;
+}
+
+.counter-area .row .col-md-4:nth-child(1) .single-counter {
+  background: #9f1e49 none repeat scroll 0 0;
+}
+.counter-area .row .col-md-4:nth-child(2) .single-counter {
+  background: #005691 none repeat scroll 0 0;
+}
+.counter-area .row .col-md-4:nth-child(2) .single-counter {
+  background: #2db6a3 none repeat scroll 0 0;
+}
+.single-counter span {
+	font-family: 'Open Sans', sans-serif;
+}
+#scrollUp {
+  line-height: 31px;
+}
+
+@-webkit-keyframes scroll-ani-to-top {
+  0% {
+    opacity: 0;
+    bottom: 0;
+  }
+  50% {
+    opacity: 1;
+    bottom: 50%;
+  }
+  100% {
+    opacity: 0;
+    bottom: 75%;
+  }
+}
+@-moz-keyframes scroll-ani-to-top {
+  0% {
+    opacity: 0;
+    bottom: 0;
+  }
+  50% {
+    opacity: 1;
+    bottom: 50%;
+  }
+  100% {
+    opacity: 0;
+    bottom: 75%;
+  }
+}
+@keyframes scroll-ani-to-top {
+  0% {
+    opacity: 0;
+    bottom: 0;
+  }
+  50% {
+    opacity: 1;
+    bottom: 50%;
+  }
+  100% {
+    opacity: 0;
+    bottom: 75%;
+  }
+}
+#scrollUp:hover i {
+  animation: 800ms linear 0s normal none infinite running scroll-ani-to-top;
+  height: 100%;
+  left: 0;
+  margin-bottom: -25px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+#scrollUp i {
+  color: #fff;
+}
+ #scrollUp {
+  background: #00bcd4 none repeat scroll 0 0;
+}
+
+
+
+
+
+
+
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1169px) {
+.hero-wrapper {
+  padding: 149px 8px;
+}
+.hero-content h3 {
+  font-size: 34px;
+  letter-spacing: 1px;
+}
+
+}
+/* tablet :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+
+.hero-content h3 {
+  font-size: 27px;
+}
+
+
+}
+/* small mobile :320px. */
+@media (max-width: 767px) {
+  
+.container {width:300px}
+
+.hero-wrapper {
+  padding: 149px 8px;
+}
+.hero-content h3 {
+  font-size: 34px;
+  letter-spacing: 1px;
+}
+.hero-content h3 {
+  line-height: 41px;
+}
+.hero-content p span {
+  line-height: 33px;
+}
+.button.large {
+  line-height: 34px;
+}
+.hero-content.fix a + a {
+  margin-top: 20px;
+}
+
+
+
+}
+
+
+
+
+
+
+
+</style>	
+	
+</head>
+<body>
+<!-- Hero
+============================================ -->
+<div class="hero-wrapper text-center">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="hero-content fix">
+					<h3>mounter Corporate  HTML5 Template</h3>
+					<p><span>Multipurpose Corporate HTML5 Template</span></p>
+					<a href="#demos" class="button large color-hover">view all demo</a>
+					<a href="#" class="button large color-hover">Buy now</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="counter-area bg-white">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<div class="single-counter">
+					<span class="counter">11</span><span>+</span>
+					<p>Total Pages</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<div class="single-counter">
+					<span class="counter">4</span><span>+</span>
+					<p>Home Style</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<div class="single-counter">
+					<span class="counter">1</span><span>+</span>
+					<p>Blog Style</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Demo Section
+============================================ -->
+<div id="demos" class="padding-90 text-center bg-off-white fix">
+	<div class="container">
+		<div class="row">
+			<div class="section-title text-center col-xs-12">
+				<h1>Choose Your Demo</h1>
+			</div>
+			<div id="demo-container">
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<div class="single-demo">
+						<div class="demo-img">
+							<a href="mounter/index.html" target="_blank"><img src="img/mounter/home-1.jpg" alt="home" /></a>
+						</div>
+						<div class="demo-title">
+							<h2>Home version one</h2>
+						</div>						
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<div class="single-demo">
+						<div class="demo-img">
+							<a href="mounter/index-2.html" target="_blank"><img src="img/mounter/home-2.jpg" alt="about" /></a>
+						</div>
+						<div class="demo-title">
+							<h2>Home version two</h2>
+						</div>						
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<div class="single-demo">
+						<div class="demo-img">
+							<a href="mounter/index-3.html" target="_blank"><img src="img/mounter/home-3.jpg" alt="blog" /></a>
+						</div>
+						<div class="demo-title">
+							<h2>Home version three</h2>
+						</div>						
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<div class="single-demo">
+						<div class="demo-img">
+							<a href="mounter/index-4.html" target="_blank"><img src="img/mounter/home-4.jpg" alt="home four"/></a>
+						</div>
+						<div class="demo-title">
+							<h2>Home version four</h2>
+						</div>						
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<div class="single-demo">
+						<div class="demo-img">
+							<a href="mounter/contact.html" target="_blank"><img src="img/mounter/contact.jpg" alt="contact" /></a>
+						</div>
+						<div class="demo-title">
+							<h2>Contact Us</h2>
+						</div>						
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<div class="single-demo">
+						<div class="demo-img">
+							<a href="mounter/about.html" target="_blank"><img src="img/mounter/about.jpg" alt="checkout" /></a>
+						</div>
+						<div class="demo-title">
+							<h2>About us</h2>
+						</div>						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- Feature Section
+============================================ -->
+<div id="feature" class="feature-area padding-90 fix">
+	<div class="container">
+		<div class="row">
+			<div class="section-title text-center col-xs-12">
+				<h1>Mounter Feature</h1>
+				<p>There are so many reasons to choose mounter, here are a few Feature</p>
+			</div>
+			<div class="feature-list col-xs-12">
+				<ul>
+					<li>Valid HTML5 & CSS3</li>
+                    <li>Neat, clean and simple design</li>
+                    <li>Creative and Modern Design</li>
+                    <li>Total 11 HTML Pages</li>
+                    <li>Built Based on Bootstrap v3</li>
+                    <li>Fully Responsive</li>
+                    <li>4 home pages</li>
+                    <li>Cross Browser Optimization</li>
+                    <li>Well Commented HTML & CSS files</li>
+                    <li>Google Fonts</li>
+                    <li>Well Documented</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="more-demo text-center bg-off-white padding-90 fix">
+	<div class="container">	
+		<div class="row">
+			<div class="col-md-12 col-sm-6 col-xs-12">
+				<div class="support-team">
+					<img src="img/team.svg" alt="logo" />
+					<h2>Dedicated Support Forum</h2>
+					<p>Join the conversation on Support Forum to find solutions,
+					ask questions, and share your ideas.</p>
+					<a target="_blank" href="http://emmotivity.com">Support link</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- Footer Top Area
+============================================ -->
+<div class="footer-top">
+	<div class="container">
+		<div class="row">
+			<div class="footer-logo col-xs-12 text-center">
+				<a href="mounter/index.html"><img src="img/mounter/mounter.png" alt="logo"></a>
+			</div>
+			<div class="footer-social col-xs-12 text-center">
+				<a href="https://www.facebook.com/devitems/?ref=bookmarks" target="_blank"><i class="fa fa-facebook"></i></a>
+				<a href="https://twitter.com/devitemsllc" target="_blank"><i class="fa fa-twitter"></i></a>
+				<a href="https://www.linkedin.com/uas/login" target="_blank"><i class="fa fa-linkedin"></i></a>
+				<a href="https://www.instagram.com/devitems/" target="_blank"><i class="fa fa-instagram"></i></a>
+				<a href="https://dribbble.com/devitemsllc" target="_blank"><i class="fa fa-dribbble"></i></a>
+				<a href="https://www.pinterest.com/devitemsllc/" target="_blank"><i class="fa fa-pinterest-p"></i></a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Footer Bottom Area
+============================================ -->
+<div class="footer-bottom">
+	<div class="container">
+		<div class="row">
+			<!-- Copyright -->
+			<div class="copyright col-sm-6 col-xs-12 text-left">
+				<p>Copyright &copy; <a href="https://devitems.com" target="_blank">Devitems</a> 2017 All right reserved.</p>
+			</div>
+			<!-- Copyright -->
+			<div class="copyright col-sm-6 col-xs-12 text-right">
+				<p>Created by <a href="https://devitems.com" target="_blank">Devitems</a> with <i class="fa fa-heart"></i></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- JS -->
+
+<!-- jQuery JS
+============================================ -->
+<script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+<!-- Bootstrap JS
+============================================ -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- Mean Menu JS
+============================================ -->
+<script src="js/jquery.meanmenu.min.js"></script>
+<!-- mixitup JS
+============================================ -->
+<script src="https://devitems.com/html/preview-cdn/js/jquery.mixitup.min.js"></script>
+<!-- ScrollUP JS
+============================================ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollup/2.4.1/jquery.scrollUp.min.js"></script>
+<!-- CounterUP JS
+============================================ -->
+<script src="js/jquery.counterup.min.js"></script>
+<!-- Waypoints JS
+============================================ -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<!-- Main JS
+============================================ -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
