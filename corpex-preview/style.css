@@ -1,0 +1,401 @@
+/*-----------------------------------------------------------------------------------
+    [Master Stylesheet]
+
+    Project:        Corpex - Corporate HTML Template 
+    Version:        1.0
+    Description:    This is Corporate HTML Template  
+    Author:         hastech
+    Author URI:     #
+
+-----------------------------------------------------------------------------------
+    
+    CSS INDEX
+    ===================
+  
+    1. Theme Default CSS
+-----------------------------------------------------------------------------------*/
+
+.btn {
+    background: #ddd none repeat scroll 0 0;
+    border-radius: 0;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 30px;
+}
+.btn.ns-btn {
+  background: #00aeef none repeat scroll 0 0;
+  color: #fff;}
+/*.btn.ns-btn:hover {
+    background: #f50057 none repeat scroll 0 0;
+}*/
+
+.btn.ns-btn::before {
+    background: #000 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 0%;
+    left: 0;
+    opacity: 0.4;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    transition: 0.3s;
+}
+.btn.ns-btn:hover::before {
+    bottom: 0;
+    height: 100%;
+}
+.btn.ns-btn {
+    position: relative;
+    border:none;
+}
+
+.pre-overlay{
+  position: relative;
+}
+.pre-overlay:before{
+  position: absolute;
+  content: "";
+  background: rgba(0,0,0,0.8);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+
+/*---------------------------------------
+    13. Scroll To Top
+----------------------------------------*/
+
+@-webkit-keyframes scroll-to-top {
+  0% {
+    opacity: 0;
+    bottom: 0;
+  }
+  50% {
+    opacity: 1;
+    bottom: 50%;
+  }
+  100% {
+    opacity: 0;
+    bottom: 75%;
+  }
+}
+@-moz-keyframes scroll-to-top {
+  0% {
+    opacity: 0;
+    bottom: 0;
+  }
+  50% {
+    opacity: 1;
+    bottom: 50%;
+  }
+  100% {
+    opacity: 0;
+    bottom: 75%;
+  }
+}
+@keyframes scroll-to-top {
+  0% {
+    opacity: 0;
+    bottom: 0;
+  }
+  50% {
+    opacity: 1;
+    bottom: 50%;
+  }
+  100% {
+    opacity: 0;
+    bottom: 75%;
+  }
+}
+#scrollUp:hover i {
+  animation: 800ms linear 0s normal none infinite running scroll-to-top;
+  height: 100%;
+  left: 0;
+  margin-bottom: -25px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  color: #fff;
+}
+
+
+/*back to top*/
+#scrollUp {
+  background: #4fc1f0 none repeat scroll 0 0;
+  bottom: 0;
+  color: #ffffff;
+  cursor: pointer;
+  display: none;
+  font-size: 24px;
+  font-weight: 700;
+  height: 45px;
+  line-height: 45px;
+  margin: auto;
+  position: fixed;
+  right: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 48px;
+  z-index: 9999;
+  transition: 0.3s;
+}
+#scrollUp:hover {
+  background: #006699 none repeat scroll 0 0;
+}
+
+
+.footer-area .copyright {
+  color: #fff;
+  opacity: 0.7;
+}
+.social-media a {
+    background: rgba(255, 255, 255, 0.1) none repeat scroll 0 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border-radius: 100%;
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    height: 50px;
+    line-height: 52px;
+    width: 50px;
+    position: relative;
+}
+.social-media ul li {
+    display: inline-block;
+    margin: auto 5px;
+    transform: translateY(10px);
+    transition: 0.3s;
+}
+
+.social-media ul li:hover {
+    transform: translateY(-10px);
+}
+
+.social-media ul li:hover a.facebook {
+    background: #597AC7;
+    color: #fff
+}
+.social-media ul li:hover a.twitter {
+    background: #5BBCEC;
+    color: #fff
+}
+.social-media ul li:hover a.google {
+    background: #FF4519;
+    color: #fff
+}
+.social-media ul li:hover a.dribbble {
+    background: #E24F86;
+    color: #fff
+}
+.social-media ul li:hover a.pinterest {
+    background: #FF3635;
+    color: #fff
+}
+.social-media ul li:hover a.rss {
+    background: #FBC95D;
+    color: #fff
+}
+.social-media ul li:hover a {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.social-media > ul {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+.footer-area {
+    position: relative;
+    z-index: 2;
+}
+.social-media a::after {
+    background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0;
+    border-radius: 100%;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: scale(0);
+    transition: all 0.3s ease 0s;
+    width: 100%;
+    z-index: -1;
+    opacity: 0;
+}
+.social-media a:hover::after {
+    transform: scale(1);
+    opacity: 1;
+}
+.social-media ul {
+    position: relative;
+}
+.social-media ul::before {
+    background: rgba(0, 0, 0, 0) radial-gradient(ellipse at center center, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 24%, rgba(0, 0, 0, 0) 69%, rgba(0, 0, 0, 0) 100%) repeat scroll 0 0;
+    bottom: -38px;
+    content: "";
+    height: 50px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 350%;
+    z-index: 50;
+}
+.social-media {
+    margin-bottom: -7px;
+}
+
+#footer .widget-social .social-media:last-child a:hover {
+  transform: translateY(0px);
+}
+.contact-area .section-title p {
+  color: #fff;
+  opacity: 0.7;
+}
+
+
+
+
+h1.theme-name {
+  font-size: 120px;
+  padding-bottom: 0;
+}
+.title.creative-slide-content .tlt {
+  color: #fff;
+  padding: 30px 0;
+  font-size: 38px;
+}
+
+
+
+
+
+
+
+
+.row .masonry__item > a {
+  display: block;
+}
+.card-3 {
+  margin-bottom: 30px;
+}
+.card .card__image img {
+  margin: 0;
+}
+.card .card__body {
+  margin-bottom: 0;
+}
+.boxed {
+  margin-bottom: 30px;
+  overflow: hidden;
+  padding: 2.4375em;
+  position: relative;
+}
+.bg--white {
+  background: #fff none repeat scroll 0 0;
+}
+.card-3 .card__body .card__title {
+  margin-bottom: 0;
+}
+a .card p, a .card span {
+  color: #767676;
+}
+.card .card__title h1, .card .card__title h2, .card .card__title h3, .card .card__title h4, .card .card__title h5, .card .card__title h6 {
+  margin: 0;
+}
+.section-title h2.purchas-sms {
+  line-height: 40px;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+.overlay-section h2, .overlay-section h1, .overlay-section h3, .overlay-section p, .overlay-section ul, .overlay-section ul li, .overlay-section i, .overlay-section a {
+  color: #fff;
+  opacity: 1;
+}
+
+
+
+
+
+
+/*Section title*/
+.section-title h2 {
+    display: inline-block;
+    padding-bottom: 25px;
+    position: relative;
+}
+.section-title h2::before {
+    background: #00aeef none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 80px;
+}
+.card__title h5 {
+  text-transform: capitalize;
+}
+.creative-slide-content h4 {
+  color: #fff;
+  letter-spacing: 0.5px;
+  opacity: 0.7;
+}
+h1.theme-name {
+  font-size: 120px;
+  padding-bottom: 20px;
+}
+.card.card-3 {
+  transition: 0.3s;
+}
+.demo-area a:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.demo-area a {
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+.demo-area a::before {
+    background: #00AEEF none repeat scroll 0 0;
+    content: "";
+    height: 0;
+    left: 0;
+    opacity: 0.6;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transition: 0.3s;
+}
+.demo-area a:hover::before {
+    height: 100%;
+    bottom: 0;
+}
+.demo-area a::after {
+    bottom: 80px;
+    color: #fff;
+    content: "\f0c1";
+    font-family: fontawesome;
+    font-size: 35px;
+    height: 50px;
+    left: 0;
+    line-height: 50px;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 50px;
+    transform: scale(0.5);
+    opacity: 0;
+    transition: 0.3s;
+}
+.demo-area a:hover::after {
+    transform: scale(1);
+    opacity: 1;
+
+}

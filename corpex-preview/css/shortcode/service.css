@@ -1,0 +1,152 @@
+/*======================================
+	Service style 1
+======================================*/
+.service h5 {
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.service > p {
+    margin-bottom: 30px;
+}
+.service .read-more {
+    padding-bottom: 8px;
+    padding-right: 30px;
+    position: relative;
+    border-bottom: 1px solid #240e35;
+}
+.service .read-more::before {
+  background: #3F51B5 none repeat scroll 0 0;
+  bottom: -1px;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  transition: all 0.3s ease 0s;
+  width: 0;
+}
+.service .read-more::after {
+  content: url("../../images/icons/arrow-right.png");
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 0.3s ease 0s;
+}
+.service .read-more:hover::before {
+  width: 100%;
+}
+.service .read-more:hover::after {
+  content: url("../../images/icons/arrow-right-red.png");
+}
+.service .read-more:hover {
+  color: #3F51B5;
+}
+
+
+/*======================================
+	Service style 2
+======================================*/
+.icon-box-4 {
+  overflow: hidden;
+  position: relative;
+}
+a.icon-box-4 {
+  background-color: #f5f5f5;
+  flex: 1 1 0;
+  padding: 40px;
+}
+.icon-box-4::after {
+  background-color: transparent;
+  border-left: 500px solid transparent;
+  border-top: 500px solid #fff;
+  content: "";
+  display: block;
+  height: 0;
+  margin-left: 100%;
+  margin-top: -51%;
+  opacity: 0;
+  position: absolute;
+  transform: scale(2);
+  transition: opacity 0.3s ease-in-out 0s, margin 0.3s ease-in-out 0s;
+  width: 0;
+  z-index: 15;
+}
+.icon-box-4::after {
+  margin-top: -55%;
+}
+.icon-box-4:hover::after {
+  margin-left: 0;
+  opacity: 0.06;
+}
+.icon-box-4-content {
+  display: table;
+  height: 100%;
+  padding-left: 105px;
+  position: relative;
+  z-index: 20;
+}
+.icon-box-4-alignment {
+  display: table-cell;
+  vertical-align: middle;
+}
+a.icon-box-4:hover h4, a.icon-box-4:hover p, a.icon-box-4:hover i {
+  color: #fff;
+}
+a.icon-box-4, a.icon-box-4 h4, a.icon-box-4 p, a.icon-box-4 i {
+  transition: all 0.3s ease-in-out 0s;
+}
+.icon-box-4-content h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.icon-box-4-content p {
+  color: #666;
+}
+.icon-box-4-content i.icon-lg {
+  color: #666;
+  font-size: 72px;
+  left: 0;
+  line-height: 62px;
+  position: absolute;
+}
+.icon-boxes-4 {
+  display: flex;
+  position: relative;
+}
+a.icon-box-4:hover {
+  background-color: #3F51B5;
+}
+.service-2.service-area .row > div:nth-child(-n+3) .icon-boxes-4 {
+  margin-bottom: 30px;
+}
+
+
+
+/*service 3*/
+.service-3 .service-thumb {
+  background: #f5f5f5 none repeat scroll 0 0;
+  border-bottom: 2px solid #333;
+  border-radius: 1px;
+  padding: 42px 22px;
+  transition: 0.3s;
+}
+.service-3 .service-thumb i {
+  color: #333333;
+  font-size: 70px;
+}
+.service-3 .service-thumb h3 {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  padding-bottom: 6px;
+}
+.service-3 .service-thumb p {
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0.2px;
+  line-height: 30px;
+}
+.service-thumb:hover  {
+  border-color: #3F51B5;
+}

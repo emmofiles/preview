@@ -1,0 +1,241 @@
+/* -----------------------------------
+Template:  Theme Name
+
+NOTE: This is Slider style file. All Slider related style included in this file.
+
+--------------------------------------*/
+ .sl-bg-1, .sl-bg-2, .sl-content-1{
+	background-attachment: fixed; 
+	background-clip: initial; 
+	background-color: rgba(0, 0, 0, 0);
+	background-origin: initial;
+	background-position: center center; 
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative; 
+	z-index: 0;
+
+ }
+.sl-bg-1 {
+  background-image: url("../../images/slider/1.jpg");
+}
+.sl-bg-2 {
+  background-image: url("../../images/slider/2.jpg");
+}
+.sl-content-1 {
+  background-image: url("../../images/slider/slider-content.png");
+  background-position: -30px 5px;
+}
+.bg-color{
+  background-color: #3F51B5;
+}
+
+.single-slide-content h1 {
+  color: #fff;
+  font-size: 44px;
+  line-height: 1.3em;
+  text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.2);
+}
+.single-slide-content p {
+  color: #fff;
+  font-size: 18px;
+  opacity: 0.7;
+  margin-top: 30px;
+}
+.single-slide-content.text-center p {
+  margin: 45px auto 0;
+  width: 90%;
+}
+.pos-vertical-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.exp-more {
+  border: 2px solid #fff;
+  border-radius: 100%;
+  bottom: 80px;
+  color: #fff;
+  display: inline-block;
+  height: 42px;
+  left: 50%;
+  line-height: 42px;
+  opacity: 0.8;
+  position: absolute;
+  text-align: center;
+  transform: translateX(-50%);
+  width: 42px;
+}
+.exp-more i {
+  font-size: 27px;
+  line-height: 40px;
+}
+.exp-more:hover,.exp-more:focus {
+	color: #fff;
+}
+@keyframes scroll-ani-to-top {
+0% {
+    bottom: 75%;
+    opacity: 0;
+}
+50% {
+    bottom: 50%;
+    opacity: 0.7;
+}
+100% {
+    bottom: 0;
+    opacity: 0;
+}
+}
+.exp-more:hover i {
+    animation: 800ms linear 0s normal none infinite running scroll-ani-to-top;
+    bottom: 0;
+    height: 90%;
+    left: 0;
+    margin-bottom: -10px;
+    position: absolute;
+    width: 100%;
+}
+
+
+/*video bg*/
+.videobg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    pointer-events: none;
+}
+audio, canvas, progress, video {
+    display: inline-block;
+    vertical-align: baseline;
+}
+.bg-overlay {
+    position: relative;
+}
+.bg-overlay::before {
+    background: #3f51b5 none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.bg-overlay.black::before {
+    background: #000 none repeat scroll 0 0;
+}
+.bg-overlay > div, .bg-overlay > a {
+    z-index: 5;
+}
+.bg-overlay .single-slide-content p {
+  opacity: 0.9;
+}
+
+
+/*animation-1*/
+.animation-1 canvas {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.intro-effect-side .codrops-demos a {
+  letter-spacing: 0.5px;
+  margin: auto 10px;
+  text-transform: uppercase;
+  color: #ddd;
+}
+.intro-effect-side .codrops-demos a:hover{
+  color: #F50057;
+}
+
+.intro-effect-side .header h1 {
+  font-size: 55px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 0 0 0.5em;
+  color: #516165;
+}
+.creative-slide-content h4 {
+  color: #7b8d92;
+  font-family: "Lora",serif;
+  font-style: italic;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+.top-area-bg {
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.slide-control {
+    color: #fff;
+    font-size: 80px;
+    left: 30px;
+    margin-top: -70px;
+    opacity: 0.2;
+    filter: alpha(opacity=20);
+    position: absolute;
+    top: 50%;
+}
+.slide-control.right {
+    left: auto;
+    right: 30px;
+}
+.slide-control:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    color: #fff;
+}
+#top-slide-carousel.carousel-fade .carousel-inner .item {
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+}
+#top-slide-carousel.carousel-fade .carousel-inner .item,
+#top-slide-carousel.carousel-fade .carousel-inner .active.left,
+#top-slide-carousel.carousel-fade .carousel-inner .active.right {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+#top-slide-carousel.carousel-fade .carousel-inner .active,
+#top-slide-carousel.carousel-fade .carousel-inner .next.left,
+#top-slide-carousel.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+#top-slide-carousel.carousel-fade .carousel-inner .next,
+#top-slide-carousel.carousel-fade .carousel-inner .prev,
+#top-slide-carousel.carousel-fade .carousel-inner .active.left,
+#top-slide-carousel.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+#top-slide-carousel.carousel-fade .carousel-control {
+    z-index: 2;
+}

@@ -1,0 +1,452 @@
+/* -----------------------------------
+Template:  Theme Name
+
+NOTE: This is Header style file. All Header related style included in this file.
+
+--------------------------------------*/
+
+
+/*==================
+    menu style
+===================*/
+.top-header-area {
+  background: #000;
+}
+.header-area {
+  width: 100%;
+  z-index: 10;
+  position: relative;
+}
+
+.header-search .form-search input[type="text"] {
+  background: transparent none repeat scroll 0 0;
+  border: 1px solid #636363;
+  color: #dddddd;
+  font-size: 12px;
+  height: 30px;
+  line-height: 24px;
+  padding: 0 30px 0 10px;
+  width: 140px;
+  font-family: lato;
+}
+.header-search .form-search .search-submit {
+    background: transparent none repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    font-size: 12px;
+    height: 30px;
+    padding: 0 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.form-search {
+    position: relative;
+}
+.main-menu > li > a {
+  color: #ffffff;
+  display: block;
+  font-family: raleway;
+  font-weight: 700;
+  height: 90px;
+  line-height: 90px;
+  padding: 0 21px;
+}
+.main-menu li {
+  display: inline-block;
+  float: none;
+  position: relative;
+}
+.main-menu > li:hover > a{
+  background: transparent none repeat scroll 0 0;
+  color: #4fc1f0;
+} 
+
+.main-menu > li > a:focus {
+  background: none;
+}
+.main-menu {
+  float: none;
+}
+
+
+
+/*================
+    Dropdown Style
+==================*/
+/*.dropdown {
+  background: #4C4C4C none repeat scroll 0 0;
+  box-shadow: 0 1px 2px rgba(86, 86, 90, 0.5);
+  left: 0;
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  transform: scaleY(0);
+  transform-origin: 0 0 0;
+  transition: all 0.3s ease 0s;
+  visibility: hidden;
+  width: 250px;
+  z-index: 2;
+}
+.dropdown li{
+	display: block;
+	border-bottom: 1px solid #181113;
+}
+.main-menu > li > .dropdown li a {
+  display: block;
+  padding: 13px 20px;
+  text-transform: uppercase;
+    color: #fff
+}
+.main-menu li:hover .dropdown{
+	transform: scale(1);
+	visibility: visible;
+}
+.main-menu > li .dropdown li a:hover{
+    color: #4fc1f0;
+}*/
+.primary-menu li.drop ul.dropdown {
+  background: #ffffff none repeat scroll 0 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.05);
+  left: 0;
+  margin: 0;
+  opacity: 0;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  transition: all 0.2s ease-in-out 0s;
+  visibility: hidden;
+}
+.primary-menu li.drop:hover > ul.dropdown {
+  opacity: 1;
+  visibility: visible;
+}
+.primary-menu ul.dropdown li {
+  border-bottom: 1px solid #f4f4f4;
+  display: block;
+}
+.primary-menu ul li ul.dropdown li a {
+  background: #ffffff none repeat scroll 0 0;
+  color: #999999;
+  display: block;
+  font-family: "Lato",sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  padding: 12px 20px 12px 30px;
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out 0s;
+}
+.primary-menu ul li ul.dropdown {
+  background: #fff none repeat scroll 0 0;
+  left: 0;
+  position: absolute;
+  top: 100%;
+  width: 220px;
+  z-index: 999;
+}
+
+.primary-menu li.drop ul.dropdown li a:hover {
+  background: #fafafa none repeat scroll 0 0;
+  color: #222222;
+}
+
+
+.primary-menu li.drop ul.dropdown li.drop > a::after {
+  color: #999;
+  content: "";
+  font-family: "FontAwesome";
+  font-size: 13px;
+  position: absolute;
+  right: 20px;
+  top: 12px;
+  transition: all 0.2s ease-in-out 0s;
+}
+.primary-menu li.drop ul.dropdown li ul.dropdown.level2 {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: -moz-use-text-color -moz-use-text-color -moz-use-text-color #f4f4f4;
+  border-image: none;
+  border-style: none none none solid;
+  border-width: medium medium medium 1px;
+  left: 100%;
+  top: 0;
+}
+.primary-menu li.drop:hover > ul.dropdown, .primary-menu li:hover > .mega-menu-area {
+  opacity: 1;
+  visibility: visible;
+}
+
+.primary-menu li.drop:hover > ul.dropdown, .primary-menu li:hover > .mega-menu-area {
+  visibility: visible;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*===========
+Mega menu style
+=============*/
+/*#primary-menu {
+  position: relative;
+}*/
+.mega-menu-area {
+    background: #ffffff none repeat scroll 0 0;
+    left: 0;
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    width: 100%;
+    box-shadow: 0 1px 2px rgba(86, 86, 90, 0.5);
+	transform: scaleY(0);
+	transform-origin: 0 0 0;
+	transition: all 0.3s ease 0s;
+	visibility: hidden;
+	z-index: 2;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #f10;
+}
+.main-menu li.mega-parent {
+    position: static;
+}
+.single-mega-item {
+    float: left;
+    width: 25%;
+    padding: 0 15px;
+}
+.single-mega-item li {
+    display: block;
+    border-bottom: 1px solid #e5e5e5;
+}
+.single-mega-item li:last-child{
+	border-bottom: 0px solid #000;
+} 
+.single-mega-item li a{
+    padding: 13px 0px;
+	display: block;
+}
+.main-menu li:hover .mega-menu-area{
+	transform: scale(1);
+	visibility: visible;
+}
+.header-middle-area .container .row [class*="col-"] {
+	position: static;
+ }
+ .header-middle-area .full-width-mega-dropdown{
+ 	position: relative;
+ }
+ /*===================
+    Header Transprent 
+======================*/
+.transparent-header {
+    background: rgba(0,0,0,0.5);
+    margin: auto;
+    position: fixed;
+    width: 100%;
+    z-index: 999999;
+}
+ /*==================
+   headroom--pinned
+=====================*/
+
+.headroom {
+    will-change: transform;
+    transition: transform 200ms linear;
+}
+.headroom--pinned {
+  transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
+.headroom--not-top.headroom--pinned .logo a {
+    margin-top: 16px;
+}
+.headroom--not-top.headroom--pinned .main-menu > li > a {
+    height: 70px;
+    line-height: 70px;
+}
+.headroom--not-top.headroom--pinned .header-search {
+    margin-top: 20px;
+}
+.header-search, .transparent-header {
+  transition: 0.3s;
+}
+.headroom--not-top.headroom--pinned.transparent-header {
+  background: rgba(0, 0, 0, 0.95) none repeat scroll 0 0;
+}
+
+
+
+ /*======================
+ End  headroom--pinned
+========================*/
+
+ /*===================
+    Start slider area
+======================*/
+.single-slider {
+    position: relative;
+}
+.overlay-black::before {
+    background: #000 none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.slider-nd-style .owl-controls {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+.slider-nd-style .owl-controls.owl-nav {
+    background: transparent none repeat scroll 0 0;
+}
+.slider-nd-style .owl-controls .owl-nav div {
+    background: transparent none repeat scroll 0 0;
+    font-size: 24px;
+    position: relative;
+    transition: 0.3s;
+}
+.slider-nd-style .owl-controls .owl-nav div.owl-prev {
+    position: relative;
+}
+.slider-nd-style .owl-controls .owl-nav div.owl-prev::after {
+    background: #fff none repeat scroll 0 0;
+    content: "";
+    height: 24px;
+    position: absolute;
+    right: -2px;
+    top: 50%;
+    transform: rotate(20deg) translateY(-50%);
+    width: 2px;
+}
+.slider-nd-style .owl-controls .owl-nav div:hover {
+    background: transparent none repeat scroll 0 0;
+    color: #66ccff;
+}
+.slider-nd-style .owl-controls .owl-dots div span {
+    background: #fff none repeat scroll 0 0;
+    height: 20px;
+    width: 2px;
+    transition: 0.3s;
+    margin: 0 5px;
+}
+.slider-nd-style .owl-controls .owl-dots div.active span{
+    background: #66ccff none repeat scroll 0 0;
+    transform: scale(1.3);
+}
+.slider-nd-style .owl-controls .owl-dots div:hover span{
+  background: #66ccff none repeat scroll 0 0;
+}
+.slider-nd-style .owl-controls .owl-nav {
+  margin-top: 0;
+  position: absolute;
+  right: 35px;
+  top: -90px;
+}
+.slider-nd-style .owl-controls .owl-dots {
+    left: 52px;
+    position: absolute;
+    top: -75px;
+}
+
+.slide-content {
+  padding: 350px 0 290px;
+}
+
+/*Start portfolio bradcaump*/
+
+.bradcaump-wrap h2.bradcaump-title {
+    color: #fff;
+    font-family: raleway;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 46px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+.bradcaump-wrap nav.bradcaump-inner {
+    color: #fff;
+    font-family: lato;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.bradcaump-wrap nav.bradcaump-inner a.breadcrumb-item {
+    color: #fff;
+}
+.bradcaump-wrap nav.bradcaump-inner a.breadcrumb-item:not(.active):hover{
+  color: #4fc1f0
+}
+
+/*Start portfolio bradcaump*/
+
+@media (min-width: 1170px) and (max-width: 1500px) {
+   
+.slide-content {
+    padding: 230px 0 145px;
+}
+ 
+
+    
+}
+
+.slide-down-btn {
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    bottom: 50px;
+    height: 30px;
+    left: 50%;
+    margin-left: -9px;
+    position: absolute;
+    text-align: center;
+    width: 17px;
+    z-index: 999;
+}
+.cx-slider-area {
+    position: relative;
+}
+
+@keyframes zoomfeecet {
+  0%{
+    line-height: 20px;
+  }
+  50% {
+    line-height: 40px;
+  }
+  100% {
+    line-height: 20px;
+  }
+}
+.slide-down-btn a {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.slide-down-btn a i{
+    animation: zoomfeecet 2s infinite;
+    width: 100%;
+    display: block;
+    font-size: 16px;
+}
+
+ /*=============
+  End  slider area
+================*/  

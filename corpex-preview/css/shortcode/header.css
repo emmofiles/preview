@@ -1,0 +1,92 @@
+/* -----------------------------------
+Template:  Theme Name
+
+NOTE: This is Header style file. All Header related style included in this file.
+
+--------------------------------------*/
+
+.header-area {
+  padding: 25px 0;
+  transition: all 0.3s ease 0s;
+  position: relative;
+  z-index: 9999;
+}
+.header-sticky {
+  transition: all 0.3s ease 0s;
+  position: relative;
+  z-index: 9999;
+}
+/*menu style */
+.primary-menu ul li {
+    display: inline-block;
+}
+.primary-menu ul li a {
+  color: #fff;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.7;
+  padding: 7px 15px;
+}
+.primary-menu ul li:last-child a {
+    padding-right: 0;
+}
+.primary-menu ul li:first-child a {
+    padding-left: 0;
+}
+.primary-menu ul li.current a {
+    opacity: 1;
+}
+.primary-menu ul li:hover a {
+    opacity: 1;
+}
+
+ /*Header Transprent */
+.transparent-header {
+  padding-top: 80px;
+  position: absolute;
+  width: 100%;
+  z-index: 101;
+  transition: all 0.3s ease 0s;
+}
+
+.is-sticky .header-sticky.transparent-header {
+  background: #333;
+  box-shadow: 0 1px 3px rgba(50, 50, 50, 0.4);
+  width: 100%;
+  z-index: 5000;
+  padding: 15px 0;
+}
+
+.is-sticky .header-sticky{
+  background: #333;
+  box-shadow: 0 1px 3px rgba(50, 50, 50, 0.4);
+  width: 100%;
+  z-index: 5000;
+  padding: 20px 0;
+}
+
+.is-sticky .primary-menu ul li a {
+}
+.sticky-wrapper {
+  position: absolute;
+  width: 100%;
+  z-index: 999999;
+}
+.simple-header .sticky-wrapper {
+  position: inherit;
+}
+.simple-header .header-area {
+  padding: 85px 0;
+}
+.simple-header .is-sticky .header-sticky {
+  padding: 20px 0;
+}
+.header-logo img {
+    width: 105px;
+    transition: all 0.3s ease 0s;
+}
+
+.is-sticky .header-logo img {
+    width: 90px;
+}
