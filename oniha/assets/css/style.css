@@ -1,0 +1,131 @@
+/*================================================
+			Start Default Css
+================================================*/
+body{
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	color: #888;
+	position: relative;
+}
+ul,li{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+a,
+a:hover,
+a:focus,
+input,
+button,
+textarea{
+	text-decoration: none;
+	outline: none;
+}
+/*-----------Typography Settings-------------*/
+h1,h2,h3,h4,h5,h6,p{
+	padding: 0;
+	margin: 0;
+}
+h2{
+	font-size: 40px;
+	color: #333333;
+	font-weight: 600;
+	text-transform: capitalize;
+}
+h4{
+	font-size: 28px;
+	color: #333333;
+	line-height: 45px;
+}
+
+p{
+	line-height: 23px;
+	color: #777;
+}
+/*-----------Spacing Css-------------*/
+.ptb_2{
+	padding-top: 120px;
+	padding-bottom: 70px;
+}
+
+/*-----------Alignment Css-------------*/
+.text_center{
+	text-align: center;
+}
+/*-----------Color Css-------------*/
+/*-----------Common Section-------------*/
+
+/*-----------All Transition Settings-------------*/
+.preview_img img{
+	-webkit-transition: all 0.4s linear;
+	-moz-transition: all 0.4s linear;
+	-o-transition: all 0.4s linear;
+	transition: all 0.4s linear;
+}
+/*-----------Banner Area-------------*/
+.banner_area{
+	background: url(../images/banner.jpg);
+	width: 100%;
+	height: 300px;
+	background-size: cover;
+	position: relative;
+	background-position: 50% 50%;
+}
+.banner_area::before{
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(58,169,216,0.9);
+}
+.banner_info {
+	align-items: center;
+	display: flex;
+	flex-flow: column nowrap;
+	height: 300px;
+	justify-content: center;
+}
+.banner_info h2 {
+	color: #fff;
+	font-size: 55px;
+}
+.banner_info h4 {
+	color: #fff;
+}
+.preview_img {
+	margin-bottom: 60px;
+}
+.preview_img img {
+	width: 100%;
+	border-radius: 5px;
+}
+.preview_img h2 {
+	font-size: 20px;
+	padding-top: 20px;
+}
+.preview_img:hover img{
+	box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+	transform: translateY(-10px);
+}
+/*-----------Footer Area-------------*/
+.footer_area{
+	background: #3AA9D8;
+}
+.footer_info > p {
+	color: #fff;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 90px;
+}
+
+
+
+
+
+
+
+
