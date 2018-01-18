@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="width=device-width, initial-scale=1, user-scalable=0" name="viewport">
+    <meta content="width" name="MobileOptimized">
+    <meta content="true" name="HandheldFriendly">
+    <meta name="description" content="" />
+    <meta name="keywords" content="">
+
+    <title>Magic Box - Creative One Page Multipurpose HTML5 Template</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Plugin CSS Begin -->
+    <link href="assets/plugin/fullscreen_background.css" rel="stylesheet" type="text/css">
+    <!-- Plugin CSS End -->
+
+    <!-- JQuery Required for background images. -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Background Fullscreen Plugin Begin -->
+    <script>
+        jQuery(function() {
+            jQuery('#fullscreen_background_bullets').fullscreen_background({
+                skin: 'bullets',
+                fadeSlides: true,
+                enableTouchScreen: false,
+                showNavArrows: false,
+                showBottomNav: true,
+                autoHideBottomNav: true,
+                bottomNavLateralMargin: 25, //only for left & right
+                showPreviewThumbs: false,
+                texturePath: 'assets/plugin/skins/patternFullScreenBg_1.png',
+                thumbsWrapperMarginTop: -55
+            });
+
+        });
+    </script>
+
+    <div id="fullscreen_background_bullets">
+        <!-- CONTENT -->
+        <ul class="fullscreen_background_list">
+            <li><img src="assets/plugin/background/01_bg.jpg" alt="" width="1920" height="1200" />
+            </li>
+
+            <li><img src="assets/plugin/background/02_bg.jpg" alt="" width="1920" height="1200" />
+            </li>
+
+            <li><img src="assets/plugin/background/03_bg.jpg" alt="" width="1920" height="1200" />
+            </li>
+
+            <li><img src="assets/plugin/background/04_bg.jpg" alt="" width="1920" height="1200" />
+            </li>
+        </ul>
+    </div>
+    <!-- Background Fullscreen Plugin End -->
+
+    <div id="mobileVisible"></div>
+
+    <!-- Header -->
+    <header>
+        <h1>
+            <a href="index.html" title="Magic Box">
+                <img src="images/logo.png" alt="Magic Box" width="70" height="69" class="logonormal">
+                <img src="images/logo2_out.png" alt="Magic Box" width="139" height="28" class="logosticky">
+                <img src="images/logoMobile_out.png" alt="Magic Box" width="300" height="92" class="logoMobile">
+            </a>
+        </h1>
+
+        <a href="#" title="Menu" class="openMenuMobile" rel="nofollow">
+            <span class="line1"></span>
+            <span class="line2"></span>
+        </a>
+
+        <div class="titleMenu">Menu</div>
+        <ul id="menuMobile">
+            <li class="selected">
+                <a href="#sector-home" rel="nofollow" title="Home">
+                    <div class="bar"><span class="line"></span>
+                    </div>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="#sector-about" rel="nofollow" title="Who We Are">
+                    <div class="bar"><span class="line"></span>
+                    </div>
+                    <span class="text">Who We Are</span>
+                </a>
+            </li>
+            <li>
+                <a href="#sector-process" rel="nofollow" title="Process">
+                    <div class="bar"><span class="line"></span>
+                    </div>
+                    <span class="text">Process</span>
+                </a>
+            </li>
+            <li>
+                <a href="#sector-portfolio" rel="nofollow" title="Portfolio">
+                    <div class="bar"><span class="line"></span>
+                    </div>
+                    <span class="text">Portfolio</span>
+                </a>
+            </li>
+            <li>
+                <a href="#sector-contact" rel="nofollow" title="Contact">
+                    <div class="bar"><span class="line"></span>
+                    </div>
+                    <span class="text">Contact</span>
+                </a>
+            </li>
+        </ul>
+
+
+        <a href="#" title="Choose your language" rel="nofollow" class="chooseLanguage">
+            <span class="caption">Choose your language</span>
+            <span class="languageSelected">English</span>
+        </a>
+
+
+        <div class="languagesMobile">
+            <a href="#" title="Menu" rel="nofollow" class="backMenu"><span class="arrow"></span>Menu</a>
+            <ul class="listLanguagesMobile">
+                <li><span>Choose your language</span>
+                </li>
+                <li>
+                    <a href="" title="Portuguese"><span>Portuguese</span></a>
+                </li>
+                <li class="selected">
+                    <a href="index.html" title="English"><span>English</span></a>
+                </li>
+                <li>
+                    <a href="" title="French"><span>French</span></a>
+                </li>
+                <li>
+                    <a href="" title="Spanish"><span>Spanish</span></a>
+                </li>
+                <li>
+                    <a href="" title="Russian"><span>Russian</span></a>
+                </li>
+                <li>
+                    <a href="" title="Chinese"><span>Chinese</span></a>
+                </li>
+                <li>
+                    <a href="" title="Arabic"><span>Arabic</span></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Menu Principal -->
+    <ul id="main_menu">
+        <li>
+            <a href="#sector-home" rel="nofollow" title="Home">
+                <div class="bar"><span class="line"></span>
+                </div>
+                <span class="text">Home</span>
+            </a>
+        </li>
+        <li>
+            <a href="#sector-about" rel="nofollow" title="Who We Are">
+                <div class="bar"><span class="line"></span>
+                </div>
+                <span class="text">Who We Are</span>
+            </a>
+        </li>
+        <li>
+            <a href="#sector-process" rel="nofollow" title="Process">
+                <div class="bar"><span class="line"></span>
+                </div>
+                <span class="text">Process</span>
+            </a>
+        </li>
+        <li>
+            <a href="#sector-portfolio" rel="nofollow" title="Portfolio">
+                <div class="bar"><span class="line"></span>
+                </div>
+                <span class="text">Portfolio</span>
+            </a>
+        </li>
+        <li>
+            <a href="#sector-contact" rel="nofollow" title="Contact">
+                <div class="bar"><span class="line"></span>
+                </div>
+                <span class="text">Contact</span>
+            </a>
+        </li>
+    </ul>
+
+
+    <a href="#" title="Languages" class="languages_link">
+        <span class="line"></span>
+        <span class="text">EN</span>
+    </a>
+
+    <!-- Intro Cronology -->
+    <div id="introCronology">
+        <div class="introAnimation"></div>
+    </div>
+
+    <!-- Sector Home -->
+    <div id="sector-home">
+        <div class="imageAnimatedBack"></div>
+        <div class="imageAnimatedFront"></div>
+        <div class="row">
+            <img src="images/logo3_out.png" alt="Magic Box" width="183" height="37" class="logo_cartonagem">
+            <!-- Conteudo centrado -->
+            <div class="content_centered">
+                <div class="text_behind">Magic</div>
+                <div class="container_box">
+                    <img src="images/box.png" alt="Magic Box" width="543" height="372" class="box">
+                    <a href="#" title="Creative Template" rel="nofollow" class="replica_btn">
+                        <span class="replica3"></span>
+                        <span class="replica2"></span>
+                    </a>
+                </div>
+                <div class="text_front">Box</div>
+                <div class="box_description">
+                    <div class="content">
+                        <div class="line"></div>
+                        <p>Creative Template</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#sector-about" rel="nofollow" title="Scroll" class="scroll_icon"></a>
+
+
+        <div id="storiesGallery">
+            <div class="header">
+                <img src="images/logo4_out.png" alt="Magic Box" width="139" height="111" class="logotipo">
+                <img src="images/logoMobile2_out.png" alt="Magic Box" width="300" height="92" class="logotipoMobile">
+                <a href="#" rel="nofollow" title="Close Stories" class="closeStories">
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                </a>
+            </div>
+            <div class="row">
+                <div class="content_centered">
+                    <!-- Intro inicial -->
+                    <div class="intro">
+                        <span class="line"></span>
+                        <div class="title">Discover some of Magic Box Theme secrets</div>
+                        <div class="subtitle">There Are 50 Years of Memories</div>
+                        <img src="images/logo50anos.png" alt="There Are 50 Years of Memories" width="166" height="162" class="fifteenyears">
+                    </div>
+                </div>
+            </div>
+            <div class="gallery">
+                <!-- timeline -->
+                <div id="thousandStories" class="owl-carousel">
+
+
+                    <div data-title="1966" data-pct="25">
+                        <div class="imageBlock threeImage">
+                            <div class="first">
+                                <img src="#" data-original="assets/images/timeline/1.jpg" alt="" class="lazy">
+                            </div>
+                            <div class="second">
+                                <img src="#" data-original="assets/images/timeline/2.jpg" alt="" class="lazy">
+                            </div>
+                            <div class="third">
+                                <img src="#" data-original="assets/images/timeline/3.jpg" alt="" class="lazy">
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="count">
+                                <div class="numbers"><strong></strong>/<span></span>
+                                </div>
+                                <svg width="66" height="66">
+                                    <circle transform="rotate(-90 33 33)" class="bar" r="30" cx="33" cy="33" fill="transparent" stroke-width="6" stroke-dasharray="188.49" stroke-dashoffset="0"></circle>
+                                </svg>
+                            </div>
+                            <div class="titleMobile">01 1966</div>
+                            <div class="younow">
+                                <div class="container">Did you know that</div>
+                            </div>
+                            <h3 class="title">1966: from dream to reality</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
+                        </div>
+                    </div>
+
+
+
+                    <div data-title="1987" data-pct="50">
+                        <div class="imageBlock twoImage">
+                            <div class="first">
+                                <img src="#" data-original="assets/images/timeline/4.jpg" alt="" class="lazy">
+                            </div>
+                            <div class="second">
+                                <img src="#" data-original="assets/images/timeline/5.jpg" alt="" class="lazy">
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="count">
+                                <div class="numbers"><strong></strong>/<span></span>
+                                </div>
+                                <svg width="66" height="66">
+                                    <circle transform="rotate(-90 33 33)" class="bar" r="30" cx="33" cy="33" fill="transparent" stroke-width="6" stroke-dasharray="188.49" stroke-dashoffset="0"></circle>
+                                </svg>
+                            </div>
+                            <div class="titleMobile">02 1987</div>
+                            <div class="younow">
+                                <div class="container">Did you know that</div>
+                            </div>
+                            <h3 class="title">1987: a vision of the future</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
+                        </div>
+                    </div>
+
+
+
+                    <div data-title="1996" data-pct="75">
+                        <div class="imageBlock threeImage">
+                            <div class="first">
+                                <img src="#" data-original="assets/images/timeline/6.jpg" alt="" class="lazy">
+                            </div>
+                            <div class="second">
+                                <img src="#" data-original="assets/images/timeline/7.jpg" alt="" class="lazy">
+                            </div>
+                            <div class="third">
+                                <img src="#" data-original="assets/images/timeline/8.jpg" alt="" class="lazy">
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="count">
+                                <div class="numbers"><strong></strong>/<span></span>
+                                </div>
+                                <svg width="66" height="66">
+                                    <circle transform="rotate(-90 33 33)" class="bar" r="30" cx="33" cy="33" fill="transparent" stroke-width="6" stroke-dasharray="188.49" stroke-dashoffset="0"></circle>
+                                </svg>
+                            </div>
+                            <div class="titleMobile">03 1996</div>
+                            <div class="younow">
+                                <div class="container">Did you know that</div>
+                            </div>
+                            <h3 class="title">1996: objective achieved</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
+                        </div>
+                    </div>
+
+
+
+                    <div data-title="2006" data-pct="100">
+                        <div class="imageBlock twoImage">
+                            <div class="first">
+                                <img src="#" data-original="assets/images/timeline/9.jpg" alt="" class="lazy">
+                            </div>
+                            <div class="second">
+                                <img src="#" data-original="assets/images/timeline/10.jpg" alt="" class="lazy">
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="count">
+                                <div class="numbers"><strong></strong>/<span></span>
+                                </div>
+                                <svg width="66" height="66">
+                                    <circle transform="rotate(-90 33 33)" class="bar" r="30" cx="33" cy="33" fill="transparent" stroke-width="6" stroke-dasharray="188.49" stroke-dashoffset="0"></circle>
+                                </svg>
+                            </div>
+                            <div class="titleMobile">04 2006</div>
+                            <div class="younow">
+                                <div class="container">Did you know that</div>
+                            </div>
+                            <h3 class="title">2006: a new home for everyone</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="navigation">
+                    <div class="row">
+                        <span class="arrowLeft"></span>
+                        <div class="containerPagination">
+                            <ul class="paginationFake">
+
+                            </ul>
+                        </div>
+                        <span class="arrowRight"></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Sector About -->
+    <div id="sector-about">
+        <div class="row">
+            <div class="container_h2">
+                <span>02</span>
+                <h2>Who We Are </h2>
+            </div>
+            <div class="container_text parallax" data-parallax-speed="5">
+                <div class="before_title">Technology combined with Creativity</div>
+                <h3 class="title">And we happen to make packaging, too.</h3>
+                <div class="text first">
+                    <p>Magic Box, a thousand stories, one history: that of Magic Box.</p>
+                    <p>Magic Box, a thousand dreams. A box holds a world of imagination and fantasy: yours and ours.</p>
+                </div>
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
+                </div>
+            </div>
+            <div class="container_signature">
+                <span class="letter parallax" data-parallax-speed="3">c</span>
+                <div class="image">
+                    <img src="#" data-original="images/author.jpg" alt="A company that gets down to work" width="755" height="330" class="lazy">
+                </div>
+                <div class="text parallax" data-parallax-speed="7">
+                    <span class="feather"></span>
+                    <div class="title">A company that gets down to work</div>
+                    <p>We are tireless in exceeding limits and we focus this dynamic attitude on finding solutions. Solutions that engage, inspire and make one think. They arouse interest.</p>
+                    <div class="signature">
+                        <img src="images/signature.png" alt="(CEO)" width="124" height="18">
+                        <span>John Doe (CEO)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sector Process -->
+    <div id="sector-process">
+        <div class="row">
+            <div class="container_h2">
+                <span>03</span>
+                <h2>Our Process</h2>
+            </div>
+            <div class="graphic">
+                <div class="container_area">
+                    <a href="#" title="" rel="nofollow" class="area">
+                        <span class="icon book"></span>
+                        <h3 class="title">CONCEPTION</h3>
+                        <div class="limit">
+                            <p>Your idea, your product, your business: we create the best packaging to contain it. We conceive, design, and shape.</p>
+                        </div>
+                        <div class="container_plus">
+                            <span class="plus"></span>
+                        </div>
+                    </a>
+                    <a href="#" title="" rel="nofollow" class="area">
+                        <span class="icon monitor"></span>
+                        <h3 class="title">DESIGN</h3>
+                        <div class="limit">
+                            <p>How do you want to dress your product? Tell us your dream, your idea: we’ll design something to make it possible.</p>
+                        </div>
+                        <div class="container_plus">
+                            <span class="plus"></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="center">
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                    <a href="#" title="" rel="nofollow" class="area">
+                        <span class="icon box"></span>
+                        <h3 class="title">PRODUCTION</h3>
+                        <div class="limit">
+                            <p>With resilience, rigidity, attention to detail. Set us a challenge and be surprised: we can produce every kind of package. Your ambition is what drives us.</p>
+                        </div>
+                        <div class="container_plus">
+                            <span class="plus"></span>
+                        </div>
+                    </a>
+                    <span class="line3"></span>
+                    <span class="line4"></span>
+                </div>
+                <div class="container_area">
+                    <a href="#" title="" rel="nofollow" class="area">
+                        <span class="icon check"></span>
+                        <h3 class="title">QUALITY CONTROL</h3>
+                        <div class="limit">
+                            <p>The world belongs to everyone and we are all bound to take care of it. Our raw materials come from self-sustainable forests.
+                            </p>
+                        </div>
+                        <div class="container_plus">
+                            <span class="plus"></span>
+                        </div>
+                    </a>
+                    <a href="#" title="" rel="nofollow" class="area">
+                        <span class="icon truck"></span>
+                        <h3 class="title">LOGISTICS</h3>
+                        <div class="limit">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
+                        </div>
+                        <div class="container_plus">
+                            <span class="plus"></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div id="processPopup">
+                <a href="#" title="Close" rel="nofollow" class="plusPopup"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sector Portfolio -->
+    <div id="sector-portfolio">
+        <div class="row">
+            <div class="container_h2">
+                <span>04</span>
+                <h2>Portfolio</h2>
+            </div>
+            <a href="#" title="Open Filters" rel="nofollow" class="openFilter">You are watching<span class="selected">All</span></a>
+            <!-- Popup filtros MOBILE -->
+            <div id="menuFilterMobile">
+                <div class="title">Portfolio</div>
+                <a href="#" title="Close" rel="nofollow" class="closeFilter">
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                </a>
+                <div class="subtitle">You are watching</div>
+                <ul class="filterMobile">
+                    <li class="selected">
+                        <a href="#" rel="nofollow" title="All" data-category-name="0">
+                            <div class="bar"><span class="line"></span>
+                            </div>
+                            <span class="text">All</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" rel="nofollow" title="Beverages" data-category-name="tag_5">
+                            <div class="bar"><span class="line"></span>
+                            </div>
+                            <span class="text">Beverages</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" rel="nofollow" title="Cosmetics" data-category-name="tag_6">
+                            <div class="bar"><span class="line"></span>
+                            </div>
+                            <span class="text">Cosmetics</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Menu timeline -->
+            <div id="gallery">
+                <ul class="menu">
+                    <li class="selected">
+                        <a href="#" title="All" rel="nofollow" data-category-name="0">All</a>
+                    </li>
+                    <li>
+                        <a href="#" title="Beverages" rel="nofollow" data-category-name="tag_5">Beverages</a>
+                    </li>
+                    <li>
+                        <a href="#" title="Cosmetics" rel="nofollow" data-category-name="tag_6">Cosmetics</a>
+                    </li>
+                </ul>
+                <div class="container_gallery">
+                    <div class="image_parallax1 parallax" data-parallax-speed="3"></div>
+
+                    <ul class="gallery_images restrictLi">
+                        <li class="tag_5 " data-project-id="1" data-client="PROJECT ONE" data-year="2017">
+                            <a href="#" rel="nofollow" title="PROJECT ONE">
+                                <div class="back">
+                                    <img data-original="assets/images/portfolio/PROJECT-1.jpg" src="assets/images/portfolio/PROJECT-1.jpg" alt="PROJECT ONE" class="lazy">
+                                </div>
+                                <div class="front">
+                                    <img src="#" data-original="assets/images/portfolio/PROJECT-1.jpg" alt="" class="lazy">
+                                    <span class="details">
+                                            <span class="project_name">PROJECT ONE</span>
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="tag_6 " data-project-id="2" data-client="PROJECT TWO" data-year="2017">
+                            <a href="#" rel="nofollow" title="PROJECT TWO">
+                                <div class="back">
+                                    <img data-original="assets/images/portfolio/PROJECT-2.jpg" src="assets/images/portfolio/PROJECT-2.jpg" alt="PROJECT TWO" class="lazy">
+                                </div>
+                                <div class="front">
+                                    <img src="#" data-original="assets/images/portfolio/PROJECT-2.jpg" alt="" class="lazy">
+                                    <span class="details">
+                                            <span class="project_name">PROJECT TWO</span>
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="tag_6 " data-project-id="3" data-client="PROJECT THREE" data-year="2017">
+                            <a href="#" rel="nofollow" title="PROJECT THREE">
+                                <div class="back">
+                                    <img data-original="assets/images/portfolio/PROJECT-3.jpg" src="assets/images/portfolio/PROJECT-3.jpg" alt="PROJECT THREE" class="lazy">
+                                </div>
+                                <div class="front">
+                                    <img src="#" data-original="assets/images/portfolio/PROJECT-3.jpg" alt="" class="lazy">
+                                    <span class="details">
+                                            <span class="project_name">PROJECT THREE</span>
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="tag_5 " data-project-id="4" data-client="PROJECT FOUR" data-year="2017">
+                            <a href="#" rel="nofollow" title="PROJECT FOUR">
+                                <div class="back">
+                                    <img data-original="assets/images/portfolio/PROJECT-4.jpg" src="assets/images/portfolio/PROJECT-4.jpg" alt="PROJECT FOUR" class="lazy">
+                                </div>
+                                <div class="front">
+                                    <img src="#" data-original="assets/images/portfolio/PROJECT-4.jpg" alt="" class="lazy">
+                                    <span class="details">
+                                            <span class="project_name">PROJECT FOUR</span>
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="tag_5 " data-project-id="5" data-client="PROJECT FIVE" data-year="2017">
+                            <a href="#" rel="nofollow" title="PROJECT FIVE">
+                                <div class="back">
+                                    <img data-original="assets/images/portfolio/PROJECT-5.jpg" src="assets/images/portfolio/PROJECT-5.jpg" alt="PROJECT FIVE" class="lazy">
+                                </div>
+                                <div class="front">
+                                    <img src="#" data-original="assets/images/portfolio/PROJECT-5.jpg" alt="" class="lazy">
+                                    <span class="details">
+                                            <span class="project_name">PROJECT FIVE</span>
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="tag_5 " data-project-id="6" data-client="PROJECT SIX" data-year="2017">
+                            <a href="#" rel="nofollow" title="PROJECT SIX">
+                                <div class="back">
+                                    <img data-original="assets/images/portfolio/PROJECT-6.jpg" src="assets/images/portfolio/PROJECT-6.jpg" alt="PROJECT SIX" class="lazy">
+                                </div>
+                                <div class="front">
+                                    <img src="#" data-original="assets/images/portfolio/PROJECT-6.jpg" alt="" class="lazy">
+                                    <span class="details">
+                                            <span class="project_name">PROJECT SIX</span>
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="tag_6 " data-project-id="7" data-client="PROJECT SEVEN" data-year="2017">
+                            <a href="#" rel="nofollow" title="PROJECT SEVEN">
+                                <div class="back">
+                                    <img data-original="assets/images/portfolio/PROJECT-7.jpg" src="assets/images/portfolio/PROJECT-7.jpg" alt="PROJECT SEVEN" class="lazy">
+                                </div>
+                                <div class="front">
+                                    <img src="#" data-original="assets/images/portfolio/PROJECT-7.jpg" alt="" class="lazy">
+                                    <span class="details">
+                                            <span class="project_name">PROJECT SEVEN</span>
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="tag_5 " data-project-id="8" data-client="PROJECT EIGHT" data-year="2017">
+                            <a href="#" rel="nofollow" title="PROJECT EIGHT">
+                                <div class="back">
+                                    <img data-original="assets/images/portfolio/PROJECT-8.jpg" src="assets/images/portfolio/PROJECT-8.jpg" alt="PROJECT EIGHT" class="lazy">
+                                </div>
+                                <div class="front">
+                                    <img src="#" data-original="assets/images/portfolio/PROJECT-8.jpg" alt="" class="lazy">
+                                    <span class="details">
+                                            <span class="project_name">PROJECT EIGHT</span>
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="tag_5 " data-project-id="9" data-client="PROJECT NINE" data-year="2017">
+                            <a href="#" rel="nofollow" title="PROJECT NINE">
+                                <div class="back">
+                                    <img data-original="assets/images/portfolio/PROJECT-9.jpg" src="assets/images/portfolio/PROJECT-9.jpg" alt="PROJECT NINE" class="lazy">
+                                </div>
+                                <div class="front">
+                                    <img src="#" data-original="assets/images/portfolio/PROJECT-9.jpg" alt="" class="lazy">
+                                    <span class="details">
+                                            <span class="project_name">PROJECT NINE</span>
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="tag_5 " data-project-id="10" data-client="PROJECT TEN" data-year="2017">
+                            <a href="#" rel="nofollow" title="PROJECT TEN">
+                                <div class="back">
+                                    <img data-original="assets/images/portfolio/PROJECT-10.jpg" src="assets/images/portfolio/PROJECT-10.jpg" alt="PROJECT TEN" class="lazy">
+                                </div>
+                                <div class="front">
+                                    <img src="#" data-original="assets/images/portfolio/PROJECT-10.jpg" alt="" class="lazy">
+                                    <span class="details">
+                                            <span class="project_name">PROJECT TEN</span>
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" title="See more work" rel="nofollow" class="showMore">See more work</a>
+                    <div class="image_parallax2 parallax" data-parallax-speed="3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sector Contact -->
+    <div id="sector-contact">
+        <div class="row">
+            <div class="container_h2">
+                <span>05</span>
+                <h2>Contact</h2>
+            </div>
+            <div class="container_contacts">
+                <div class="leftdiv">
+                    <div class="title">So many reasons to visit us<span class="line"></span>
+                    </div>
+                    <a href="#" rel="nofollow" title="Contact Form" class="contactFormLink">
+                        <span class="icon"></span> Contact Form </a>
+                    <ul class="socialNetwork">
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank" title="Facebook" class="fb"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank" title="Instagram" class="ins"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/" target="_blank" title="Youtube" class="yt"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="informations">
+                    <div>
+                        <div class="icon telephone"></div>
+                        <h4 class="title">Telephone</h4>
+                        <p>000 111 222 333</p>
+                    </div>
+                    <div>
+                        <div class="icon fax"></div>
+                        <h4 class="title">Fax</h4>
+                        <p>+000 111 222 333</p>
+                    </div>
+                    <div>
+                        <div class="icon envelope"></div>
+                        <h4 class="title">Email</h4>
+                        <p><a href="mailto:email@yourdomain.com" title="email@yourdomain.com">email@yourdomain.com</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="informations">
+                    <div>
+                        <div class="icon adress"></div>
+                        <h4 class="title"></h4>
+                        <p>DHA, ROAD</p>
+                        <p>Lahore, Punjab</p>
+                        <p>Pakistan</p>
+                    </div>
+                    <a href="#" title="Map" target="_blank" class="linkMaps">
+                        <span class="replica2"></span>
+                        <span class="replica3"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div id="contactForm">
+            <div class="row">
+                <div class="header">
+                    <a href="#" rel="nofollow" title="Close" class="close_contactForm">
+                        <span class="line1"></span>
+                        <span class="line2"></span>
+                    </a>
+                    <h3 class="title">Contact Form</h3>
+                </div>
+                <form id="form" method="post">
+                    <input type="hidden" name="accao" value="form_contacto">
+                    <div class="containerInput">
+                        <label for="nome">Name</label>
+                        <input type="text" id="nome" name="nome" onchange="validacao('nome');">
+                    </div>
+                    <div class="containerInput">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" onchange="validacao('email');">
+                    </div>
+                    <div class="containerSelect">
+                        <span class="wordVisible">Subject</span>
+                        <ul class="options">
+                            <li><a href="#" rel="nofollow" title="Subject">Subject</a>
+                            </li>
+
+                            <li><a href="#" rel="nofollow" title="Quotations">Quotations</a>
+                            </li>
+                            <li><a href="#" rel="nofollow" title="Recruting">Recruting</a>
+                            </li>
+                            <li><a href="#" rel="nofollow" title="Suppliers">Suppliers</a>
+                            </li>
+                            <li><a href="#" rel="nofollow" title="Others">Others</a>
+                            </li>
+                        </ul>
+                        <select name="assunto" id="assunto" onchange="validacao('assunto');">
+                            <option value="0" selected>Subject</option>
+
+                            <option value="1">Quotations</option>
+                            <option value="2">Recruting</option>
+                            <option value="3">Suppliers</option>
+                            <option value="4">Others</option>
+
+                        </select>
+                    </div>
+                    <div class="containerInput totalWidth">
+                        <label for="mensagem">Your Message</label>
+                        <input type="text" id="mensagem" name="mensagem" onchange="validacao('mensagem');">
+                    </div>
+
+                    <input type="submit" onclick="validacao('');return false;" value="Send">
+                    <div class="msg">
+                        <div class="icon"></div>
+                        <p>Your message was sent successfully</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="row">
+            <div class="content">
+                <p>&copy; 2017 . <strong>Magic Box</strong> . All rights reserved</p>
+                <span>|</span>
+
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Timeline Portfolio -->
+    <div id="portfolioGallery">
+        <a href="#" title="Close" rel="nofollow" class="closePortfolio"></a>
+
+        <span class="lineTopLeft"></span>
+        <span class="lineLeft"></span>
+        <span class="lineBottomLeft"></span>
+        <span class="lineTopRight"></span>
+        <span class="lineRight"></span>
+        <span class="lineBottomRight"></span>
+
+        <img src="images/logo.png" alt="Magic Box" class="logoEspera" height="69" width="70">
+        <ul class="imagesPortfolio" id="imagesPortfolio">
+
+            <li data-project="t1" data-num="1" data-client="PROJECT ONE" data-year="2017" data-class="tag_5">
+                <img src="#" data-original="assets/images/timeline-portfolio/slide_1.jpg" alt="" class="lazy">
+            </li>
+            <li data-project="t1" data-num="2" data-client="PROJECT ONE" data-year="2017" data-class="tag_5">
+                <img src="#" data-original="assets/images/timeline-portfolio/slide_2.jpg" alt="" class="lazy">
+            </li>
+            <li data-project="t2" data-num="1" data-client="PROJECT TWO" data-year="2017" data-class="tag_6">
+                <img src="#" data-original="assets/images/timeline-portfolio/slide_3.jpg" alt="" class="lazy">
+            </li>
+            <li data-project="t3" data-num="1" data-client="PROJECT THREE" data-year="2017" data-class="tag_6">
+                <img src="#" data-original="assets/images/timeline-portfolio/slide_4.jpg" alt="" class="lazy">
+            </li>
+            <li data-project="t3" data-num="2" data-client="PROJECT THREE" data-year="2017" data-class="tag_6">
+                <img src="#" data-original="assets/images/timeline-portfolio/slide_5.jpg" alt="" class="lazy">
+            </li>
+            <li data-project="t4" data-num="1" data-client="PROJECT FOUR" data-year="2017" data-class="tag_5">
+                <img src="#" data-original="assets/images/timeline-portfolio/slide_6.jpg" alt="" class="lazy">
+            </li>
+            <li data-project="t4" data-num="2" data-client="PROJECT FOUR" data-year="2017" data-class="tag_5">
+                <img src="#" data-original="assets/images/timeline-portfolio/slide_7.jpg" alt="" class="lazy">
+            </li>
+            <li data-project="t5" data-num="1" data-client="PROJECT FIVE" data-year="2017" data-class="tag_5">
+                <img src="#" data-original="assets/images/timeline-portfolio/slide_8.jpg" alt="" class="lazy">
+            </li>
+            <li data-project="t5" data-num="2" data-client="PROJECT FIVE" data-year="2017" data-class="tag_5">
+                <img src="#" data-original="assets/images/timeline-portfolio/slide_9.jpg" alt="" class="lazy">
+            </li>
+            <li data-project="t6" data-num="1" data-client="PROJECT SIX" data-year="2017" data-class="tag_5">
+                <img src="#" data-original="assets/images/timeline-portfolio/slide_10.jpg" alt="" class="lazy">
+            </li>
+            <li data-project="t6" data-num="2" data-client="PROJECT SIX" data-year="2017" data-class="tag_5">
+                <img src="#" data-original="assets/images/timeline-portfolio/slide_11.jpg" alt="" class="lazy">
+            </li>
+            <li data-project="t6" data-num="3" data-client="PROJECT SIX" data-year="2017" data-class="tag_5">
+                <img src="#" data-original="assets/images/timeline-portfolio/slide_12.jpg" alt="" class="lazy">
+            </li>
+            <li data-project="t7" data-num="1" data-client="PROJECT SEVEN" data-year="2017" data-class="tag_6">
+                <img src="#" data-original="assets/images/timeline-portfolio/slide_13.jpg" alt="" class="lazy">
+            </li>
+            <li data-project="t8" data-num="1" data-client="PROJECT EIGHT" data-year="2017" data-class="tag_5">
+                <img src="#" data-original="assets/images/timeline-portfolio/slide_14.jpg" alt="" class="lazy">
+            </li>
+            <li data-project="t9" data-num="1" data-client="PROJECT NINE" data-year="2017" data-class="tag_5">
+                <img src="#" data-original="assets/images/timeline-portfolio/slide_15.jpg" alt="" class="lazy">
+            </li>
+            <li data-project="t10" data-num="2" data-client="PROJECT TEN" data-year="2017" data-class="tag_5">
+                <img src="#" data-original="assets/images/timeline-portfolio/slide_16.jpg" alt="" class="lazy">
+            </li>
+            <li data-project="t10" data-num="3" data-client="PROJECT TEN" data-year="2017" data-class="tag_5">
+                <img src="#" data-original="assets/images/timeline-portfolio/slide_17.jpg" alt="" class="lazy">
+            </li>
+        </ul>
+        <a href="#" rel="nofollow" title="Previous" class="previousImage"></a>
+        <a href="#" rel="nofollow" title="Next" class="nextImage"></a>
+        <div class="informations">
+            <ul class="pagination">
+                <li class="active"></li>
+                <li></li>
+            </ul>
+            <div class="containerCountLi">
+                <div class="actived"></div>
+                <div class="total">/<span></span>
+                </div>
+            </div>
+            <div class="containerClient">
+                <div class="title">Customer</div>
+                <div class="content"></div>
+            </div>
+            <div class="containerYear">
+                <div class="title">Year</div>
+                <div class="content"></div>
+            </div>
+            <div class="containerNextProject">
+                <div class="title">Next Project</div>
+                <div class="content"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Intro -->
+    <div id="intro">
+        <img src="images/logo_descritivo.gif" alt="Magic Box">
+        <div class="introAnimation"></div>
+    </div>
+    <!-- Idiomas Popup -->
+    <div id="container_languages">
+        <a href="#" title="Close" rel="nofollow" class="close_languages">
+            <span class="line1"></span>
+            <span class="line2"></span>
+        </a>
+        <ul class="languages_list">
+            <li>
+                <a href="#" rel="nofollow" title="Choose your language">Choose your language</a>
+            </li>
+            <li>
+                <a href="" title="Portuguese"><span>Portuguese</span></a>
+            </li>
+            <li class="selected">
+                <a href="index.html" title="English"><span>English</span></a>
+            </li>
+            <li>
+                <a href="" title="French"><span>French</span></a>
+            </li>
+            <li>
+                <a href="" title="Spanish"><span>Spanish</span></a>
+            </li>
+            <li>
+                <a href="" title="Russian"><span>Russian</span></a>
+            </li>
+            <li>
+                <a href="" title="Chinese"><span>Chinese</span></a>
+            </li>
+            <li>
+                <a href="" title="Arabic"><span>Arabic</span></a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- JavaScripts -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/vendor/fastclick/lib/fastclick.min.js"></script>
+    <script src="assets/vendor/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="assets/vendor/jquery_lazyload/jquery.lazyload.js"></script>
+    <script src="assets/vendor/jquery_lazyload/jquery.scrollstop.js"></script>
+    <script src="assets/vendor/jquery/jquery.easing.min.js"></script>
+
+    <!-- JAVASCRIPTS For Background Fullscreen Plugin Begin -->
+    <script src="assets/plugin/js/jquery.ui.touch-punch.min.js" type="text/javascript"></script>
+    <script src="assets/plugin/js/fullscreen_background.js" type="text/javascript"></script>
+    <!-- JAVASCRIPTS For Background Fullscreen Plugin End -->
+
+
+</body>
+
+</html>

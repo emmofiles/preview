@@ -1,0 +1,221 @@
+/*
+skins available:
+	- default
+*/
+/* the border */
+* {-webkit-text-size-adjust: none;}
+.universal_video_backgroundBorder {
+	position:relative;
+	/*overflow:hidden;*/
+}
+
+
+/* the container */
+.universal_video_background {
+	position:relative;
+}
+.setAsBg {
+	position:fixed;
+	z-index:0;
+	margin:0;
+	padding:0;
+	left:0;
+	top:0;
+	overflow: hidden;
+}
+.universal_video_background.thumbs  .texture_over_image {
+	position:absolute;
+	z-index:4;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	pointer-events:none;
+}
+
+.universal_video_background_list {
+	margin:0;
+	padding:0;
+	list-style:none;
+	display:none;
+}
+
+
+
+/***default SKIN***/
+.universal_video_background.thumbs .lbg_player {
+	z-index:-1;	
+	position:absolute;
+}
+
+.universal_video_background.thumbs .lbg_vimeo_player {
+	z-index:-1;
+	position:absolute;
+}
+
+.universal_video_background.thumbs .bannerControls {
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:6;
+	width:100%;
+}
+
+
+
+
+
+.universal_video_background.thumbs .thumbsHolderWrapper {
+	position:absolute;
+	height:72px;
+	width:100%;
+	z-index:6;
+	overflow:hidden;
+	-webkit-box-sizing:content-box;
+	-moz-box-sizing:content-box;
+	box-sizing:content-box;	
+}
+.universal_video_background.thumbs .thumbsHolderVisibleWrapper {
+	position:absolute;
+	width:100%;
+	height:72px;
+	overflow:hidden;
+}
+.universal_video_background.thumbs .thumbsHolder {
+	position:absolute;
+	
+}
+.universal_video_background.thumbs .thumbsHolder_ThumbOFF {
+	float:left;
+	display:block;
+	/*width:110px;
+	height:65px;*/
+	cursor: pointer;
+	border-width:3px;
+	border-style:solid;
+	border-color:'transparent';
+	overflow:hidden;
+	/*border-color:transparent !important;*/
+	-webkit-box-sizing:content-box;
+	-moz-box-sizing:content-box;
+	box-sizing:content-box;		
+}
+
+
+
+.universal_video_background.thumbs .thumbsHolder_ThumbOFF img {
+	display:block;
+	margin:0;
+	padding:0;
+}
+
+/*.universal_video_background.thumbs .thumbsHolder_ThumbON {
+	border-width:2px;
+	border-style:solid;
+	border-color: #000000;*/
+	/*border-color:#FF0 !important;*/
+/*}*/
+
+.universal_video_background.thumbs .carouselLeftNav {
+	position:absolute;
+	width:44px;
+	height:70px;
+	background:url(skins/thumbs/carouselLeftNavOFF.png) 0 0 no-repeat;
+	cursor: pointer;
+}
+
+.universal_video_background.thumbs .carouselLeftNav:hover {
+	background:url(skins/thumbs/carouselLeftNavON.png) 0 0 no-repeat;
+}
+
+.universal_video_background.thumbs .carouselLeftNavDisabled {
+	background:url(skins/thumbs/carouselLeftNavDisable.png) 0 0 no-repeat;
+	cursor:default;
+}
+.universal_video_background.thumbs .carouselLeftNavDisabled:hover {
+	background:url(skins/thumbs/carouselLeftNavDisable.png) 0 0 no-repeat;
+}
+
+.universal_video_background.thumbs .carouselRightNav {
+	position:absolute;
+	width:44px;
+	height:70px;
+	background:url(skins/thumbs/carouselRightNavOFF.png) 0 0 no-repeat;
+	cursor: pointer;
+}
+
+.universal_video_background.thumbs .carouselRightNav:hover {
+	background:url(skins/thumbs/carouselRightNavON.png) 0 0 no-repeat;
+}
+
+.universal_video_background.thumbs .carouselRightNavDisabled {
+	background:url(skins/thumbs/carouselRightNavDisable.png) 0 0 no-repeat;
+	cursor:default;
+}
+.universal_video_background.thumbs .carouselRightNavDisabled:hover {
+	background:url(skins/thumbs/carouselRightNavDisable.png) 0 0 no-repeat;
+}
+
+
+
+
+
+
+
+.hideElement {
+	display:none;
+}
+
+
+
+
+/* jQuery-UI TOOL TIP */
+
+.ui-tooltip {	
+	padding:8px;
+	position:absolute;
+	z-index:9999;
+}
+
+.ui-tooltip, .lbg_grid_arrow:after {
+	background: #333;
+}
+.ui-tooltip {
+	background: #333;
+	color: #FFFFFF;
+	padding: 8px 8px;
+	border-radius: 4px;
+}
+.lbg_grid_arrow {
+  width: 70px;
+  height: 16px;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  margin-left: -33px;
+  bottom: -16px;
+}
+.lbg_grid_arrow.top {
+	top: -16px;
+	bottom: auto;
+}
+.lbg_grid_arrow.left {
+	left: 20%;
+}
+.lbg_grid_arrow:after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: -20px;
+  width: 25px;
+  height: 25px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  tranform: rotate(45deg);
+}
+.lbg_grid_arrow.top:after {
+	bottom: -20px;
+	top: auto;
+}
