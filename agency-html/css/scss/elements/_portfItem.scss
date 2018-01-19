@@ -1,0 +1,116 @@
+.item-container {
+  min-height:680px;
+  margin-bottom:25px;
+}
+.portfolio-item-desc {
+  margin-bottom: 25px;
+  position:relative;
+}
+
+.portf-link {
+  img {
+    -webkit-backface-visibility: hidden;
+  }
+}
+.portf-link:hover {
+
+  img{
+    transition: all .2s ease-out;
+    opacity: .8;
+    -webkit-backface-visibility: hidden;
+  }
+}
+.portf-item-details {
+  list-style: none;
+  margin-bottom:40px;
+  padding-left: 0px;
+  li {
+        margin-bottom: 15px;
+  }
+  .list-label {
+    min-width: 100px;
+    font-weight: 300;
+    color: #ababab;
+    float: left;
+  }
+  .list-detail {
+
+    overflow: hidden;
+  }
+}
+.portfolio-item-livelink {
+  float:right;
+  @include max_tablet {
+    float: none;
+    display: inline-block;
+  }
+}
+/*read more*/
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 700px;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'See more';
+
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Show less';
+
+}
+.read-more-wrap {
+  position:relative;
+}
+.read-more-wrap:after {
+  content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 100px;
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(255,255,255,0)),color-stop(100%,#ffffff));
+    background: -webkit-linear-gradient(top,rgba(255,255,255,0) 0%,#ffffff 100%);
+    background: linear-gradient(to bottom,rgba(255,255,255,0) 0%,#ffffff 100%);
+}
+.read-more-state:checked ~ .read-more-wrap:after {
+  background:none;
+}
+.read-more-state:checked ~ .read-more-trigger{
+  color:$hoverColor;
+  .glyphicon.glyphicon-menu-up {
+    display:block;
+    margin-left: 10px;
+    float: right;
+    line-height: 30px;
+  }
+  .glyphicon.glyphicon-menu-down {
+    display:none;
+  }
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 11px;
+
+  .glyphicon.glyphicon-menu-up {
+    display:none;
+  }
+}

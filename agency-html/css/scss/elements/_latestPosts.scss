@@ -1,0 +1,108 @@
+.latest_posts {
+  margin-bottom: 30px;
+  text-align:center;
+}
+.hover-border {
+  position: relative;
+  display: inline-block;
+  img {
+    max-width: 100%;
+    box-sizing: border-box;
+    border-radius: 2px;
+  
+    position: relative;
+    box-shadow: 0 1px 1px rgba(0,0,0,.22);
+    height:auto;
+  }
+}
+.plus.hover-border:before {
+  content: "\002b";
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-radius: 3px;
+  -webkit-transition: opacity .2s ease-out;
+  transition: opacity .2s ease-out;
+  font-family: Glyphicons Halflings;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  z-index: 1;
+  color: $white;
+  font-size: 22px;
+
+}
+.plus.hover-border:hover:before {
+    opacity: 1;
+}
+.plus.hover-border:hover:after {
+    background-color: rgba(35,35,35,.5);
+}
+.hover-border:hover:after {
+    box-shadow: 0 0 0 5px #d72a30 inset;
+}
+.hover-border:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 3px;
+    box-shadow: inset 0 0 0 3px hsla(0,0%,100%,.15);
+    -webkit-transition: background-color .2s ease-out,-webkit-box-shadow .2s ease-out;
+    transition: box-shadow .2s ease-out,background-color .2s ease-out;
+}
+.latest_posts-readon {
+  position: absolute;
+  left: -10px;
+  bottom: 16px;
+  color: $white;
+  padding: 11px 14px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0;
+  border-radius: 2px;
+  z-index: 1;
+  background-color: $hoverColor;
+}
+.u-trans-all-2s {
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+.latest_posts-link:hover{
+  .latest_posts-readon {
+    left: 15px;
+    background: $white;
+    color: $hoverColor;
+  }
+}
+.latest_posts-details {
+    font-size: 11px;
+    display: block;
+    color: rgba(83,83,83,0.7);
+    margin-top: 10px;
+}
+.post-wrapper{
+  margin-bottom: 30px;
+    text-align: left;
+}
+.latest_posts-title {
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-top: 10px;
+    text-align: left;
+}
+.related-articles{
+  margin-bottom: 20px;
+  &__wrapper {
+    margin-bottom: 20px;
+  }
+}

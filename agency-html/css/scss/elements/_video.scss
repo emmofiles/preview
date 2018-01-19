@@ -1,0 +1,30 @@
+.circleanim-svg {
+  width: 108px;
+  height: 108px;
+  display: inline-block;
+  margin: 0 auto;
+}
+.circleanim-svg {
+
+  &__circle-back {
+    fill: none;
+    stroke: $white;
+  }
+  &__circle-front {
+    fill: none;
+    stroke: $white;
+    stroke-dasharray: 60 1000;
+    stroke-width: 5px;
+    stroke-opacity: .5;
+    stroke-dashoffset: 0;
+    -webkit-transition: stroke-width 1s,stroke-dashoffset 1s,stroke-dasharray 1s,stroke-opacity 1s;
+    transition: stroke-width 1s,stroke-dashoffset 1s,stroke-dasharray 1s,stroke-opacity 1s;
+  }
+}
+.circleanim-svg:hover {
+  .circleanim-svg__circle-front{
+    stroke-dasharray: 340;
+    stroke-width: 2px;
+    stroke-opacity: 1;
+  }
+}

@@ -1,0 +1,220 @@
+/** All header code will be placed here */
+.siteheader-container {
+  //width: 100%; /*if width of container wanted*/
+  position: relative;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.site-header {
+  width: 100%;
+  background: rgba(0,0,0,.5);
+  z-index: 3;
+  &--absolute {
+    position:absolute;
+  }
+  @include max_tablet {
+    position: relative;
+    background-color:$black;
+  }
+  @include min_tablet {
+    background-color: rgba(10,10,10,0);
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+  }
+}
+.site-header-main {
+  height: 160px;
+  //add desired height here
+  @include max_tablet {
+    height: auto;
+  }
+}
+.site-logo {
+    width: 100%;
+    margin: 0;
+    display: table;
+}
+
+.cg__mainMenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  li {
+    float:left;
+    margin-left:0;
+    position: relative;
+    margin-left: 5px;
+    &:first-child {
+      margin-left:0;
+    }
+    a {
+      color:$white;
+      font-family: $titleFont;
+      line-height: 25px;
+      font-weight: 700;
+      font-style: normal;
+      font-size:15px;
+      padding: 6px 12px;
+    }
+    a:hover {
+      text-decoration: none;
+      color:$navlink;
+    }
+  }
+  @include max_desktop {display:none;}
+  &--dark {
+    li {
+      a {
+        color:$titleColor;
+      }
+    }
+  }
+}
+
+/* header responsive menu */
+.cg__resMenu {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	right: 0;
+	top: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	overflow: hidden;
+	backface-visibility: hidden;
+	transition: transform .5s ease;
+	z-index: 10000;
+	transform: translateX(100%);
+	transform-style: preserve-3d;
+	@include min_tablet {
+		max-width: 400px;
+	}
+	li {
+		backface-visibility: hidden;
+		border-color: rgba(0, 0, 0, 0.15);
+		position: static;
+		 border-bottom: 1px solid rgba(0,0,0,.15);
+		&.cg__resMenu-back {
+			.cg__resMenu-backLink {
+				font-size: 14px;
+				padding: 7px 28px 7px;
+				display: block;
+				font-weight: 400;
+				cursor: pointer;
+				color: rgba(0,0,0,.45);
+				text-align: center;
+				text-transform: capitalize;
+				&:hover {
+					color: rgba(0, 0, 0, 0.85);
+					text-decoration: none;
+				}
+			}
+			.cg__resMenu-backIcon {
+				left: 0;
+				right: auto;
+				border-left: none;
+				border-right: 1px solid rgba(0, 0, 0, 0.15);
+				position: absolute;
+				width: 49px;
+				height: 45px;
+				line-height: 45px;
+				vertical-align: middle;
+				text-align: center;
+				cursor: pointer;
+				color: rgba(0, 0, 0, 0.45);
+				top: 0;
+			}
+		}
+		a {
+			padding: 7px 28px 7px;
+			display: block;
+			font-weight: 400;
+			color: rgba(0,0,0,.45);
+
+			font-size: 13px;
+			&.active {
+				background-color: rgba(0,0,0,.05);
+				color: rgba(0,0,0,.85);
+			}
+			&:hover {color: rgba(0,0,0,.85);}
+		}
+	}
+  &.cg__menu--visible {
+		transform: translateZ(0);
+		display: block;
+	}
+}
+.cg__topMenu-wrapper {
+  position: relative;
+  @include max_tablet {
+    margin: auto;
+  }
+  /* top menu */
+  .cg__topMenu {
+    li a {
+      @include max_ldesktop {color: #6f6b6b;}
+    }
+    li {
+      @include min_ldesktop { position: relative; }
+      @include max_ldesktop {
+        display: block;
+        float: none;
+        margin: 0;
+        padding: 0;
+      }
+    }
+    @include max_ldesktop {
+      display: none;
+      float: none;
+      margin: 0;
+      position: absolute;
+      top: 25px;
+      right: -10px;
+    }
+  }
+  &.is-opened .cg__topMenu {
+    @include max_ldesktop {display: block;}
+  }
+}
+
+
+/* Main menu block */
+.cg__menuWrapper {
+	display: table-cell;
+	vertical-align: middle;
+	.cg__mainMenu-trigger {
+		.cg__menuBurger {
+			width: 20px;
+			vertical-align: middle;
+			position: relative;
+			display: inline-block;
+			height: 22px;
+			margin-right: 10px;
+			transform: rotate(0deg);
+			transition: .2s ease-out;
+			cursor: pointer;
+			opacity: .8;
+			span {
+				height: 3px;
+				background: hsla(0,0%,100%,.85);
+				display: block;
+				position: absolute;
+				width: 100%;
+				border-radius: 2px;
+				opacity: 1;
+				left: 0;
+				transform: rotate(0deg);
+				transition: .25s ease-in-out;
+				&:first-child {top: 0;}
+				&:nth-child(2) {top: 6px;}
+				&:nth-child(3) {top: 12px;}
+			}
+		}
+		@include min_desktop {display: none;}
+	}
+}

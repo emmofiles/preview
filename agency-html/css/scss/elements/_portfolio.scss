@@ -1,0 +1,151 @@
+.grid-item {
+  width: 25%;
+  @include max_tablet {
+    width:100%;
+  }
+  &--width2 {
+    width: 50%;
+    @include max_tablet {
+      width:100%;
+    }
+   }
+  &--width3 {
+    width:33.333%;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    @include max_tablet {
+      width:100%;
+    }
+   }
+ }
+
+.portfolio-filter {
+  margin-bottom:30px;
+}
+.ag-gridGallery {
+  &__img-container {
+    overflow: hidden;
+    margin: 0 auto;
+    img {
+      width:100%;
+    }
+  }
+}
+.grid {
+  padding-left:0px;
+}
+.ptf-item {
+  width:33.333%;
+  //float: left;
+  padding: 0 10px;
+  margin-bottom: 20px;
+  @include max_tablet {
+    width:100%;
+  }
+}
+.gallery-item {
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+.portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(31,34,37,.25);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+.portfolio-inner {
+    position: relative;
+    text-align: center;
+    top: 50%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: -webkit-transform .3s ease-in-out;
+    transition: -webkit-transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out,-webkit-transform .3s ease-in-out;
+}
+
+.ag-icon {
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  line-height: 58px;
+  border: 2px solid $white;
+  display: inline-block;
+  border-radius: 50%;
+  -webkit-transform: scale(.9);
+  transform: scale(.9);
+}
+.portfolio-link {
+  z-index:10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.grid-item-wrapper {
+  position: relative;
+  z-index: 0;
+}
+.grid-item-wrapper:hover {
+  opacity:1;
+  .portfolio-overlay {
+    opacity: 1;
+    visibility:visible;
+  }
+}
+.portfolio-nav {
+  display: table;
+  text-align:center;
+  margin:0 auto;
+  margin-bottom: 30px;
+  padding:0;
+  li {
+    float:left;
+    position:relative;
+    font-family: $titleFont;
+    margin-bottom: 10px;
+
+  }
+  button {
+    background: none;
+   border: none;
+   display: inline;
+   font: inherit;
+   margin: 0;
+   padding: 0;
+   outline: none;
+   outline-offset: 0;
+  }
+  .portfolio-nav-link {
+    padding:15px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 0;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    font-size: 12px;
+    color:$titleColor;
+  }
+  .button.is-checked {
+    color: $titlegrey;
+  }
+  .portfolio-nav-link:hover,.portfolio-nav-link:visited,.portfolio-nav-link:active {
+    text-decoration:none;
+    color: $titlegrey;
+  }
+  .portfolio-nav-link:focus{
+    text-decoration:none;
+
+  }
+}
