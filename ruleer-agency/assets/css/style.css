@@ -1,0 +1,142 @@
+/*-----------------------------------------------------------------------------------------------------
+
+This is main CSS file that contains custom CSS rules used in this template
+---------------------------------------------------------------------------------------------------------------------------------
+Template Name: "Ruleer"
+Version: 1.0 Initial Release
+Author: Themesfolio
+Copyright: (C) 2018
+----------------------------------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Domine', serif;*/
+
+body {
+	background:#fff;
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+.logo {
+	display: table;
+	width: auto;
+	margin: 0 auto 30px auto;
+	padding:0 15px;
+}
+.banner {
+	background: url(../images/banner_bg.jpg) no-repeat center center;
+	background-size: cover;
+	width: 100%;
+	height: 600px;
+	position: relative;
+}
+.banner:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	content: "";
+	background: rgba(0,0,0,0.5);
+}
+.banner_content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	text-align: center;
+	color: #fff;
+}
+.banner_content h3 {
+	font-size: 40px;
+	font-family: 'Montserrat', sans-serif
+}
+.banner_content h3 span {
+	display: block;
+	color: #ff264A;
+	font-size: 50px;
+	margin-top: 20px;
+}
+.content {
+	margin: 90px auto;
+}
+.theme_cnt {
+	padding: 60px 0px;
+	border-bottom: 1px solid #202020;
+}
+.theme_cnt:last-child {
+	border: 0;
+}
+.title {
+	margin:0px 0px 30px 0px;
+	font-size: 30px;
+	color: #ff264A;
+	text-align: center;
+}
+.theme_screen {
+	position:relative;
+  	width: 100%;
+  	padding: 10px;
+  	margin:15px 0px;
+	overflow: hidden;
+	display: block;
+	color: #333333;
+	box-shadow: 1px 1px 10px #d6d6d6;
+}
+.theme_screen:hover, .theme_screen:focus {
+	color: #757575;
+	text-decoration: none;
+}
+.theme_screen:hover img {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.theme_info {
+	text-align:center;
+	text-transform:uppercase;
+	background: #f1f1f1;
+	padding: 10px 0px;
+	margin: 30px 0px 0px;
+}
+.theme_info h3 {
+	margin:0;
+	font-size:20px;
+	margin: 0;
+}
+footer {
+	background: #262626;
+	padding: 20px 0px;
+	color: #fff;
+	text-align: center;
+}
+footer p {
+	margin: 0;
+	font-size: 16px;
+}
+
+@media screen and (max-width: 767px) {
+.banner {
+	height: 360px;
+}
+.banner_content {
+	width: 100%;
+}
+.banner_content h3 {
+	font-size: 24px;
+}
+.banner_content h3 span  {
+	font-size: 30px;
+}
+.theme_screen {
+	margin-bottom: 20px;
+}
+.title {
+	font-size: 26px;
+}
+}
