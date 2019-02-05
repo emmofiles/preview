@@ -1,0 +1,361 @@
+
+
+
+
+
+
+
+/*===========================
+     27.SHOP DETAILS css 
+===========================*/
+
+.product-images{
+    & .tab-content{
+        @include box-shadow(0px 0px 16px 0px rgba(191,191,191,1));
+        padding: 5px;
+        border-radius: 5px;
+        
+        & img{
+            width: 100%;
+        }
+    }
+    & .nav{
+        & .nav-item{
+            margin: 0 10px;
+            
+            @media #{$xs}{
+                margin: 0 5px;
+            }
+            
+            & a{
+                display: block;
+                & img{
+                    width: 100%;
+                    border-radius: 5px;
+                }
+            }
+            
+            &:first-child{
+                margin-left: 0;
+            }
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.product-content{
+    & h3{
+        font-size: 32px;
+        font-weight: 600;
+    }
+    & > span{
+        font-size: 20px;
+        font-weight: 600;
+        color: $heading-color;
+        margin-right: 30px;
+    }
+    & ul{
+        display: inline-block;
+        
+        & li{
+            display: inline-block;
+            font-size: 15px;
+            margin: 0 2px;
+            
+            & i{
+                color: #f9b522;
+            }
+            & > span{
+                font-size: 15px;
+                
+            }
+        }
+    }
+    & .add-cart{
+        & .nice-number{
+            position: relative;
+            padding-left: 44px;
+            margin-right: 25px;
+            
+            & button{
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 0;
+                width: 22px;
+                height: 34px;
+                border: 1px solid $theme-color;
+                border-right: 0;
+                background: none;
+                cursor: pointer;
+                
+                &:first-child{
+                    left: 22px;
+                    border-left: 0;
+                }
+            }
+            & input{
+                border: 1px solid $theme-color;
+                height: 30px;
+                width: 30px !important;
+            }
+        }
+    }
+}
+
+.product-review{
+    & .nav{
+        & .nav-item{
+            margin-right: -1px;
+            
+            @media #{$xs}{
+                width: 50%;
+                flex-basis: auto;
+                margin-top: -1px;
+            }
+            
+            & a{
+                display: block;
+                line-height: 73px;
+                width: 100%;
+                font-size: 20px;
+                font-weight: 600;
+                color: $heading-color;
+                @include transition(0.4s);
+                border: 1px solid $border-color-3;
+                
+                @media #{$xs}{
+                    font-size: 16px;
+                }
+                
+                &.active,
+                &:hover{
+                    background-color: $theme-color;
+                    color: $white;
+                    border-color: $theme-color;
+                }
+                
+            }
+            &:first-child a{
+                border-top-left-radius: 5px;
+                @media #{$xs}{
+                    border-top-left-radius: 0px;
+                }
+            }
+            &:last-child a{
+                border-top-right-radius: 5px;
+                @media #{$xs}{
+                    border-top-right-radius: 0px;
+                }
+            }
+        }
+    }
+    
+    & .tab-content{
+        border: 1px solid $border-color-3;
+        border-top: 0;
+        padding: 25px 40px;
+        
+        @media #{$xs}{
+            padding: 20px 25px;
+        }
+        
+        & .review{
+            padding-top: 10px;
+            
+            & > ul{
+                & > li{
+                    margin-bottom: 30px;
+                    
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                    & .single-review{
+                        position: relative;
+                        
+                        & .ahtore-image{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            
+                            @media #{$xs}{
+                                position: relative;
+                                margin-bottom: 25px;
+                            }
+                            
+                            & img{
+                                border-radius: 5px;
+                            }
+                        }
+                        & .content{
+                            padding-left: 135px;
+                            position: relative;
+                            
+                            @media #{$xs}{
+                                padding-left: 0;
+                            }
+                            & h6{
+                                font-size: 16px;
+                                font-weight: 600;
+                                padding-bottom: 5px;
+                            }
+                            & span{
+                                font-size: 14px;
+                                color: $body-text-color;
+                                padding-bottom: 5px;
+                            }
+                            
+                            & .rating{
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                @media #{$xs}{
+                                    position: relative;
+                                    right: auto;
+                                    left: 0;
+                                }
+                                @media #{$sm}{
+                                    position: absolute;
+                                    right: 0;
+                                    left: auto;
+                                }
+                                & > ul{
+                                    & > li{
+                                        display: inline-block;
+                                        margin: 0 6px;
+
+                                        & i{
+                                            font-size: 22px;
+                                            color: #f7cb19;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        & .review-form{
+            & .single-form{
+                margin-top: 30px;
+                
+                & input,
+                & textarea{
+                    font-size: 15px;
+                    width: 100%;
+                    height: 55px;
+                    padding: 0 20px;
+                    border: 1px solid $border-color-3;
+                    border-radius: 5px;
+                }
+
+                & textarea{
+                    height: 140px;
+                    resize: none;
+                    padding-top: 15px;
+                }
+                
+                & .rating-stars{
+                    & span{
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: $heading-color;
+                        padding-right: 15px;
+                    }
+                    & .star-rating{
+                        margin-top: 5px;
+                        
+                        & i{
+                            margin-right: 3px;
+                        }
+                        & .fa.fa-star-o{
+                            float: left;
+                            cursor: pointer;
+                            color: #f9b522;
+                        }
+                        & .fa.fa-star{
+                            float: left;
+                            cursor: pointer;
+                            color: #f9b522;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.shop-active{
+    & .slick-arrow{
+        position: absolute;
+        top: 50%;
+        left: -65px;
+        width: 50px;
+        line-height: 48px;
+        border-radius: 50%;
+        border: 1px solid $theme-color;
+        text-align: center;
+        color: $theme-color;
+        font-size: 24px;
+        @include transform(translateY(-50%));
+        @include transition(0.4s);
+        cursor: pointer;
+        
+        &.next{
+            left: auto;
+            right: -65px;
+        }
+        
+        &:hover{
+            background-color: $theme-color;
+            color: $white;
+        }
+    }
+}
+
+#shop-details{
+    @media #{$md}{
+        padding-top: 30px;
+        padding-bottom: 65px;
+    }
+    @media #{$xs}{
+        padding-top: 20px;
+        padding-bottom: 55px;
+    }
+}
+
+.product-review{
+    @media #{$md}{
+        padding-top: 80px;
+    }
+    @media #{$xs}{
+        padding-top: 70px;
+    }
+}
+
+#related-products{
+    @media #{$md}{
+        padding-top: 70px;
+        padding-bottom: 80px;
+    }
+    @media #{$xs}{
+        padding-top: 60px;
+        padding-bottom: 70px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

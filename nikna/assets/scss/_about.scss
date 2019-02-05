@@ -1,0 +1,117 @@
+
+
+
+
+
+
+/*===========================
+    6.ABOUT css 
+===========================*/
+
+.about-part{
+    margin-bottom: 230px;
+}
+
+.about-content{
+    background-color: $theme-color;
+    padding: 0 40px 35px;
+    margin-bottom: -230px;
+    
+    @media #{$xs}{
+        padding: 0 15px 35px;     
+    }
+    
+    & .video{
+        @include transform(translateY(-40px));
+        text-align: center;
+        
+        & a{
+            
+            & i{
+                width: 80px;
+                line-height: 80px;
+                border-radius: 50%;
+                background-color: $white;
+                text-align: center;
+                font-size: 20px;
+                color: $theme-color;
+                
+            }
+        }
+    }
+    & .about-text{
+        & span{
+            color: $white;
+            font-weight: 500;
+            font-size: 15px;
+            text-transform: uppercase;
+            display: block;
+            padding-bottom: 5px;
+        }
+        & h3{
+            font-size: 32px;
+            color: $white;
+        }
+        & p{
+            color: $white;
+        }
+    }
+    & .signature{
+        & h6{
+            font-size: 16px;
+            color: $white;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        & span{
+            color: $white;
+            font-size: 14px;
+        }
+    }
+}
+
+/*===== Index 2 =====*/
+
+.about-part-2{
+    position: relative;
+    
+    & .about-2-bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 45%;
+        height: 100%;
+    }
+}
+
+.about-2-content{
+    & h3{
+        font-weight: 600;
+        font-size: 32px;
+        padding-right: 160px;
+        
+        @media #{$xs}{
+            padding-right: 0;
+        }
+        
+        & span{
+            color: $theme-color;
+        }
+    }
+}
+
+#about-part-2{
+    @media #{$md}{
+        padding-top: 70px;
+        padding-bottom: 80px;
+    }
+    @media #{$xs}{
+        padding-top: 60px;
+        padding-bottom: 70px;
+    }
+}
+
+
+
+
+

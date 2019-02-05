@@ -1,0 +1,203 @@
+
+
+
+
+
+
+/*===========================
+    10.TESTIMONIAL css 
+===========================*/
+
+.singel-testimonial{
+    border: 2px solid $theme-color;
+    border-radius: 5px;
+    padding: 25px 20px 0;
+    background-color: $white;
+    margin-bottom: 45px;
+    
+    & .testimonial-conent{
+        
+    }
+    & .author-name{
+        position: relative;
+        
+        & h6{
+            font-size: 16px;
+            font-weight: 600;
+            position: relative;
+            z-index: 5;
+        }
+        & p{
+            font-size: 15px;
+            position: relative;
+            z-index: 5;
+        }
+        & i{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            font-size: 70px;
+            line-height: 45px;
+            color: #f1f1f1;
+        }
+    }
+    & .testimonial-author{
+        margin-bottom: -45px;
+        display: inline-block;
+        
+        & img{
+            border-radius: 50%;
+            border: 2px solid $theme-color;
+        }
+    }
+}
+
+.testimonial-slide{
+    & .slick-dots{
+        text-align: center;
+        margin-top: 32px;
+        
+        & li{
+            display: inline-block;
+            margin: 0 7px;
+            
+            & button{
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: #d8d8d8;
+                padding: 0;
+                font-size: 0;
+                border: 0;
+                cursor: pointer;
+            }
+            &.slick-active{
+                & button{
+                    background-color: $theme-color;
+                }
+            }
+        }
+    }
+}
+
+#testimonial-part{
+    @media #{$md}{
+        padding-top: 70px;
+        padding-bottom: 80px;
+    }
+}
+
+#testimonial-part{
+    @media #{$xs}{
+        padding-top: 60px;
+        padding-bottom: 70px;
+    }
+}
+
+
+/*===== Index 2 =====*/
+
+.single-testimonial{
+    @include transition(0.4s);
+    
+    & .testimonial-content{
+        border: 1px solid #cccccc;
+        padding: 25px 30px 55px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        @include transition(0.4s);
+    }
+    
+    & .testimonial-author{
+        padding: 15px 30px 20px;
+        background-color: $theme-color;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        position: relative;
+        
+        & .author-image{
+            width: 75px;
+            background-color: $white;
+            border-radius: 50%;
+            position: absolute;
+            top: -38px;
+            left: 30px;
+            
+            & img{
+                padding: 4px;
+                border-radius: 50%;
+            }
+        }
+        
+        & .author-name{
+            & h6{
+                color: $white;
+                font-size: 16px;
+                font-weight: 600;
+                padding-bottom: 4px;
+            }
+            & span {
+                color: $white;
+            }
+        }
+    }
+    
+    &:hover{
+        @include box-shadow(0px 0px 51px 0px rgba(191,191,191,0.3));
+        
+        & .testimonial-content{
+            border-color: transparent;
+        }
+    }
+}
+
+.slick-center{
+    & .single-testimonial{
+        @include box-shadow(0px 0px 51px 0px rgba(191,191,191,0.3));
+
+        & .testimonial-content{
+            border-color: transparent;
+        }
+    }
+}
+
+.testimonial-slide-2{
+    & .slick-dots{
+        text-align: center;
+        margin-top: 37px;
+        
+        & li{
+            display: inline-block;
+            margin: 0 7px;
+            
+            & button{
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background-color: #d8d8d8;
+                padding: 0;
+                font-size: 0;
+                border: 0;
+                cursor: pointer;
+            }
+            &.slick-active{
+                & button{
+                    background-color: $theme-color;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

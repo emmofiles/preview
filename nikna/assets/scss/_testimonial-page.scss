@@ -1,0 +1,114 @@
+
+
+
+
+
+
+
+/*===========================
+   28.TESTIMONIAL PAGE  css 
+===========================*/
+
+.single-testimonial-2{
+    border: 1px solid $border-color-3;
+    margin-bottom: -2px;
+    border-radius: 5px;
+    
+    & .image{
+        margin-top: -1px;
+        margin-bottom: -1px;
+        margin-left: -1px;
+        margin-right: -1px;
+        
+        & img{
+            width: 100%;
+            border-radius: 5px;
+        }
+    }
+    & .content{
+        position: relative;
+        
+        @media #{$md}{
+            padding: 0 30px 30px;
+        }
+        @media #{$xs}{
+            padding: 0 25px 25px;
+        }
+        
+        & h4{
+            font-size: 20px;
+            font-weight: 600;
+        }
+        & span{
+            font-size: 14px;
+            font-style: italic;
+        }
+        & ul{
+            & li{
+                display: inline-block;
+                margin-right: 10px;
+                &:last-child{
+                    margin-right: 0;
+                }
+                
+                & a{
+                    width: 35px;
+                    line-height: 33px;
+                    border: 1px solid $border-color-3;
+                    border-radius: 5px;
+                    text-align: center;
+                    font-size: 16px;
+                    color: $theme-color;
+                    @include transition(0.4s);
+                    
+                    &:hover{
+                        background-color: $theme-color;
+                        border-color: $theme-color;
+                        color: $white;
+                    }
+                }
+            }
+        }
+        & > i{
+            position: absolute;
+            top: 0;
+            right: 30px;
+            font-size: 48px;
+            line-height: 40px;
+            color: #ddd;
+            @include transform(rotate(180deg));
+        }
+    }
+}
+
+
+
+
+
+
+
+
+#shop-details{
+    @media #{$md}{
+        padding-top: 30px;
+        padding-bottom: 65px;
+    }
+    @media #{$xs}{
+        padding-top: 20px;
+        padding-bottom: 55px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

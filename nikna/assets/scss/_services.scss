@@ -1,0 +1,117 @@
+
+
+
+
+
+
+/*===========================
+    5.SERVICES css 
+===========================*/
+
+.singel-services{
+    & .icon{
+        & i{
+            font-size: 36px;
+            color: $border-color;
+            width: 75px;
+            line-height: 73px;
+            border-radius: 50%;
+            border: 1px solid $border-color;
+            @include transition(0.4s);
+        }
+    }
+    &:hover{
+        .icon{
+            & i{
+                background-color: $theme-color;
+                border-color: $theme-color;
+            }
+        }
+    }
+    & .content{
+        & a{
+            & h4{
+                font-size: 20px;
+                @include transition(0.4s);
+                &:hover{
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+}
+
+#services-part{
+    @media #{$md}{
+        padding-top: 70px;
+        padding-bottom: 80px;
+    }
+}
+
+#services-part{
+    @media #{$xs}{
+        padding-top: 60px;
+        padding-bottom: 70px;
+    }
+}
+
+/*===== Index 2 =====*/
+
+.singel-services-2{
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    padding: 0 30px 20px;
+    @include transition(0.4s);
+    
+    & .icon{
+        margin-top: -40px;
+        
+        & i{
+            font-size: 36px;
+            color: $border-color;
+            width: 75px;
+            line-height: 73px;
+            border-radius: 50%;
+            border: 1px solid $border-color;
+            background-color: $white;
+            @include transition(0.4s);
+        }
+    }
+    & .content{
+        & a{
+            & h4{
+                font-size: 20px;
+                @include transition(0.4s);
+                &:hover{
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+    
+    &:hover{
+        border-color: $theme-color;
+        & .icon {
+            & i{
+                border-color: $theme-color;
+                background-color: $theme-color;
+            }
+        }
+        & .content{
+            & a{
+                & h4{
+                    color: $theme-color;
+                }
+            }
+            
+        }
+    }
+}
+
+
+
+
+
+
+
+

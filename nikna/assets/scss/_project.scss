@@ -1,0 +1,295 @@
+
+
+
+
+
+
+/*===========================
+    7.PROJECT css 
+===========================*/
+
+.project-menu{
+    & ul{
+        & li{
+            display: inline-block;
+            padding: 0 50px;
+            line-height: 50px;
+            border-radius: 50px;
+            border: 2px solid $theme-color;
+            margin: 10px 12px 0;
+            cursor: pointer;
+            color: $theme-color;
+            font-size: 15px;
+            font-weight: 600;
+            @include transition(0.4s);
+            
+            @media #{$md}{
+                margin: 10px 5px 0;
+                font-size: 14px;
+                line-height: 45px;
+                padding: 0 30px;
+            }
+            
+            @media #{$xs}{
+                margin: 10px 5px 0;
+                font-size: 14px;
+                line-height: 40px;
+                padding: 0 20px;
+            }
+            
+            &.active,
+            &:hover{
+                background-color: $theme-color;
+                color: $white;
+            }
+        }
+    }
+}
+
+.singel-project{
+    position: relative;
+    border: 10px solid $white;
+    border-radius: 5px;
+    @include box-shadow(0px 5px 18px 0px rgba(191,191,191,0.4));
+    
+    & .image{
+        & img{
+            width: 100%;
+        }
+        &::before{
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $theme-color;
+            opacity: 0;
+            @include transition(0.4s);
+            
+        }
+    }
+    & .content{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            @include transform(translate(-50%, -50%));
+            opacity: 0;
+            visibility: hidden;
+            @include transition(0.4s);
+        
+       & ul{
+            & li{
+                display: inline-block;
+                margin: 0 5px;
+                @include transform(translateY(-100%));
+                @include transition(0.4s);
+                
+               & a{
+                    color: $white;
+                    font-size: 18px;
+                   width: 45px;
+                   line-height: 41px;
+                   border-radius: 50%;
+                   text-align: center;
+                   border: 2px solid $white;
+                   @include transition(0.4s);
+                                   
+                   &:hover{
+                       background-color: $white;
+                       color: $theme-color;
+                   }
+                }
+            }
+        }
+        & a{
+            display: block;
+             & h4{
+                color: $white;
+                font-size: 20px;
+                font-weight: 600;
+                @include transform(translateY(100%));
+                @include transition(0.4s);
+            }
+        }
+        & span{
+            font-size: 14px;
+            color: $white;
+            @include transform(translateY(100%));
+            @include transition(0.4s);
+        }
+    }
+    &:hover{
+        & .image:before{ 
+                opacity: 1;
+            }
+        & .content{
+            opacity: 1;
+            visibility: visible;
+            & ul{
+                & li{
+                    @include transform(translateY(0));
+                }
+            }
+            & h4,
+            & span{
+                    @include transform(translateY(0));
+            }
+        }
+    }
+}
+
+#project-part{
+    @media #{$md}{
+        padding-top: 70px;
+        padding-bottom: 80px;
+    }
+}
+#project-part{
+    @media #{$xs}{
+        padding-top: 60px;
+        padding-bottom: 70px;
+    }
+}
+
+/*===== Index 2 =====*/
+
+.project-2-menu{
+    & ul{
+        
+        & li{
+            margin: 10px -2px 0;
+            display: inline-block;
+            padding: 0 15px 15px;
+            color: $heading-color;
+            font-size: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            position: relative;
+            @include transition(0.4s);
+            
+            @media #{$xs}{
+                padding: 0 10px 15px;
+                font-size: 16px;
+            }
+            
+            &::after,
+            &::before{
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 5px;
+                background-color: $border-color-2;
+                left: 0;
+                bottom: 0;
+                
+            }
+            &:first-child{
+                &::before{
+                    border-top-left-radius: 5px;
+                    border-bottom-left-radius: 5px;
+                }
+                
+            }
+            &:last-child{
+                &::before{
+                    border-top-right-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                }
+                
+            }
+            &::after{
+                border-radius: 5px;
+                background-color: $theme-color;
+                width: 0;
+                left: 0;
+                right: 0;
+                @include transition(0.4s);
+            }
+            
+            &.active,
+            &:hover{
+                color: $theme-color;
+                
+                &::after{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.single-project-2{
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    
+    & .project-image{
+        @include transform(translateY(0px));
+        @include transition(0.4s);
+            
+        & img{
+            width: 100%;
+        }
+    }
+    & .project-content{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        bottom: 0;
+        padding: 10px 30px;
+        background-color: $theme-color;
+        @include transform(translateY(100%));
+        @include transition(0.4s);
+        
+        & .name{
+            & a{
+                & h4{
+                    color: $white;
+                    font-size: 20px;
+                    font-weight: 600;
+                } 
+            }
+            & span{
+                color: $white;
+                font-size: 15px;
+                display: block;
+            }
+        }
+        & .view{
+            position: absolute;
+            right: 30px;
+            top: 50%;
+            @include transform(translateY(-50%));
+            
+            & a{
+                color: $white;
+                font-size: 15px;
+                font-weight: 600;
+                & i{
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+    &:hover{
+        & .project-image{
+            @include transform(translateY(-65px));
+        }
+        & .project-content{
+            @include transform(translateY(0));
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

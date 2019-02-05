@@ -1,0 +1,118 @@
+
+
+
+
+
+
+
+/*===========================
+   21.PROJECTS DETAILS css 
+===========================*/
+
+
+
+.project-details-image{
+    & img{
+        width: 100%;
+        border-radius: 5px;
+    }
+}
+
+.project-details-content{
+    & h4{
+        font-size: 24px;
+        font-weight: 600;
+    }
+    
+    & ul {
+        
+        & li{
+            line-height: 40px;
+            
+            & b{
+                width: 195px;
+                font-size: 15px;
+                font-weight: 600;
+                color: $heading-color;
+                display: inline-block;
+                
+                @media #{$xs}{
+                    width: 130px
+                }
+                @media #{$sm}{
+                    width: 195px
+                }
+            }
+            & span{
+                font-size: 15px;
+            }
+            & .share{
+                display: inline-block;
+                & li{
+                    display: inline-block;
+                    margin-right: 13px;
+                    
+                    @media #{$xs}{
+                        margin-right: 8px;
+                    }
+                    
+                    & a{
+                        font-size: 15px;
+                        color: #777;
+                        @include transition(0.4s);
+                        
+                        &:hover{
+                            color: $theme-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.project-active{
+    & .slick-arrow{
+        position: absolute;
+        top: 50%;
+        left: -65px;
+        width: 50px;
+        line-height: 48px;
+        border-radius: 50%;
+        border: 1px solid $theme-color;
+        text-align: center;
+        color: $theme-color;
+        font-size: 24px;
+        @include transform(translateY(-50%));
+        @include transition(0.4s);
+        cursor: pointer;
+        
+        &.next{
+            left: auto;
+            right: -65px;
+        }
+        
+        &:hover{
+            background-color: $theme-color;
+            color: $white;
+        }
+    }
+}
+
+
+#project-details{
+    @media #{$md}{
+        padding-top: 30px;
+        padding-bottom: 65px;
+    }
+    @media #{$xs}{
+        padding-top: 20px;
+        padding-bottom: 55px;
+    }
+}
+
+
+
+
+
+

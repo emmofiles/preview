@@ -1,0 +1,93 @@
+
+
+
+
+
+
+
+/*===========================
+      22.TEAM PAGE css 
+===========================*/
+
+
+.single-team-2{
+    & .team-image{
+        position: relative;
+        overflow: hidden;
+        padding: 5px;
+        border-radius: 5px;
+        @include box-shadow( 0px 0px 12px 0px rgba(191,191,191,0.35));
+        background-color: $white;
+        
+        & img{
+            width: 100%;
+        }
+        & .team-social{
+            position: absolute;
+            left: 0;
+            width: 100%;
+            bottom: 0;
+            background-image: url(../images/team/team-2/hover.png);
+            background-position: top center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            line-height: 70px;
+            @include transform(translateY(100%));
+            z-index: 5;
+            @include transition(0.6s);
+            
+            & ul {
+                & li{
+                    display: inline-block;
+                    margin: 0 5px;
+                    
+                    & a{
+                        font-size: 16px;
+                        color: #ccc;
+                        @include transition(0.4s);
+                        
+                        &:hover{
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+        &:hover{
+            & .team-social{
+                @include transform(translateY(0));
+            }
+        }
+    }
+    & .team-content{
+        & a{
+            & h6{
+                @include transition(0.4s);
+            }
+            &:hover{
+                & h6{
+                    color: $theme-color;
+                }
+            }
+        }
+        & span {
+            display: block;
+            font-size: 15px;
+        }
+    }
+}
+
+#team-page{
+    @media #{$md}{
+        padding-top: 65px;
+        padding-bottom: 75px;
+    }
+    @media #{$xs}{
+        padding-top: 60px;
+        padding-bottom: 70px;
+    }
+}
+
+
+
+

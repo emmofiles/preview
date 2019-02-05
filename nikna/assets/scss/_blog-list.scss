@@ -1,0 +1,123 @@
+
+
+
+
+
+
+
+/*=================================
+      30.BLOG LIST PAGE  css 
+=================================*/
+
+.single-blog-list{
+    border: 1px solid $border-color-3;
+    border-radius: 5px;
+    @include transition(0.4s);
+    background-color: $white;
+    
+    & .blog-image{
+        margin-left: -1px;
+        margin-top: -1px;
+        margin-bottom: -px;
+        margin-right: -1px;
+        overflow: hidden;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        height: 100%;
+        
+        & img{
+            width: 100%;
+            height: 100%;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            @include transition(0.4s);
+        }
+    }
+    & .blog-content{
+        padding-right: 30px;
+        
+        @media #{$md}{
+            padding: 0 30px 25px ;
+        }
+        @media #{$xs}{
+            padding: 0 25px 20px ;
+        }
+        & a{
+            & h4{
+                font-size: 20px;
+                font-weight: 600;
+                @include transition(0.4s);
+                
+                &:hover{
+                    color: $theme-color;
+                }
+            }
+        }
+        & .date{
+            & ul{
+                & > li{
+                    display: inline-block;
+                    margin-right: 48px;
+                    
+                    @media #{$lg}{
+                        margin-right: 20px;
+                    }
+                    @media #{$xs}{
+                        margin-right: 20px;
+                    }
+                    @media #{$sm}{
+                        margin-right: 30px;
+                    }
+                    
+                    & > a{
+                        font-size: 15px;
+                        color: $body-text-color;
+                        @include transition(0.4s);
+                        
+                        & i{
+                            margin-right: 10px;
+                            color: $theme-color;
+                        }
+                        
+                        &:hover{
+                            color: $theme-color;
+                        }
+                    }
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+        & > a{
+            font-size: 15px;
+            font-weight: 600;
+            color: $theme-color;
+            & i{
+              margin-left: 5px;
+              font-size: 17px;
+            }
+        }
+    }
+    &:hover{
+        & .blog-image{
+            & img{
+                @include transform(scale(1.1));
+            }
+        }
+        border-color: transparent;
+        @include box-shadow(0px 0px 25px 0px rgba(191,191,191,0.35));
+    }
+}
+
+
+#blog-list{
+    @media #{$md}{
+        padding-top: 30px;
+        padding-bottom: 80px;
+    }
+    @media #{$xs}{
+        padding-top: 20px;
+        padding-bottom: 70px;
+    }
+}

@@ -1,0 +1,180 @@
+
+
+
+
+
+
+
+/*===========================
+    13.FOOTER css 
+===========================*/
+
+.footer-part {
+    background-color: $theme-color-2;
+}
+
+.footer-description{
+    
+    & p{
+        color: #cecece;
+    }
+    & ul{
+        & li{
+            display: inline-block;
+            margin-right: 17px;
+            
+            & a{
+                font-size: 16px;
+                color: #cecece;
+                @include transition(0.4s);
+                
+                &:hover{
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+}
+
+.title{
+    & h4{
+        font-size: 20px;
+        color: #cecece;
+    }
+}
+
+.footer-link{
+    & ul{
+        & li{
+            line-height: 35px;
+            
+            & a{
+                font-size: 15px;
+                color: #cecece;
+                @include transition(0.4s);
+                
+                & i{
+                    margin-right: 5px;
+                    @include transition(0.4s);
+                }
+                &:hover{
+                    & i{
+                        margin-right: 8px;
+                    }
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+    
+    @media #{$xs}{
+        padding-left: 0;
+    }
+}
+
+.footer-contact{
+    & ul{
+        & li{
+            margin-top: 15px;
+            & p{
+                color: #cecece;
+            }
+        }
+    }
+}
+
+.footer-subscribe{
+    & p{
+        color: #cecece;
+    }
+    & .subscribe-form{
+        position: relative;
+        & input{
+            width: 100%;
+            height: 45px;
+            padding: 0 15px;
+            background-color: #1b2f41;
+            color: $white;
+            border: 0;
+
+        }
+        & button{
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 0;
+            width: 60px;
+            height: 45px;
+            font-size: 30px;
+            color: $white;
+            background-color: $theme-color;
+            border: 0;
+            text-align: center;
+        }
+    }
+}
+
+#footer-part{
+    @media #{$md}{
+        padding-top: 30px;
+        padding-bottom: 80px;
+    }
+    @media #{$xs}{
+        padding-top: 20px;
+        padding-bottom: 70px;
+    }
+}
+
+.copyright-part{
+    background-color: #221d41;
+    
+    & .copyright-content{
+        & p{
+            flex: 15px;
+            color: $white;
+        }
+    }
+    & .copyright-policy{
+        & ul{
+            & li{
+                display: inline-block;
+                margin-right: 17px;
+                
+                & a{
+                    font-size: 15px;
+                    color: $white;
+                }
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+.back-to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    font-size: 20px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    background-color: $theme-color;
+    color: $white;
+    text-align: center;
+    z-index: 99;
+    @include transition(0.4s);
+    display: none;
+    
+    &:hover{
+        background-color: #221d41;
+        color: $white;
+    }
+}
+
+

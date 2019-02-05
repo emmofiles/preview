@@ -1,0 +1,141 @@
+
+
+
+
+
+
+
+/*===========================
+     23.TEAM DETAILS css 
+===========================*/
+
+.team-details-image{
+    & img{
+        width: 100%;
+        border-radius: 5px;
+    }
+}
+
+.team-details-content{
+    & h4{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    & span{
+        font-size: 15px;
+    }
+    & .contact{
+        & ul{
+            & li{
+                display: inline-block;
+                margin-right: 40px;
+                margin-top: 15px;
+                
+                @media #{$xs}{
+                    margin-right: 0;
+                }
+                
+                @media #{$xs}{
+                    margin-right: 40px;
+                }
+                
+                &:last-child{
+                    margin-right: 0;
+                }
+                
+                & i{
+                    font-size: 16px;
+                    color: $theme-color;
+                    margin-right: 10px;
+                }
+                & b{
+                    font-size: 15px;
+                    font-weight: 600;
+                    color: $heading-color;
+                    margin-right: 10px;
+                }
+                & span{
+                    
+                }
+            }
+        }
+    }
+    & .social{
+        & ul{
+            & li{
+                display: inline-block;
+                margin-right: 10px;
+                &:last-child{
+                    margin-right: 0;
+                }
+                
+                & a{
+                    width: 35px;
+                    line-height: 33px;
+                    border: 1px solid $border-color-3;
+                    border-radius: 5px;
+                    text-align: center;
+                    font-size: 16px;
+                    color: $theme-color;
+                    @include transition(0.4s);
+                    
+                    &:hover{
+                        background-color: $theme-color;
+                        border-color: $theme-color;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.join-team-content{
+    & h2{
+        font-size: 32px;
+        font-weight: 600;
+        
+        @media #{$xs}{
+            font-size: 28px;
+        }
+    }
+    & ul{
+        & li{
+            display: inline-block;
+            margin: 10px 13px 0;
+            
+            & .main-btn{
+                &.main-btn-2{
+                    border-color: $theme-color;
+                }
+            }
+        }
+    }
+}
+
+
+#team-details{
+    @media #{$md}{
+        padding-top: 30px;
+        padding-bottom: 80px;
+    }
+    @media #{$xs}{
+        padding-top: 20px;
+        padding-bottom: 70px;
+    }
+}
+
+#join-team{
+    @media #{$md}{
+        padding-top: 75px;
+        padding-bottom: 80px;
+    }
+    @media #{$xs}{
+        padding-top: 65px;
+        padding-bottom: 70px;
+    }
+}
+
+
+
+

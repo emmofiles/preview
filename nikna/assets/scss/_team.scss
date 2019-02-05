@@ -1,0 +1,85 @@
+
+
+
+
+
+
+
+/*===========================
+    14.OUR TEAM css 
+===========================*/
+
+.single-team{
+    background-color: $white;
+    border: 1px solid #bfbfbf;
+    border-radius: 5px;
+    padding: 0 10px 25px;
+    
+    & .author-thumb{
+        margin-top: -45px;
+        
+        & img{
+            border-radius: 50%;
+            padding: 5px;
+            background-color: #bfbfbf;
+            @include transition(0.4s);
+        }
+    }
+    & .author-content{
+        & h6{
+            font-size: 16px;
+            padding-bottom: 4px;
+            @include transition(0.4s);
+            
+            &:hover{
+                color: $theme-color;
+            }
+        }
+        & span{
+            font-size: 14px;
+            display: block;
+        }
+        & ul{
+            & li{
+                display: inline-block;
+                margin: 0 4px;
+                & a{
+                    font-size: 16px;
+                    color: #ccc;
+                    @include transition(0.4s);
+                    
+                    &:hover{
+                        color: $theme-color;
+                    }
+                }
+            }
+        }
+    }
+    
+    &:hover{
+        & .author-thumb{
+            & img{
+                background-color: $theme-color;
+            }
+        }
+    }
+}
+
+#team-part{
+    @media #{$md}{
+        padding-top: 70px;
+        padding-bottom: 80px;
+    }
+    @media #{$xs}{
+        padding-top: 60px;
+        padding-bottom: 70px;
+    }
+}
+
+
+
+
+
+
+
+

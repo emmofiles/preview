@@ -1,0 +1,266 @@
+
+
+
+
+
+
+
+/*===========================
+    19.SERVICES DETAILS css 
+===========================*/
+
+.saidebar-catagories{
+    & ul{
+        & li{
+            margin-bottom: 30px;
+            position: relative;
+            
+            &:last-child{
+                margin-bottom: 0;
+            }
+            &::before{
+                position: absolute;
+                content: '';
+                width: 5px;
+                height: 100%;
+                background-color: $theme-color;
+                left: -1px;
+                top: 0px;
+                @include transition(0.4s);
+                z-index: 6;
+            }
+                        
+            & a{
+                display: block;
+                line-height: 65px;
+                border: 1px solid $border-color-3;
+                border-left: 0;
+                overflow: hidden;
+                padding: 0 30px;
+                position: relative;
+                z-index: 5;
+                @include transition(0.4s);
+                
+                & span{
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: $heading-color;
+                    @include transition(0.4s);
+                }
+                & i{
+                    float: right;
+                    color: $heading-color;
+                    font-size: 18px;
+                    @include transition(0.4s);
+                }
+            }
+            
+            &.active,
+            &:hover{
+                &::before{
+                    width: 100%;
+                    z-index: -1;
+                }
+                & a {
+                    border-color: $theme-color;
+                    
+                    & span{
+                        color: $white;
+                    }
+                    & i{
+                        color: $white;
+                    } 
+                }
+            }
+        }
+    }
+}
+
+
+.saidebar-form{
+    border: 1px solid $border-color-3;
+    background-color: $grey;
+    padding: 25px 30px 30px;
+    border-radius: 5px;
+    
+    & h3{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    & .single-form{
+        margin-top: 20px;
+        
+        & textarea,
+        & input{
+            width: 100%;
+            height: 40px;
+            padding: 0 12px;
+            border: 1px solid $border-color-3;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+        & textarea{
+            height: 130px;
+            padding-top: 12px;
+            resize: none;
+        }
+        & .main-btn{
+            line-height: 40px;
+            
+        }
+    }
+}
+
+.saidebar-download{
+    border: 1px solid $border-color-3;
+    background-color: $grey;
+    padding: 25px 30px;
+    border-radius: 5px;
+    
+    & a{
+        font-size: 60px;
+        color: $theme-color;
+        line-height: 60px;
+    }
+    & h4{
+        font-size: 22px;
+        font-weight: 600;
+        
+        @media #{$xs}{
+            font-size: 20px
+        }
+    }
+    & p{}
+}
+
+.services-details-content{
+    & h4{
+        font-size: 24px;
+        font-weight: 600;
+    }
+    
+    & .image{
+        padding: 0 95px;
+        
+        @media #{$lg}{
+            padding: 0 65px;
+        }
+        
+        @media #{$xs}{
+            padding: 0;
+        }
+        & img{
+            width: 100%;
+            border-radius: 5px;
+        }
+    }
+    & img{
+        width: 100%;
+        border-radius: 5px;
+    }
+    
+    & .quality-list{
+        @media #{$lg}{
+            margin-bottom: 25px;
+        }
+        @media #{$xs}{
+            margin-bottom: 25px;
+        }
+        & ul{
+             width: 50%;
+            
+            @media #{$xs}{
+                width: 100%;
+            }
+            
+            & li{
+                font-size: 15px;
+                color: $heading-color;
+                padding-left: 25px;
+                position: relative;
+                line-height: 35px;
+                
+                &::before{
+                    position: absolute;
+                    content: '';
+                    width: 15px;
+                    height: 15px;
+                    background-color: $theme-color;
+                    border-radius: 50%;
+                    left: 0;
+                    top: 50%;
+                    @include transform(translateY(-50%));
+                }
+            }
+        }
+    }
+}
+.faq{
+
+    & .accordion{
+
+        & .card{
+            @include box-shadow(0px 0px 35px 0px rgba(232,232,232,0.66));
+            margin-top: 30px;
+            padding: 0;
+            border: 0;
+            background-color: $white;
+            border-radius: 5px;
+
+            & .card-header{
+                border: 0;
+                background-color: $white;
+                padding: 25px 30px;
+                @media #{$xs}{
+                    padding: 15px 20px;
+                }
+                & a{
+                    display: block;
+                    font-size: 15px;
+                    @include transition(0.4s);
+                    color: $theme-color;
+                    position: relative;
+
+                    &::before{
+                        content: "\f114";
+                        font-family: "Flaticon";
+                        position: absolute;
+                        font-size: 18px;
+                        top: 0;
+                        right: 0;
+                        @include transform(rotate(90deg));
+                        @include transition(0.4s);
+                    }
+                    &.collapsed{
+                        color: $heading-color;
+                        &:hover{
+                            color: $theme-color;
+                        }
+                        &::before{
+                            @include transform(rotate(0deg));
+                        }
+                    }
+                }
+            }
+            & .card-body{
+                border-top: 1px solid $border-color-3;
+                padding: 25px 30px;
+            }
+        }
+    }
+}
+
+
+#services-details{
+    @media #{$md}{
+        padding-top: 25px;
+        padding-bottom: 80px;
+    }
+    @media #{$xs}{
+        padding-top: 15px;
+        padding-bottom: 70px;
+    }
+}
+
+
+
