@@ -1,0 +1,191 @@
+/* 
+RTL
+========================================================================== 
+*/
+/* Right to left CSS */
+body {
+  direction: rtl;
+  unicode-bidi: embed;
+}
+
+.bg-f.bg-f--skewbottom:after {
+  right: 0;
+}
+
+.hero .hero__wrapper .hero__text h1, h1, h2, h3, h4, h5, h6, p {
+  text-align: right;
+}
+
+h1.title-line:before, h2.title-line:before, h3.title-line:before, h4.title-line:before, h5.title-line:before, h6.title-line:before {
+  right: 0;
+}
+
+.subtitle {
+  text-align: right;
+}
+
+.hero .hero__wrapper .ui-scroll small {
+  margin-left: 10px;
+}
+
+.subtitle:before {
+  margin-left: 10px;
+}
+
+.about .bio {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+ul.list-inline-check li:before {
+  margin-right: -15px;
+}
+
+.hero .hero__wrapper .hero__text {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.hero .hero__wrapper .hero__text p.lead {
+  direction: initial;
+}
+
+.btn i {
+  margin-right: 0;
+  margin-left: 20px;
+}
+
+.about .services i {
+  margin-right: 0;
+  margin-left: 15px;
+}
+
+.about .experiences .experience .experience__info .experience__jobtitle, .experience__period {
+  text-align: right;
+}
+
+.about .experiences .experience .experience__organization {
+  text-align: left;
+}
+
+.portfolio .portfolio__item .item__content .item__title i, .portfolio .portfolio__item .item__content .item__title i:before {
+  content: '\EA4B';
+}
+
+.portfolio .portfolio__item .item__content .item__category:before, .portfolio .portfolio__item .item__content .item__title:before {
+  -webkit-transform-origin: 100% 0%;
+  transform-origin: 100% 0%;
+}
+
+.portfolio .portfolio__item .item__content .item__title span:before, .portfolio .portfolio__item .item__content .item__category span:before {
+  -webkit-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+}
+
+.pricing-tables .pricing-table ul li {
+  margin: 0 40px 15px 15px;
+}
+
+.pricing-tables .pricing-table ul li:before {
+  margin-right: -40px;
+  margin-left: 10px;
+}
+
+.jarallax .jarallax__content h2 {
+  text-align: center;
+}
+
+.owl-testimonials, .contact-methods {
+  direction: initial;
+}
+
+.ul.list-inline-check li {
+  position: relative;
+}
+
+.single-portfolio .text-center, .single-portfolio .subtitle, .single-portfolio h2, .single-portfolio p {
+  text-align: center !important;
+}
+
+ul.list-inline-check li {
+  position: relative;
+}
+
+.single-post .post__entry ul {
+  text-align: right;
+}
+
+.single-post .post__entry ul li:before {
+  margin-left: 0;
+  margin-right: -1.5em;
+}
+
+.single-post .post__author .author__text .social-channels {
+  left: 0;
+  right: initial;
+}
+
+.single-post .post__author .author__text .social-channels li {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+.single-post .post__author .author__img {
+  margin-right: 0;
+  margin-left: 25px;
+}
+
+.single-post .post__comments .post__comment .comment__text {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.single-post .post__comments .post__comment .comment__text .comment__date {
+  text-align: right;
+}
+
+@media (min-width: 768px) {
+  .text-md-right {
+    text-align: left !important;
+  }
+}
+
+.navbar-toggler {
+  position: relative;
+}
+
+@media (max-width: 991.98px) {
+  .pricing-tables .pricing-table ul li {
+    margin: 0 30px 15px 0;
+    text-align: right;
+  }
+  .contact .contact__image .contact__wrapper ul.contact-methods {
+    text-align: right;
+  }
+  .contact .contact__image .contact__wrapper ul.contact-methods li i {
+    margin: 0 0 0 10px;
+    float: right;
+  }
+  .contact .contact__image .contact__wrapper ul.contact-methods li a {
+    float: right;
+    margin-left: 5px;
+  }
+  .single-post .post__comments .post__comment .btn-reply {
+    right: initial;
+    left: 0;
+  }
+  .single-post .post__comments .post__comment .comment__text {
+    margin-right: 0;
+  }
+  .social-share ul {
+    padding: 0 0 0 0;
+  }
+}
